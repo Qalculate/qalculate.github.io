@@ -1,0 +1,584 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Qalculate! - the ultimate desktop calculator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body text="Black" bgcolor="white">
+<table cellspacing="20" width="100%" height="1500"><tr>
+<td width="150" bgcolor="#666677" align="center" valign="top">
+<br>
+<a href="index.html"><IMG src="images/qalculate-icon.png" width="128" height="128" border="0"></a>
+<br><br><br>
+<table cellspacing="20" width="100%"><tr><td align="left">
+<font size="+1" color="White" face="serif">
+<strong>Sections:</strong><br><br>
+<strong><a href="news.html" style="text-decoration: none"><font color="White" face="serif">News</font></a></strong><br>
+<strong><a href="features.html" style="text-decoration: none"><font color="White" face="serif">Features</font></a></strong><br>
+<strong><a href="screenshots.html" style="text-decoration: none"><font color="White" face="serif">Screenshots</font></a></strong><br>
+<strong><a href="downloads.html" style="text-decoration: none"><font color="White" face="serif">Downloads</font></a></strong><br>
+<strong><a href="manual/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>Manual</nobr></font></a></strong><br>
+<strong><a href="reference/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>API Reference</nobr></font></a></strong><br>
+</font>
+</td></tr></table>
+</td>
+<td width="550" valign="top">
+<div align="right"><hr>
+<h1><font color="#cc4499"><strong>Q</strong></font>alculate! news</h1>
+<hr></div>
+<br>
+	<h4>.: 2016-04-30 :. A new version coming soon...</h4>
+	The graphical user interface has been ported to GTK+ 3 (unfortunately the KDE version has been abandoned for now) and lots of bugs have been fixed. Even a few new features have been introduced in the process. Only few more fixes and a lot more testing are needed before I will release a shiny new version of Qalculate.<br>
+	<h4>.: 2010-01-06 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.7 released</h4>
+	After a long time without updates, a new version of <font color="#cc4499"><strong>Q</strong></font>alculate! is available for download. This is a bug fix and build update release. Qalculate! should now compile and work on most modern systems.
+	<br><br>Changelog:
+	<ul>	
+		<li>General build updates and bug fixes, including the ability to build against cln >= 1.2</li>
+		<li>Bug fix for segfaults with some uses of integrate()</li>
+		<li>New Simplified Chinese translation
+		<li>Fix crash with unsupported operator in RPN syntax</li>
+		<li>Fix reduction of vector size</li>
+	</ul>
+	<h4>.: 2007-06-17 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.6 released</h4>
+	A new version of <font color="#cc4499"><strong>Q</strong></font>alculate! providing enhanced stability and usability with bug fixes and feature enhancements is now available.
+	<br><br>Changelog:
+	<ul>		
+		<li>Use Lambert W to solve more equations and avoid infinite loop when solving some equations</li>		
+		<li>More data on elements</li>
+		<li>Fix simplification of (1-1/x)^3 and similar</li>
+		<li>Fix clumsy mistakes in with prefixes leading to crashes</li>
+		<li>Fix parsing of unit expressions (when converting) such as W/(m K)</li>
+		<li>Add more exact values for sin() and cos() and avoid floating point underflow by, in approximate mode, 
+	  checking against the value of pi</li>
+	  	<li>Always input decimal separator sign on keypad separator press</li>
+		<li>Fix crash when expression entry reclaims focus if compiled with optimizations (GTK+)</li>
+	  	<li>New units: typographic units, pouce, pied du roi, grams of TNT and tons of TNT</li>
+		<li>New functions: lambertW(), addDays(), addMonths(), addYear(), addTime(), isNumber(), isReal(), isRational(), isInteger(),
+	  representsNumber(), representsReal(), representsRational(), representsInteger()</li>
+	  	<li>New variable: omega constant</li>
+		<li>Other minor fixes and enhancements</li>
+	</ul>
+	<h4>.: 2006-12-17 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.5 finally released</h4>
+	After a long time with sporadic development, here is a new version with many new features and bug fixes.
+	<br><br>Changelog:
+	<ul>
+		<li>French translation (not fully complete yet)</li>
+		<li>Return value in save() and add "name := value" as shortcut</li>		
+		<li>Integer factorization</li>
+		<li>Interpret 0x[0-9,a-f] as hexadecimal number (do not require first digit to be 0-9)</li>
+		<li>Add "Engineering" display mode</li>
+		<li>Several fixes to display of units and prefixes</li>
+		<li>Show value for variables without title in expression completion</li>
+		<li>New functions: cross(), heaviside(), rectangular(), triangular(), ramp() kronecker(), sigmoid(), and logit()</li>
+		<li>Use radius as argument for circumference()</li>
+		<li>Add optional upper and lower limit arguments to integrate() for definite integrals</li>
+		<li>Fix precision in logn()</li>
+		<li>Ability to set shortcuts for meta modes (KDE)</li>		
+		<li>Make separate options for "Sort Minus Last" and "Negative Exponents" in numerical display menu</li>
+		<li>Add "Edit Expression", "Edit Result", and "Insert Result Variable" to history context menu (KDE)</li>
+		<li>Global shortcut for show/hide (KDE)</li>
+		<li>Use localized comma for insert matrix/vector</li>
+		<li>Remove use of libgnomeui completely and add --with-libgnome configure option</li>
+		<li>Fix parsing of "x!)!"</li>
+		<li>Use Julian year for light-year value</li>
+		<li>Add several accelerator keys (GTK+)</li>
+		<li>Connect "Exp" button Exp RPN operation and add Ctrl+Shift+E shortcut</li>
+		<li>Fixes for old KDE and Qt versions</li>
+		<li>New command line options for qalc: -terse (-t), -nodefs (-n), -nocurrencies, -nodatasets, -nofunctions, -nounits, -novariables</li>
+	</ul>
+	<h4>.: 2006-06-02 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.4 released</h4>
+	This version includes many enhancements, such as a true RPN mode, a Dutch translation, new icons, API documenation, and bug fixes.
+	<br><br>Changelog:
+	<ul>
+		<li>True RPN mode with stack manipulation</li>
+		<li>Dutch translation (from Jaap Woldringh and the Dutch KDE translation team)</li>
+		<li>New application icons (from Thomas L&uuml;bking)</li>
+		<li>API documentation (approximately halfway)</li>
+		<li>Enhanced edit matrix/vector dialogs, with widget for GTK+</li>
+		<li>View/edit/insert matrix/vector menu items (GTK+)</li>
+		<li>Combined dialog for number bases in result and expression (GTK+)</li>
+		<li>Fix comma as decimal sign with KDE GUI</li>
+		<li>"Convert to Best Unit" and "Convert to Base Units" was swapped (KDE)</li>
+		<li>Ignore commas (with dot as decimal sign) in numbers and option to use dot as thousands separator</li>
+		<li>Fix removal of factors in simplifaction ("1 kg m/s" was simplified to "1000 m/s")</li>
+		<li>Fix libqalculate.so unresolved symbols (with patch from Thomas de Grenier de Latour)</li>
+		<li>Fix bug that caused all number arguments to require numbers to be rational</li>
+		<li>Interpret 0x..., 0o... and 0b... as hexadecimal, octal and binary numbers, respectively, when base is decimal</li>
+		<li>Ability to represent numbers as 0x0feff (for HEX), 0b0011101010 (for BIN)</li>
+		<li>Set vectors and matrices as the first argument by default (foremost changes some statistical functions)</li>
+		<li>New functions: tetrahedron(), tetrahedron_sa(), tetrahedron_height(), sqpyramid(), sqpyramid_sa(), sqpyramid_height(), stack() and register()</li>
+		<li>component() and components() removed (use element() and dimension())</li>
+		<li>Fix integration</li>
+		<li>New unit: psi</li>
+		<li>New name format in data files for more flexible translations</li>
+		<li>Change some dubious mathematical wordings</li>
+		<li>...and many more enhancements and fixes...</li>
+	</ul>
+	<h4>.: 2006-03-24 :. KDE GUI updated</h4>
+	Version 0.9.3.1 of the KDE GUI for <font color="#cc4499"><strong>Q</strong></font>alculate! (only the qalculate-kde package has been updated) has been released. This version fixes session management and puts <font color="#cc4499"><strong>Q</strong></font>alculate! in the system tray by default. Also new are a combined dialog for number bases in result and expression, and a command line option to calculate the clipboard content.
+	<h4>.: 2006-03-14 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.3 released</h4>
+	This is primarily a bug fix release with relatively few changes.
+	<br><br>Changelog:
+	<ul>
+		<li>Avoid floating point overflow and underflow (bug #1432571)</li>
+		<li>Do not use "Read Precision" in plot (bug #1429523)</li>		
+		<li>cos(x*pi*rad) equals 1 if x is even, not -1 (bug #1416048)</li>
+		<li>isodate(), localdate(), timestamp(), stamptodate() functions</li>
+		<li>Fix show ending zeroes</li>
+		<li>Fix prefixes with automatic simplification/factorization</li>
+		<li>Approximate comparison</li>
+		<li>...and some more...</li>
+	</ul>
+	<h4>.: 2005-12-22 :. Happy Yule to you all! &nbsp; <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.2 released</h4>
+	This is a major release (hence the .2 increase) that focuses on the CAS functionality, with greatly enhanced factorization/simplification
+	and solving of equations and inequalities.
+	<br><br>Changelog:
+	<ul>		
+		<li>Enhanced factorization, with square free factorization of rational multivariate polynomials</li>
+		<li>New simplification using the enhanced factorization</li>
+		<li>Much more efficient determinant and matrix inverse calculation</li>
+		<li>Greatly enhanced and reworked solving of equations and inequalities</li>		
+		<li>More efficient evaluation avoiding recalculations</li>
+		<li>Generally enhanced and more correct algebraic functionality</li>
+		<li>Faster calculation of powers with large exponent and base close to one</li>
+		<li>Option to automatically simplify or factorize</li>
+		<li>Option to warn about denominators assumed non-zero</li>
+		<li>Fix negative exponents with lower-case e</li>				
+		<li>Fix fetching of exchange rates with gnome-vfs &lt; 2.10</li>				
+		<li>Polynomial functions: coeff(), lcoeff(), pcontent(), degree(), etc.</li>		
+		<li>Fix ln(e^x)</li>
+		<li>Display "x &lt; 3 && x &gt; 1" as "1 &lt; x &lt; 3"</li>
+		<li>Display "&amp;&amp;" and "||" as "and" and "or" by default</li>
+		<li>Fix display of fractions in "Decimal (Try Exact)" mode</li>		
+		<li>Add "Clear" to history popup menu</li>
+		<li>Add "Enable/Disable Completion", "Read Precision", "Limit Implicit Multiplication", "RPN Mode", and "Meta Modes" to expression entry popup menu (GTK+)</li>
+		<li>Fix crash with newline character in pasted text (GTK+)</li>
+		<li>Fix completion with or after unicode signs (KDE)</li>
+		<li>Compile without errors or warnings with -pedantic and -Wextra</li>
+		<li>Fix compilation with --enable-final (KDE)</li>
+		<li>Status text fixes (GTK+)</li>
+		<li>Unicode fixes</li>
+		<li>...and many more minor fixes and enhancements (and probably some new bugs)...</li>
+	</ul>
+	<h4>.: 2005-11-03 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.0 released</h4>
+	This release includes many visual and non-visual enhancements. Users will first notice the redesigned main
+	window, and then the as-you-type parse and function hint display, and enhanced completion. 
+	But there are more to be discovered...
+	<br><br>Changelog:
+	<ul>
+		<li>Redesigned GTK+ GUI with history view in the main window</li>
+		<li>Redesigned keypad in the KDE GUI</li>
+		<li>Display of as-you-type expression parsing and function hints</li>
+		<li>Enhanced completion</li>
+		<li>Scaling of result display to vertically fit the window</li>
+		<li>Nicer history listing</li>
+		<li>Enhanced result display in GTK+ GUI with much nicer parentheses</li>
+		<li>Meta modes</li>
+		<li>67 new units: bel (B) and neper (Np), information units such as bit and byte, many convenience units (km/h, deciliter, etc), and more.</li>
+		<li>Binary prefixes</li>
+		<li>Some new variables and functions</li>
+		<li>Fixed help display in new yelp</li>
+		<li>Fixed compile with cln-1.1.10</li>
+		<li>Fixed regressions in simplification</li>
+		<li>Fixed f(x) return type analysis (ex. log(x) represents a real number if x represents a positive). This was by accident unused.</li>
+		<li>...and many more bug fixes and enhancements...</li>
+	</ul>
+	<h4>.: 2005-10-11 :. Quick fix for result cropping in new pango</h4>
+	The gtk+ version of <font color="#cc4499"><strong>Q</strong></font>alculate! was updated to handle new behaviour
+	in pango &gt;= 1.10.0.
+	<h4>.: 2005-10-10 :. New Applications: <font color="#cc4499"><strong>Q</strong></font>alculate! Bases, <font color="#cc4499"><strong>Q</strong></font>alculate! Currency, <font color="#cc4499"><strong>Q</strong></font>alculate! Units</h4>
+	In some cases the big (bloated) <font color="#cc4499"><strong>Q</strong></font>alculate! application is not the most efficient and user friendly interface.
+	Why should you, for example, need to load and learn to use the full application just to convert a simple binary number to a decimal, or
+	to see what the price of a foreign product is in your national currency with the current exchange rates. 
+	Therefore, I am now releasing three small utilities: <font color="#cc4499"><strong>Q</strong></font>alculate! Bases,
+	<font color="#cc4499"><strong>Q</strong></font>alculate! Currency, and <font color="#cc4499"><strong>Q</strong></font>alculate! Units.
+	The full libqalculate capabilities is of course available in these applications (arbitrary precision, expression evaluation, etc.), but in
+	graphical user interfaces more fine-tuned for the specific purposes. The <a href="screenshots.html#qalclets">screenshots</a> should be self-explanatory.
+	<h4>.: 2005-10-10 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.2</h4>
+	A new full release with mostly bug fixes.
+	<br><br>Changelog:
+	<ul>
+		<li>Use gnomevfs instead of wget if available</li>
+		<li>Allow user to specify wget options</li>
+		<li>Add -export-dynamic to LDFLAGS to fix libglade without libgnome</li>
+		<li>Update currencies</li>
+		<li>Close gnuplot and disable save button when no series defined (GTK+)</li>
+		<li>Fix round halfway numbers to even menu item (KDE)</li>
+		<li>Also process operators entered with keypad (KDE)</li>
+		<li>System tray icon and close to system tray option (of by default, KDE)</li>
+		<li>Do not create qalculate symlink to qalc (confusing when installing GUI in other location)</li>
+	</ul>
+	<h4>.: 2005-09-22 :. lib<font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.1.2</h4>
+	This is a bug fix release of libqalculate.
+	<br><br>Changelog:
+	<ul>
+		<li>Fix (1/2)^n &lt; 0.5 in equalities (bug #1265104)</li>
+		<li>Fix transformation of unicode signs in expressions with quotes</li>
+		<li>Fix conversion of 0 &ordm;C to &ordm;F</li>
+		<li>New units: mph and mpg</li>
+	</ul>
+	<h4>.: 2005-06-11 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.1.1</h4>
+	The purpose if this release is to check and lower the version numbers of required libraries.
+	Some additional enhancements did however sneak in... qalculate-gtk has not been updated but needs to
+	be recompiled if libqalculate is updated.
+	<br><br>Changelog:
+	<ul>
+		<li>Remove requirement glib-2.0 >= 2.4 and require libxml2 >= 2.3.8</li>
+		<li>Do not use unicode prefix names for long names</li>
+		<li>Add even(), odd() and shift() functions and operators "&lt;&lt;" and "&gt;&gt;"</li>
+		<li>Compile with kdelibs and Qt >= 3.1 (KDE)</li>
+		<li>Add glib-2.0 and libxml-2.0 to PKG_CHECK_MODULES (KDE)</li>
+		<li>Display prefix in object info (KDE)</li>
+		<li>Confirm overwriting result and plot image files (KDE)</li>
+		<li>Use KIO instead of wget for fetching exchange rates (KDE)</li>
+		<li>Close gnuplot and disable save button when no series defined (KDE)</li>
+	</ul>
+	<h4>.: 2005-06-09 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.1</h4>
+	This release includes several major bug fixes and new features in the KDE interface. The new version also adds
+	support for bitwise operators (~, &, |). This means that '&&' or 'AND', and '||' or 'OR' must be used for 
+	logical	operations.
+	<br><br>Changelog:
+	<ul>
+		<li>Bitwise operators</li>
+		<li>XOR function</li>
+		<li>Update currencies (more added)</li>
+		<li>Do not crash when saving data sets</li>
+		<li>Put buttons on the right (KDE)</li>
+		<li>Add web address to about data and correct bug address (KDE)</li>
+		<li>Add tooltips (KDE)</li>
+		<li>Base and numeric mode combo boxes should not be editable (KDE)</li>
+		<li>Support QT without STL support (KDE)</li>
+		<li>Insert matrix/vector dialogs (KDE)</li>
+		<li>Many enhancements to result display (KDE)</li>
+		<li>Add list items add the end of the list to get the right order (KDE)</li>
+		<li>Allow only one instance (KDE)</li>
+		<li>Display ampersands in menus for categorys and titles (KDE)</li>
+		<li>Hide completion when expression is empty (KDE)</li>
+		<li>Handle input keys ^+digit as "^"+digit (KDE)</li>
+		<li>and more...</li>
+	</ul>
+	<h4>.: 2005-06-01 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.0 released with new KDE interface</h4>
+	This release includes a completely new graphical user interface using KDE with all features of the old GTK+ GUI.
+	It features a redesigned main window, with new features such as a history view (instead of in its own window),
+	selectable result and tooltips for variables, functions and units in the result.
+	Note that this does NOT mean that the old interface will be abandoned.
+	The Qalculate! package has been split in three: liqalculate, qalculate-gtk and qalculate-kde.
+	<br><br>Changelog:
+	<ul>
+		<li>New KDE GUI</li>
+		<li>Allow use of 'e' as well as 'E': 5e2 = 5E2 = 500</li>
+		<li>Update solve2()</li>
+		<li>Reenable message dialog without buttons for gtk+ >= 2.6.2</li>
+		<li>Do not look at function arguments in contains... functions</li>
+		<li>Update integration and differentiation (sin(x) != sin(x)*rad) after change in sin() and cos() behaviour</li>
+		<li>Fix documentation typos</li>
+		<li>Fix includes.h for gcc-4.0</li>
+	</ul>
+	<h4>.: 2005-02-01 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.7.2</h4>
+	This release includes some requested feature enhancements and minor bug fixes.
+	<br><br>Changelog:
+	<ul>
+		<li>Show base (if not decimal, hexadecimal or non-standard) as subscript</li>
+		<li>Use singular instead of abbreviated name for completion</li>
+		<li>Fix "Convert result" button</li>
+		<li>Use the last operator for leftover stack values</li>
+		<li>Fix RPN crash and don't add lonely stack value to itself</li>
+		<li>Workaround freeze with message dialog without buttons</li>
+	</ul>
+	<h4>.: 2004-11-22 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.7.1</h4>
+	This is mainly a bug fix release.
+	<br><br>Changelog:
+	<ul>
+		<li>Only use unicode character if available in the used font. Fixes plus sign not displayed correctly in keypad (bug #933234, bug #932828 and debian bug #281096), and wide keypad (bug #1063474)</li>
+		<li>Do not round exact integers not in exponential format. Fixes display of large numbers in non-decimal number bases (debian bug #278973)</li>
+		<li>Fix crash on systems, such as amd64, where size_t is not long int (bug #1049570)</li>
+		<li>Do not update plot data when not changed</li>
+		<li>Rearrange plot dialog and make x variable separate for each plot function</li>
+		<li>Generate vector function</li>	
+		<li>Fix some cases with nested trigonometric functions by adding option to set default angle unit to none, to allow angle unit in argument</li>
+		<li>Try with assumptions set to unknown in solve function if not successful</li>
+		<li>Be more picky in comparisons with units</li>
+		<li>Fix comparison of unit with unknown</li>
+		<li>Fix 0.5!</li>
+	</ul>
+	<h4>.: 2004-10-18 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.7.0</h4>
+	This release includes some structural changes, a text-based interface, some major speed-ups and a number of bug fixes. 
+	Libqalculate is now installed as a shared library and in addition to the now optional gtk+ GUI, there
+	is now a text-based/command line interface with an executable named qalc and access to the full functionality
+	of <font color="#cc4499"><strong>Q</strong></font>alculate!.
+	<br><br>Changelog:
+	<ul>
+		<li>New text interface: qalc</li>
+		<li>Change package name to qalculate</li>
+		<li>Install libqalculate as a shared library</li>
+		<li>Make compilation of qalculate-gtk and qalc optional</li>
+		<li>Drop support for gtk+ &lt; 2.4</li>
+		<li>Separate internationalization files for definitions</li>
+		<li>Add appendix with auto generated function, variable and unit lists to documentation</li>
+		<li>Make definitions loading more than twice as fast</li>
+		<li>Calculation speed-ups, with some statistical functions now being many times faster with large vectors</li>
+		<li>Add option to limit use of implicit multiplication when parsing expressions</li>
+		<li>Support fractions of two in gamma function and do not transform to factorial for unsupported values</li>
+		<li>Double-, multi-, hyper- and superfactorials</li>
+		<li>Alternative to use step size instead of sampling rate for generation of plot data</li>
+		<li>Ask if exchange rates shall be downloaded on first run</li>
+		<li>Change promille to permille and add permille sign</li>
+		<li>Lots of approximation indication fixes</li>
+		<li>Fix: atan ignored selected angle unit</li>
+		<li>Fix: large numbers displayed approximately was not reported as approximate</li>
+		<li>Fix: read precision from zero with decimals</li>
+		<li>Fix: x!! != (x!)!</li>
+		<li>Fix: change non-unicode abbreviation for micro from n to u</li>
+	</ul>
+	<h4>.: 2004-09-27 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.4</h4>
+	This release includes, in addition to a large variety of enhancements and bug fixes, 
+	a new data set concept, to be able to handle large sets of variables, and significant algebraic enhancements.
+	<br><br>Changelog:
+	<ul>
+		<li>New data set concept</li>
+		<li>Improve factorization</li>
+		<li>Status text</li>
+		<li>Ability to save result to image file (png)</li>
+		<li>Simple integration</li>
+		<li>Polynomial division and other division enhancements</li>
+		<li>Enhanced equation solving</li>
+		<li>Transform sqrt(54) to 3*sqrt(6) (and similar) in exact mode</li>
+		<li>Alternative to assume that unknown denominators are non-zero</li>
+		<li>Set unknowns dialog</li>
+		<li>Finish system property of units</li>
+		<li>Allow use of operation name instead of sign (ex. "5 meters per second" instead of "5 m/s")</li>
+		<li>New variables: thousand, hundred, ans2, ans3, ans4 and ans5</li>
+		<li>New units: day and year</li>
+		<li>New functions: solve2(), multisolve(), integrate()</li>
+		<li>Save and load accel map</li>
+		<li>Better sorting</li>
+		<li>Display error when plot data contains non-numerical elements</li>
+		<li>Fix xy-xy=xy !</li>
+		<li>Fix RPN mode</li>
+		<li>Fix saving of unknowns entered with quotation marks</li>
+		<li>Fix install over old installation</li>
+		<li>Fix display of application icon</li>
+		<li>Fix diff() with variables and functions that contains x</li>
+		<li>Many additional minor enhancements and bug fixes</li>
+	</ul>
+	<h4>.: 2004-08-16 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.3</h4>
+	A new exciting release of <font color="#cc4499"><strong>Q</strong></font>alculate! is ready with a lot of bug fixes
+	and some interesting new features, including a periodic table, lots of physical constants, and new more flexible internal
+	systems and user options for precision and object names (now case-insensitive).
+	<br><br>Changelog:
+	<ul>
+		<li>Periodic Table and functions to retrieve element data</li>
+		<li>Non-abbreviated names are now case-insensitive</li>
+		<li>Individual precision for approximate values</li>
+		<li>Solve quadratic equations (note that <font color="#cc4499"><strong>Q</strong></font>alculate! is still not really a good tool for solving advanced equations)</li>
+		<li>New system for variable, unit and function names which allows unlimited number of different names for each object, translation of all names, and suffixes</li>
+		<li>New variables: lots of physical constants, and true (yes), false (no), undefined</li>
+		<li>Option to show ending zeroes (to see actual precision)</li>
+		<li>Option to interpret input numbers with decimals as approximate with a precision equal to the number of digits (after preceding zeroes)</li>
+		<li>Optional automatic conversion to best unit or base units</li>
+		<li>New units: atomic mass unit (u), stilb, phot, oersted, maxwell, gauss, dyne, poise, stokes, mass fraction (kg/kg)</li>
+		<li>New functions: bmi(), atomic_weight(), atomic_name(), atomic_symbol(), atomic_number(), atom()</li>
+		<li>Convert to best unit now only converts to SI units</li>
+		<li>Fix insert complex unit ("m/s" instead of "m_p_s")</li>
+		<li>Fix right parenthesis added before (but no left after) vector</li>
+		<li>Remove arg() until it has been fixed, and remove quarter unit as it might be confusing</li>
+		<li>Do not prefix currencies in all locales</li>
+		<li>Fix parsing of numbers with base &lt;10 and decimal point</li>
+		<li>Result display fixes</li>
+		<li>Numerous minor enhancements and bug fixes...</li>
+	</ul>
+	The element data is rather limited at moment and I'm not exactly a chemist, so if someone is willing to step
+	forward and fill in the missing properties I would very much appreciate it. I could also use some more suggestions 
+	on functions that you think should be included, how the user interface can become more user-friendly, and any 
+	new features that would be useful.
+	<h4>.: 2004-07-29 :. <font color="#cc4499"><strong>Q</strong></font>alculate! ebuild now in portage</h4>
+	<font color="#cc4499"><strong>Q</strong></font>alculate! is now available in <a href="http://www.gentoo.org">Gentoo</a>.
+	<br>Install with <code>ACCEPT_KEYWORDS="~x86" emerge qalculate-gtk</code>
+	<h4>.: 2004-07-19 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.2</h4>
+	The new version includes some urgent bug fixes and a number of feature enhancements.
+	<br><br>Changelog:
+	<ul>
+		<li>Fix segfault on exit</li>
+		<li>Force use of -O2 instead of -Os</li>
+		<li>Fix a^b^c = a^(b^c) not (a^b)^c</li>
+		<li>Fix rounding and precision in display of numbers</li>
+		<li>if(), function, error, warning, load, save and title functions were not activated (oops!)</li>
+		<li>Fix parsing of default value of text argument</li>
+		<li>Fix display of empty vector</li> 
+		<li>Fix import of CSV file to matrix</li>
+		<li>Fix E in rpn mode</li>
+		<li>Fix rad unit being dropped in unsolved sin/cos function</li>
+		<li>Fix ! (NOT)</li>
+		<li>Change -5^2 = (-5)^2 to = -(5^2)</li>
+		<li>Variable edit fixes</li>
+		<li>Display also the parsed and formatted expression in history window</li>
+		<li>GUI for subfunctions</li>
+		<li>GUI to show numbers in base between 2 and 36</li>
+		<li>Alternative to use lower case letters in numbers</li>
+		<li>Alternative to round halfway numbers to even in display</li>
+		<li>Alternative disable complex and infinite results</li>
+		<li>Ability set number base for whole expression and enter epxressions in base functions</li>
+		<li>Export to CSV file</file>
+		<li>Fetching exchange rates message and slightly changed behaviour</li>
+		<li>Undefined, implicit unknowns disabled by default</li>
+		<li>Make symlink from qalculate-gtk to qalculate</li>
+		<li>Documentation updates</li>
+		<li>...</li>
+	</ul>
+	<h4>.: 2004-07-10 :. Problems with -Os optimization</h4>
+	I have discovered that with "-Os" in CFLAGS/CXXFLAGS, <font color="#cc4499"><strong>Q</strong></font>alculate! will 
+	crash on startup. Replace with "-O2".
+	<h4>.: 2004-07-07 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.1</h4>
+	This release fixes some urgent bugs.
+	<br><br>Changelog:
+	<ul>
+		<li>Fix input of numbers in bases &gt; 10</li>
+		<li>Terminate threads before exit</li>
+		<li>Fix compilation by including unistd.h in main.cc</li>
+		<li>Follow ISO 8601 standard for week numbers (glib doesn't)</li>
+		<li>Fix approximate integers</li>
+		<li>Fix is approximate indication</li>
+	</ul>
+	<h4>.: 2004-06-24 :. Quick fix</h4>
+	If you downloaded version 0.6 yesterday, you should try again today.
+	<h4>.: 2004-06-23 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6 finally released</h4>
+	This release features completely rewritten math structures, including how expressions are represented, simplified and calculated internally.
+	This means that all known bugs and mathematical errors have been fixed, and hopefully results in much improved reliability. 
+	As almost no code was left untouched, a bunch of new bugs should however be expected.
+	<br><br>User visible changes include
+	<ul>
+		<li>Correct calculations :-)</li>
+		<li>Selectable assumptions and definition of separate unknown variables</li>
+		<li>Some infinity support</li>
+		<li>Some new and changed variables and functions (some removed)</li>
+		<li>New result drawing routines</li>
+		<li>Exact mode -> "Always Exact", "Try Exact" and "Approximate" approximation choices</li>
+		<li>Fixed plotting</li>
+		<li>Multiplication sign selection</li>
+		<li>New boolean entry</li>
+		<li>Do not create a new thread (and stack space) for every calculation</li>
+		<li>...</li>
+	</ul>
+	<h4>.: 2004-05-12 :. Status Update</h4>
+	Relatively long time has gone by since the last release, but this does not mean that development has stalled. 
+	I am currently rewriting the core math code, including how expressions are represented, simplified and calculated internally.
+	<br><br>The rewrite will take some time, but will hopefully result in much improved reliability. Some functionality will be lost in the process
+	and some will be added, such as assumptions (although the current version makes some inconsistent on its own) and display of the actual expression calculated, but most 
+	user-visible features will remain unchanged. Also, the API will be closer to being ready for a separate library release.
+	<br><br>I seriously considered fully moving to Giac, but found that it was still lacking the stability needed for 
+	a desktop application and I also felt that I was moving too far a way from the main purpose 
+	of <font color="#cc4499"><strong>Q</strong></font>alculate!, which is to be a user-friendly and
+	efficient tool for a wide array of everyday and simple scientific calculations. Those who need a full CAS will probably
+	be more efficient with the tools provided with Giac.
+	<h4>.: 2004-04-06 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.5.1</h4>
+	This version includes some important bug fixes (mostly related to trigonometric functions and multiple roots) 
+	and a new solve function.
+	<br><br>Changelog:
+	<ul>
+		<li>Fix multiple real roots as far as possible</li>
+		<li>Fix polynomial division (sin() / tan() was broken)</li>
+		<li>Fix trigonometric function units</li>
+		<li>Equation solver independent of Giac and isolation of x in comparisons</li>
+		<li>Fix comparison of approximate values</li>
+		<li>Elasticity and extremum functions</li>
+		<li>Do not display any extra trailing zeros</li>
+		<li>Fix invocation of newly created function</li>
+		<li>Minimal integrate function without Giac</li>
+		<li>Nicer complex number display</li>
+		<li>Fix precision dialog</li>
+		<li>Additional minor bug fixes</li>
+	</ul>
+	<h4>.: 2004-04-02 :. Multiple roots is broken</h4>
+	The mode for calculation of multiple roots is seriously broken. Make sure that you disable it!
+	<h4>.: 2004-03-29 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.5</h4>
+	This version includes a relatively large number of feature enhancements and fixes. 
+	The user interface has been partly redesigned (see screenshots) and does now have convenient completion for expressions. 
+	Note that gtk+-2.4 is recommended for this release, as it is needed for some of the new features.
+	<br><br>Changelog:
+	<ul>
+		<li>Redesigned GUI with menubar, history window, etc.</li>
+		<li>Full completion of variables, functions and units in the expression entry</li>
+		<li>Context-sensitive popup menu for the result</li>
+		<li>Customizable expression entry font.</li>
+		<li>A new solution for languages with comma as decimal point that actually should be working</li>
+		<li>Actions for automatic unit conversion: convert to best unit and convert to base units</li>
+		<li>Allow use of [] for creation of matrices and vectors</li>
+		<li>Polynomial division</li>
+		<li>Imperial and U.S. capacity units</li>
+		<li>New functions: sum (old sum renamed to total), product, area, code, char, cis, derangements, sec, re, im, time, week, weekday, year, month, day, asec, sech, asech, csc, acsc, csch, acsch, cot, acot, coth, acoth</li>
+		<li>Use symbols for some common currencies in result and put them in front of the quantity, which is now fully supported in expressions</li>
+		<li>Roman and sexagesimal numbers</li>
+		<li>A new derivative function which does not depend on Giac</li>
+		<li>Simple factorization without Giac</li>
+		<li>A new convenient number class replaces fractions and integers internally</li>
+		<li>Make use of the relations between e, pi and i to give exact results</li>
+		<li>Define all trigonometric functions as expressions in relation to e and ln()</li>
+		<li>Allow "today" for dates</li>
+		<li>Fix ugly result display with gtk pixmap themes</li>
+		<li>Fixes for newer Giac versions</li>
+		<li>Some result display adjustments</li>
+		<li>Fix some unit conversion cases</li>
+		<li>Fix rem, mod and abs</li>
+		<li>Fix trimmed, weighted and winsorized mean</li>
+		<li>Fix date calculations with different basis</li>
+		<li>Fix printing of exponent 1E...</li>
+		<li>Some additional minor fixes</li>
+	</ul>
+	<h4>.: 2004-03-10 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4.2a: "Oops!"</h4>
+	Fixes compilation without Giac.
+	<h4>.: 2004-03-09 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4.2: Now with documentation!</h4>
+	This release includes a first manual draft. Please note that English is not my native language and this quite extensive manual was written during one hectic week. 
+	Version 0.4.2 also includes some bug fixes and new features.
+	<br><br>Changelog:
+	<ul>
+		<li>Manual and a help menu item</li>
+		<li>Load function for accessing data files directly in expressions</li>
+		<li>Save history between sessions</li>
+		<li>Expression history, accessed with Up and Down keys</li>
+		<li>Calculate expression given in command line</li>
+		<li>Yen, pound, dollar and cent signs</li>
+		<li>Allow currencies to be put immediately before the quantity</li>
+		<li>Move some options from preferences dialog to menus</li>
+		<li>Fix unit conversion for ch^2 to acre and similar</li>
+		<li>Fix log with negative result</li>
+		<li>Fix exponential display in non-fractional mode with negative exponents</i>
+		<li>Fix problem with Gnuplot labels and quotation marks</li>
+		<li>Fix Gnuplot's dislike of local decimal points</li>
+		<li>Fix abort when locale not supported by C library</li>
+		<li>Fix some problems related to complex numbers</li>
+	</ul>
+	<h4>.: 2004-02-26 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4.1</h4>
+	This is a bug fix release that fixes all problems related to strptime (by not using it) and parsing of text/date arguments.<br>
+	<br>Changelog:
+	<ul>
+		<li>Replace strptime</li>
+		<li>Fix parsing of text/date arguments</li>
+		<li>Fix gtk warnings on start-up</li>
+		<li>Use gtk's new file dialog</li>
+	</ul>
+	<h4>.: 2004-02-18 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4</h4>
+	This release adds complex numbers and optional support for <a href="http://www-fourier.ujf-grenoble.fr/~parisse/giac.html">Giac</a>, 
+	a computer algebra system. Even though some bug fixes have been made, this version is considered less stable than the previous.
+	Most changes dates back to early November before a long break and I'm still waiting for the time and motivation to do the necessary rewrite of the core math structures.<br>
+	<br>Changelog:
+	<ul>
+		<li>Complex numbers</li>
+		<li>Preliminary Giac support, including derive, integrate, solve and a generic giac function, as well as the possibility to factorize the result</li>
+		<li>Start with gnuplot absent</li>
+		<li>"Copy Result" menu item</li>
+		<li>Use of Newton's Binomial Formula to speed up symbolic calculations</li>
+		<li>Show argument names in error messages</li>
+		<li>Define trigonometric functions as non-builtins when possible</li>
+		<li>Handle pi correcly in trigonometric functions</li>
+		<li>Delay inexact calculations: sqrt(2)^2 is no longer approximate</li>
+		<li>Permutations and combinations</li>
+	</ul>
+	<h4>.: 2004-02-03 :. Binary packages available</h4>
+	<a href="http://packages.debian.org/qalculate">Debian packages</a> (by Martin Waitz) are now available.
+	<h4>.: 2004-01-31 :. Minor bug fix release</h4>
+	<font color="#cc4499"><strong>Q</strong></font>alculate! version 0.3.1.1 foremost fixes crash on display of matrix and incorrect
+	calculation of division by root with multiple solutions.
+</td><td>&nbsp;</td>
+</tr></table>
+</body>
+</html>
