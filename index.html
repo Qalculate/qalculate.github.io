@@ -4,36 +4,42 @@
   <title>Qalculate! - the ultimate desktop calculator</title>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
-<body text="Black" bgcolor="white">
-<table cellspacing="20" width="100%" height="1500"><tr>
+<body text="Black" bgcolor="#ccccdd" style="margin: auto">
+<div align="center">
+<table cellspacing="0" bgcolor="White" style="height: 100vh"><tr>
 <td width="150" bgcolor="#666677" align="center" valign="top">
 <br>
 <a href="index.html"><IMG src="images/qalculate-icon.png" width="128" height="128" border="0"></a>
 <br><br><br>
-<table cellspacing="20" width="100%"><tr><td align="left">
+<table cellspacing="25" width="100%"><tr><td align="left">
 <font size="+1" color="White" face="serif">
-<strong>Sections:</strong><br><br>
-<strong><a href="news.html" style="text-decoration: none"><font color="White" face="serif">News</font></a></strong><br>
-<strong><a href="features.html" style="text-decoration: none"><font color="White" face="serif">Features</font></a></strong><br>
-<strong><a href="screenshots.html" style="text-decoration: none"><font color="White" face="serif">Screenshots</font></a></strong><br>
-<strong><a href="downloads.html" style="text-decoration: none"><font color="White" face="serif">Downloads</font></a></strong><br>
-<strong><a href="manual/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>Manual</nobr></font></a></strong><br>
-<strong><a href="reference/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>API Reference</nobr></font></a></strong><br>
+Sections:<br>
+<hr color="White" size="1" noshade>
+<a href="news.html" style="text-decoration: none"><font color="White" face="serif">News</font></a><br>
+<a href="features.html" style="text-decoration: none"><font color="White" face="serif">Features</font></a><br>
+<a href="screenshots.html" style="text-decoration: none"><font color="White" face="serif">Screenshots</font></a><br>
+<a href="downloads.html" style="text-decoration: none"><font color="White" face="serif">Downloads</font></a><br>
+<a href="manual/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>Manual</nobr></font></a><br>
+<a href="reference/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>API Reference&nbsp;&nbsp;&nbsp;&nbsp;</nobr></font></a><br>
+<a href="contact.html" style="text-decoration: none"><font color="White" face="serif">Contact</font></a><br>
 </font>
+<hr color="White" size="1" noshade>
 </td></tr></table>
-</td>
-<td width="550" valign="top">
-<div align="right"><hr>
+<br><br>
+</td><td width="50">&nbsp;</td>
+<td valign="top" width="900">
+<br>
+<div align="center">
 <h1><font color="#cc4499"><strong>Q</strong></font>alculate!</h1>
 <h2>
                             - the ultimate desktop calculator
                         </h2>
-<hr></div>
-<br>
+</div>
+<br><br>
 <div align="center"><IMG src="images/qalculate-gtk.png" width="482" height="231" border="0"></div>
 <br>Qalculate! is a multi-purpose desktop calculator for GNU/Linux (and Mac OS). It is small and simple to use but with much power and
   versatility underneath. Features include customizable functions, units,
-  arbitrary precision, plotting, and a user-friendly interface (GTK+).
+  arbitrary precision, plotting, and a user-friendly interface (GTK+ and CLI).
   <br><br>
 </font>
 <br><br>
@@ -43,9 +49,33 @@
 	</div>	
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2016-04-30 :. A new version coming soon...</h4>
-	The graphical user interface has been ported to GTK+ 3 (unfortunately the KDE version has been abandoned for now) and lots of bugs have been fixed. Even a few new features have been introduced in the process. Only few more fixes and a lot more testing are needed before I will release a shiny new version of Qalculate.<br><div align="right"><a href="news.html">older news...</a></div>
-</td><td>&nbsp;</td>
-</tr></table>
+	<h4>.: 2016-06-15 :. Qalculate! version 0.9.8 released</h4>
+	After almost a decade of very little development, the project has been revived and during the last two months many improvements have been made, until it is now time to release a new version. Qalculate! version 0.9.8 includes many bug fixes, but due to limited testing some new bugs have probably been introduced. Any external applications using libqalculate need to be recompiled to work with the new version.
+	<br><br>Changes:
+	<ul>	
+		<li>Lots of bug fixes and minor improvements</li>
+		<li>Three different parsing modes can be chosen from (providing mainly different handling of implicit multiplication). The default 'adaptive' mode has been enhanced.</li>		
+		<li>By default prefixes will not be added to for example imperial units.</li>
+		<li>Changed handling of degrees Celsius and Fahrenheit. Conversion will take place already during parsing.</li>
+		<li>When converting to unit without prefix, no prefix will be added to the result unless the unit expression is prepended with '?' ('0' works in the opposite direction).</li>
+		<li>Option to ignore commas in numbers (for use as thousands separator).</li>
+		<li>Possibility to abort slow number printing without using crash prone thread cancellation (use Calculator::startPrintControl() and related functions).</li>
+		<li>New function: fibonacci (Qalculate! can now tell you that the millionth fibonacci number is approximately 1,953282129 * 10^208987, although for obvious reasons the exact number cannot be displayed).</li>
+		<li>New units: Hartree, Rydberg, Dalton (same as u)</li>
+		<li>Currencies have been updated to reflect the available data from ECB.</li>
+		<li>Use ~/.local and ~/.conf to store configuration and definitions</li>
+		<li>The GTK+ UI has been ported to GTK+ 3 and has been polished in the process.</li>
+		<li>The convert dialog has been transformed into a tab page in the main window, with auto-selection of unit category and continuous conversion. (GTK+ UI)</li>
+		<li>Less obtrusive display of errors and warnings. They are now shown as tooltips for an icon next to the expression entry. (GTK+ UI)</li>
+		<li>Spinning animations show calculation/display activity and an icon in the expression entry halts the process, instead of a message dialog. (GTK+ UI)</li>
+		<li>A tooltip for the result display will show the result in text format less open to interpretation. (GTK+ UI)</li>
+		<li>Automatic ondemand updates of exchanges rates (GTK+ UI)</li>
+		<li>Better resizing of main windows. Tabs will be resized instead of result display and keypad view will remember size independently of the history view. (GTK+ UI)</li>
+		<li>'to' can now not only be used for conversion to unit expressions. "to bin", "to oct", "to hex" and "to bases" changes number base displayed, "to factors" factorizes, "to fraction" displays as fraction, and "to base" and "to optimal" auto-converts units. (CLI and GTK+ UI)</li>
+		<li>The KDE UI has been abandoned for now and is not included in this release.</li>
+	</ul>
+	<br><div align="right"><a href="news.html">older news...</a></div>
+<br><br>
+</td><td width="50px">&nbsp;</td></tr>
 </body>
 </html>

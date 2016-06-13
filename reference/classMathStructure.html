@@ -244,12 +244,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>insertChild</b> (cons
 <tr class="memitem:adf8e1376d740453329db92ff93ba4775"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf8e1376d740453329db92ff93ba4775"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>insertChild_nocopy</b> (<a class="el" href="classMathStructure.html">MathStructure</a> *o, size_t index)</td></tr>
 <tr class="separator:adf8e1376d740453329db92ff93ba4775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad674fb6da0f00d949a28f33f2cec0038"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad674fb6da0f00d949a28f33f2cec0038"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChild</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o, size_t index=1)</td></tr>
-<tr class="separator:ad674fb6da0f00d949a28f33f2cec0038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1d3c41e9b6dac5773eb990efbc300bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1d3c41e9b6dac5773eb990efbc300bf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChild_nocopy</b> (<a class="el" href="classMathStructure.html">MathStructure</a> *o, size_t index=1)</td></tr>
-<tr class="separator:ac1d3c41e9b6dac5773eb990efbc300bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850c217d36f9dfdf5bb2c114722d9505"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a850c217d36f9dfdf5bb2c114722d9505"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setChild</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o, size_t index=1, bool merge_precision=false)</td></tr>
+<tr class="separator:a850c217d36f9dfdf5bb2c114722d9505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126564864ab3d50161cba04252d09614"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a126564864ab3d50161cba04252d09614"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setChild_nocopy</b> (<a class="el" href="classMathStructure.html">MathStructure</a> *o, size_t index=1, bool merge_precision=false)</td></tr>
+<tr class="separator:a126564864ab3d50161cba04252d09614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b8b0a9793de4998ce3e370119987ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07b8b0a9793de4998ce3e370119987ca"></a>
 const <a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getChild</b> (size_t index) const </td></tr>
 <tr class="separator:a07b8b0a9793de4998ce3e370119987ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,15 +437,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsUndefined</
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonMatrix</b> () const </td></tr>
 <tr class="separator:ab2bd5d4f7b3fca97e7976b4c3971278c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for precision</div></td></tr>
-<tr class="memitem:ac018383587ac27649276d8924d57a7a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac018383587ac27649276d8924d57a7a5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setApproximate</b> (bool is_approx=true)</td></tr>
-<tr class="separator:ac018383587ac27649276d8924d57a7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591d10d331a7c9d3784abf5447295e3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a591d10d331a7c9d3784abf5447295e3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setApproximate</b> (bool is_approx=true, bool recuresive=false)</td></tr>
+<tr class="separator:a591d10d331a7c9d3784abf5447295e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0353ab3880dfc1ecc33f3d2a250341b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0353ab3880dfc1ecc33f3d2a250341b6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isApproximate</b> () const </td></tr>
 <tr class="separator:a0353ab3880dfc1ecc33f3d2a250341b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6d94d8d13bdf929afb8f180b1833333"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6d94d8d13bdf929afb8f180b1833333"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrecision</b> (int prec)</td></tr>
-<tr class="separator:ac6d94d8d13bdf929afb8f180b1833333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda66bc98a2a1a704ae45ad430cc4898"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adda66bc98a2a1a704ae45ad430cc4898"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrecision</b> (int prec, bool recursive=false)</td></tr>
+<tr class="separator:adda66bc98a2a1a704ae45ad430cc4898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae166e1d76679c9762d0bfc2d75a2fed3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae166e1d76679c9762d0bfc2d75a2fed3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>precision</b> () const </td></tr>
 <tr class="separator:ae166e1d76679c9762d0bfc2d75a2fed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
