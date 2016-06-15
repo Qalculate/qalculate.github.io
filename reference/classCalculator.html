@@ -546,12 +546,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>exportCSV</b> (const 
 <tr class="separator:ae9c028f4126c55d77bfd288bf167e500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8d36c3248c8a7395ecf31ef80b5640"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a8f8d36c3248c8a7395ecf31ef80b5640">getExchangeRatesUrl</a> ()</td></tr>
 <tr class="separator:a8f8d36c3248c8a7395ecf31ef80b5640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ce4f1151b8ac97cd0764700ae489c1"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a33ce4f1151b8ac97cd0764700ae489c1">getExchangeRatesTime</a> ()</td></tr>
+<tr class="separator:a33ce4f1151b8ac97cd0764700ae489c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d87095ea67437067a66bb8d2f3ae884"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a7d87095ea67437067a66bb8d2f3ae884">fetchExchangeRates</a> (int timeout, string wget_args)</td></tr>
 <tr class="separator:a7d87095ea67437067a66bb8d2f3ae884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de21b8f1adaf7d29fdf5cfef1b1c0d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a7de21b8f1adaf7d29fdf5cfef1b1c0d4">fetchExchangeRates</a> (int timeout=15)</td></tr>
 <tr class="separator:a7de21b8f1adaf7d29fdf5cfef1b1c0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa6a571edfcbf10f1ff7225f924b2cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a1aa6a571edfcbf10f1ff7225f924b2cf">checkExchangeRatesDate</a> ()</td></tr>
-<tr class="separator:a1aa6a571edfcbf10f1ff7225f924b2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d285d27cd7ff51c4954fbb9f89f2a57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a3d285d27cd7ff51c4954fbb9f89f2a57">checkExchangeRatesDate</a> (unsigned int n_days=7, bool force_check=false, bool send_warning=false)</td></tr>
+<tr class="separator:a3d285d27cd7ff51c4954fbb9f89f2a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c58508c4881a215a71b9aacc8be7dfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c58508c4881a215a71b9aacc8be7dfa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a9c58508c4881a215a71b9aacc8be7dfa">setExchangeRatesWarningEnabled</a> (bool enable)</td></tr>
+<tr class="memdesc:a9c58508c4881a215a71b9aacc8be7dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable old exchange rates warning (initial state is true). <br /></td></tr>
+<tr class="separator:a9c58508c4881a215a71b9aacc8be7dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd02041a77678dd2e1419223d4a8c97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd02041a77678dd2e1419223d4a8c97"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>exchangeRatesWarningEnabled</b> () const </td></tr>
+<tr class="separator:a8bd02041a77678dd2e1419223d4a8c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00b261adf068905ddd5129b1ff131c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae00b261adf068905ddd5129b1ff131c0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae00b261adf068905ddd5129b1ff131c0">exchangeRatesUsed</a> () const </td></tr>
+<tr class="memdesc:ae00b261adf068905ddd5129b1ff131c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if exchange rates has been used since resetExchangeRatesUsed() was last called. <br /></td></tr>
+<tr class="separator:ae00b261adf068905ddd5129b1ff131c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134df9357cc27470f7e53dfd0b8c3ad7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a134df9357cc27470f7e53dfd0b8c3ad7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetExchangeRatesUsed</b> ()</td></tr>
+<tr class="separator:a134df9357cc27470f7e53dfd0b8c3ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1011d9f478d749adf482960f65cbb51a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1011d9f478d749adf482960f65cbb51a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a1011d9f478d749adf482960f65cbb51a">setExchangeRatesUsed</a> ()</td></tr>
+<tr class="memdesc:a1011d9f478d749adf482960f65cbb51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use, called by currency units. <br /></td></tr>
+<tr class="separator:a1011d9f478d749adf482960f65cbb51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for plotting</div></td></tr>
 <tr class="memitem:a3ab8060acffe394e68427ad0fac6765a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a3ab8060acffe394e68427ad0fac6765a">canPlot</a> ()</td></tr>
 <tr class="separator:a3ab8060acffe394e68427ad0fac6765a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1327,6 +1347,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_argument_errors</b>
 <tr class="memitem:a6f1f7132a2ddf9ec0108a85afab2fa61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f1f7132a2ddf9ec0108a85afab2fa61"></a>
 time_t&#160;</td><td class="memItemRight" valign="bottom"><b>exchange_rates_time</b></td></tr>
 <tr class="separator:a6f1f7132a2ddf9ec0108a85afab2fa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae399f168caaee546bfd8c048b4085deb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae399f168caaee546bfd8c048b4085deb"></a>
+time_t&#160;</td><td class="memItemRight" valign="bottom"><b>exchange_rates_check_time</b></td></tr>
+<tr class="separator:ae399f168caaee546bfd8c048b4085deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1e8b7e697aee04b83bfad5b77b7b6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c1e8b7e697aee04b83bfad5b77b7b6b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_exchange_rates_used</b></td></tr>
+<tr class="separator:a6c1e8b7e697aee04b83bfad5b77b7b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8419d7ee777ddfe742a8e87c35a08ab4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8419d7ee777ddfe742a8e87c35a08ab4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_exchange_rates_warning_enabled</b></td></tr>
+<tr class="separator:a8419d7ee777ddfe742a8e87c35a08ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5004d18c632cce5e4401d4fa7705a9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5004d18c632cce5e4401d4fa7705a9c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>has_gvfs</b></td></tr>
 <tr class="separator:ad5004d18c632cce5e4401d4fa7705a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2140,19 +2169,45 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a class="anchor" id="a1aa6a571edfcbf10f1ff7225f924b2cf"></a>
+<a class="anchor" id="a3d285d27cd7ff51c4954fbb9f89f2a57"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool Calculator::checkExchangeRatesDate </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>n_days</em> = <code>7</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force_check</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>send_warning</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if the exchange rates on local disc is older than one week. </p>
+<p>Check age of exchange rates on local disc.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_days</td><td>How old in days exchange rates may be before exchange rates need updating </td></tr>
+    <tr><td class="paramname">force_check</td><td>If exchange rates date should be checked again even if found outdated within n_days before </td></tr>
+    <tr><td class="paramname">send_warning</td><td>If the standard exchange rates warning should be sent. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false if exchange.rates need updating </dd></dl>
 
 </div>
 </div>
@@ -2699,6 +2754,23 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 </div><div class="memdoc">
 <p>Name of the exchange rates file on local disc.</p>
 <dl class="section return"><dt>Returns</dt><dd>name of local exchange rates file. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a33ce4f1151b8ac97cd0764700ae489c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t Calculator::getExchangeRatesTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Modification time of the exchange rates file.</p>
+<dl class="section return"><dt>Returns</dt><dd>Returns exchange rates modification time. </dd></dl>
 
 </div>
 </div>

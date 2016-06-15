@@ -54,14 +54,15 @@ Sections:<br>
 	<br><br>Changes:
 	<ul>	
 		<li>Lots of bug fixes and minor improvements</li>
-		<li>Three different parsing modes can be chosen from (providing mainly different handling of implicit multiplication). The default 'adaptive' mode has been enhanced.</li>		
+		<li>Three different parsing modes can be chosen from (providing mainly different handling of implicit multiplication). The default 'adaptive' mode has been enhanced.</li>
 		<li>By default prefixes will not be added to for example imperial units.</li>
 		<li>Changed handling of degrees Celsius and Fahrenheit. Conversion will take place already during parsing.</li>
 		<li>When converting to unit without prefix, no prefix will be added to the result unless the unit expression is prepended with '?' ('0' works in the opposite direction).</li>
 		<li>Option to ignore commas in numbers (for use as thousands separator).</li>
 		<li>Possibility to abort slow number printing without using crash prone thread cancellation (use Calculator::startPrintControl() and related functions).</li>
 		<li>New function: fibonacci (Qalculate! can now tell you that the millionth fibonacci number is approximately 1,953282129 * 10^208987, although for obvious reasons the exact number cannot be displayed).</li>
-		<li>New units: Hartree, Rydberg, Dalton (same as u)</li>
+		<li>New units: Hartree, Rydberg, Dalton (same as u).</li>
+		<li>Physical constant have been updated with the CODATA values from 2014.</li>
 		<li>Currencies have been updated to reflect the available data from ECB.</li>
 		<li>Use ~/.local and ~/.conf to store configuration and definitions</li>
 		<li>The GTK+ UI has been ported to GTK+ 3 and has been polished in the process.</li>
