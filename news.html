@@ -33,6 +33,37 @@ Sections:<br>
 <h1><font color="#cc4499"><strong>Q</strong></font>alculate! news</h1>
 <hr></div>
 <br>
+	<h4>.: 2017-03-06 :. Qalculate! version 0.9.11 released</h4>
+	Qalculate! version 0.9.11 includes both some important bug fixes and a number of new features. Among other things mixed units conversion has been added and users of the graphical user interface will notice the new enhanced history view. The RPN functionality has received much needed attention and should now be more usable.
+	<br><br>Changes:
+	<ul>
+		<li>Mixed units conversion (e.g. "15 in = 1 ft + 3 in" and "3,2 h = 3 h + 12 min")</li>
+		<li>Fixes to unit conversion (e.g. "1/(1 ns) to GHz")</li>
+		<li>Fix slow calculation of exponentiations with big numerators in exponents (e.g. "2^0.333333333")</li>
+		<li>Critical fixes for RPN syntax</li>
+		<li>Fix degree sign</li>
+		<li>Fix transformation of last arguments to vector, when only one last argument (fixes function("1+\x"; 1))</li>
+		<li>Plot functions (makes possible plotting, using gnuplot, in qalc)</li>
+		<li>"Swap, "pop", "copy", "rotate" and "move" commands for RPN stack manipulation in qalc</li>
+		<li>Enable both (or one of) RPN stack and syntax with the "rpn" command in qalc</li>
+		<li>New commands for creation of simple functions and variables (without calculation of the expression) in qalc</li>
+		<li>Updated history view. The calculation log is now presented in an actual list. Buttons and functions have been added for calculation with previous expression and results (GTK+ UI)</li>
+		<li>Enhanced RPN stack manipulation (swap, rotation and copy) and arithmetics buttons next to stack list and combine RPN options in a single menu (GTK+ UI)</li>
+		<li>Calculation of text in spinboxes for integer function arguments (GTK+ UI)</li>
+		<li>Option to use multiple instances by default (GTK+ UI)</li>
+		<li>Various other minor enhancements and bug fixes...</li>
+	</ul>
+	<h4>.: 2016-07-26 :. Qalculate! version 0.9.9 released</h4>
+	Qalculate! version 0.9.9 is a minor release with some important bug fixes, as well as a few new features.
+	<br><br>Changes:
+	<ul>
+		<li>libqalculate will no longer cause segmentation faults when using a locale unsupported by the users system</li>
+		<li>Parsing of "today" fixed and "tomorrow" and "yesterday" added</li>
+		<li>Qalculate! now compiles, without errors and warning, using clang</li>
+		<li>Only a single instance of the GUI will run by default (use command line switch '-n' for old behaviour)</li>
+		<li>New commands/options in qalc which list available variables, functions and units</li>
+		<li>New command in qalcfor deletion of variables</li>
+	</ul>
 	<h4>.: 2016-08-28 :. Qalculate! version 0.9.10 released</h4>
 	Qalculate! version 0.9.10 includes a small number of important bug fixes. Only libqalculate has been updated.
 	<br><br>Changes:
@@ -49,7 +80,7 @@ Sections:<br>
 		<li>Qalculate! now compiles, without errors and warning, using clang</li>
 		<li>Only a single instance of the GUI will run by default (use command line switch '-n' for old behaviour)</li>
 		<li>New commands/options in qalc which list available variables, functions and units</li>
-		<li>New command in qalcfor deletion of variables</li>
+		<li>New command in qalc for deletion of variables</li>
 	</ul>
 	<h4>.: 2016-06-15 :. Qalculate! version 0.9.8 released</h4>
 	After almost a decade of very little development, the project has been revived and during the last two months many improvements have been made, until it is now time to release a new version. Qalculate! version 0.9.8 includes many bug fixes, but due to limited testing some new bugs have probably been introduced. Any external applications using libqalculate need to be recompiled to function properly with the new version.

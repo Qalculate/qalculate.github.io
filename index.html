@@ -49,14 +49,27 @@ Sections:<br>
 	</div>	
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2016-08-28 :. Qalculate! version 0.9.10 released</h4>
-	Qalculate! version 0.9.10 includes a small number of important bug fixes. Only libqalculate has been updated.
+	<h4>.: 2017-03-06 :. Qalculate! version 0.9.11 released</h4>
+	Qalculate! version 0.9.11 includes both some important bug fixes and a number of new features. Among other things mixed units conversion has been added and users of the graphical user interface will notice the new enhanced history view. The RPN functionality has received much needed attention and should now be more usable.
 	<br><br>Changes:
 	<ul>
-		<li>Unit conversion fixes (e.g. "1/s to ms" and "1/ns to GHz")</li>
-		<li>Fixed parsing of degrees sign (used in defult symbol for temperature units)</li>
+		<li>Mixed units conversion (e.g. "15 in = 1 ft + 3 in" and "3,2 h = 3 h + 12 min")</li>
+		<li>Fixes to unit conversion (e.g. "1/(1 ns) to GHz")</li>
+		<li>Fix slow calculation of exponentiations with big numerators in exponents (e.g. "2^0.333333333")</li>
+		<li>Critical fixes for RPN syntax</li>
+		<li>Fix degree sign</li>
+		<li>Fix transformation of last arguments to vector, when only one last argument (fixes function("1+\x"; 1))</li>
+		<li>Plot functions (makes possible plotting, using gnuplot, in qalc)</li>
+		<li>"Swap, "pop", "copy", "rotate" and "move" commands for RPN stack manipulation in qalc</li>
+		<li>Enable both (or one of) RPN stack and syntax with the "rpn" command in qalc</li>
+		<li>New commands for creation of simple functions and variables (without calculation of the expression) in qalc</li>
+		<li>Updated history view. The calculation log is now presented in an actual list. Buttons and functions have been added for calculation with previous expression and results (GTK+ UI)</li>
+		<li>Enhanced RPN stack manipulation (swap, rotation and copy) and arithmetics buttons next to stack list and combine RPN options in a single menu (GTK+ UI)</li>
+		<li>Calculation of text in spinboxes for integer function arguments (GTK+ UI)</li>
+		<li>Option to use multiple instances by default (GTK+ UI)</li>
+		<li>Various other minor enhancements and bug fixes...</li>
 	</ul>
-	<br><div align="right"><a href="news.html">older news...</a></div>
+<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
 </td><td width="50px">&nbsp;</td></tr>
 </body>
