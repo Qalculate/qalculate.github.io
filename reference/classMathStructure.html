@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-0.9.11: MathStructure Class Reference</title>
+<title>libqalculate-1.0.0: MathStructure Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-0.9.11
+   <div id="projectname">libqalculate-1.0.0
    </div>
   </td>
  </tr>
@@ -316,6 +316,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUnit</b> () const</
 <tr class="memitem:ac8d31c6c9bf5cfde2d051bc502c6cf85"><td class="memItemLeft" align="right" valign="top"><a id="ac8d31c6c9bf5cfde2d051bc502c6cf85"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUnit_exp</b> () const</td></tr>
 <tr class="separator:ac8d31c6c9bf5cfde2d051bc502c6cf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fe860225c32cbacd0e7e89e43cc52c"><td class="memItemLeft" align="right" valign="top"><a id="ab4fe860225c32cbacd0e7e89e43cc52c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUnknown</b> () const</td></tr>
+<tr class="separator:ab4fe860225c32cbacd0e7e89e43cc52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd04828e1683b226c6babadeaecba8a"><td class="memItemLeft" align="right" valign="top"><a id="a9bd04828e1683b226c6babadeaecba8a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUnknown_exp</b> () const</td></tr>
+<tr class="separator:a9bd04828e1683b226c6babadeaecba8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d95cf90bf05ef0ec932eb976d90fad"><td class="memItemLeft" align="right" valign="top"><a id="ad1d95cf90bf05ef0ec932eb976d90fad"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNumber_exp</b> () const</td></tr>
 <tr class="separator:ad1d95cf90bf05ef0ec932eb976d90fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,6 +436,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsUndefined</
 <tr class="memitem:a27b0df5323820baa9bb1dd4e346d79ff"><td class="memItemLeft" align="right" valign="top"><a id="a27b0df5323820baa9bb1dd4e346d79ff"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonMatrix</b> () const</td></tr>
 <tr class="separator:a27b0df5323820baa9bb1dd4e346d79ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4970fc8a8963b01889f5560b64e04d75"><td class="memItemLeft" align="right" valign="top"><a id="a4970fc8a8963b01889f5560b64e04d75"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsScalar</b> () const</td></tr>
+<tr class="separator:a4970fc8a8963b01889f5560b64e04d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for precision</div></td></tr>
 <tr class="memitem:a591d10d331a7c9d3784abf5447295e3b"><td class="memItemLeft" align="right" valign="top"><a id="a591d10d331a7c9d3784abf5447295e3b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setApproximate</b> (bool is_approx=true, bool recuresive=false)</td></tr>
@@ -1062,6 +1071,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dissolveAllCompositeU
 <tr class="memitem:a373b50362a6ead908e87ef5a7f90ea38"><td class="memItemLeft" align="right" valign="top"><a id="a373b50362a6ead908e87ef5a7f90ea38"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>setPrefixForUnit</b> (<a class="el" href="classUnit.html">Unit</a> *u, <a class="el" href="classPrefix.html">Prefix</a> *new_prefix)</td></tr>
 <tr class="separator:a373b50362a6ead908e87ef5a7f90ea38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e47aecd53a4247e5209e09860efa19c"><td class="memItemLeft" align="right" valign="top"><a id="a0e47aecd53a4247e5209e09860efa19c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>convertToBaseUnits</b> (bool convert_complex_relations=false, bool *found_complex_relations=NULL, bool calculate_new_functions=false, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;feo=default_evaluation_options)</td></tr>
+<tr class="separator:a0e47aecd53a4247e5209e09860efa19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f8f77867fcf3096ea519aab8dc99a56"><td class="memItemLeft" align="right" valign="top"><a id="a6f8f77867fcf3096ea519aab8dc99a56"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>convert</b> (<a class="el" href="classUnit.html">Unit</a> *u, bool convert_complex_relations=false, bool *found_complex_relations=NULL, bool calculate_new_functions=false, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;feo=default_evaluation_options, <a class="el" href="classPrefix.html">Prefix</a> *new_prefix=NULL)</td></tr>
 <tr class="separator:a6f8f77867fcf3096ea519aab8dc99a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1135,9 +1147,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>integrate</b> (const 
 <tr class="memitem:a42bd9daef9c1d277641c1d84ad927548"><td class="memItemLeft" align="right" valign="top"><a id="a42bd9daef9c1d277641c1d84ad927548"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>simplify</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool unfactorize=true)</td></tr>
 <tr class="separator:a42bd9daef9c1d277641c1d84ad927548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c512856a0320d8108323c188b4057e"><td class="memItemLeft" align="right" valign="top"><a id="a52c512856a0320d8108323c188b4057e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>factorize</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options)</td></tr>
-<tr class="separator:a52c512856a0320d8108323c188b4057e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd54fd654e7c1be246cdc2fc5abba33"><td class="memItemLeft" align="right" valign="top"><a id="a0cd54fd654e7c1be246cdc2fc5abba33"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>factorize</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool unfactorize=true, int term_combination_levels=-1, int max_msecs=1000, bool only_integers=true, bool recursive=true, struct timeval *endtime_p=NULL)</td></tr>
+<tr class="separator:a0cd54fd654e7c1be246cdc2fc5abba33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d17b466a255ac7a7e3ee16db3e83eed"><td class="memItemLeft" align="right" valign="top"><a id="a3d17b466a255ac7a7e3ee16db3e83eed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>structure</b> (<a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77">StructuringMode</a> structuring, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, bool restore_first=true)</td></tr>
+<tr class="separator:a3d17b466a255ac7a7e3ee16db3e83eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60f807df160e62684c0f720df16db3a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMathStructure.html#a60f807df160e62684c0f720df16db3a3">isRationalPolynomial</a> () const</td></tr>
 <tr class="separator:a60f807df160e62684c0f720df16db3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0e7267648b56e47190a293644043ffe"><td class="memItemLeft" align="right" valign="top"><a id="ae0e7267648b56e47190a293644043ffe"></a>

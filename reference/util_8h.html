@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-0.9.11: libqalculate/util.h File Reference</title>
+<title>libqalculate-1.0.0: libqalculate/util.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-0.9.11
+   <div id="projectname">libqalculate-1.0.0
    </div>
   </td>
  </tr>
@@ -42,15 +42,26 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">util.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="includes_8h.html">libqalculate/includes.h</a>&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThread.html">Thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a73a8d7e98be85f67961ca682c291033a"><td class="memItemLeft" align="right" valign="top"><a id="a73a8d7e98be85f67961ca682c291033a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sleep_ms</b> (int milliseconds)</td></tr>
+<tr class="separator:a73a8d7e98be85f67961ca682c291033a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff14849f186902c9653f64f4634514e1"><td class="memItemLeft" align="right" valign="top"><a id="aff14849f186902c9653f64f4634514e1"></a>
 string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>gsub</b> (const string &amp;pattern, const string &amp;sub, string &amp;str)</td></tr>
 <tr class="separator:aff14849f186902c9653f64f4634514e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +230,12 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>getOldLocalDir</b> 
 <tr class="memitem:acf06ea0f526fada0f3382ffcb75c41e2"><td class="memItemLeft" align="right" valign="top"><a id="acf06ea0f526fada0f3382ffcb75c41e2"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>getLocalDir</b> ()</td></tr>
 <tr class="separator:acf06ea0f526fada0f3382ffcb75c41e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eec22092c6a8f1a05e8391fd783036"><td class="memItemLeft" align="right" valign="top"><a id="a46eec22092c6a8f1a05e8391fd783036"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getPackageDataDir</b> ()</td></tr>
+<tr class="separator:a46eec22092c6a8f1a05e8391fd783036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cca8e7fcb3c35e6c4533617ab86ecec"><td class="memItemLeft" align="right" valign="top"><a id="a1cca8e7fcb3c35e6c4533617ab86ecec"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getPackageLocaleDir</b> ()</td></tr>
+<tr class="separator:a1cca8e7fcb3c35e6c4533617ab86ecec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac236cbc28268d44b7a341e45a8700830"><td class="memItemLeft" align="right" valign="top"><a id="ac236cbc28268d44b7a341e45a8700830"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>getLocalDataDir</b> ()</td></tr>
 <tr class="separator:ac236cbc28268d44b7a341e45a8700830"><td class="memSeparator" colspan="2">&#160;</td></tr>

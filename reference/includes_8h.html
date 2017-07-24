@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-0.9.11: libqalculate/includes.h File Reference</title>
+<title>libqalculate-1.0.0: libqalculate/includes.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-0.9.11
+   <div id="projectname">libqalculate-1.0.0
    </div>
   </td>
  </tr>
@@ -161,6 +161,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a17a6b9ebee415d7c549c864153a6c4cb"><td class="memItemLeft" align="right" valign="top"><a id="a17a6b9ebee415d7c549c864153a6c4cb"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EXP_SCIENTIFIC</b>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a17a6b9ebee415d7c549c864153a6c4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fe306d941587e78702892bf2fdcbc9"><td class="memItemLeft" align="right" valign="top"><a id="a75fe306d941587e78702892bf2fdcbc9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>POST_CONVERSION_BEST</b>&#160;&#160;&#160;POST_CONVERSION_OPTIMAL_AND_SI</td></tr>
+<tr class="separator:a75fe306d941587e78702892bf2fdcbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348c616a3061201017ef966181db39ac"><td class="memItemLeft" align="right" valign="top"><a id="a348c616a3061201017ef966181db39ac"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CALCULATOR</b>&#160;&#160;&#160;calculator</td></tr>
 <tr class="separator:a348c616a3061201017ef966181db39ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -530,9 +533,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ad88c13b9b9fb65fe35ef8aff71f824ca"><td class="memItemLeft" align="right" valign="top"><a id="ad88c13b9b9fb65fe35ef8aff71f824ca"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SINF</b>&#160;&#160;&#160;&quot;INF&quot;</td></tr>
 <tr class="separator:ad88c13b9b9fb65fe35ef8aff71f824ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b60eacd7a46dea835a725c5ec6a6a2"><td class="memItemLeft" align="right" valign="top"><a id="a54b60eacd7a46dea835a725c5ec6a6a2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SNAN</b>&#160;&#160;&#160;&quot;NAN&quot;</td></tr>
-<tr class="separator:a54b60eacd7a46dea835a725c5ec6a6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c2ad6b30ace010814f2ed48fcae6ebf"><td class="memItemLeft" align="right" valign="top"><a id="a4c2ad6b30ace010814f2ed48fcae6ebf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>UNDERSCORE</b>&#160;&#160;&#160;&quot;_&quot;</td></tr>
 <tr class="separator:a4c2ad6b30ace010814f2ed48fcae6ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -607,7 +607,8 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>PLOT_FILETYPE_LATEX</b>, 
 <b>PLOT_FILETYPE_SVG</b>, 
-<b>PLOT_FILETYPE_FIG</b>
+<b>PLOT_FILETYPE_FIG</b>, 
+<b>PLOT_FILETYPE_PDF</b>
 <br />
  }<tr class="memdesc:a1ca37f86de898ce01f1f72ea13ec841b"><td class="mdescLeft">&#160;</td><td class="mdescRight">File type for saving plot to image. <br /></td></tr>
 </td></tr>
@@ -683,12 +684,14 @@ Enumerations</h2></td></tr>
 <tr class="separator:a690822f0e1b41ef7f46b085ce973e9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8538e4aef0716ad66016493cbeffb77"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77">StructuringMode</a> { <a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77a2b2bfcc809050ce73d2ce9bd308bc536">STRUCTURING_NONE</a>, 
 <a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77a7f04b32dbe9cbd0b80b55f6a6554c6d2">STRUCTURING_SIMPLIFY</a>, 
-<a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77ab33725263a2a7ec0ec1d101b07e43f89">STRUCTURING_FACTORIZE</a>
+<a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77ab33725263a2a7ec0ec1d101b07e43f89">STRUCTURING_FACTORIZE</a>, 
+<a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77adf1c32b2ff5fc65d1f9e69b85d0aba3b">STRUCTURING_HYBRID</a>
  }</td></tr>
 <tr class="separator:af8538e4aef0716ad66016493cbeffb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41cbc7680bd25dcdfec51442dd6bca7c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7c">AutoPostConversion</a> { <a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7cad07f858c8a6ac6799153b766951e2a8f">POST_CONVERSION_NONE</a>, 
-<a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7ca10e1c50c1587e04161cf68fbc79b6b7c">POST_CONVERSION_BEST</a>, 
-<a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7ca556ec3e4e4d61f9d97a9b09350a8faf9">POST_CONVERSION_BASE</a>
+<a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7ca451221e3c22f02dcab4970c286a66cf4">POST_CONVERSION_OPTIMAL_SI</a>, 
+<a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7ca556ec3e4e4d61f9d97a9b09350a8faf9">POST_CONVERSION_BASE</a>, 
+<a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7ca576424c7cd21658d6c100eb72af45135">POST_CONVERSION_OPTIMAL</a>
  }</td></tr>
 <tr class="separator:a41cbc7680bd25dcdfec51442dd6bca7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeaba693a15c6a38ba1fe623fdcc35ba"><td class="memItemLeft" align="right" valign="top"><a id="afeaba693a15c6a38ba1fe623fdcc35ba"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>MixedUnitsConversion</b> { <br />
@@ -818,9 +821,11 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a41cbc7680bd25dcdfec51442dd6bca7cad07f858c8a6ac6799153b766951e2a8f"></a>POST_CONVERSION_NONE&#160;</td><td class="fielddoc"><p>Do not do any conversion of units in addition to syncing. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a41cbc7680bd25dcdfec51442dd6bca7ca10e1c50c1587e04161cf68fbc79b6b7c"></a>POST_CONVERSION_BEST&#160;</td><td class="fielddoc"><p>Convert to the best suited SI units (the least amount of units) </p>
+<tr><td class="fieldname"><a id="a41cbc7680bd25dcdfec51442dd6bca7ca451221e3c22f02dcab4970c286a66cf4"></a>POST_CONVERSION_OPTIMAL_SI&#160;</td><td class="fielddoc"><p>Convert to the least amount of units. Non-SI units are converted to SI units. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a41cbc7680bd25dcdfec51442dd6bca7ca556ec3e4e4d61f9d97a9b09350a8faf9"></a>POST_CONVERSION_BASE&#160;</td><td class="fielddoc"><p>Convert to base units. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a41cbc7680bd25dcdfec51442dd6bca7ca576424c7cd21658d6c100eb72af45135"></a>POST_CONVERSION_OPTIMAL&#160;</td><td class="fielddoc"><p>Convert to the the least amount of units. Non-SI units is kept (if optimal), but for conversion only SI units are used. </p>
 </td></tr>
 </table>
 
@@ -910,9 +915,11 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77a2b2bfcc809050ce73d2ce9bd308bc536"></a>STRUCTURING_NONE&#160;</td><td class="fielddoc"><p>Do not do any factorization or additional simplifications. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77a7f04b32dbe9cbd0b80b55f6a6554c6d2"></a>STRUCTURING_SIMPLIFY&#160;</td><td class="fielddoc"><p>Simplify the result as much as possible. </p>
+<tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77a7f04b32dbe9cbd0b80b55f6a6554c6d2"></a>STRUCTURING_SIMPLIFY&#160;</td><td class="fielddoc"><p>Simplify the result as much as possible (no factorization, normally the same as STRUCTURING_NONE)) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77ab33725263a2a7ec0ec1d101b07e43f89"></a>STRUCTURING_FACTORIZE&#160;</td><td class="fielddoc"><p>Factorize the result. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77adf1c32b2ff5fc65d1f9e69b85d0aba3b"></a>STRUCTURING_HYBRID&#160;</td><td class="fielddoc"><p>Make some factorizations to enhance visibility of the result (e.g. x/z+y/z=(x+y)/z and 2*x+pi*x=(2+pi)*x) </p>
 </td></tr>
 </table>
 
