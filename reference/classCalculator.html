@@ -69,6 +69,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Calculator</b> ()
 <tr class="separator:a354a0ee0d35c6aecf1b5717367aa8d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b1ed0f925ae3a7d135d03f77b04008b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a4b1ed0f925ae3a7d135d03f77b04008b">calculate</a> (string str, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, <a class="el" href="classMathStructure.html">MathStructure</a> *parsed_struct=NULL, <a class="el" href="classMathStructure.html">MathStructure</a> *to_struct=NULL, bool make_to_division=true)</td></tr>
 <tr class="separator:a4b1ed0f925ae3a7d135d03f77b04008b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386fe38c3982b09bdfe00a010451be34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a386fe38c3982b09bdfe00a010451be34">calculate</a> (<a class="el" href="classMathStructure.html">MathStructure</a> *mstruct, int msecs, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, string to_str=&quot;&quot;)</td></tr>
+<tr class="separator:a386fe38c3982b09bdfe00a010451be34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ae8fa7994773151ecd3f6167ea09b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a08ae8fa7994773151ecd3f6167ea09b0">calculate</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, string to_str=&quot;&quot;)</td></tr>
 <tr class="separator:a08ae8fa7994773151ecd3f6167ea09b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc2500b7aacaa353b4213ecccfe1e7d"><td class="memItemLeft" align="right" valign="top"><a id="acdc2500b7aacaa353b4213ecccfe1e7d"></a>
@@ -99,24 +101,40 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>abortedMessage</b> 
 <tr class="memitem:ac3f37bd7c6dafbf7f384acf430cd2722"><td class="memItemLeft" align="right" valign="top"><a id="ac3f37bd7c6dafbf7f384acf430cd2722"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>timedOutString</b> (void) const</td></tr>
 <tr class="separator:ac3f37bd7c6dafbf7f384acf430cd2722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac570ba29df5be2ec772465c1e8629504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ac570ba29df5be2ec772465c1e8629504">startPrintControl</a> (int milliseconds=0)</td></tr>
+<tr class="memitem:ac570ba29df5be2ec772465c1e8629504"><td class="memItemLeft" align="right" valign="top"><a id="ac570ba29df5be2ec772465c1e8629504"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ac570ba29df5be2ec772465c1e8629504">startPrintControl</a> (int milliseconds=0)</td></tr>
+<tr class="memdesc:ac570ba29df5be2ec772465c1e8629504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use <a class="el" href="classCalculator.html#a23ebf235ced4e144a78460e4ec9331a4">startControl()</a> <br /></td></tr>
 <tr class="separator:ac570ba29df5be2ec772465c1e8629504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ec1161fd4ea2dc13f6f065cf057179"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a63ec1161fd4ea2dc13f6f065cf057179">abortPrint</a> (void)</td></tr>
+<tr class="memitem:a63ec1161fd4ea2dc13f6f065cf057179"><td class="memItemLeft" align="right" valign="top"><a id="a63ec1161fd4ea2dc13f6f065cf057179"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a63ec1161fd4ea2dc13f6f065cf057179">abortPrint</a> (void)</td></tr>
+<tr class="memdesc:a63ec1161fd4ea2dc13f6f065cf057179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use <a class="el" href="classCalculator.html#a0c57e07e9a53e7aebe1c3fd5a37dbfb8">abort()</a> <br /></td></tr>
 <tr class="separator:a63ec1161fd4ea2dc13f6f065cf057179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca38ee22b43594620f9602aeb293d8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aca38ee22b43594620f9602aeb293d8b8">stopPrintControl</a> (void)</td></tr>
+<tr class="memitem:aca38ee22b43594620f9602aeb293d8b8"><td class="memItemLeft" align="right" valign="top"><a id="aca38ee22b43594620f9602aeb293d8b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aca38ee22b43594620f9602aeb293d8b8">stopPrintControl</a> (void)</td></tr>
+<tr class="memdesc:aca38ee22b43594620f9602aeb293d8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use <a class="el" href="classCalculator.html#aa08f2c72260dee4783fdbb7e650fb7a6">stopControl()</a> <br /></td></tr>
 <tr class="separator:aca38ee22b43594620f9602aeb293d8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bcc7a519d24199ae2700f0741fa3194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a5bcc7a519d24199ae2700f0741fa3194">printingAborted</a> (void)</td></tr>
+<tr class="memitem:a5bcc7a519d24199ae2700f0741fa3194"><td class="memItemLeft" align="right" valign="top"><a id="a5bcc7a519d24199ae2700f0741fa3194"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a5bcc7a519d24199ae2700f0741fa3194">printingAborted</a> (void)</td></tr>
+<tr class="memdesc:a5bcc7a519d24199ae2700f0741fa3194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use aborted() <br /></td></tr>
 <tr class="separator:a5bcc7a519d24199ae2700f0741fa3194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a484c50f2c7d5be94c13b1b8004e321c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a484c50f2c7d5be94c13b1b8004e321c2">printingControlled</a> (void) const</td></tr>
+<tr class="memitem:a484c50f2c7d5be94c13b1b8004e321c2"><td class="memItemLeft" align="right" valign="top"><a id="a484c50f2c7d5be94c13b1b8004e321c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a484c50f2c7d5be94c13b1b8004e321c2">printingControlled</a> (void) const</td></tr>
+<tr class="memdesc:a484c50f2c7d5be94c13b1b8004e321c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use isControlled() <br /></td></tr>
 <tr class="separator:a484c50f2c7d5be94c13b1b8004e321c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae735cce4824e030f8019e572d49f14bc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae735cce4824e030f8019e572d49f14bc">printingAbortedMessage</a> (void) const</td></tr>
+<tr class="memitem:ae735cce4824e030f8019e572d49f14bc"><td class="memItemLeft" align="right" valign="top"><a id="ae735cce4824e030f8019e572d49f14bc"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae735cce4824e030f8019e572d49f14bc">printingAbortedMessage</a> (void) const</td></tr>
+<tr class="memdesc:ae735cce4824e030f8019e572d49f14bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use abortedMessage() <br /></td></tr>
 <tr class="separator:ae735cce4824e030f8019e572d49f14bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for handling of threaded calculations</div></td></tr>
 <tr class="memitem:a672da9ded5ee5b6294311e506be6b948"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a672da9ded5ee5b6294311e506be6b948">busy</a> ()</td></tr>
 <tr class="separator:a672da9ded5ee5b6294311e506be6b948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807946696721fce8ecca5253b16710cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a807946696721fce8ecca5253b16710cb">saveState</a> ()</td></tr>
+<tr class="memitem:a807946696721fce8ecca5253b16710cb"><td class="memItemLeft" align="right" valign="top"><a id="a807946696721fce8ecca5253b16710cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a807946696721fce8ecca5253b16710cb">saveState</a> ()</td></tr>
+<tr class="memdesc:a807946696721fce8ecca5253b16710cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: does nothing. <br /></td></tr>
 <tr class="separator:a807946696721fce8ecca5253b16710cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b2c0f2735926f1cbcca3a3a082e1fcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a4b2c0f2735926f1cbcca3a3a082e1fcb">restoreState</a> ()</td></tr>
+<tr class="memitem:a4b2c0f2735926f1cbcca3a3a082e1fcb"><td class="memItemLeft" align="right" valign="top"><a id="a4b2c0f2735926f1cbcca3a3a082e1fcb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a4b2c0f2735926f1cbcca3a3a082e1fcb">restoreState</a> ()</td></tr>
+<tr class="memdesc:a4b2c0f2735926f1cbcca3a3a082e1fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: does nothing. <br /></td></tr>
 <tr class="separator:a4b2c0f2735926f1cbcca3a3a082e1fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed8e1101293cdcece848a4505bcf836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a0ed8e1101293cdcece848a4505bcf836">clearBuffers</a> ()</td></tr>
 <tr class="separator:a0ed8e1101293cdcece848a4505bcf836"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -558,9 +576,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>exportCSV</b> (const 
 <tr><td colspan="2"><div class="groupHeader">Functions for exchange rates.</div></td></tr>
 <tr class="memitem:a01717b85b6bc9be0a646a0e88d9bf679"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a01717b85b6bc9be0a646a0e88d9bf679">canFetch</a> ()</td></tr>
 <tr class="separator:a01717b85b6bc9be0a646a0e88d9bf679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a725ffdbf3323ec361dbc02eaaf7198a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a725ffdbf3323ec361dbc02eaaf7198a6">hasGVFS</a> ()</td></tr>
+<tr class="memitem:a725ffdbf3323ec361dbc02eaaf7198a6"><td class="memItemLeft" align="right" valign="top"><a id="a725ffdbf3323ec361dbc02eaaf7198a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a725ffdbf3323ec361dbc02eaaf7198a6">hasGVFS</a> ()</td></tr>
+<tr class="memdesc:a725ffdbf3323ec361dbc02eaaf7198a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: gvfs is not needed anymore. <br /></td></tr>
 <tr class="separator:a725ffdbf3323ec361dbc02eaaf7198a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5552dfffefb1b868a27196202d1413cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a5552dfffefb1b868a27196202d1413cc">hasGnomeVFS</a> ()</td></tr>
+<tr class="memitem:a5552dfffefb1b868a27196202d1413cc"><td class="memItemLeft" align="right" valign="top"><a id="a5552dfffefb1b868a27196202d1413cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a5552dfffefb1b868a27196202d1413cc">hasGnomeVFS</a> ()</td></tr>
+<tr class="memdesc:a5552dfffefb1b868a27196202d1413cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: gvfs is not needed anymore. <br /></td></tr>
 <tr class="separator:a5552dfffefb1b868a27196202d1413cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf6bec5b21f8932107ac6a3576dddf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aebf6bec5b21f8932107ac6a3576dddf6">loadExchangeRates</a> ()</td></tr>
 <tr class="separator:aebf6bec5b21f8932107ac6a3576dddf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,7 +592,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>exportCSV</b> (const 
 <tr class="separator:a8f8d36c3248c8a7395ecf31ef80b5640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ce4f1151b8ac97cd0764700ae489c1"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a33ce4f1151b8ac97cd0764700ae489c1">getExchangeRatesTime</a> ()</td></tr>
 <tr class="separator:a33ce4f1151b8ac97cd0764700ae489c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add29b39335d18476bc7ceb59f306e1c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#add29b39335d18476bc7ceb59f306e1c8">fetchExchangeRates</a> (int seconds, string wget_args)</td></tr>
+<tr class="memitem:add29b39335d18476bc7ceb59f306e1c8"><td class="memItemLeft" align="right" valign="top"><a id="add29b39335d18476bc7ceb59f306e1c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#add29b39335d18476bc7ceb59f306e1c8">fetchExchangeRates</a> (int seconds, string wget_args)</td></tr>
+<tr class="memdesc:add29b39335d18476bc7ceb59f306e1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: wget arguments are not used. <br /></td></tr>
 <tr class="separator:add29b39335d18476bc7ceb59f306e1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279f546d0c1de3f058a332d4841d562a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a279f546d0c1de3f058a332d4841d562a">fetchExchangeRates</a> (int seconds=15)</td></tr>
 <tr class="separator:a279f546d0c1de3f058a332d4841d562a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -682,6 +706,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:acd8c179e4483a8ea310c1d6e44188f9f"><td class="memItemLeft" align="right" valign="top"><a id="acd8c179e4483a8ea310c1d6e44188f9f"></a>
 <a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_e</b></td></tr>
 <tr class="separator:acd8c179e4483a8ea310c1d6e44188f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdda02a82e494704ffa1005527e3836"><td class="memItemLeft" align="right" valign="top"><a id="a3fdda02a82e494704ffa1005527e3836"></a>
+<a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_euler</b></td></tr>
+<tr class="separator:a3fdda02a82e494704ffa1005527e3836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e61e5f060b38c3a669387b1623925e4"><td class="memItemLeft" align="right" valign="top"><a id="a2e61e5f060b38c3a669387b1623925e4"></a>
+<a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_catalan</b></td></tr>
+<tr class="separator:a2e61e5f060b38c3a669387b1623925e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2730d0ac9e43bb53e6ded2927c7c8697"><td class="memItemLeft" align="right" valign="top"><a id="a2730d0ac9e43bb53e6ded2927c7c8697"></a>
 <a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_i</b></td></tr>
 <tr class="separator:a2730d0ac9e43bb53e6ded2927c7c8697"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -697,6 +727,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae7adaef033cd4284bf4bdbbb7aa72bf0"><td class="memItemLeft" align="right" valign="top"><a id="ae7adaef033cd4284bf4bdbbb7aa72bf0"></a>
 <a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_undef</b></td></tr>
 <tr class="separator:ae7adaef033cd4284bf4bdbbb7aa72bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9858f982d17acec9a90e5ae56e2d8999"><td class="memItemLeft" align="right" valign="top"><a id="a9858f982d17acec9a90e5ae56e2d8999"></a>
+<a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_precision</b></td></tr>
+<tr class="separator:a9858f982d17acec9a90e5ae56e2d8999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f94f0879073b6e53a4fc85949662d6c"><td class="memItemLeft" align="right" valign="top"><a id="a0f94f0879073b6e53a4fc85949662d6c"></a>
 <a class="el" href="classUnknownVariable.html">UnknownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_x</b></td></tr>
 <tr class="separator:a0f94f0879073b6e53a4fc85949662d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -931,6 +964,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a16b997d16e0d71627857b3d483b0d3db"><td class="memItemLeft" align="right" valign="top"><a id="a16b997d16e0d71627857b3d483b0d3db"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_atanh</b></td></tr>
 <tr class="separator:a16b997d16e0d71627857b3d483b0d3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccc5d2dd8014bd2a0b939cfd06f9532"><td class="memItemLeft" align="right" valign="top"><a id="a2ccc5d2dd8014bd2a0b939cfd06f9532"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_atan2</b></td></tr>
+<tr class="separator:a2ccc5d2dd8014bd2a0b939cfd06f9532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b8332d05f69c0382b261338e45a3e1"><td class="memItemLeft" align="right" valign="top"><a id="ac6b8332d05f69c0382b261338e45a3e1"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_radians_to_default_angle_unit</b></td></tr>
 <tr class="separator:ac6b8332d05f69c0382b261338e45a3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -940,9 +976,27 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a31574b3456d9cd547a8f985da7201423"><td class="memItemLeft" align="right" valign="top"><a id="a31574b3456d9cd547a8f985da7201423"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_gamma</b></td></tr>
 <tr class="separator:a31574b3456d9cd547a8f985da7201423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5394ad291c5ec7100db1197e89d332c0"><td class="memItemLeft" align="right" valign="top"><a id="a5394ad291c5ec7100db1197e89d332c0"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_digamma</b></td></tr>
+<tr class="separator:a5394ad291c5ec7100db1197e89d332c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7c0c8e2600403fa3e137a365470ed6"><td class="memItemLeft" align="right" valign="top"><a id="adf7c0c8e2600403fa3e137a365470ed6"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_beta</b></td></tr>
 <tr class="separator:adf7c0c8e2600403fa3e137a365470ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21dbe30ed771a28231d65213e97394b9"><td class="memItemLeft" align="right" valign="top"><a id="a21dbe30ed771a28231d65213e97394b9"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_airy</b></td></tr>
+<tr class="separator:a21dbe30ed771a28231d65213e97394b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7919b244baa5ea2060196de406f401f"><td class="memItemLeft" align="right" valign="top"><a id="af7919b244baa5ea2060196de406f401f"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_besselj</b></td></tr>
+<tr class="separator:af7919b244baa5ea2060196de406f401f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497afbd93a2121592983c038921466bb"><td class="memItemLeft" align="right" valign="top"><a id="a497afbd93a2121592983c038921466bb"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_bessely</b></td></tr>
+<tr class="separator:a497afbd93a2121592983c038921466bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640c807b563764b36c0f66e433cdb6d3"><td class="memItemLeft" align="right" valign="top"><a id="a640c807b563764b36c0f66e433cdb6d3"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_erf</b></td></tr>
+<tr class="separator:a640c807b563764b36c0f66e433cdb6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9467d86c45027b0b6ae90f1c8d9e7b3d"><td class="memItemLeft" align="right" valign="top"><a id="a9467d86c45027b0b6ae90f1c8d9e7b3d"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_erfc</b></td></tr>
+<tr class="separator:a9467d86c45027b0b6ae90f1c8d9e7b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a046c0aad917ccff5746690497dcc1d6d"><td class="memItemLeft" align="right" valign="top"><a id="a046c0aad917ccff5746690497dcc1d6d"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_total</b></td></tr>
 <tr class="separator:a046c0aad917ccff5746690497dcc1d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1198,6 +1252,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tmp_maketodivision</b
 <tr class="memitem:a8ad9c14ab9da2f8abd692309ae5ba7b0"><td class="memItemLeft" align="right" valign="top"><a id="a8ad9c14ab9da2f8abd692309ae5ba7b0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>tmp_proc_command</b></td></tr>
 <tr class="separator:a8ad9c14ab9da2f8abd692309ae5ba7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f58ff8cb825f1484097c17da310dc71"><td class="memItemLeft" align="right" valign="top"><a id="a3f58ff8cb825f1484097c17da310dc71"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tmp_proc_registers</b></td></tr>
+<tr class="separator:a3f58ff8cb825f1484097c17da310dc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade364abe70400c227713cbcc85943b85"><td class="memItemLeft" align="right" valign="top"><a id="ade364abe70400c227713cbcc85943b85"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>tmp_rpnindex</b></td></tr>
 <tr class="separator:ade364abe70400c227713cbcc85943b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1225,12 +1282,12 @@ vector&lt; <a class="el" href="classBinaryPrefix.html">BinaryPrefix</a> * &gt;&#
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a791d151a84659b06df7f93df804e643b"><td class="memItemLeft" align="right" valign="top"><a id="a791d151a84659b06df7f93df804e643b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateRPN</b> (<a class="el" href="classMathStructure.html">MathStructure</a> *mstruct, int command, size_t index, int msecs, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo)</td></tr>
-<tr class="separator:a791d151a84659b06df7f93df804e643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26f8cf98d5d343f46f59fdf9568a54b2"><td class="memItemLeft" align="right" valign="top"><a id="a26f8cf98d5d343f46f59fdf9568a54b2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateRPN</b> (string str, int command, size_t index, int msecs, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, <a class="el" href="classMathStructure.html">MathStructure</a> *parsed_struct, <a class="el" href="classMathStructure.html">MathStructure</a> *to_struct, bool make_to_division)</td></tr>
-<tr class="separator:a26f8cf98d5d343f46f59fdf9568a54b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa2948c8e1f2f6698efd71ce59a6eb0"><td class="memItemLeft" align="right" valign="top"><a id="acaa2948c8e1f2f6698efd71ce59a6eb0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateRPN</b> (<a class="el" href="classMathStructure.html">MathStructure</a> *mstruct, int command, size_t index, int msecs, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, int function_arguments=0)</td></tr>
+<tr class="separator:acaa2948c8e1f2f6698efd71ce59a6eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0022ad91e9060dd4bb66f5ecc83c27"><td class="memItemLeft" align="right" valign="top"><a id="a4a0022ad91e9060dd4bb66f5ecc83c27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateRPN</b> (string str, int command, size_t index, int msecs, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, <a class="el" href="classMathStructure.html">MathStructure</a> *parsed_struct, <a class="el" href="classMathStructure.html">MathStructure</a> *to_struct, bool make_to_division, int function_arguments=0)</td></tr>
+<tr class="separator:a4a0022ad91e9060dd4bb66f5ecc83c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -1342,9 +1399,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_exchange_rates_used
 <tr class="memitem:a8419d7ee777ddfe742a8e87c35a08ab4"><td class="memItemLeft" align="right" valign="top"><a id="a8419d7ee777ddfe742a8e87c35a08ab4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_exchange_rates_warning_enabled</b></td></tr>
 <tr class="separator:a8419d7ee777ddfe742a8e87c35a08ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5004d18c632cce5e4401d4fa7705a9c"><td class="memItemLeft" align="right" valign="top"><a id="ad5004d18c632cce5e4401d4fa7705a9c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>has_gvfs</b></td></tr>
-<tr class="separator:ad5004d18c632cce5e4401d4fa7705a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae0d79076c744897afe0e399865ed88"><td class="memItemLeft" align="right" valign="top"><a id="aeae0d79076c744897afe0e399865ed88"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_gnuplot_open</b></td></tr>
 <tr class="separator:aeae0d79076c744897afe0e399865ed88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1462,25 +1516,6 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 </div><div class="memdoc">
 <p>Abort formatting, printing or evaluation (after <a class="el" href="classCalculator.html#a23ebf235ced4e144a78460e4ec9331a4">startControl()</a> has been called). This function will normally be called from a thread that checks for user input or other conditions.</p>
 <dl class="section return"><dt>Returns</dt><dd>false if the calculation thread was forcibly stopped </dd></dl>
-
-</div>
-</div>
-<a id="a63ec1161fd4ea2dc13f6f065cf057179"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63ec1161fd4ea2dc13f6f065cf057179">&#9670;&nbsp;</a></span>abortPrint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculator::abortPrint </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: use <a class="el" href="classCalculator.html#a0c57e07e9a53e7aebe1c3fd5a37dbfb8">abort()</a> </p>
 
 </div>
 </div>
@@ -1613,7 +1648,7 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 </div>
 </div>
 <a id="a354a0ee0d35c6aecf1b5717367aa8d10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a354a0ee0d35c6aecf1b5717367aa8d10">&#9670;&nbsp;</a></span>calculate() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a354a0ee0d35c6aecf1b5717367aa8d10">&#9670;&nbsp;</a></span>calculate() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1685,7 +1720,7 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 </div>
 </div>
 <a id="a4b1ed0f925ae3a7d135d03f77b04008b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b1ed0f925ae3a7d135d03f77b04008b">&#9670;&nbsp;</a></span>calculate() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1ed0f925ae3a7d135d03f77b04008b">&#9670;&nbsp;</a></span>calculate() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1742,8 +1777,59 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
+<a id="a386fe38c3982b09bdfe00a010451be34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386fe38c3982b09bdfe00a010451be34">&#9670;&nbsp;</a></span>calculate() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Calculator::calculate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td>
+          <td class="paramname"><em>mstruct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>eo</em> = <code>default_evaluation_options</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>to_str</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates a parsed value. This function starts the calculation in a separate thread and will return when the calculation has started unless a maximum time has been specified. The calculation can then be stopped with <a class="el" href="classCalculator.html#a0c57e07e9a53e7aebe1c3fd5a37dbfb8">abort()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mstruct</td><td>Parsed value to evaluate and fill with the result. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">msecs</td><td>The maximum time for the calculation in milliseconds. If msecs &lt;= 0 the time will be unlimited. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">eo</td><td>Options for the evaluation of the expression. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">to_str</td><td>"to" expression for conversion. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of the calculation. </dd></dl>
+
+</div>
+</div>
 <a id="a08ae8fa7994773151ecd3f6167ea09b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08ae8fa7994773151ecd3f6167ea09b0">&#9670;&nbsp;</a></span>calculate() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ae8fa7994773151ecd3f6167ea09b0">&#9670;&nbsp;</a></span>calculate() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2196,8 +2282,8 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks if gvfs-copy or wget is available for downloading exchange rates from the Internet.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if gvfs-copy or wget was found. </dd></dl>
+<p>Checks if able to downloading exchange rates from the Internet (using libcurl).</p>
+<dl class="section return"><dt>Returns</dt><dd>true if exchange rates can downloaded (if libcurl is available). </dd></dl>
 
 </div>
 </div>
@@ -2480,45 +2566,8 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="add29b39335d18476bc7ceb59f306e1c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add29b39335d18476bc7ceb59f306e1c8">&#9670;&nbsp;</a></span>fetchExchangeRates() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Calculator::fetchExchangeRates </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>seconds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>wget_args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Download current exchange rates from the Internet to local disc.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">milliseconds</td><td>Maximum time for donwload try (only used by wget) </td></tr>
-    <tr><td class="paramname">wget_args</td><td>Extra arguments to pass to wget. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if operation was successful. </dd></dl>
-
-</div>
-</div>
 <a id="a279f546d0c1de3f058a332d4841d562a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a279f546d0c1de3f058a332d4841d562a">&#9670;&nbsp;</a></span>fetchExchangeRates() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a279f546d0c1de3f058a332d4841d562a">&#9670;&nbsp;</a></span>fetchExchangeRates()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2535,7 +2584,7 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 <p>Download current exchange rates from the Internet to local disc with default wget arguments.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">milliseconds</td><td>Maximum time for donwload try (only used by wget) </td></tr>
+    <tr><td class="paramname">seconds</td><td>Maximum time for donwload try </td></tr>
   </table>
   </dd>
 </dl>
@@ -3249,44 +3298,6 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="a5552dfffefb1b868a27196202d1413cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5552dfffefb1b868a27196202d1413cc">&#9670;&nbsp;</a></span>hasGnomeVFS()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Calculator::hasGnomeVFS </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks if gvfs-copy available. Deprecated: use <a class="el" href="classCalculator.html#a725ffdbf3323ec361dbc02eaaf7198a6">hasGVFS()</a> or <a class="el" href="classCalculator.html#a01717b85b6bc9be0a646a0e88d9bf679">canFetch()</a> instead.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if gvfs-copy was found. </dd></dl>
-
-</div>
-</div>
-<a id="a725ffdbf3323ec361dbc02eaaf7198a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a725ffdbf3323ec361dbc02eaaf7198a6">&#9670;&nbsp;</a></span>hasGVFS()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Calculator::hasGVFS </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks if gvfs-copy available.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if gvfs-copy was found. </dd></dl>
-
-</div>
-</div>
 <a id="a01fdc68ca8019ff3d1808580394a6d14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01fdc68ca8019ff3d1808580394a6d14">&#9670;&nbsp;</a></span>hasUnit()</h2>
 
@@ -3869,63 +3880,6 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="a5bcc7a519d24199ae2700f0741fa3194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bcc7a519d24199ae2700f0741fa3194">&#9670;&nbsp;</a></span>printingAborted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Calculator::printingAborted </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: use aborted() </p>
-
-</div>
-</div>
-<a id="ae735cce4824e030f8019e572d49f14bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae735cce4824e030f8019e572d49f14bc">&#9670;&nbsp;</a></span>printingAbortedMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Calculator::printingAbortedMessage </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: use abortedMessage() </p>
-
-</div>
-</div>
-<a id="a484c50f2c7d5be94c13b1b8004e321c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a484c50f2c7d5be94c13b1b8004e321c2">&#9670;&nbsp;</a></span>printingControlled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Calculator::printingControlled </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: use isControlled() </p>
-
-</div>
-</div>
 <a id="a574951157283e673d7c8a8d2c94a083d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a574951157283e673d7c8a8d2c94a083d">&#9670;&nbsp;</a></span>reset()</h2>
 
@@ -3995,24 +3949,6 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
       </table>
 </div><div class="memdoc">
 <p>Unloads all non-builtin variables. </p>
-
-</div>
-</div>
-<a id="a4b2c0f2735926f1cbcca3a3a082e1fcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b2c0f2735926f1cbcca3a3a082e1fcb">&#9670;&nbsp;</a></span>restoreState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculator::restoreState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: does nothing. </p>
 
 </div>
 </div>
@@ -4243,24 +4179,6 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="a807946696721fce8ecca5253b16710cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a807946696721fce8ecca5253b16710cb">&#9670;&nbsp;</a></span>saveState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculator::saveState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: does nothing. </p>
-
-</div>
-</div>
 <a id="a36f048f6a3126ab2e75cfc9fb4ba7354"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36f048f6a3126ab2e75cfc9fb4ba7354">&#9670;&nbsp;</a></span>separateToExpression()</h2>
 
@@ -4398,25 +4316,6 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="ac570ba29df5be2ec772465c1e8629504"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac570ba29df5be2ec772465c1e8629504">&#9670;&nbsp;</a></span>startPrintControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculator::startPrintControl </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>milliseconds</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: use <a class="el" href="classCalculator.html#a23ebf235ced4e144a78460e4ec9331a4">startControl()</a> </p>
-
-</div>
-</div>
 <a id="adfb53446616362dcc974a38838f0bca3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfb53446616362dcc974a38838f0bca3">&#9670;&nbsp;</a></span>stillHasFunction()</h2>
 
@@ -4490,25 +4389,6 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
       </table>
 </div><div class="memdoc">
 <p>Always call this function after <a class="el" href="classCalculator.html#a23ebf235ced4e144a78460e4ec9331a4">Calculator::startControl()</a> after formatting, printing or calculation has finished. </p>
-
-</div>
-</div>
-<a id="aca38ee22b43594620f9602aeb293d8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca38ee22b43594620f9602aeb293d8b8">&#9670;&nbsp;</a></span>stopPrintControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Calculator::stopPrintControl </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Deprecated: use <a class="el" href="classCalculator.html#aa08f2c72260dee4783fdbb7e650fb7a6">stopControl()</a> </p>
 
 </div>
 </div>

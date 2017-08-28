@@ -43,13 +43,15 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Number.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="includes_8h.html">libqalculate/includes.h</a>&gt;</code><br />
-<code>#include &lt;cln/cln.h&gt;</code><br />
+<code>#include &lt;gmp.h&gt;</code><br />
+<code>#include &lt;mpfr.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -68,6 +70,36 @@ Macros</h2></td></tr>
 <tr class="memitem:a52910a48eaaf6e33db1d2596ec21d76f"><td class="memItemLeft" align="right" valign="top"><a id="a52910a48eaaf6e33db1d2596ec21d76f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EQUALS_PRECISION_HIGHEST</b>&#160;&#160;&#160;-3</td></tr>
 <tr class="separator:a52910a48eaaf6e33db1d2596ec21d76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ae33bf5f4db440a147780b796497d1ef5"><td class="memItemLeft" align="right" valign="top"><a id="ae33bf5f4db440a147780b796497d1ef5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>NumberType</b> { <br />
+&#160;&#160;<b>NUMBER_TYPE_RATIONAL</b>, 
+<b>NUMBER_TYPE_FLOAT</b>, 
+<b>NUMBER_TYPE_INFINITY</b>, 
+<b>NUMBER_TYPE_POSITIVE_INFINITY</b>, 
+<br />
+&#160;&#160;<b>NUMBER_TYPE_NEGATIVE_INFINITY</b>, 
+<b>NUMBER_TYPE_RATIONAL</b>, 
+<b>NUMBER_TYPE_FLOAT</b>, 
+<b>NUMBER_TYPE_INFINITY</b>, 
+<br />
+&#160;&#160;<b>NUMBER_TYPE_PLUS_INFINITY</b>, 
+<b>NUMBER_TYPE_MINUS_INFINITY</b>
+<br />
+ }</td></tr>
+<tr class="separator:ae33bf5f4db440a147780b796497d1ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3982ee469aad8735e9257109e2a49e7"><td class="memItemLeft" align="right" valign="top"><a id="ac3982ee469aad8735e9257109e2a49e7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>IntegerType</b> { <br />
+&#160;&#160;<b>INTEGER_TYPE_NONE</b>, 
+<b>INTEGER_TYPE_SINT</b>, 
+<b>INTEGER_TYPE_UINT</b>, 
+<b>INTEGER_TYPE_ULONG</b>, 
+<br />
+&#160;&#160;<b>INTEGER_TYPE_SLONG</b>, 
+<b>INTEGER_TYPE_SIZE</b>
+<br />
+ }</td></tr>
+<tr class="separator:ac3982ee469aad8735e9257109e2a49e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

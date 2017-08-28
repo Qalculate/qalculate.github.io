@@ -63,12 +63,18 @@ Inheritance diagram for IntegerArgument:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad639eb55b976e8249c1c5f2976f688d7"><td class="memItemLeft" align="right" valign="top"><a id="ad639eb55b976e8249c1c5f2976f688d7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>IntegerArgument</b> (string name_=&quot;&quot;, <a class="el" href="Function_8h.html#ad0a30ebdef87198658988eb0817dd6b3">ArgumentMinMaxPreDefinition</a> minmax=ARGUMENT_MIN_MAX_NONE, bool does_test=true, bool does_error=true)</td></tr>
-<tr class="separator:ad639eb55b976e8249c1c5f2976f688d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77bbf2f63b8ecc6f29da36a74598e269"><td class="memItemLeft" align="right" valign="top"><a id="a77bbf2f63b8ecc6f29da36a74598e269"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IntegerArgument</b> (string name_=&quot;&quot;, <a class="el" href="Function_8h.html#ad0a30ebdef87198658988eb0817dd6b3">ArgumentMinMaxPreDefinition</a> minmax=ARGUMENT_MIN_MAX_NONE, bool does_test=true, bool does_error=true, IntegerType integer_type=INTEGER_TYPE_NONE)</td></tr>
+<tr class="separator:a77bbf2f63b8ecc6f29da36a74598e269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dbe432ed869933cbc6d8870eb463ecc"><td class="memItemLeft" align="right" valign="top"><a id="a7dbe432ed869933cbc6d8870eb463ecc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>IntegerArgument</b> (const <a class="el" href="classIntegerArgument.html">IntegerArgument</a> *arg)</td></tr>
 <tr class="separator:a7dbe432ed869933cbc6d8870eb463ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373885398a640b228cc7bf3599b42020"><td class="memItemLeft" align="right" valign="top"><a id="a373885398a640b228cc7bf3599b42020"></a>
+IntegerType&#160;</td><td class="memItemRight" valign="bottom"><b>integerType</b> () const</td></tr>
+<tr class="separator:a373885398a640b228cc7bf3599b42020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5820a4cfa50f5ed7e6c3e600003de9"><td class="memItemLeft" align="right" valign="top"><a id="a0e5820a4cfa50f5ed7e6c3e600003de9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setIntegerType</b> (IntegerType integer_type)</td></tr>
+<tr class="separator:a0e5820a4cfa50f5ed7e6c3e600003de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2679d730b883f6dc0aaa53300e8ace"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIntegerArgument.html#a8c2679d730b883f6dc0aaa53300e8ace">set</a> (const <a class="el" href="classArgument.html">Argument</a> *arg)</td></tr>
 <tr class="separator:a8c2679d730b883f6dc0aaa53300e8ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a112955e9246286564ea9ca4825c91535"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classArgument.html">Argument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIntegerArgument.html#a112955e9246286564ea9ca4825c91535">copy</a> () const</td></tr>
@@ -162,6 +168,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a460a135d2dbbbe2042d29670c339eb86"><td class="memItemLeft" align="right" valign="top"><a id="a460a135d2dbbbe2042d29670c339eb86"></a>
 <a class="el" href="classNumber.html">Number</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>imax</b></td></tr>
 <tr class="separator:a460a135d2dbbbe2042d29670c339eb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a163e369e6a9066f1fbad3a3dd3177"><td class="memItemLeft" align="right" valign="top"><a id="a27a163e369e6a9066f1fbad3a3dd3177"></a>
+IntegerType&#160;</td><td class="memItemRight" valign="bottom"><b>i_inttype</b></td></tr>
+<tr class="separator:a27a163e369e6a9066f1fbad3a3dd3177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classArgument"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classArgument')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classArgument.html">Argument</a></td></tr>
 <tr class="memitem:a6f99eb71dbbfc299a19a2ca490605d2e inherit pro_attribs_classArgument"><td class="memItemLeft" align="right" valign="top"><a id="a6f99eb71dbbfc299a19a2ca490605d2e"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>sname</b></td></tr>

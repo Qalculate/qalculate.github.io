@@ -35,8 +35,7 @@ Sections:<br>
                             - the ultimate desktop calculator
                         </h2>
 </div>
-<br><br>
-<div align="center"><IMG src="images/qalculate-gtk.png" width="482" height="231" border="0"></div>
+<div align="center"><IMG src="images/qalculate-keypad.png" width="550" border="0"></div>
 <br>Qalculate! is a multi-purpose cross-platform desktop calculator. It is small and simple to use but with much power and
   versatility underneath. Features include customizable functions, units,
   arbitrary precision, plotting, and a user-friendly interface (GTK+ and CLI).
@@ -51,19 +50,25 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2017-08-09 :. Preview of the first official Windows version of Qalculate! released</h4>
-	Qalculate! has long been available for GNU/Linux and Mac OS X, but now it is finally also compatible with Microsoft Windows (although there is a fork by Cheng Sun with Windows compatibility, which has contributed code to this version). This pre-release version is likely not as stable as version 1.0.0 (although it does include some important bug fixes), but you are nevertheless invited to try it, report any issues you find and share you opinion. 
-	<br><br>Download the installer here: <a href="https://github.com/Qalculate/libqalculate/releases/download/v1.0.99/qalculate-1.0.99.msi">qalculate-1.0.99.msi</a>.
-	<h4>.: 2017-07-24 :. Qalculate! version 1.0 released</h4>
-	Qalculate! version 1.0 includes the following changes:
+	<h4>.: 2017-08-28 :. Qalculate! version 2.0 released</h4>
+	After a month of hard work Qalculate! version 2.0 is ready with removal of glib and cln dependencies from the library, a redesigned expression entry and keypad in the GUI, and a new feature complete Windows version. Get the new version from the <a href="downloads.html">downloads page</a>.<br><br>
+	List of main changes:
 	<ul>
-		<li>Increased efficiency and stability. Slow calculations can in most cases now be terminated in a controlled manner and the application should no longer potentially crash when trying to calculate extremely large numbers.</li>
-		<li>Enhanced factorization.</li>
-		<li>Revised temperature unit handling.</li>
-		<li>Enhanced automatic unit conversion, including a new default mode which keeps original non-SI units if no better alternative (that uses fewer units and exponents) is found.</li>
-		<li>A long list of bug fixes and minor feature enhancements.</li>
+		<li>CLN has been replaced with GMP and MPFR for low-level numerical calculations.</li>
+		<li>The Glib dependancy has been removed. It has partly been replaced with libiconv and icu. Libqalculate can be compiled without them and libiconv is only used the CLI application.</li>
+		<li>GVFS and wget have been replaced by libcurl for exchange rates retrieval.</li>
+		<li>Date functions have been rewritten and now support much larger numbers.</li>
+		<li>Trigonometric functions with angle unit other than radians have been fixed.</li>
+		<li>Functions with more than one argument can now also be applied to the RPN stack, and enter on empty expression duplicates the stack register at the top.</li>
+		<li>New functions: airy(), arg(), besselj(), bessely(), conj(), digamma(), erf(), erfc()</li>
+		<li>Redesigned keypad with a lot more functionality. (GUI)</li>
+		<li>Multiline expression entry with undo/redo. (GUI)</li>
+		<li>Alternative simplified function creation dialog. (GUI)</li>
+		<li>Percentage calculation tool. (GUI)</li>
+		<li>Binary installer for Microsoft Windows.</li>
+		<li>Increased efficiency and many minor enhancements and bug fixes.</li>
 	</ul>
-	For a complete list of changes see the git logs for <a href="https://github.com/Qalculate/libqalculate/commits/v1.0.0a">libqalculate</a> and <a href="https://github.com/Qalculate/qalculate-gtk/commits/v1.0.0">qalculate-gtk</a>.<br>
+	For a complee list of changes see the ChangeLogs (<a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v2.0.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v2.0.0a/ChangeLog">qalculate-gtk</a>), or, for even more details, git logs (<a href="https://github.com/Qalculate/libqalculate/commits/v2.0.0">libqalculate</a> and <a href="https://github.com/Qalculate/qalculate-gtk/commits/v2.0.0a">qalculate-gtk</a>).<br>
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
 </td><td width="50px">&nbsp;</td></tr>

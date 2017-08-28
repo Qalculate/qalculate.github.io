@@ -68,6 +68,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac14084fff4c9fcaec9cf47578fac5f13"><td class="memItemLeft" align="right" valign="top"><a id="ac14084fff4c9fcaec9cf47578fac5f13"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DateArgument</b> (const <a class="el" href="classDateArgument.html">DateArgument</a> *arg)</td></tr>
 <tr class="separator:ac14084fff4c9fcaec9cf47578fac5f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f00a8551308f30a8d2416fa307534e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDateArgument.html#af3f00a8551308f30a8d2416fa307534e">parse</a> (<a class="el" href="classMathStructure.html">MathStructure</a> *mstruct, const string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options) const</td></tr>
+<tr class="separator:af3f00a8551308f30a8d2416fa307534e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe65feed350c7a2c932d42437a3df92b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDateArgument.html#abe65feed350c7a2c932d42437a3df92b">type</a> () const</td></tr>
 <tr class="separator:abe65feed350c7a2c932d42437a3df92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47cb66257b1cfd705f651319ddc6be0b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classArgument.html">Argument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDateArgument.html#a47cb66257b1cfd705f651319ddc6be0b">copy</a> () const</td></tr>
@@ -89,8 +91,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafb1d78b7db515d012b222f757ad28d4 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c951983cd4589bea3a8dc4a245f0dbd inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a4c951983cd4589bea3a8dc4a245f0dbd">parse</a> (const string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options) const</td></tr>
 <tr class="separator:a4c951983cd4589bea3a8dc4a245f0dbd inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b6e981342668b40c867e0d3c893d07d inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a2b6e981342668b40c867e0d3c893d07d">parse</a> (<a class="el" href="classMathStructure.html">MathStructure</a> *mstruct, const string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options) const</td></tr>
-<tr class="separator:a2b6e981342668b40c867e0d3c893d07d inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b4369dad69f4e155a97e0ad7b1313f4 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a6b4369dad69f4e155a97e0ad7b1313f4">name</a> () const</td></tr>
 <tr class="separator:a6b4369dad69f4e155a97e0ad7b1313f4 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa9eaf486339f09cbbd0158f6f14f9c inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a0fa9eaf486339f09cbbd0158f6f14f9c">setName</a> (string name_)</td></tr>
@@ -202,6 +202,59 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_last</b></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A copy. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classArgument.html#aa706e82c47fbbdc5247d5633dced9ffb">Argument</a>.</p>
+
+</div>
+</div>
+<a id="af3f00a8551308f30a8d2416fa307534e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f00a8551308f30a8d2416fa307534e">&#9670;&nbsp;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DateArgument::parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td>
+          <td class="paramname"><em>mstruct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>po</em> = <code>default_parse_options</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parses an expression for an argument value. The default behavior is to use <a class="el" href="classCalculator.html#a8324b84bd93abbf7bf1084c1853ed987">Calculator::parse()</a> directly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mstruct</td><td>Mathematical structure to set with the parsed expression. </td></tr>
+    <tr><td class="paramname">str</td><td>Expression. </td></tr>
+    <tr><td class="paramname">po</td><td>Parse options. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classArgument.html#a2b6e981342668b40c867e0d3c893d07d">Argument</a>.</p>
 
 </div>
 </div>

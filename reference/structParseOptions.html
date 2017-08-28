@@ -109,9 +109,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="separator:a46ee49c4fae2044e3d435a0e0181af4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a873a657fae8b78929ae863790a08306b"><td class="memItemLeft" align="right" valign="top"><a id="a873a657fae8b78929ae863790a08306b"></a>
 <a class="el" href="classDataSet.html">DataSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParseOptions.html#a873a657fae8b78929ae863790a08306b">default_dataset</a></td></tr>
-<tr class="memdesc:a873a657fae8b78929ae863790a08306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaukt dataset. Used for object.property syntax without a preceeding data set. Default: NULL. <br /></td></tr>
+<tr class="memdesc:a873a657fae8b78929ae863790a08306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default dataset. Used for object.property syntax without a preceeding data set. Default: NULL. <br /></td></tr>
 <tr class="separator:a873a657fae8b78929ae863790a08306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed36c001d1d57db8df627d6b1c4bdc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="includes_8h.html#ac1f1e0a72eb3bb133c13c1aedc837223">ParsingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParseOptions.html#a6ed36c001d1d57db8df627d6b1c4bdc0">parsing_mode</a></td></tr>
+<tr class="memitem:a6ed36c001d1d57db8df627d6b1c4bdc0"><td class="memItemLeft" align="right" valign="top"><a id="a6ed36c001d1d57db8df627d6b1c4bdc0"></a>
+<a class="el" href="includes_8h.html#ac1f1e0a72eb3bb133c13c1aedc837223">ParsingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParseOptions.html#a6ed36c001d1d57db8df627d6b1c4bdc0">parsing_mode</a></td></tr>
+<tr class="memdesc:a6ed36c001d1d57db8df627d6b1c4bdc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsing mode. Default: PARSING_MODE_ADAPTIVE. <br /></td></tr>
 <tr class="separator:a6ed36c001d1d57db8df627d6b1c4bdc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -131,21 +133,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 
 <p>When implicit multiplication is limited variables, functions and units must be separated by a space, operator or parenthesis ("xy" does not equal "x * y"). Default: false. </p>
 <p>If the limit implicit multiplication mode is activated, the use of implicite multiplication when parsing expressions and displaying results will be limited to avoid confusion. For example, if this mode is not activated and "integrte(5x)" is accidently typed instead of "integrate(5x)", the expression is interpreted as "int(e * e * (5 * x) * gr * t)". If limit implicit multiplication is turned on to mistyped expression would instead show an error telling that "integrte" is not a valid variable, function or unit (unless unknowns is not enabled in which case the result will be "5 'integrate' * x". </p>
-
-</div>
-</div>
-<a id="a6ed36c001d1d57db8df627d6b1c4bdc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ed36c001d1d57db8df627d6b1c4bdc0">&#9670;&nbsp;</a></span>parsing_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="includes_8h.html#ac1f1e0a72eb3bb133c13c1aedc837223">ParsingMode</a> ParseOptions::parsing_mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Convert degree Celsius and Fahrenheit to Kelvin already when parsing the expression. Turn off when parsing unit expression to convert to. Default: true Parsing mode. Default: PARSING_MODE_ADAPTIVE </p>
 
 </div>
 </div>
