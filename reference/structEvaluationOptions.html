@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.0.0: EvaluationOptions Struct Reference</title>
+<title>libqalculate-2.1.0: EvaluationOptions Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.0.0
+   <div id="projectname">libqalculate-2.1.0
    </div>
   </td>
  </tr>
@@ -104,10 +104,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#ab500bf077118a4f1855cd4d98385d485">allow_infinite</a></td></tr>
 <tr class="memdesc:ab500bf077118a4f1855cd4d98385d485"><td class="mdescLeft">&#160;</td><td class="mdescRight">If infinite numbers will be used for evaluation. Default: true. <br /></td></tr>
 <tr class="separator:ab500bf077118a4f1855cd4d98385d485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb6c99a388dc2e1f9ce46df38220fc15"><td class="memItemLeft" align="right" valign="top"><a id="acb6c99a388dc2e1f9ce46df38220fc15"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#acb6c99a388dc2e1f9ce46df38220fc15">assume_denominators_nonzero</a></td></tr>
-<tr class="memdesc:acb6c99a388dc2e1f9ce46df38220fc15"><td class="mdescLeft">&#160;</td><td class="mdescRight">If simplification will be made easier by assuming that denominators with unknown value not is zero. Default: false. <br /></td></tr>
-<tr class="separator:acb6c99a388dc2e1f9ce46df38220fc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fad5c3d769d11664f149487964737f"><td class="memItemLeft" align="right" valign="top"><a id="aa6fad5c3d769d11664f149487964737f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#aa6fad5c3d769d11664f149487964737f">assume_denominators_nonzero</a></td></tr>
+<tr class="memdesc:aa6fad5c3d769d11664f149487964737f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If simplification will be made easier by assuming that denominators with unknown value not is zero. Default: false. <br /></td></tr>
+<tr class="separator:aa6fad5c3d769d11664f149487964737f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cebe54389e26f500299b466c46c9a6f"><td class="memItemLeft" align="right" valign="top"><a id="a2cebe54389e26f500299b466c46c9a6f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a2cebe54389e26f500299b466c46c9a6f">warn_about_denominators_assumed_nonzero</a></td></tr>
 <tr class="memdesc:a2cebe54389e26f500299b466c46c9a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Warn if a denominator with unknown value was assumed non-zero (with assume_denominators_nonzero set to true) to allow simplification. Default: false. <br /></td></tr>
@@ -140,6 +140,9 @@ MixedUnitsConversion&#160;</td><td class="memItemRight" valign="bottom"><a class
 const <a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a4e475e40c8b4930068f1012906367e2e">isolate_var</a></td></tr>
 <tr class="memdesc:a4e475e40c8b4930068f1012906367e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set will decide which variable to isolate in an equation. Default: NULL. <br /></td></tr>
 <tr class="separator:a4e475e40c8b4930068f1012906367e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7206319b7a9b48bed75c5112038fe804"><td class="memItemLeft" align="right" valign="top"><a id="a7206319b7a9b48bed75c5112038fe804"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>do_polynomial_division</b></td></tr>
+<tr class="separator:a7206319b7a9b48bed75c5112038fe804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Options for calculation. </p>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.0.0: libqalculate/includes.h File Reference</title>
+<title>libqalculate-2.1.0: libqalculate/includes.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.0.0
+   <div id="projectname">libqalculate-2.1.0
    </div>
   </td>
  </tr>
@@ -125,8 +125,11 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SQP_LT_100000</b>&#160;&#160;&#160;68</td></tr>
 <tr class="separator:ad4db5e0eb104c2a008b8f84a070ee3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6812ad8e97077a7c99bcc1e443d5df23"><td class="memItemLeft" align="right" valign="top"><a id="a6812ad8e97077a7c99bcc1e443d5df23"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>NR_OF_SQUARE_PRIMES</b>&#160;&#160;&#160;174</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NR_OF_SQUARE_PRIMES</b>&#160;&#160;&#160;170</td></tr>
 <tr class="separator:a6812ad8e97077a7c99bcc1e443d5df23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad08b7ef4dac76d2a49b16a47a26f94"><td class="memItemLeft" align="right" valign="top"><a id="a4ad08b7ef4dac76d2a49b16a47a26f94"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LARGEST_RAISED_PRIME_EXPONENT</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a4ad08b7ef4dac76d2a49b16a47a26f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecf50cd4f90c32349be515726de47c1"><td class="memItemLeft" align="right" valign="top"><a id="a1ecf50cd4f90c32349be515726de47c1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BASE_ROMAN_NUMERALS</b>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:a1ecf50cd4f90c32349be515726de47c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,10 +194,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SIGN_POWER_3</b>&#160;&#160;&#160;&quot;³&quot;</td></tr>
 <tr class="separator:a2f237054584792110fa9973c5bbcce08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc2a3d3294f3316397df3428896636ed"><td class="memItemLeft" align="right" valign="top"><a id="abc2a3d3294f3316397df3428896636ed"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIGN_POWER_4</b>&#160;&#160;&#160;&quot;³&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIGN_POWER_4</b>&#160;&#160;&#160;&quot;⁴&quot;</td></tr>
 <tr class="separator:abc2a3d3294f3316397df3428896636ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd894a6f02a6d012c3d19d5f85c17e8"><td class="memItemLeft" align="right" valign="top"><a id="acdd894a6f02a6d012c3d19d5f85c17e8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIGN_POWER_5</b>&#160;&#160;&#160;&quot;⁴&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIGN_POWER_5</b>&#160;&#160;&#160;&quot;⁵&quot;</td></tr>
 <tr class="separator:acdd894a6f02a6d012c3d19d5f85c17e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4baebcc74abc2aa02c24b0586686a0e6"><td class="memItemLeft" align="right" valign="top"><a id="a4baebcc74abc2aa02c24b0586686a0e6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SIGN_POWER_6</b>&#160;&#160;&#160;&quot;⁶&quot;</td></tr>
@@ -738,6 +741,8 @@ static const long int&#160;</td><td class="memItemRight" valign="bottom"><b>PRIM
 <tr class="separator:aa9e7365823d277d8386f78f16800308d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca4761e5ea48617b7f97e9af4bbe652"><td class="memItemLeft" align="right" valign="top">static const long int&#160;</td><td class="memItemRight" valign="bottom"><b>SQUARE_PRIMES</b> []</td></tr>
 <tr class="separator:a7ca4761e5ea48617b7f97e9af4bbe652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a90f89efebf950b45941390f422deb"><td class="memItemLeft" align="right" valign="top">static const long int&#160;</td><td class="memItemRight" valign="bottom"><b>RAISED_PRIMES</b> [][49]</td></tr>
+<tr class="separator:a15a90f89efebf950b45941390f422deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32e95c245aadfc84490cc61cc7ea96c"><td class="memItemLeft" align="right" valign="top"><a id="af32e95c245aadfc84490cc61cc7ea96c"></a>
 static const struct <a class="el" href="structSortOptions.html">SortOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>default_sort_options</b></td></tr>
 <tr class="separator:af32e95c245aadfc84490cc61cc7ea96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -780,6 +785,12 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
 <tr class="memitem:a283012d6df55b9d2db5c619223ac0b33"><td class="memItemLeft" align="right" valign="top"><a id="a283012d6df55b9d2db5c619223ac0b33"></a>
 <a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nr_one</b></td></tr>
 <tr class="separator:a283012d6df55b9d2db5c619223ac0b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de98aa59b8429574f84efb0be9fadcb"><td class="memItemLeft" align="right" valign="top"><a id="a7de98aa59b8429574f84efb0be9fadcb"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nr_two</b></td></tr>
+<tr class="separator:a7de98aa59b8429574f84efb0be9fadcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325b5532c93d31f20aba69bdf3d15786"><td class="memItemLeft" align="right" valign="top"><a id="a325b5532c93d31f20aba69bdf3d15786"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nr_three</b></td></tr>
+<tr class="separator:a325b5532c93d31f20aba69bdf3d15786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bea8d07b8b7f148a1e792be056a72a5"><td class="memItemLeft" align="right" valign="top"><a id="a4bea8d07b8b7f148a1e792be056a72a5"></a>
 <a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nr_minus_one</b></td></tr>
 <tr class="separator:a4bea8d07b8b7f148a1e792be056a72a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -940,13 +951,35 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
 </td></tr>
 <tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77ab33725263a2a7ec0ec1d101b07e43f89"></a>STRUCTURING_FACTORIZE&#160;</td><td class="fielddoc"><p>Factorize the result. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77adf1c32b2ff5fc65d1f9e69b85d0aba3b"></a>STRUCTURING_HYBRID&#160;</td><td class="fielddoc"><p>Make some factorizations to enhance visibility of the result (e.g. x/z+y/z=(x+y)/z and 2*x+pi*x=(2+pi)*x) </p>
+<tr><td class="fieldname"><a id="af8538e4aef0716ad66016493cbeffb77adf1c32b2ff5fc65d1f9e69b85d0aba3b"></a>STRUCTURING_HYBRID&#160;</td><td class="fielddoc"><p>Deprecated: use STRUCTURING_SIMPLIFY instead. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a15a90f89efebf950b45941390f422deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a90f89efebf950b45941390f422deb">&#9670;&nbsp;</a></span>RAISED_PRIMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long int RAISED_PRIMES[][49]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">{8L, 27L, 125L, 343L, 1331L, 2197, 4913, 6859, 12167L, 24389L,</div><div class="line">29791L, 50653L, 68921L, 79507L, 103823L, 148877L, 205379L, 226981L, 300763L, 357911L,</div><div class="line">389017L, 493039L, 571787L, 704969L, 912673L, 1030301L, 1092727L, 1225043L, 1295029, 1442897,</div><div class="line">2048383L, 2248091L, 2571353L, 2685619L, 3307949L, 3442951L, 3869893L, 4330747L, 4657463L, 5177717L,</div><div class="line">5735339L, 5929741L, 6967871L, 7189057L, 7645373L, 7880599L, 9393931L, 11089567L, 0},</div><div class="line">{16L, 81L, 625L, 2401L, 14641L, 28561L, 83521L, 130321L, 279841L, 707281L, </div><div class="line">923521L, 1874161L, 2825761L, 3418801L, 4879681L, 7890481L, 12117361L,</div><div class="line">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},</div><div class="line">{32L, 243L, 3125L, 16807L, 161051L, 371293L, 1419857L, 2476099L, 6436343L, 20511149L,</div><div class="line">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},</div><div class="line">{64L, 729L, 15625L, 117649L, 1771561L, 4826809L, 24137569L, 47045881L, 148035889L,</div><div class="line">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},</div><div class="line">{128L, 2187L, 78125L, 823543L, 19487171L, 62748517L, 410338673L,</div><div class="line">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},</div><div class="line">{256L, 6561L, 390625L, 5764801L, 214358881L, 815730721L,</div><div class="line">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},</div><div class="line">{512L, 19683L, 1953125L, 40353607L,</div><div class="line">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},</div><div class="line">{1024L, 59049L, 9765625L, 282475249L,</div><div class="line">0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}</div><div class="line">}</div></div><!-- fragment -->
+</div>
+</div>
 <a id="a7ca4761e5ea48617b7f97e9af4bbe652"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ca4761e5ea48617b7f97e9af4bbe652">&#9670;&nbsp;</a></span>SQUARE_PRIMES</h2>
 
@@ -966,7 +999,7 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">4L, 9L, 25L, 49L, 121L, 169L, 289L, 361L, 441L, 529L, </div><div class="line">841L, 961L, 1369L, 1681L, 961L, 1369L, 1681L, 1849L, 2209L, 2809L, </div><div class="line">3481L, 3721L, 4489L, 5041L, 5329L, 6241L, 6889L, 7921L, 9409L, 10201L, </div><div class="line">10609L, 11449L, 11881L, 12769L, 16129L, 17161L, 18769L, 19321L, 22201L, 22801L, </div><div class="line">24649L, 26569L, 27889L, 29929L, 32041L, 32761L, 36481L, 37249L, 38809L, 39601L, </div><div class="line">44521L, 49729L, 51529L, 52441L, 54289L, 57121L, 58081L, 63001L, 66049L, 69169L, </div><div class="line">72361L, 73441L, 76729L, 78961L, 80089L, 85849L, 94249L, 96721L, 97969L, 100489L, </div><div class="line">109561L, 113569L, 120409L, 121801L, 124609L, 128881L, 134689L, 139129L, 143641L, 146689L, </div><div class="line">151321L, 157609L, 160801L, 167281L, 175561L, 177241L, 185761L, 187489L, 192721L, 196249L, </div><div class="line">201601L, 208849L, 212521L, 214369L, 218089L, 229441L, 237169L, 241081L, 249001L, 253009L, </div><div class="line">259081L, 271441L, 273529L, 292681L, 299209L, 310249L, 316969L, 323761L, 326041L, 332929L, </div><div class="line">344569L, 351649L, 358801L, 361201L, 368449L, 375769L, 380689L, 383161L, 398161L, 410881L, </div><div class="line">413449L, 418609L, 426409L, 434281L, 436921L, 452929L, 458329L, 466489L, 477481L, 491401L, </div><div class="line">502681L, 516961L, 528529L, 537289L, 546121L, 552049L, 564001L, 573049L, 579121L, 591361L, </div><div class="line">597529L, 619369L, 635209L, 654481L, 657721L, 674041L, 677329L, 683929L, 687241L, 703921L, </div><div class="line">727609L, 734449L, 737881L, 744769L, 769129L, 776161L, 779689L, 786769L, 822649L, 829921L, </div><div class="line">844561L, 863041L, 877969L, 885481L, 896809L, 908209L, 935089L, 942841L, 954529L, 966289L, </div><div class="line">982081L, 994009L, 1018081L, 1026169L</div><div class="line">}</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">4L, 9L, 25L, 49L, 121L, 169L, 289L, 361L, 529L, 841L, </div><div class="line">961L, 1369L, 1681L, 1849L, 2209L, 2809L, 3481L, 3721L, 4489L, 5041L, </div><div class="line">5329L, 6241L, 6889L, 7921L, 9409L, 10201L, 10609L, 11449L, 11881L, 12769L, </div><div class="line">16129L, 17161L, 18769L, 19321L, 22201L, 22801L, 24649L, 26569L, 27889L, 29929L, </div><div class="line">32041L, 32761L, 36481L, 37249L, 38809L, 39601L, 44521L, 49729L, 51529L, 52441L, </div><div class="line">54289L, 57121L, 58081L, 63001L, 66049L, 69169L, 72361L, 73441L, 76729L, 78961L, </div><div class="line">80089L, 85849L, 94249L, 96721L, 97969L, 100489L, 109561L, 113569L, 120409L, 121801L, </div><div class="line">124609L, 128881L, 134689L, 139129L, 143641L, 146689L, 151321L, 157609L, 160801L, 167281L, </div><div class="line">175561L, 177241L, 185761L, 187489L, 192721L, 196249L, 201601L, 208849L, 212521L, 214369L, </div><div class="line">218089L, 229441L, 237169L, 241081L, 249001L, 253009L, 259081L, 271441L, 273529L, 292681L, </div><div class="line">299209L, 310249L, 316969L, 323761L, 326041L, 332929L, 344569L, 351649L, 358801L, 361201L, </div><div class="line">368449L, 375769L, 380689L, 383161L, 398161L, 410881L, 413449L, 418609L, 426409L, 434281L, </div><div class="line">436921L, 452929L, 458329L, 466489L, 477481L, 491401L, 502681L, 516961L, 528529L, 537289L, </div><div class="line">546121L, 552049L, 564001L, 573049L, 579121L, 591361L, 597529L, 619369L, 635209L, 654481L, </div><div class="line">657721L, 674041L, 677329L, 683929L, 687241L, 703921L, 727609L, 734449L, 737881L, 744769L, </div><div class="line">769129L, 776161L, 779689L, 786769L, 822649L, 829921L, 844561L, 863041L, 877969L, 885481L, </div><div class="line">896809L, 908209L, 935089L, 942841L, 954529L, 966289L, 982081L, 994009L, 1018081L, 1026169L</div><div class="line">}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.0.0: DynamicVariable Class Reference</title>
+<title>libqalculate-2.1.0: DynamicVariable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.0.0
+   <div id="projectname">libqalculate-2.1.0
    </div>
   </td>
  </tr>
@@ -56,9 +56,10 @@ Inheritance diagram for DynamicVariable:</div>
  <div class="center">
   <img src="classDynamicVariable.png" usemap="#DynamicVariable_map" alt=""/>
   <map id="DynamicVariable_map" name="DynamicVariable_map">
-<area href="classKnownVariable.html" title="A variable with a known value. " alt="KnownVariable" shape="rect" coords="0,112,109,136"/>
-<area href="classVariable.html" title="Abstract base class for variables. " alt="Variable" shape="rect" coords="0,56,109,80"/>
-<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="0,0,109,24"/>
+<area href="classKnownVariable.html" title="A variable with a known value. " alt="KnownVariable" shape="rect" coords="0,112,113,136"/>
+<area href="classVariable.html" title="Abstract base class for variables. " alt="Variable" shape="rect" coords="0,56,113,80"/>
+<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="0,0,113,24"/>
+<area href="classPrecisionVariable.html" title="Dynamic variable for Pi. " alt="PrecisionVariable" shape="rect" coords="0,224,113,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -98,6 +99,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNon
 <tr class="memitem:aaa1024b03d326efe3a2e0a2f4313eb36"><td class="memItemLeft" align="right" valign="top"><a id="aaa1024b03d326efe3a2e0a2f4313eb36"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsInteger</b> (bool=false)</td></tr>
 <tr class="separator:aaa1024b03d326efe3a2e0a2f4313eb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29de324f52a8ae82a525a04d131f470"><td class="memItemLeft" align="right" valign="top"><a id="aa29de324f52a8ae82a525a04d131f470"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonInteger</b> (bool=false)</td></tr>
+<tr class="separator:aa29de324f52a8ae82a525a04d131f470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d09618e7b343ad2fce1f4288423b3a3"><td class="memItemLeft" align="right" valign="top"><a id="a2d09618e7b343ad2fce1f4288423b3a3"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNumber</b> (bool=false)</td></tr>
 <tr class="separator:a2d09618e7b343ad2fce1f4288423b3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +152,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsSca
 <tr class="separator:ac7914440aa1f10963683ae30efa1e9da inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecea1325dfae4a621fc202c476bd72de inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#aecea1325dfae4a621fc202c476bd72de">subtype</a> () const</td></tr>
 <tr class="separator:aecea1325dfae4a621fc202c476bd72de inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771370531c79cf6b525b4130b02ee801 inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a771370531c79cf6b525b4130b02ee801"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsFraction</b> (bool=false)</td></tr>
+<tr class="separator:a771370531c79cf6b525b4130b02ee801 inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classVariable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classVariable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classVariable.html">Variable</a></td></tr>
 <tr class="memitem:a7b639f0de7ff97842fd09f826309e248 inherit pub_methods_classVariable"><td class="memItemLeft" align="right" valign="top"><a id="a7b639f0de7ff97842fd09f826309e248"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Variable</b> (string cat_, string name_, string title_=&quot;&quot;, bool is_local=true, bool is_builtin=false, bool is_active=true)</td></tr>

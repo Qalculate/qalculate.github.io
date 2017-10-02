@@ -50,25 +50,21 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2017-08-28 :. Qalculate! version 2.0 released</h4>
-	After a month of hard work Qalculate! version 2.0 is ready with removal of glib and cln dependencies from the library, a redesigned expression entry and keypad in the GUI, and a new feature complete Windows version. Get the new version from the <a href="downloads.html">downloads page</a>.<br><br>
+	<h4>.: 2017-10-02 :. Qalculate! version 2.1 released</h4>
+	The main focus of version 2.1 is consistent handling of roots of negative numbers and equation solving enhancements. Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
 	List of main changes:
 	<ul>
-		<li>CLN has been replaced with GMP and MPFR for low-level numerical calculations.</li>
-		<li>The Glib dependancy has been removed. It has partly been replaced with libiconv and icu. Libqalculate can be compiled without them and libiconv is only used the CLI application.</li>
-		<li>GVFS and wget have been replaced by libcurl for exchange rates retrieval.</li>
-		<li>Date functions have been rewritten and now support much larger numbers.</li>
-		<li>Trigonometric functions with angle unit other than radians have been fixed.</li>
-		<li>Functions with more than one argument can now also be applied to the RPN stack, and enter on empty expression duplicates the stack register at the top.</li>
-		<li>New functions: airy(), arg(), besselj(), bessely(), conj(), digamma(), erf(), erfc()</li>
-		<li>Redesigned keypad with a lot more functionality. (GUI)</li>
-		<li>Multiline expression entry with undo/redo. (GUI)</li>
-		<li>Alternative simplified function creation dialog. (GUI)</li>
-		<li>Percentage calculation tool. (GUI)</li>
-		<li>Binary installer for Microsoft Windows.</li>
-		<li>Increased efficiency and many minor enhancements and bug fixes.</li>
+		<li>Equation solving enhancements.</li>
+		<li>root() and cbrt() now always returns the real root (e.g. cbrt(-8)=-2), while fractional powers return the principal root ((-8)^(1/3)=1+1,73i).</li>
+		<li>Enhanced simplification.</li>
+		<li>More than 100 additional currencies (using mycurrency.net).</li>
+		<li>Fix automatic prefix for negative values.</li>
+		<li>Fix optimal unit conversion for cbrt(L) and similar.</li>
+		<li>Fix wrong partial calculation of square root in exact mode in some cases</li>
+		<li>Highlighting of matching parentheses. (GUI)</li>
+		<li>Proper display of roots and absolute value. (GUI)</li>
+		<li>Minor bug fixes and feature enhancements.</li>
 	</ul>
-	For a complee list of changes see the ChangeLogs (<a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v2.0.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v2.0.0a/ChangeLog">qalculate-gtk</a>), or, for even more details, git logs (<a href="https://github.com/Qalculate/libqalculate/commits/v2.0.0">libqalculate</a> and <a href="https://github.com/Qalculate/qalculate-gtk/commits/v2.0.0a">qalculate-gtk</a>).<br>
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
 </td><td width="50px">&nbsp;</td></tr>

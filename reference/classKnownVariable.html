@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.0.0: KnownVariable Class Reference</title>
+<title>libqalculate-2.1.0: KnownVariable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.0.0
+   <div id="projectname">libqalculate-2.1.0
    </div>
   </td>
  </tr>
@@ -56,9 +56,10 @@ Inheritance diagram for KnownVariable:</div>
  <div class="center">
   <img src="classKnownVariable.png" usemap="#KnownVariable_map" alt=""/>
   <map id="KnownVariable_map" name="KnownVariable_map">
-<area href="classVariable.html" title="Abstract base class for variables. " alt="Variable" shape="rect" coords="0,56,109,80"/>
-<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="0,0,109,24"/>
-<area href="classDynamicVariable.html" title="Abstract base class for variables with a value which is recalculated when the precision has changed..." alt="DynamicVariable" shape="rect" coords="0,168,109,192"/>
+<area href="classVariable.html" title="Abstract base class for variables. " alt="Variable" shape="rect" coords="0,56,113,80"/>
+<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="0,0,113,24"/>
+<area href="classDynamicVariable.html" title="Abstract base class for variables with a value which is recalculated when the precision has changed..." alt="DynamicVariable" shape="rect" coords="0,168,113,192"/>
+<area href="classPrecisionVariable.html" title="Dynamic variable for Pi. " alt="PrecisionVariable" shape="rect" coords="0,224,113,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -106,6 +107,12 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNon
 <tr class="memitem:aaaa7afe4ed69fd24be5acf939391171b"><td class="memItemLeft" align="right" valign="top"><a id="aaaa7afe4ed69fd24be5acf939391171b"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsInteger</b> (bool=false)</td></tr>
 <tr class="separator:aaaa7afe4ed69fd24be5acf939391171b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1ba575a0f040425d35b98b74f96e5f"><td class="memItemLeft" align="right" valign="top"><a id="a5f1ba575a0f040425d35b98b74f96e5f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonInteger</b> (bool=false)</td></tr>
+<tr class="separator:a5f1ba575a0f040425d35b98b74f96e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771370531c79cf6b525b4130b02ee801"><td class="memItemLeft" align="right" valign="top"><a id="a771370531c79cf6b525b4130b02ee801"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsFraction</b> (bool=false)</td></tr>
+<tr class="separator:a771370531c79cf6b525b4130b02ee801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33edfd16b2a0d9ec702e15fa633470a0"><td class="memItemLeft" align="right" valign="top"><a id="a33edfd16b2a0d9ec702e15fa633470a0"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNumber</b> (bool=false)</td></tr>
 <tr class="separator:a33edfd16b2a0d9ec702e15fa633470a0"><td class="memSeparator" colspan="2">&#160;</td></tr>

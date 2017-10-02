@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.0.0: Variable Class Reference</title>
+<title>libqalculate-2.1.0: Variable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.0.0
+   <div id="projectname">libqalculate-2.1.0
    </div>
   </td>
  </tr>
@@ -55,10 +55,11 @@ Inheritance diagram for Variable:</div>
  <div class="center">
   <img src="classVariable.png" usemap="#Variable_map" alt=""/>
   <map id="Variable_map" name="Variable_map">
-<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="60,0,171,24"/>
-<area href="classKnownVariable.html" title="A variable with a known value. " alt="KnownVariable" shape="rect" coords="0,112,111,136"/>
-<area href="classUnknownVariable.html" title="A variable with unknown value. " alt="UnknownVariable" shape="rect" coords="121,112,232,136"/>
-<area href="classDynamicVariable.html" title="Abstract base class for variables with a value which is recalculated when the precision has changed..." alt="DynamicVariable" shape="rect" coords="0,168,111,192"/>
+<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="61,0,174,24"/>
+<area href="classKnownVariable.html" title="A variable with a known value. " alt="KnownVariable" shape="rect" coords="0,112,113,136"/>
+<area href="classUnknownVariable.html" title="A variable with unknown value. " alt="UnknownVariable" shape="rect" coords="123,112,236,136"/>
+<area href="classDynamicVariable.html" title="Abstract base class for variables with a value which is recalculated when the precision has changed..." alt="DynamicVariable" shape="rect" coords="0,168,113,192"/>
+<area href="classPrecisionVariable.html" title="Dynamic variable for Pi. " alt="PrecisionVariable" shape="rect" coords="0,224,113,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -96,6 +97,12 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNon
 <tr class="memitem:af0e11f720c7aaf2d42b288d334029114"><td class="memItemLeft" align="right" valign="top"><a id="af0e11f720c7aaf2d42b288d334029114"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsInteger</b> (bool=false)</td></tr>
 <tr class="separator:af0e11f720c7aaf2d42b288d334029114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8717cf8a60a7b0a5fe79393ac0968741"><td class="memItemLeft" align="right" valign="top"><a id="a8717cf8a60a7b0a5fe79393ac0968741"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonInteger</b> (bool=false)</td></tr>
+<tr class="separator:a8717cf8a60a7b0a5fe79393ac0968741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b104e5bccad567584973eeb07dacf5"><td class="memItemLeft" align="right" valign="top"><a id="a22b104e5bccad567584973eeb07dacf5"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsFraction</b> (bool=false)</td></tr>
+<tr class="separator:a22b104e5bccad567584973eeb07dacf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af57c0c486d0b3faf3cfa7bc45d9461ac"><td class="memItemLeft" align="right" valign="top"><a id="af57c0c486d0b3faf3cfa7bc45d9461ac"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNumber</b> (bool=false)</td></tr>
 <tr class="separator:af57c0c486d0b3faf3cfa7bc45d9461ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
