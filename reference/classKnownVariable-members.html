@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.1.0: Member List</title>
+<title>libqalculate-2.2.0: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.1.0
+   <div id="projectname">libqalculate-2.2.0
    </div>
   </td>
  </tr>
@@ -56,6 +56,8 @@ $(function() {
   <tr bgcolor="#f0f0f0"><td class="entry"><b>b_local</b> (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>b_registered</b> (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>calculated_precision</b> (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>calculated_with_interval</b> (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>calculated_with_units</b> (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classExpressionItem.html#af1435ce558eedafe8ffa0f684c7ed755">category</a>() const</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>changeReference</b>(ExpressionItem *o_from, ExpressionItem *o_to) (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classExpressionItem.html#a04e3302abecfd9d2fc7bf181304ccda4">clearNames</a>()</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -135,11 +137,17 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setPrecision</b>(int prec) (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classExpressionItem.html#af15986a343f2483662754d791c35a526">setRegistered</a>(bool is_registered)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classExpressionItem.html#ace1a8db6f9f16b7578a65f82b4b5f125">setTitle</a>(string title_)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setUncertainty</b>(string standard_uncertainty) (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setUnit</b>(string unit_expression) (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>sexpression</b> (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>stitle</b> (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classKnownVariable.html#aecea1325dfae4a621fc202c476bd72de">subtype</a>() const</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>suncertainty</b> (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>sunit</b> (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classExpressionItem.html#ac22657704ad45e21c949f1a822881535">title</a>(bool return_name_if_no_title=true, bool use_unicode=false, bool(*can_display_unicode_string_function)(const char *, void *)=NULL, void *can_display_unicode_string_arg=NULL) const</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classVariable.html#a660347bdb2bada0b2796d91b5e109029">type</a>() const</td><td class="entry"><a class="el" href="classVariable.html">Variable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>uncertainty</b>() const (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>unit</b>() const (defined in <a class="el" href="classKnownVariable.html">KnownVariable</a>)</td><td class="entry"><a class="el" href="classKnownVariable.html">KnownVariable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>unref</b>() (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>unref</b>(ExpressionItem *o) (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>v_refs</b> (defined in <a class="el" href="classExpressionItem.html">ExpressionItem</a>)</td><td class="entry"><a class="el" href="classExpressionItem.html">ExpressionItem</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>

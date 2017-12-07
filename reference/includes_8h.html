@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.1.0: libqalculate/includes.h File Reference</title>
+<title>libqalculate-2.2.0: libqalculate/includes.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.1.0
+   <div id="projectname">libqalculate-2.2.0
    </div>
   </td>
  </tr>
@@ -85,11 +85,20 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a76d3b88e70eac8cb699afc6999775952"><td class="memItemLeft" align="right" valign="top"><a id="a76d3b88e70eac8cb699afc6999775952"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QALCULATE_MAJOR_VERSION</b>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:a76d3b88e70eac8cb699afc6999775952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f265d3620cdc050b80d1ab12022f8a"><td class="memItemLeft" align="right" valign="top"><a id="ac6f265d3620cdc050b80d1ab12022f8a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QALCULATE_MINOR_VERSION</b>&#160;&#160;&#160;(2)</td></tr>
+<tr class="separator:ac6f265d3620cdc050b80d1ab12022f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15e111b17ce8f00d3447804c39f43b5"><td class="memItemLeft" align="right" valign="top"><a id="af15e111b17ce8f00d3447804c39f43b5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QALCULATE_MICRO_VERSION</b>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:af15e111b17ce8f00d3447804c39f43b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd4b785d18d18e1757740c3a070fa27"><td class="memItemLeft" align="right" valign="top"><a id="aebd4b785d18d18e1757740c3a070fa27"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_MIGHT_BE_LESS_OR_GREATER</b>(i)&#160;&#160;&#160;(i == COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_NOT_EQUAL)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_MIGHT_BE_LESS_OR_GREATER</b>(i)&#160;&#160;&#160;(i &gt;= COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_NOT_EQUAL)</td></tr>
 <tr class="separator:aebd4b785d18d18e1757740c3a070fa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab17a3b64ad3d3e22aa65aa1616e04591"><td class="memItemLeft" align="right" valign="top"><a id="ab17a3b64ad3d3e22aa65aa1616e04591"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_NOT_FULLY_KNOWN</b>(i)&#160;&#160;&#160;(i == COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_NOT_EQUAL || i == COMPARISON_RESULT_EQUAL_OR_LESS || i == COMPARISON_RESULT_EQUAL_OR_GREATER)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_NOT_FULLY_KNOWN</b>(i)&#160;&#160;&#160;(i &gt;= COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_NOT_EQUAL || i == COMPARISON_RESULT_EQUAL_OR_LESS || i == COMPARISON_RESULT_EQUAL_OR_GREATER)</td></tr>
 <tr class="separator:ab17a3b64ad3d3e22aa65aa1616e04591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc8eab9f088347b73585972e5889822"><td class="memItemLeft" align="right" valign="top"><a id="adfc8eab9f088347b73585972e5889822"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_IS_EQUAL_OR_GREATER</b>(i)&#160;&#160;&#160;(i == COMPARISON_RESULT_EQUAL || i == COMPARISON_RESULT_GREATER || i == COMPARISON_RESULT_EQUAL_OR_GREATER)</td></tr>
@@ -101,10 +110,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_IS_NOT_EQUAL</b>(i)&#160;&#160;&#160;(i == COMPARISON_RESULT_NOT_EQUAL || i == COMPARISON_RESULT_LESS || i == COMPARISON_RESULT_GREATER)</td></tr>
 <tr class="separator:a6d92b07a2f9dc97666acdcf8af024f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1221cd239bc3b3e4ae9293538fb5bf5"><td class="memItemLeft" align="right" valign="top"><a id="ab1221cd239bc3b3e4ae9293538fb5bf5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_MIGHT_BE_EQUAL</b>(i)&#160;&#160;&#160;(i == COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_EQUAL_OR_LESS || i == COMPARISON_RESULT_EQUAL_OR_GREATER)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_MIGHT_BE_EQUAL</b>(i)&#160;&#160;&#160;(i &gt;= COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_EQUAL_OR_LESS || i == COMPARISON_RESULT_EQUAL_OR_GREATER)</td></tr>
 <tr class="separator:ab1221cd239bc3b3e4ae9293538fb5bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fef017d3850dca3a52d1a37909eeb75"><td class="memItemLeft" align="right" valign="top"><a id="a5fef017d3850dca3a52d1a37909eeb75"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_MIGHT_BE_NOT_EQUAL</b>(i)&#160;&#160;&#160;(i == COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_EQUAL_OR_LESS || i == COMPARISON_RESULT_EQUAL_OR_GREATER)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMPARISON_MIGHT_BE_NOT_EQUAL</b>(i)&#160;&#160;&#160;(i &gt;= COMPARISON_RESULT_UNKNOWN || i == COMPARISON_RESULT_EQUAL_OR_LESS || i == COMPARISON_RESULT_EQUAL_OR_GREATER)</td></tr>
 <tr class="separator:a5fef017d3850dca3a52d1a37909eeb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4f3ab356b1b3c1aefbb007168c0a251"><td class="memItemLeft" align="right" valign="top"><a id="ac4f3ab356b1b3c1aefbb007168c0a251"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NR_OF_PRIMES</b>&#160;&#160;&#160;600</td></tr>
@@ -145,6 +154,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a7c2e9072939c9b2f8a5cafe37631b8a0"><td class="memItemLeft" align="right" valign="top"><a id="a7c2e9072939c9b2f8a5cafe37631b8a0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BASE_DECIMAL</b>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a7c2e9072939c9b2f8a5cafe37631b8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38d9feb538e9a88500a4833830e5140"><td class="memItemLeft" align="right" valign="top"><a id="ae38d9feb538e9a88500a4833830e5140"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BASE_DUODECIMAL</b>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:ae38d9feb538e9a88500a4833830e5140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c5e6eedd57250d2b69476940b2c0a8"><td class="memItemLeft" align="right" valign="top"><a id="ae8c5e6eedd57250d2b69476940b2c0a8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BASE_HEXADECIMAL</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:ae8c5e6eedd57250d2b69476940b2c0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -564,7 +576,13 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>COMPARISON_RESULT_EQUAL_OR_LESS</b>, 
 <b>COMPARISON_RESULT_NOT_EQUAL</b>, 
-<b>COMPARISON_RESULT_UNKNOWN</b>
+<b>COMPARISON_RESULT_UNKNOWN</b>, 
+<b>COMPARISON_RESULT_EQUAL_LIMITS</b>, 
+<br />
+&#160;&#160;<b>COMPARISON_RESULT_CONTAINS</b>, 
+<b>COMPARISON_RESULT_CONTAINED</b>, 
+<b>COMPARISON_RESULT_OVERLAPPING_LESS</b>, 
+<b>COMPARISON_RESULT_OVERLAPPING_GREATER</b>
 <br />
  }<tr class="memdesc:a1740aefbee912324c5270bc38a860074"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result of a comparison of two values. <br /></td></tr>
 </td></tr>
@@ -686,9 +704,26 @@ Enumerations</h2></td></tr>
 <b>BASE_DISPLAY_ALTERNATIVE</b>
  }</td></tr>
 <tr class="separator:a4ab2927f19e4cfb9ed8d61c65b548e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbfd3a89efb3e941024f9eea456399a"><td class="memItemLeft" align="right" valign="top"><a id="aacbfd3a89efb3e941024f9eea456399a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>IntervalDisplay</b> { <br />
+&#160;&#160;<b>INTERVAL_DISPLAY_SIGNIFICANT_DIGITS</b>, 
+<b>INTERVAL_DISPLAY_INTERVAL</b>, 
+<b>INTERVAL_DISPLAY_PLUSMINUS</b>, 
+<b>INTERVAL_DISPLAY_MIDPOINT</b>, 
+<br />
+&#160;&#160;<b>INTERVAL_DISPLAY_LOWER</b>, 
+<b>INTERVAL_DISPLAY_UPPER</b>
+<br />
+ }</td></tr>
+<tr class="separator:aacbfd3a89efb3e941024f9eea456399a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee44413c22f5f6d6dfaab72d5e1e64ef"><td class="memItemLeft" align="right" valign="top"><a id="aee44413c22f5f6d6dfaab72d5e1e64ef"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DigitGrouping</b> { <b>DIGIT_GROUPING_NONE</b>, 
+<b>DIGIT_GROUPING_STANDARD</b>, 
+<b>DIGIT_GROUPING_LOCALE</b>
+ }</td></tr>
+<tr class="separator:aee44413c22f5f6d6dfaab72d5e1e64ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a690822f0e1b41ef7f46b085ce973e9aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="includes_8h.html#a690822f0e1b41ef7f46b085ce973e9aa">ApproximationMode</a> { <a class="el" href="includes_8h.html#a690822f0e1b41ef7f46b085ce973e9aaa64972d228a36cb1f05074b7dc2737ec7">APPROXIMATION_EXACT</a>, 
 <a class="el" href="includes_8h.html#a690822f0e1b41ef7f46b085ce973e9aaa0322cd4550527b96d80296f63174abd4">APPROXIMATION_TRY_EXACT</a>, 
-<a class="el" href="includes_8h.html#a690822f0e1b41ef7f46b085ce973e9aaa74e827ff8d7a54f127eb6a59976e637e">APPROXIMATION_APPROXIMATE</a>
+<a class="el" href="includes_8h.html#a690822f0e1b41ef7f46b085ce973e9aaa74e827ff8d7a54f127eb6a59976e637e">APPROXIMATION_APPROXIMATE</a>, 
+<a class="el" href="includes_8h.html#a690822f0e1b41ef7f46b085ce973e9aaa826430a046804520c3339467d9993ad6">APPROXIMATION_EXACT_VARIABLES</a>
  }</td></tr>
 <tr class="separator:a690822f0e1b41ef7f46b085ce973e9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8538e4aef0716ad66016493cbeffb77"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77">StructuringMode</a> { <a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77a2b2bfcc809050ce73d2ce9bd308bc536">STRUCTURING_NONE</a>, 
@@ -806,6 +841,12 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
 <tr class="memitem:a001a48b9ab583cdd339e912fbdd0d543"><td class="memItemLeft" align="right" valign="top"><a id="a001a48b9ab583cdd339e912fbdd0d543"></a>
 <a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nr_minus_half</b></td></tr>
 <tr class="separator:a001a48b9ab583cdd339e912fbdd0d543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748fa3cfefb576c5d3691eefeeee9de4"><td class="memItemLeft" align="right" valign="top"><a id="a748fa3cfefb576c5d3691eefeeee9de4"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nr_plus_inf</b></td></tr>
+<tr class="separator:a748fa3cfefb576c5d3691eefeeee9de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a5305b4b81e19b4ced52b7cec8ae0c"><td class="memItemLeft" align="right" valign="top"><a id="a49a5305b4b81e19b4ced52b7cec8ae0c"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nr_minus_inf</b></td></tr>
+<tr class="separator:a49a5305b4b81e19b4ced52b7cec8ae0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f042b43110a20d6ddf960ec0db6ec7a"><td class="memItemLeft" align="right" valign="top"><a id="a3f042b43110a20d6ddf960ec0db6ec7a"></a>
 <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>no_evaluation</b></td></tr>
 <tr class="separator:a3f042b43110a20d6ddf960ec0db6ec7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -834,6 +875,8 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
 <tr><td class="fieldname"><a id="a690822f0e1b41ef7f46b085ce973e9aaa0322cd4550527b96d80296f63174abd4"></a>APPROXIMATION_TRY_EXACT&#160;</td><td class="fielddoc"><p>Try to make the result as exact as possible. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a690822f0e1b41ef7f46b085ce973e9aaa74e827ff8d7a54f127eb6a59976e637e"></a>APPROXIMATION_APPROXIMATE&#160;</td><td class="fielddoc"><p>Calculate the result approximately directly. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a690822f0e1b41ef7f46b085ce973e9aaa826430a046804520c3339467d9993ad6"></a>APPROXIMATION_EXACT_VARIABLES&#160;</td><td class="fielddoc"><p>Used internally. </p>
 </td></tr>
 </table>
 

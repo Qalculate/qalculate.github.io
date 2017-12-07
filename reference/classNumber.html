@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.1.0: Number Class Reference</title>
+<title>libqalculate-2.2.0: Number Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.1.0
+   <div id="projectname">libqalculate-2.2.0
    </div>
   </td>
  </tr>
@@ -585,18 +585,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (string numbe
 <tr class="memitem:ab78113301c3f2988556392f51cca7f94"><td class="memItemLeft" align="right" valign="top"><a id="ab78113301c3f2988556392f51cca7f94"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (long int numerator, long int denominator=1, long int exp_10=0, bool keep_precision=false, bool keep_imag=false)</td></tr>
 <tr class="separator:ab78113301c3f2988556392f51cca7f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf6c3e10ff1fe91fbca5ffc782dd0839"><td class="memItemLeft" align="right" valign="top"><a id="adf6c3e10ff1fe91fbca5ffc782dd0839"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setInfinity</b> (bool keep_precision=false)</td></tr>
-<tr class="separator:adf6c3e10ff1fe91fbca5ffc782dd0839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07b16bae80a76db2bd349ecdfee1e835"><td class="memItemLeft" align="right" valign="top"><a id="a07b16bae80a76db2bd349ecdfee1e835"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPlusInfinity</b> (bool keep_precision=false)</td></tr>
-<tr class="separator:a07b16bae80a76db2bd349ecdfee1e835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75e942927d9a3f5547f5c79a55f52a4c"><td class="memItemLeft" align="right" valign="top"><a id="a75e942927d9a3f5547f5c79a55f52a4c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMinusInfinity</b> (bool keep_precision=false)</td></tr>
-<tr class="separator:a75e942927d9a3f5547f5c79a55f52a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308dc1bc2484285b6fa0a6e3d084ff2f"><td class="memItemLeft" align="right" valign="top"><a id="a308dc1bc2484285b6fa0a6e3d084ff2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPlusInfinity</b> (bool keep_precision=false, bool keep_imag=false)</td></tr>
+<tr class="separator:a308dc1bc2484285b6fa0a6e3d084ff2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1881c595061d2766b06b764f6f9046b4"><td class="memItemLeft" align="right" valign="top"><a id="a1881c595061d2766b06b764f6f9046b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMinusInfinity</b> (bool keep_precision=false, bool keep_imag=false)</td></tr>
+<tr class="separator:a1881c595061d2766b06b764f6f9046b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a46269d810bc30c334cb7ae013131d7"><td class="memItemLeft" align="right" valign="top"><a id="a5a46269d810bc30c334cb7ae013131d7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setFloat</b> (double d_value)</td></tr>
 <tr class="separator:a5a46269d810bc30c334cb7ae013131d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873efda9de8e6fc656f882435e120c4a"><td class="memItemLeft" align="right" valign="top"><a id="a873efda9de8e6fc656f882435e120c4a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setInterval</b> (const <a class="el" href="classNumber.html">Number</a> &amp;nr_lower, const <a class="el" href="classNumber.html">Number</a> &amp;nr_upper, bool keep_precision=false)</td></tr>
+<tr class="separator:a873efda9de8e6fc656f882435e120c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2635e7cbabbd9fd269b359b1b3ef3fa8"><td class="memItemLeft" align="right" valign="top"><a id="a2635e7cbabbd9fd269b359b1b3ef3fa8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setInternal</b> (const mpz_t &amp;mpz_value, bool keep_precision=false, bool keep_imag=false)</td></tr>
 <tr class="separator:a2635e7cbabbd9fd269b359b1b3ef3fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -633,15 +633,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clearImaginary</b> ()
 <tr class="memitem:a1cfae4163f66fa2541a4a03d8002fad6"><td class="memItemLeft" align="right" valign="top"><a id="a1cfae4163f66fa2541a4a03d8002fad6"></a>
 const mpq_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalRational</b> () const</td></tr>
 <tr class="separator:a1cfae4163f66fa2541a4a03d8002fad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a786f5ce9a28ba9678f212bd404ebbbd2"><td class="memItemLeft" align="right" valign="top"><a id="a786f5ce9a28ba9678f212bd404ebbbd2"></a>
-const mpfr_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalFloat</b> () const</td></tr>
-<tr class="separator:a786f5ce9a28ba9678f212bd404ebbbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39c2358fbab4588eae3db8f8ac52da7"><td class="memItemLeft" align="right" valign="top"><a id="ae39c2358fbab4588eae3db8f8ac52da7"></a>
+const mpfr_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalUpperFloat</b> () const</td></tr>
+<tr class="separator:ae39c2358fbab4588eae3db8f8ac52da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34663d7196af943a0bd2ef7ee9d0a06d"><td class="memItemLeft" align="right" valign="top"><a id="a34663d7196af943a0bd2ef7ee9d0a06d"></a>
+const mpfr_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalLowerFloat</b> () const</td></tr>
+<tr class="separator:a34663d7196af943a0bd2ef7ee9d0a06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef940e1ebee5181c3eb7c5303e0ce070"><td class="memItemLeft" align="right" valign="top"><a id="aef940e1ebee5181c3eb7c5303e0ce070"></a>
 mpq_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalRational</b> ()</td></tr>
 <tr class="separator:aef940e1ebee5181c3eb7c5303e0ce070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb95d2cc4422ceb86e911bd54dc88205"><td class="memItemLeft" align="right" valign="top"><a id="acb95d2cc4422ceb86e911bd54dc88205"></a>
-mpfr_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalFloat</b> ()</td></tr>
-<tr class="separator:acb95d2cc4422ceb86e911bd54dc88205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadeabb706633ac6607d12cbbb2b96df0"><td class="memItemLeft" align="right" valign="top"><a id="aadeabb706633ac6607d12cbbb2b96df0"></a>
+mpfr_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalUpperFloat</b> ()</td></tr>
+<tr class="separator:aadeabb706633ac6607d12cbbb2b96df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885df14110b195108a1c068b239771ab"><td class="memItemLeft" align="right" valign="top"><a id="a885df14110b195108a1c068b239771ab"></a>
+mpfr_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internalLowerFloat</b> ()</td></tr>
+<tr class="separator:a885df14110b195108a1c068b239771ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bd9995853b15b0cbdb7938c618a479b"><td class="memItemLeft" align="right" valign="top"><a id="a0bd9995853b15b0cbdb7938c618a479b"></a>
 <a class="el" href="classNumber.html">Number</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>internalImaginary</b> () const</td></tr>
 <tr class="separator:a0bd9995853b15b0cbdb7938c618a479b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -654,6 +660,27 @@ const NumberType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>int
 <tr class="memitem:a5faaf9f9281564262a50184d1bb6cc38"><td class="memItemLeft" align="right" valign="top"><a id="a5faaf9f9281564262a50184d1bb6cc38"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>setToFloatingPoint</b> ()</td></tr>
 <tr class="separator:a5faaf9f9281564262a50184d1bb6cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fc13ff0604db2f6b0d48d0d5354843"><td class="memItemLeft" align="right" valign="top"><a id="a84fc13ff0604db2f6b0d48d0d5354843"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>precisionToInterval</b> ()</td></tr>
+<tr class="separator:a84fc13ff0604db2f6b0d48d0d5354843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4a4357516e9ffef6e54a81ba5d2e57"><td class="memItemLeft" align="right" valign="top"><a id="a3a4a4357516e9ffef6e54a81ba5d2e57"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>intervalToPrecision</b> (long int min_precision=2)</td></tr>
+<tr class="separator:a3a4a4357516e9ffef6e54a81ba5d2e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ae1c4e84552617dc295032ed282815"><td class="memItemLeft" align="right" valign="top"><a id="ae1ae1c4e84552617dc295032ed282815"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>intervalToMidValue</b> ()</td></tr>
+<tr class="separator:ae1ae1c4e84552617dc295032ed282815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c842f53521e32d60668b203eb8b7f1"><td class="memItemLeft" align="right" valign="top"><a id="a44c842f53521e32d60668b203eb8b7f1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mergeInterval</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool set_to_overlap=false)</td></tr>
+<tr class="separator:a44c842f53521e32d60668b203eb8b7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c24ef983c188709f55f74b999345170"><td class="memItemLeft" align="right" valign="top"><a id="a6c24ef983c188709f55f74b999345170"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUncertainty</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool force_interval=false)</td></tr>
+<tr class="separator:a6c24ef983c188709f55f74b999345170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818bd245261e00b153c4a257588a857c"><td class="memItemLeft" align="right" valign="top"><a id="a818bd245261e00b153c4a257588a857c"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uncertainty</b> () const</td></tr>
+<tr class="separator:a818bd245261e00b153c4a257588a857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40aa4d542406e11833dc80b3a1320dcb"><td class="memItemLeft" align="right" valign="top"><a id="a40aa4d542406e11833dc80b3a1320dcb"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>relativeUncertainty</b> () const</td></tr>
+<tr class="separator:a40aa4d542406e11833dc80b3a1320dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2881a489dca1674a1f38651ec385e9f"><td class="memItemLeft" align="right" valign="top"><a id="af2881a489dca1674a1f38651ec385e9f"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>floatValue</b> () const</td></tr>
 <tr class="separator:af2881a489dca1674a1f38651ec385e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -672,24 +699,37 @@ unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><b>ulintVal
 <tr class="separator:a541e75d2dc079bd11752eeded2fcf3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d41df681e921abfede762cccdb1ff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a59d41df681e921abfede762cccdb1ff7">isFloatingPoint</a> () const</td></tr>
 <tr class="separator:a59d41df681e921abfede762cccdb1ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aff3a6ee48d8293787c19d40c22d5b4"><td class="memItemLeft" align="right" valign="top"><a id="a8aff3a6ee48d8293787c19d40c22d5b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInterval</b> (bool ignore_imag=true) const</td></tr>
+<tr class="separator:a8aff3a6ee48d8293787c19d40c22d5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a5de8d45fe898b16e88e6a267eff91"><td class="memItemLeft" align="right" valign="top"><a id="ad6a5de8d45fe898b16e88e6a267eff91"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>imaginaryPartIsInterval</b> () const</td></tr>
+<tr class="separator:ad6a5de8d45fe898b16e88e6a267eff91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090ee99eefd9cb6fcdd0a0965d05a95b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a090ee99eefd9cb6fcdd0a0965d05a95b">setApproximate</a> (bool is_approximate=true)</td></tr>
 <tr class="separator:a090ee99eefd9cb6fcdd0a0965d05a95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338a73a8c569553275a6bfc6c6ce09fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a338a73a8c569553275a6bfc6c6ce09fc">precision</a> () const</td></tr>
-<tr class="separator:a338a73a8c569553275a6bfc6c6ce09fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5ddd6fbfdbf6764f71ad2874ad5f09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a2a5ddd6fbfdbf6764f71ad2874ad5f09">precision</a> (int calculate_from_interval=0) const</td></tr>
+<tr class="separator:a2a5ddd6fbfdbf6764f71ad2874ad5f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af029bfe4da5762de945ca2126d9e7b78"><td class="memItemLeft" align="right" valign="top"><a id="af029bfe4da5762de945ca2126d9e7b78"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrecision</b> (int prec)</td></tr>
 <tr class="separator:af029bfe4da5762de945ca2126d9e7b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb5a9c4c399a776b165f50c595da0431"><td class="memItemLeft" align="right" valign="top"><a id="acb5a9c4c399a776b165f50c595da0431"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUndefined</b> () const</td></tr>
 <tr class="separator:acb5a9c4c399a776b165f50c595da0431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc4220cad75fa98913e3102987f12a82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#afc4220cad75fa98913e3102987f12a82">isInfinite</a> () const</td></tr>
-<tr class="separator:afc4220cad75fa98913e3102987f12a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c22c3727cb3678d81c000807a617b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a34c22c3727cb3678d81c000807a617b6">isInfinity</a> () const</td></tr>
-<tr class="separator:a34c22c3727cb3678d81c000807a617b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ada44f0c385eb709e1ccaa78950d92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a31ada44f0c385eb709e1ccaa78950d92">isPlusInfinity</a> () const</td></tr>
-<tr class="separator:a31ada44f0c385eb709e1ccaa78950d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce8791d241c382b839cd780d8fa4c38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a8ce8791d241c382b839cd780d8fa4c38">isMinusInfinity</a> () const</td></tr>
-<tr class="separator:a8ce8791d241c382b839cd780d8fa4c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90ba37a52abfe2d19dde8737ff02114"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#aa90ba37a52abfe2d19dde8737ff02114">isInfinite</a> (bool ignore_imag=true) const</td></tr>
+<tr class="separator:aa90ba37a52abfe2d19dde8737ff02114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd0567124a27b37b2c595a005cc66ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a0bd0567124a27b37b2c595a005cc66ca">isPlusInfinity</a> (bool ignore_imag=false) const</td></tr>
+<tr class="separator:a0bd0567124a27b37b2c595a005cc66ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3645a13c27374566acb423cfa2b056"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a4e3645a13c27374566acb423cfa2b056">isMinusInfinity</a> (bool ignore_imag=false) const</td></tr>
+<tr class="separator:a4e3645a13c27374566acb423cfa2b056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afade8ef1a8d8aaa71b872b9f40c27e2b"><td class="memItemLeft" align="right" valign="top"><a id="afade8ef1a8d8aaa71b872b9f40c27e2b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>includesInfinity</b> (bool ignore_imag=false) const</td></tr>
+<tr class="separator:afade8ef1a8d8aaa71b872b9f40c27e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07512e4faed75871a0dd468b1ae6c460"><td class="memItemLeft" align="right" valign="top"><a id="a07512e4faed75871a0dd468b1ae6c460"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>includesPlusInfinity</b> () const</td></tr>
+<tr class="separator:a07512e4faed75871a0dd468b1ae6c460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf051329849fdb1c290d65800762997f"><td class="memItemLeft" align="right" valign="top"><a id="acf051329849fdb1c290d65800762997f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>includesMinusInfinity</b> () const</td></tr>
+<tr class="separator:acf051329849fdb1c290d65800762997f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5c5300843e0fdcf84fb8a03c21be8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#aeb5c5300843e0fdcf84fb8a03c21be8b">realPart</a> () const</td></tr>
 <tr class="separator:aeb5c5300843e0fdcf84fb8a03c21be8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37be161e2abf12cc30a0ebe25992418f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a37be161e2abf12cc30a0ebe25992418f">imaginaryPart</a> () const</td></tr>
@@ -706,6 +746,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isUndefined</b> () co
 <tr class="memitem:ab244109e508b16682c270fea5237730c"><td class="memItemLeft" align="right" valign="top"><a id="ab244109e508b16682c270fea5237730c"></a>
 <a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>complexDenominator</b> () const</td></tr>
 <tr class="separator:ab244109e508b16682c270fea5237730c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2cbbb8e8049ee129f36bbb0037579b"><td class="memItemLeft" align="right" valign="top"><a id="afb2cbbb8e8049ee129f36bbb0037579b"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lowerEndPoint</b> (bool include_imag=false) const</td></tr>
+<tr class="separator:afb2cbbb8e8049ee129f36bbb0037579b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffbe2ee0c2dc6733fc178e3bc84dc0e"><td class="memItemLeft" align="right" valign="top"><a id="a3ffbe2ee0c2dc6733fc178e3bc84dc0e"></a>
+<a class="el" href="classNumber.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><b>upperEndPoint</b> (bool include_imag=false) const</td></tr>
+<tr class="separator:a3ffbe2ee0c2dc6733fc178e3bc84dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2691dc9f40f05762fed48acfd94e1733"><td class="memItemLeft" align="right" valign="top"><a id="a2691dc9f40f05762fed48acfd94e1733"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
 <tr class="separator:a2691dc9f40f05762fed48acfd94e1733"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -853,6 +899,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFraction</b> () con
 <tr class="memitem:a81a3c3689b85c8fe4ad70a275c8ba1b6"><td class="memItemLeft" align="right" valign="top"><a id="a81a3c3689b85c8fe4ad70a275c8ba1b6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isZero</b> () const</td></tr>
 <tr class="separator:a81a3c3689b85c8fe4ad70a275c8ba1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f791ddf79302115bd7a93f0ad8c38d"><td class="memItemLeft" align="right" valign="top"><a id="a42f791ddf79302115bd7a93f0ad8c38d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNonZero</b> () const</td></tr>
+<tr class="separator:a42f791ddf79302115bd7a93f0ad8c38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c7de90a10b1673c0bce543b1e75d6d"><td class="memItemLeft" align="right" valign="top"><a id="aa7c7de90a10b1673c0bce543b1e75d6d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOne</b> () const</td></tr>
 <tr class="separator:aa7c7de90a10b1673c0bce543b1e75d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -883,15 +932,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNonPositive</b> () 
 <tr class="memitem:af40fd21e6fd37d737957d8896ff4919d"><td class="memItemLeft" align="right" valign="top"><a id="af40fd21e6fd37d737957d8896ff4919d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>realPartIsNegative</b> () const</td></tr>
 <tr class="separator:af40fd21e6fd37d737957d8896ff4919d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb63124d4ab383210ef424c3899ab2a0"><td class="memItemLeft" align="right" valign="top"><a id="afb63124d4ab383210ef424c3899ab2a0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>realPartIsNonNegative</b> () const</td></tr>
+<tr class="separator:afb63124d4ab383210ef424c3899ab2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5a652e20367c90a2761cd204cb70484"><td class="memItemLeft" align="right" valign="top"><a id="aa5a652e20367c90a2761cd204cb70484"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>realPartIsPositive</b> () const</td></tr>
 <tr class="separator:aa5a652e20367c90a2761cd204cb70484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadb3eefa0bb72ae47f38fd49e340533"><td class="memItemLeft" align="right" valign="top"><a id="abadb3eefa0bb72ae47f38fd49e340533"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>realPartIsNonZero</b> () const</td></tr>
+<tr class="separator:abadb3eefa0bb72ae47f38fd49e340533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b26281cd0f248d41aa92ca2f64964f"><td class="memItemLeft" align="right" valign="top"><a id="af4b26281cd0f248d41aa92ca2f64964f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>realPartIsRational</b> () const</td></tr>
+<tr class="separator:af4b26281cd0f248d41aa92ca2f64964f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1500002be15433d26d9c29ef75aceea8"><td class="memItemLeft" align="right" valign="top"><a id="a1500002be15433d26d9c29ef75aceea8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>imaginaryPartIsNegative</b> () const</td></tr>
 <tr class="separator:a1500002be15433d26d9c29ef75aceea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b1e0d47f345ff9e93192f329556207"><td class="memItemLeft" align="right" valign="top"><a id="ac2b1e0d47f345ff9e93192f329556207"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>imaginaryPartIsPositive</b> () const</td></tr>
 <tr class="separator:ac2b1e0d47f345ff9e93192f329556207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf92cf48eadaf440a4b044eeae946cdc"><td class="memItemLeft" align="right" valign="top"><a id="acf92cf48eadaf440a4b044eeae946cdc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>imaginaryPartIsNonZero</b> () const</td></tr>
+<tr class="separator:acf92cf48eadaf440a4b044eeae946cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92550fd3a744e4484e9000aaf08574f2"><td class="memItemLeft" align="right" valign="top"><a id="a92550fd3a744e4484e9000aaf08574f2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasNegativeSign</b> () const</td></tr>
 <tr class="separator:a92550fd3a744e4484e9000aaf08574f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -901,18 +962,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasPositiveSign</b> (
 <tr class="memitem:a80cc96fe71789017a3616ceea38eb9b7"><td class="memItemLeft" align="right" valign="top"><a id="a80cc96fe71789017a3616ceea38eb9b7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>equalsZero</b> () const</td></tr>
 <tr class="separator:a80cc96fe71789017a3616ceea38eb9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5d1684466a36c47683b8c69fc04ec94"><td class="memItemLeft" align="right" valign="top"><a id="aa5d1684466a36c47683b8c69fc04ec94"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o) const</td></tr>
-<tr class="separator:aa5d1684466a36c47683b8c69fc04ec94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00cd0ee7eda6b089b89aea8d9f8e0971"><td class="memItemLeft" align="right" valign="top"><a id="a00cd0ee7eda6b089b89aea8d9f8e0971"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool allow_interval=false) const</td></tr>
+<tr class="separator:a00cd0ee7eda6b089b89aea8d9f8e0971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e5da3fec1610d0ff88dac25036c1c0d"><td class="memItemLeft" align="right" valign="top"><a id="a9e5da3fec1610d0ff88dac25036c1c0d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (long int i) const</td></tr>
 <tr class="separator:a9e5da3fec1610d0ff88dac25036c1c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad228b6d9a1c0ccee4d1bf58f28b2ec25"><td class="memItemLeft" align="right" valign="top"><a id="ad228b6d9a1c0ccee4d1bf58f28b2ec25"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equalsApproximately</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, int prec) const</td></tr>
-<tr class="separator:ad228b6d9a1c0ccee4d1bf58f28b2ec25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a451ce4e19a89b40e2790da987021c2f2"><td class="memItemLeft" align="right" valign="top"><a id="a451ce4e19a89b40e2790da987021c2f2"></a>
-<a class="el" href="includes_8h.html#a1740aefbee912324c5270bc38a860074">ComparisonResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o) const</td></tr>
-<tr class="separator:a451ce4e19a89b40e2790da987021c2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac465ee4aeed7cbaf148b77765164f7e4"><td class="memItemLeft" align="right" valign="top"><a id="ac465ee4aeed7cbaf148b77765164f7e4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>equalsApproximately</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, int prec) const</td></tr>
+<tr class="separator:ac465ee4aeed7cbaf148b77765164f7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c50bfd5a98882a376cf0e42e5f99ba"><td class="memItemLeft" align="right" valign="top"><a id="ab7c50bfd5a98882a376cf0e42e5f99ba"></a>
+<a class="el" href="includes_8h.html#a1740aefbee912324c5270bc38a860074">ComparisonResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool ignore_imag=false) const</td></tr>
+<tr class="separator:ab7c50bfd5a98882a376cf0e42e5f99ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3ba924e8b3233edfa17c7cce4284565"><td class="memItemLeft" align="right" valign="top"><a id="ad3ba924e8b3233edfa17c7cce4284565"></a>
 <a class="el" href="includes_8h.html#a1740aefbee912324c5270bc38a860074">ComparisonResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (long int i) const</td></tr>
 <tr class="separator:ad3ba924e8b3233edfa17c7cce4284565"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1022,8 +1083,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>divide</b> (long int 
 <tr class="separator:ab372c3ba8a85ddcfd80ffd0e3f6cf35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079f67e3b7617f81962a6807407c3887"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a079f67e3b7617f81962a6807407c3887">recip</a> ()</td></tr>
 <tr class="separator:a079f67e3b7617f81962a6807407c3887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7018ddc85242481dbc2a02c2b2d7f241"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a7018ddc85242481dbc2a02c2b2d7f241">raise</a> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool try_exact=true, bool real_root=false)</td></tr>
-<tr class="separator:a7018ddc85242481dbc2a02c2b2d7f241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad089a3ddcb0333193b081a584d992d97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#ad089a3ddcb0333193b081a584d992d97">raise</a> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool try_exact=true)</td></tr>
+<tr class="separator:ad089a3ddcb0333193b081a584d992d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab15d27873bd9b3b9656d4c109cff1486"><td class="memItemLeft" align="right" valign="top"><a id="ab15d27873bd9b3b9656d4c109cff1486"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>sqrt</b> ()</td></tr>
 <tr class="separator:ab15d27873bd9b3b9656d4c109cff1486"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1078,6 +1139,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isIntegerDivisible</b
 <tr class="memitem:ac94b51965710d5f66c8c83dbeeb6ddd1"><td class="memItemLeft" align="right" valign="top"><a id="ac94b51965710d5f66c8c83dbeeb6ddd1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isqrt</b> ()</td></tr>
 <tr class="separator:ac94b51965710d5f66c8c83dbeeb6ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a94829e33c5db1bf58d703c5bc8cb3a"><td class="memItemLeft" align="right" valign="top"><a id="a5a94829e33c5db1bf58d703c5bc8cb3a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPerfectSquare</b> () const</td></tr>
+<tr class="separator:a5a94829e33c5db1bf58d703c5bc8cb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac72f28c3014d3c44db8c259c84341601"><td class="memItemLeft" align="right" valign="top"><a id="ac72f28c3014d3c44db8c259c84341601"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>round</b> ()</td></tr>
 <tr class="separator:ac72f28c3014d3c44db8c259c84341601"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1190,9 +1254,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tan</b> ()</td></tr>
 <tr class="memitem:ae2dffa4ef6bb8fb71dbd46d58ae3e861"><td class="memItemLeft" align="right" valign="top"><a id="ae2dffa4ef6bb8fb71dbd46d58ae3e861"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>atan</b> ()</td></tr>
 <tr class="separator:ae2dffa4ef6bb8fb71dbd46d58ae3e861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a408ec4662e2bc8edf50c62adc906202f"><td class="memItemLeft" align="right" valign="top"><a id="a408ec4662e2bc8edf50c62adc906202f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>atan2</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
-<tr class="separator:a408ec4662e2bc8edf50c62adc906202f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7e20fa9154c7d1342d8d3f98ed3eda"><td class="memItemLeft" align="right" valign="top"><a id="a2b7e20fa9154c7d1342d8d3f98ed3eda"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>atan2</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool allow_zero=false)</td></tr>
+<tr class="separator:a2b7e20fa9154c7d1342d8d3f98ed3eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53f055b843d1c6d44fcc050114088715"><td class="memItemLeft" align="right" valign="top"><a id="a53f055b843d1c6d44fcc050114088715"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>arg</b> ()</td></tr>
 <tr class="separator:a53f055b843d1c6d44fcc050114088715"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1316,6 +1380,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_approx</b></td></tr
 <tr class="memitem:a1071d1ecb753f8a2aa63770ea7101aae"><td class="memItemLeft" align="right" valign="top"><a id="a1071d1ecb753f8a2aa63770ea7101aae"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>i_precision</b></td></tr>
 <tr class="separator:a1071d1ecb753f8a2aa63770ea7101aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee08ba44fc3c7e1bd099c2a5eb9515fb"><td class="memItemLeft" align="right" valign="top"><a id="aee08ba44fc3c7e1bd099c2a5eb9515fb"></a>
+mpfr_t&#160;</td><td class="memItemRight" valign="bottom"><b>fu_value</b></td></tr>
+<tr class="separator:aee08ba44fc3c7e1bd099c2a5eb9515fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352b4d229d73c97928deddea21d08f00"><td class="memItemLeft" align="right" valign="top"><a id="a352b4d229d73c97928deddea21d08f00"></a>
+mpfr_t&#160;</td><td class="memItemRight" valign="bottom"><b>fl_value</b></td></tr>
+<tr class="separator:a352b4d229d73c97928deddea21d08f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace830159a7099b5a25066dbaf5079603"><td class="memItemLeft" align="right" valign="top"><a id="ace830159a7099b5a25066dbaf5079603"></a>
 <a class="el" href="classNumber.html">Number</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>i_value</b></td></tr>
 <tr class="separator:ace830159a7099b5a25066dbaf5079603"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2139,8 +2209,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
 
 </div>
 </div>
-<a id="afc4220cad75fa98913e3102987f12a82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc4220cad75fa98913e3102987f12a82">&#9670;&nbsp;</a></span>isInfinite() <span class="overload">[2/2]</span></h2>
+<a id="aa90ba37a52abfe2d19dde8737ff02114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90ba37a52abfe2d19dde8737ff02114">&#9670;&nbsp;</a></span>isInfinite() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2148,7 +2218,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
         <tr>
           <td class="memname">bool Number::isInfinite </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_imag</em> = <code>true</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2159,26 +2230,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
 </div>
 </div>
 <a id="a34c22c3727cb3678d81c000807a617b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34c22c3727cb3678d81c000807a617b6">&#9670;&nbsp;</a></span>isInfinity() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Number::isInfinity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns true if the number is infinity, if the number is plus or minus infinity (which is not known).</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the number is infinity. </dd></dl>
-
-</div>
-</div>
-<a id="a34c22c3727cb3678d81c000807a617b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34c22c3727cb3678d81c000807a617b6">&#9670;&nbsp;</a></span>isInfinity() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c22c3727cb3678d81c000807a617b6">&#9670;&nbsp;</a></span>isInfinity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2215,8 +2267,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
 
 </div>
 </div>
-<a id="a8ce8791d241c382b839cd780d8fa4c38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce8791d241c382b839cd780d8fa4c38">&#9670;&nbsp;</a></span>isMinusInfinity() <span class="overload">[2/2]</span></h2>
+<a id="a4e3645a13c27374566acb423cfa2b056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3645a13c27374566acb423cfa2b056">&#9670;&nbsp;</a></span>isMinusInfinity() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2224,7 +2276,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
         <tr>
           <td class="memname">bool Number::isMinusInfinity </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_imag</em> = <code>false</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2253,8 +2306,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
 
 </div>
 </div>
-<a id="a31ada44f0c385eb709e1ccaa78950d92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31ada44f0c385eb709e1ccaa78950d92">&#9670;&nbsp;</a></span>isPlusInfinity() <span class="overload">[2/2]</span></h2>
+<a id="a0bd0567124a27b37b2c595a005cc66ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd0567124a27b37b2c595a005cc66ca">&#9670;&nbsp;</a></span>isPlusInfinity() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2262,7 +2315,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
         <tr>
           <td class="memname">bool Number::isPlusInfinity </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_imag</em> = <code>false</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2417,8 +2471,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
 
 </div>
 </div>
-<a id="a338a73a8c569553275a6bfc6c6ce09fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a338a73a8c569553275a6bfc6c6ce09fc">&#9670;&nbsp;</a></span>precision() <span class="overload">[2/2]</span></h2>
+<a id="a2a5ddd6fbfdbf6764f71ad2874ad5f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5ddd6fbfdbf6764f71ad2874ad5f09">&#9670;&nbsp;</a></span>precision() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2426,7 +2480,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
         <tr>
           <td class="memname">int Number::precision </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>calculate_from_interval</em> = <code>0</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2473,8 +2528,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
 
 </div>
 </div>
-<a id="a7018ddc85242481dbc2a02c2b2d7f241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7018ddc85242481dbc2a02c2b2d7f241">&#9670;&nbsp;</a></span>raise() <span class="overload">[2/2]</span></h2>
+<a id="ad089a3ddcb0333193b081a584d992d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad089a3ddcb0333193b081a584d992d97">&#9670;&nbsp;</a></span>raise() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2489,13 +2544,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>try_exact</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>real_root</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>try_exact</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2509,7 +2558,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_imag</b></td></tr>
   <table class="params">
     <tr><td class="paramname">o</td><td><a class="el" href="classNumber.html" title="A number. ">Number</a> to raise to. </td></tr>
     <tr><td class="paramname">try_exact</td><td>If an exact solution should be tried first (might be slow). </td></tr>
-    <tr><td class="paramname">use_real_root</td><td>If true return the real root (if exists), otherwise return the principal root. </td></tr>
   </table>
   </dd>
 </dl>

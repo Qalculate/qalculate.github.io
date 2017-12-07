@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.1.0: MathStructure Class Reference</title>
+<title>libqalculate-2.2.0: MathStructure Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.1.0
+   <div id="projectname">libqalculate-2.2.0
    </div>
   </td>
  </tr>
@@ -105,9 +105,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (long int num
 <tr class="separator:ae8d990723cedbf2d2f43f2a06e1683ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc1ef46053ef93edd9ee6f29e87df1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMathStructure.html#a5cc1ef46053ef93edd9ee6f29e87df1b">set</a> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool preserve_precision=false)</td></tr>
 <tr class="separator:a5cc1ef46053ef93edd9ee6f29e87df1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9289744c956b91142894e571cdb3e7f0"><td class="memItemLeft" align="right" valign="top"><a id="a9289744c956b91142894e571cdb3e7f0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setInfinity</b> (bool preserve_precision=false)</td></tr>
-<tr class="separator:a9289744c956b91142894e571cdb3e7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9aeda37a0653b1094c42712c8048113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMathStructure.html#ac9aeda37a0653b1094c42712c8048113">setUndefined</a> (bool preserve_precision=false)</td></tr>
 <tr class="separator:ac9aeda37a0653b1094c42712c8048113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0391f1309b4a7b49ccf2ab72d2d96890"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMathStructure.html#a0391f1309b4a7b49ccf2ab72d2d96890">setAborted</a> (bool preserve_precision=false)</td></tr>
@@ -204,13 +201,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setVariable</b> (<a c
 <tr class="memitem:a4ebed61a7bce33df616c12cf7b13876d"><td class="memItemLeft" align="right" valign="top"><a id="a4ebed61a7bce33df616c12cf7b13876d"></a>
 <a class="el" href="classVariable.html">Variable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>variable</b> () const</td></tr>
 <tr class="separator:a4ebed61a7bce33df616c12cf7b13876d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Functions for statistical uncertainty/error of value</div></td></tr>
-<tr class="memitem:a87403e1819041ef6eac005d70f670bc3"><td class="memItemLeft" align="right" valign="top"><a id="a87403e1819041ef6eac005d70f670bc3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setUncertainty</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o)</td></tr>
-<tr class="separator:a87403e1819041ef6eac005d70f670bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb7ebefeada338eceb747734cf5a4805"><td class="memItemLeft" align="right" valign="top"><a id="afb7ebefeada338eceb747734cf5a4805"></a>
-const <a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>uncertainty</b> () const</td></tr>
-<tr class="separator:afb7ebefeada338eceb747734cf5a4805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for nested structures (power, muliplication, addition, vector, etc)</div></td></tr>
 <tr class="memitem:aba80945e6cc3430e8acabf9fb582139f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMathStructure.html#aba80945e6cc3430e8acabf9fb582139f">childUpdated</a> (size_t index, bool recursive=false)</td></tr>
 <tr class="separator:aba80945e6cc3430e8acabf9fb582139f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,6 +375,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNumber</b> () const
 <tr class="memitem:a9b6c09b432227fb7860d83d137ea4b96"><td class="memItemLeft" align="right" valign="top"><a id="a9b6c09b432227fb7860d83d137ea4b96"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isZero</b> () const</td></tr>
 <tr class="separator:a9b6c09b432227fb7860d83d137ea4b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae015a32ea65b0d8cb66d452a076ab641"><td class="memItemLeft" align="right" valign="top"><a id="ae015a32ea65b0d8cb66d452a076ab641"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isApproximatelyZero</b> () const</td></tr>
+<tr class="separator:ae015a32ea65b0d8cb66d452a076ab641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab50658c7f46e1464b223c4934b69d960"><td class="memItemLeft" align="right" valign="top"><a id="ab50658c7f46e1464b223c4934b69d960"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOne</b> () const</td></tr>
 <tr class="separator:ab50658c7f46e1464b223c4934b69d960"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -436,15 +429,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonZero</b>
 <tr class="memitem:aa2051aa06972dd56fe63953f90fbc7e2"><td class="memItemLeft" align="right" valign="top"><a id="aa2051aa06972dd56fe63953f90fbc7e2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsZero</b> (bool allow_units=false) const</td></tr>
 <tr class="separator:aa2051aa06972dd56fe63953f90fbc7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c034858b2e0f724e745be119307aa6"><td class="memItemLeft" align="right" valign="top"><a id="aa3c034858b2e0f724e745be119307aa6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsApproximatelyZero</b> (bool allow_units=false) const</td></tr>
+<tr class="separator:aa3c034858b2e0f724e745be119307aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18cede98988384237073644b4d695f9"><td class="memItemLeft" align="right" valign="top"><a id="ad18cede98988384237073644b4d695f9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsEven</b> (bool allow_units=false) const</td></tr>
 <tr class="separator:ad18cede98988384237073644b4d695f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c474f4660c1cd6f9506b97d470c69b"><td class="memItemLeft" align="right" valign="top"><a id="a72c474f4660c1cd6f9506b97d470c69b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsOdd</b> (bool allow_units=false) const</td></tr>
 <tr class="separator:a72c474f4660c1cd6f9506b97d470c69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109248d4cd7d78b02967751bf1aa7269"><td class="memItemLeft" align="right" valign="top"><a id="a109248d4cd7d78b02967751bf1aa7269"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsUndefined</b> (bool include_childs=false, bool include_infinite=false, bool be_strict=false) const</td></tr>
-<tr class="separator:a109248d4cd7d78b02967751bf1aa7269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b472b6e3353de84ab257e034c65b73"><td class="memItemLeft" align="right" valign="top"><a id="a98b472b6e3353de84ab257e034c65b73"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsUndefined</b> (bool include_children=false, bool include_infinite=false, bool be_strict=false) const</td></tr>
+<tr class="separator:a98b472b6e3353de84ab257e034c65b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b0df5323820baa9bb1dd4e346d79ff"><td class="memItemLeft" align="right" valign="top"><a id="a27b0df5323820baa9bb1dd4e346d79ff"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonMatrix</b> () const</td></tr>
 <tr class="separator:a27b0df5323820baa9bb1dd4e346d79ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -452,9 +448,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNonMatrix</
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsScalar</b> () const</td></tr>
 <tr class="separator:a4970fc8a8963b01889f5560b64e04d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for precision</div></td></tr>
-<tr class="memitem:a591d10d331a7c9d3784abf5447295e3b"><td class="memItemLeft" align="right" valign="top"><a id="a591d10d331a7c9d3784abf5447295e3b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setApproximate</b> (bool is_approx=true, bool recuresive=false)</td></tr>
-<tr class="separator:a591d10d331a7c9d3784abf5447295e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2342088eb46fa799c15c3c07d67fa77"><td class="memItemLeft" align="right" valign="top"><a id="ab2342088eb46fa799c15c3c07d67fa77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setApproximate</b> (bool is_approx=true, bool recursive=false)</td></tr>
+<tr class="separator:ab2342088eb46fa799c15c3c07d67fa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d96997bcedf29b6e757d57a2fd068d"><td class="memItemLeft" align="right" valign="top"><a id="a55d96997bcedf29b6e757d57a2fd068d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isApproximate</b> () const</td></tr>
 <tr class="separator:a55d96997bcedf29b6e757d57a2fd068d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,6 +463,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>precision</b> () const
 <tr class="memitem:a24413f3210f763bf00a3e2b81c17385d"><td class="memItemLeft" align="right" valign="top"><a id="a24413f3210f763bf00a3e2b81c17385d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mergePrecision</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o)</td></tr>
 <tr class="separator:a24413f3210f763bf00a3e2b81c17385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5faefa2d8f0e361345c14c9ae278e446"><td class="memItemLeft" align="right" valign="top"><a id="a5faefa2d8f0e361345c14c9ae278e446"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mergePrecision</b> (bool approx, int prec)</td></tr>
+<tr class="separator:a5faefa2d8f0e361345c14c9ae278e446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Operators for structural transformations and additions</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>These operators transforms or adds to the structure without doing any calculations </p>
 </div></td></tr>
@@ -738,12 +737,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>transform_nocopy</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>transform</b> (<a class="el" href="MathStructure_8h.html#aff0cb3a143c587463f28ef629d0cd35e">StructureType</a> mtype)</td></tr>
 <tr class="separator:ad5e410113a140aa18d9dcd72506b2d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions/operators for comparisons</div></td></tr>
-<tr class="memitem:aec859660e52d0593e943effb416ea45e"><td class="memItemLeft" align="right" valign="top"><a id="aec859660e52d0593e943effb416ea45e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o) const</td></tr>
-<tr class="separator:aec859660e52d0593e943effb416ea45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4101db609286b6793bd054accd135fe0"><td class="memItemLeft" align="right" valign="top"><a id="a4101db609286b6793bd054accd135fe0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o) const</td></tr>
-<tr class="separator:a4101db609286b6793bd054accd135fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb5b095e2e1477c7239001754feb7b6"><td class="memItemLeft" align="right" valign="top"><a id="a7bb5b095e2e1477c7239001754feb7b6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o, bool allow_interval=false) const</td></tr>
+<tr class="separator:a7bb5b095e2e1477c7239001754feb7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf622d11d4ebf90e9ea0dc450bfc835"><td class="memItemLeft" align="right" valign="top"><a id="a3cf622d11d4ebf90e9ea0dc450bfc835"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool allow_interval=false) const</td></tr>
+<tr class="separator:a3cf622d11d4ebf90e9ea0dc450bfc835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaaf97ab83242ffcfa449a24d928f8e1"><td class="memItemLeft" align="right" valign="top"><a id="adaaf97ab83242ffcfa449a24d928f8e1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (int i) const</td></tr>
 <tr class="separator:adaaf97ab83242ffcfa449a24d928f8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -762,6 +761,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (string sy
 <tr class="memitem:a7d2c861c3a4f467b874a06bdee42cd03"><td class="memItemLeft" align="right" valign="top"><a id="a7d2c861c3a4f467b874a06bdee42cd03"></a>
 <a class="el" href="includes_8h.html#a1740aefbee912324c5270bc38a860074">ComparisonResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compareApproximately</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options) const</td></tr>
 <tr class="separator:a7d2c861c3a4f467b874a06bdee42cd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81da3282892bc283fd08f4b7ab3c5764"><td class="memItemLeft" align="right" valign="top"><a id="a81da3282892bc283fd08f4b7ab3c5764"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mergeInterval</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o, bool set_to_overlap=false)</td></tr>
+<tr class="separator:a81da3282892bc283fd08f4b7ab3c5764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22aa02a423ee643206b7cacaf6d9a23a"><td class="memItemLeft" align="right" valign="top"><a id="a22aa02a423ee643206b7cacaf6d9a23a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o) const</td></tr>
 <tr class="separator:a22aa02a423ee643206b7cacaf6d9a23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -787,9 +789,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <tr class="memitem:aeaf8f543c4526bbde8e8e37293de1d64"><td class="memItemLeft" align="right" valign="top"><a id="aeaf8f543c4526bbde8e8e37293de1d64"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>eval</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options)</td></tr>
 <tr class="separator:aeaf8f543c4526bbde8e8e37293de1d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06563be6d6a82341c93b9e3f071d37cc"><td class="memItemLeft" align="right" valign="top"><a id="a06563be6d6a82341c93b9e3f071d37cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculateUncertaintyPropagation</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo)</td></tr>
-<tr class="separator:a06563be6d6a82341c93b9e3f071d37cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb320a8e2a7cc509fbca7a59a61b958"><td class="memItemLeft" align="right" valign="top"><a id="a7bb320a8e2a7cc509fbca7a59a61b958"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateMergeIndex</b> (size_t index, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;feo, <a class="el" href="classMathStructure.html">MathStructure</a> *mparent=NULL, size_t index_this=1)</td></tr>
 <tr class="separator:a7bb320a8e2a7cc509fbca7a59a61b958"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1108,6 +1107,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>containsRepresentative
 <tr class="memitem:adc2779b3db7a51f57bc0f5fb4fbad6f1"><td class="memItemLeft" align="right" valign="top"><a id="adc2779b3db7a51f57bc0f5fb4fbad6f1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>containsFunction</b> (<a class="el" href="classMathFunction.html">MathFunction</a> *f, bool structural_only=true, bool check_variables=false, bool check_functions=false) const</td></tr>
 <tr class="separator:adc2779b3db7a51f57bc0f5fb4fbad6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d370d0d1861899bd5205643b6f542f"><td class="memItemLeft" align="right" valign="top"><a id="ac3d370d0d1861899bd5205643b6f542f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>containsInterval</b> (bool structural_only=true, bool check_variables=false, bool check_functions=false) const</td></tr>
+<tr class="separator:ac3d370d0d1861899bd5205643b6f542f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb7f0f6aeee6fb40a6c7db4f4b19858"><td class="memItemLeft" align="right" valign="top"><a id="a1bb7f0f6aeee6fb40a6c7db4f4b19858"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>containsOpaqueContents</b> () const</td></tr>
 <tr class="separator:a1bb7f0f6aeee6fb40a6c7db4f4b19858"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1126,9 +1128,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>countFunctions</b> 
 <tr class="memitem:a8c41213e524f6a40f34b2591f68d784a"><td class="memItemLeft" align="right" valign="top"><a id="a8c41213e524f6a40f34b2591f68d784a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>findAllUnknowns</b> (<a class="el" href="classMathStructure.html">MathStructure</a> &amp;unknowns_vector)</td></tr>
 <tr class="separator:a8c41213e524f6a40f34b2591f68d784a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba6dec05b1403aafb534f3e40b4fbac"><td class="memItemLeft" align="right" valign="top"><a id="a8ba6dec05b1403aafb534f3e40b4fbac"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>replace</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mfrom, const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mto)</td></tr>
-<tr class="separator:a8ba6dec05b1403aafb534f3e40b4fbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c386dc8ca6743afa1747b3a116f919"><td class="memItemLeft" align="right" valign="top"><a id="a83c386dc8ca6743afa1747b3a116f919"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>replace</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mfrom, const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mto, bool once_only=false, bool allow_interval=false)</td></tr>
+<tr class="separator:a83c386dc8ca6743afa1747b3a116f919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057e836586aef01df604f3dc8ce6b161"><td class="memItemLeft" align="right" valign="top"><a id="a057e836586aef01df604f3dc8ce6b161"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateReplace</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mfrom, const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mto, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo)</td></tr>
 <tr class="separator:a057e836586aef01df604f3dc8ce6b161"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1159,9 +1161,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>integrate</b> (const 
 <tr class="memitem:a42bd9daef9c1d277641c1d84ad927548"><td class="memItemLeft" align="right" valign="top"><a id="a42bd9daef9c1d277641c1d84ad927548"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>simplify</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool unfactorize=true)</td></tr>
 <tr class="separator:a42bd9daef9c1d277641c1d84ad927548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd54fd654e7c1be246cdc2fc5abba33"><td class="memItemLeft" align="right" valign="top"><a id="a0cd54fd654e7c1be246cdc2fc5abba33"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>factorize</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool unfactorize=true, int term_combination_levels=-1, int max_msecs=1000, bool only_integers=true, bool recursive=true, struct timeval *endtime_p=NULL)</td></tr>
-<tr class="separator:a0cd54fd654e7c1be246cdc2fc5abba33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8ff063675bdbe84d122c9a5e590b77"><td class="memItemLeft" align="right" valign="top"><a id="a6f8ff063675bdbe84d122c9a5e590b77"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>factorize</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool unfactorize=true, int term_combination_levels=0, int max_msecs=1000, bool only_integers=true, int recursive=1, struct timeval *endtime_p=NULL)</td></tr>
+<tr class="separator:a6f8ff063675bdbe84d122c9a5e590b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d17b466a255ac7a7e3ee16db3e83eed"><td class="memItemLeft" align="right" valign="top"><a id="a3d17b466a255ac7a7e3ee16db3e83eed"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>structure</b> (<a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77">StructuringMode</a> structuring, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, bool restore_first=true)</td></tr>
 <tr class="separator:a3d17b466a255ac7a7e3ee16db3e83eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1282,9 +1284,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_plural</b></td></tr
 <tr class="memitem:a56e1a7f056e62c543e7bbf4ed40e3647"><td class="memItemLeft" align="right" valign="top"><a id="a56e1a7f056e62c543e7bbf4ed40e3647"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>function_value</b></td></tr>
 <tr class="separator:a56e1a7f056e62c543e7bbf4ed40e3647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa675e07cf49ee2690329d2e630cc757b"><td class="memItemLeft" align="right" valign="top"><a id="aa675e07cf49ee2690329d2e630cc757b"></a>
-<a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>o_uncertainty</b></td></tr>
-<tr class="separator:aa675e07cf49ee2690329d2e630cc757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a931375e1cc20808fc7f12a9c79411ed4"><td class="memItemLeft" align="right" valign="top"><a id="a931375e1cc20808fc7f12a9c79411ed4"></a>
 <a class="el" href="includes_8h.html#a521a866244dbd66d1ba30bd1b661b011">ComparisonType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ct_comp</b></td></tr>
 <tr class="separator:a931375e1cc20808fc7f12a9c79411ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>

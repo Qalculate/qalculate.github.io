@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.1.0: AliasUnit_Composite Class Reference</title>
+<title>libqalculate-2.2.0: AliasUnit_Composite Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.1.0
+   <div id="projectname">libqalculate-2.2.0
    </div>
   </td>
  </tr>
@@ -115,10 +115,16 @@ virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>expression<
 <tr class="memitem:ae690d0951daddbd2f2f424d7e23483d5 inherit pub_methods_classAliasUnit"><td class="memItemLeft" align="right" valign="top"><a id="ae690d0951daddbd2f2f424d7e23483d5"></a>
 virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>inverseExpression</b> () const</td></tr>
 <tr class="separator:ae690d0951daddbd2f2f424d7e23483d5 inherit pub_methods_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c8006fba86c24deb9b6a0955d484a4 inherit pub_methods_classAliasUnit"><td class="memItemLeft" align="right" valign="top"><a id="a67c8006fba86c24deb9b6a0955d484a4"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>uncertainty</b> () const</td></tr>
+<tr class="separator:a67c8006fba86c24deb9b6a0955d484a4 inherit pub_methods_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf39fd99fee334e40ff5247ad4db8d7 inherit pub_methods_classAliasUnit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAliasUnit.html#accf39fd99fee334e40ff5247ad4db8d7">setExpression</a> (string relation)</td></tr>
 <tr class="separator:accf39fd99fee334e40ff5247ad4db8d7 inherit pub_methods_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9faac6c0a50301cd8b10b41a276d5013 inherit pub_methods_classAliasUnit"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAliasUnit.html#a9faac6c0a50301cd8b10b41a276d5013">setInverseExpression</a> (string inverse)</td></tr>
 <tr class="separator:a9faac6c0a50301cd8b10b41a276d5013 inherit pub_methods_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a097ceb6719d54b4203b0e2e43dfdf inherit pub_methods_classAliasUnit"><td class="memItemLeft" align="right" valign="top"><a id="a97a097ceb6719d54b4203b0e2e43dfdf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setUncertainty</b> (string standard_uncertainty)</td></tr>
+<tr class="separator:a97a097ceb6719d54b4203b0e2e43dfdf inherit pub_methods_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab679a8c079eba9a1df7405429cc0504f inherit pub_methods_classAliasUnit"><td class="memItemLeft" align="right" valign="top"><a id="ab679a8c079eba9a1df7405429cc0504f"></a>
 virtual <a class="el" href="classMathStructure.html">MathStructure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>convertToBaseUnit</b> (<a class="el" href="classMathStructure.html">MathStructure</a> &amp;mvalue, <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mexp) const</td></tr>
 <tr class="separator:ab679a8c079eba9a1df7405429cc0504f inherit pub_methods_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -346,6 +352,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>svalue</b></td></tr
 <tr class="memitem:afafcc4c148afe1254c7e8393c77f69ca inherit pro_attribs_classAliasUnit"><td class="memItemLeft" align="right" valign="top"><a id="afafcc4c148afe1254c7e8393c77f69ca"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>sinverse</b></td></tr>
 <tr class="separator:afafcc4c148afe1254c7e8393c77f69ca inherit pro_attribs_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae787d5ca90629a5341c1359e5e90dd3d inherit pro_attribs_classAliasUnit"><td class="memItemLeft" align="right" valign="top"><a id="ae787d5ca90629a5341c1359e5e90dd3d"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>suncertainty</b></td></tr>
+<tr class="separator:ae787d5ca90629a5341c1359e5e90dd3d inherit pro_attribs_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf8f75297aad4b7d831a7b24903f32a1 inherit pro_attribs_classAliasUnit"><td class="memItemLeft" align="right" valign="top"><a id="acf8f75297aad4b7d831a7b24903f32a1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>i_exp</b></td></tr>
 <tr class="separator:acf8f75297aad4b7d831a7b24903f32a1 inherit pro_attribs_classAliasUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>

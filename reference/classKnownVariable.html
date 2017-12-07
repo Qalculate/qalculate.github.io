@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.1.0: KnownVariable Class Reference</title>
+<title>libqalculate-2.2.0: KnownVariable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.1.0
+   <div id="projectname">libqalculate-2.2.0
    </div>
   </td>
  </tr>
@@ -85,12 +85,24 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (cons
 <tr class="separator:ad0d643223b93cc5a236d19ea646403fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7914440aa1f10963683ae30efa1e9da"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#ac7914440aa1f10963683ae30efa1e9da">expression</a> () const</td></tr>
 <tr class="separator:ac7914440aa1f10963683ae30efa1e9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa09631b2428cad8ceec5034f845c63"><td class="memItemLeft" align="right" valign="top"><a id="a4aa09631b2428cad8ceec5034f845c63"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>uncertainty</b> () const</td></tr>
+<tr class="separator:a4aa09631b2428cad8ceec5034f845c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab609e009f55c7ac5d0634e7b85633d42"><td class="memItemLeft" align="right" valign="top"><a id="ab609e009f55c7ac5d0634e7b85633d42"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>unit</b> () const</td></tr>
+<tr class="separator:ab609e009f55c7ac5d0634e7b85633d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecea1325dfae4a621fc202c476bd72de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#aecea1325dfae4a621fc202c476bd72de">subtype</a> () const</td></tr>
 <tr class="separator:aecea1325dfae4a621fc202c476bd72de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4602f4613094017ecd3dcc7c9989948"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#ab4602f4613094017ecd3dcc7c9989948">set</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;o)</td></tr>
 <tr class="separator:ab4602f4613094017ecd3dcc7c9989948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4025fe1a16385e24ad9662947a538c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#a8e4025fe1a16385e24ad9662947a538c">set</a> (string expression_)</td></tr>
 <tr class="separator:a8e4025fe1a16385e24ad9662947a538c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4bf4fed020f090e75c4c7f615da762"><td class="memItemLeft" align="right" valign="top"><a id="aae4bf4fed020f090e75c4c7f615da762"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setUncertainty</b> (string standard_uncertainty)</td></tr>
+<tr class="separator:aae4bf4fed020f090e75c4c7f615da762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3f892f7f6e4e3753daa7d06b18c84f"><td class="memItemLeft" align="right" valign="top"><a id="a6c3f892f7f6e4e3753daa7d06b18c84f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setUnit</b> (string unit_expression)</td></tr>
+<tr class="separator:a6c3f892f7f6e4e3753daa7d06b18c84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35979ac213868a22044422201f1fd1c"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#af35979ac213868a22044422201f1fd1c">get</a> ()</td></tr>
 <tr class="separator:af35979ac213868a22044422201f1fd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb6707edd7e47c78b5dba7e840428523"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#abb6707edd7e47c78b5dba7e840428523">representsPositive</a> (bool=false)</td></tr>
@@ -288,9 +300,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_expression</b></td>
 <tr class="memitem:a1d445df211540d5ccce5c95e504f2698"><td class="memItemLeft" align="right" valign="top"><a id="a1d445df211540d5ccce5c95e504f2698"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_precision</b></td></tr>
 <tr class="separator:a1d445df211540d5ccce5c95e504f2698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64138d06ffd8f698a6ebae5da9fc2356"><td class="memItemLeft" align="right" valign="top"><a id="a64138d06ffd8f698a6ebae5da9fc2356"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_with_interval</b></td></tr>
+<tr class="separator:a64138d06ffd8f698a6ebae5da9fc2356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a73376b3c958df8b1ffd675914f3371"><td class="memItemLeft" align="right" valign="top"><a id="a3a73376b3c958df8b1ffd675914f3371"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_with_units</b></td></tr>
+<tr class="separator:a3a73376b3c958df8b1ffd675914f3371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a024a2084c2f3b0ef79232480e3bad3dc"><td class="memItemLeft" align="right" valign="top"><a id="a024a2084c2f3b0ef79232480e3bad3dc"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>sexpression</b></td></tr>
 <tr class="separator:a024a2084c2f3b0ef79232480e3bad3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc9062153c8b2a47caef21b83b0cef3"><td class="memItemLeft" align="right" valign="top"><a id="a1fc9062153c8b2a47caef21b83b0cef3"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>suncertainty</b></td></tr>
+<tr class="separator:a1fc9062153c8b2a47caef21b83b0cef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0f66f17a8696f9be946ce67fede686"><td class="memItemLeft" align="right" valign="top"><a id="a3a0f66f17a8696f9be946ce67fede686"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>sunit</b></td></tr>
+<tr class="separator:a3a0f66f17a8696f9be946ce67fede686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classExpressionItem"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classExpressionItem')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classExpressionItem.html">ExpressionItem</a></td></tr>
 <tr class="memitem:a3a00b2e70cc3af9c018bfa52944621a1 inherit pro_attribs_classExpressionItem"><td class="memItemLeft" align="right" valign="top"><a id="a3a00b2e70cc3af9c018bfa52944621a1"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>scat</b></td></tr>

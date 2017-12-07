@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.1.0: Calculator Class Reference</title>
+<title>libqalculate-2.2.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.1.0
+   <div id="projectname">libqalculate-2.2.0
    </div>
   </td>
  </tr>
@@ -57,6 +57,12 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af5dcee4db25462650ecc9439ab94d665"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#af5dcee4db25462650ecc9439ab94d665">findMatchingUnit</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct)</td></tr>
 <tr class="separator:af5dcee4db25462650ecc9439ab94d665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f81ba49b1320c66c3d434b85a9f139"><td class="memItemLeft" align="right" valign="top"><a id="ab4f81ba49b1320c66c3d434b85a9f139"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVariableUnitsEnabled</b> (bool enable_variable_units=true)</td></tr>
+<tr class="separator:ab4f81ba49b1320c66c3d434b85a9f139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0100f6a6d3623e0ed321aaf82660880"><td class="memItemLeft" align="right" valign="top"><a id="ab0100f6a6d3623e0ed321aaf82660880"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>variableUnitsEnabled</b> () const</td></tr>
+<tr class="separator:ab0100f6a6d3623e0ed321aaf82660880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructor</div></td></tr>
 <tr class="memitem:adf568b2e0dacc9adf5b7d740622beb92"><td class="memItemLeft" align="right" valign="top"><a id="adf568b2e0dacc9adf5b7d740622beb92"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Calculator</b> ()</td></tr>
@@ -210,9 +216,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>moveRPNRegisterDown</
 <tr class="memitem:ae82d6ba34f3ca621b1f31a7188efbae0"><td class="memItemLeft" align="right" valign="top"><a id="ae82d6ba34f3ca621b1f31a7188efbae0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasToExpression</b> (const string &amp;str) const</td></tr>
 <tr class="separator:ae82d6ba34f3ca621b1f31a7188efbae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067418ad7ce5cd7dd0e6917e9c9fcdbe"><td class="memItemLeft" align="right" valign="top"><a id="a067418ad7ce5cd7dd0e6917e9c9fcdbe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parseSigns</b> (string &amp;str) const</td></tr>
-<tr class="separator:a067418ad7ce5cd7dd0e6917e9c9fcdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84164dea724603decbd354740c8bb374"><td class="memItemLeft" align="right" valign="top"><a id="a84164dea724603decbd354740c8bb374"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>parseSigns</b> (string &amp;str, bool convert_to_internal_representation=false) const</td></tr>
+<tr class="separator:a84164dea724603decbd354740c8bb374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8324b84bd93abbf7bf1084c1853ed987"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a8324b84bd93abbf7bf1084c1853ed987">parse</a> (string str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options)</td></tr>
 <tr class="separator:a8324b84bd93abbf7bf1084c1853ed987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1bffd8f12c648e87cc3535be360779"><td class="memItemLeft" align="right" valign="top"><a id="aae1bffd8f12c648e87cc3535be360779"></a>
@@ -586,16 +592,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a5552dfffefb1b868a27196202d1413cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf6bec5b21f8932107ac6a3576dddf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aebf6bec5b21f8932107ac6a3576dddf6">loadExchangeRates</a> ()</td></tr>
 <tr class="separator:aebf6bec5b21f8932107ac6a3576dddf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9c028f4126c55d77bfd288bf167e500"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae9c028f4126c55d77bfd288bf167e500">getExchangeRatesFileName</a> ()</td></tr>
-<tr class="separator:ae9c028f4126c55d77bfd288bf167e500"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11e6dd0e60f40a309711c220611eb064"><td class="memItemLeft" align="right" valign="top"><a id="a11e6dd0e60f40a309711c220611eb064"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getExchangeRatesFileName2</b> ()</td></tr>
-<tr class="separator:a11e6dd0e60f40a309711c220611eb064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f8d36c3248c8a7395ecf31ef80b5640"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a8f8d36c3248c8a7395ecf31ef80b5640">getExchangeRatesUrl</a> ()</td></tr>
-<tr class="separator:a8f8d36c3248c8a7395ecf31ef80b5640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcaa948b1f06fbb9a0e1e35c838b6f35"><td class="memItemLeft" align="right" valign="top"><a id="afcaa948b1f06fbb9a0e1e35c838b6f35"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getExchangeRatesUrl2</b> ()</td></tr>
-<tr class="separator:afcaa948b1f06fbb9a0e1e35c838b6f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fa75ca925e44aa89c4d6b0a5509f10"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ad6fa75ca925e44aa89c4d6b0a5509f10">getExchangeRatesFileName</a> (int index=1)</td></tr>
+<tr class="separator:ad6fa75ca925e44aa89c4d6b0a5509f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fb8a7d1c2f1fd67c44e71da415d6c8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a75fb8a7d1c2f1fd67c44e71da415d6c8">getExchangeRatesUrl</a> (int index=1)</td></tr>
+<tr class="separator:a75fb8a7d1c2f1fd67c44e71da415d6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ce4f1151b8ac97cd0764700ae489c1"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a33ce4f1151b8ac97cd0764700ae489c1">getExchangeRatesTime</a> ()</td></tr>
 <tr class="separator:a33ce4f1151b8ac97cd0764700ae489c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add29b39335d18476bc7ceb59f306e1c8"><td class="memItemLeft" align="right" valign="top"><a id="add29b39335d18476bc7ceb59f306e1c8"></a>
@@ -659,6 +659,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>gnuplotOpen</b> ()</t
 <tr class="separator:a26fbb54e1d33cd75b06597410630381f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c527dc3809186a46f1d965b88cc0b70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a9c527dc3809186a46f1d965b88cc0b70">getPrecision</a> () const</td></tr>
 <tr class="separator:a9c527dc3809186a46f1d965b88cc0b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2856e02579b5a2060ce7028333e301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aee2856e02579b5a2060ce7028333e301">useIntervalArithmetic</a> (bool use_interval_arithmetic=true)</td></tr>
+<tr class="separator:aee2856e02579b5a2060ce7028333e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5652998cac7838372a64640bf62891c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a5652998cac7838372a64640bf62891c8">usesIntervalArithmetic</a> () const</td></tr>
+<tr class="separator:a5652998cac7838372a64640bf62891c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d2f07f81268aa0bc1651f87f7ccf14"><td class="memItemLeft" align="right" valign="top"><a id="ab6d2f07f81268aa0bc1651f87f7ccf14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>beginTemporaryStopIntervalArithmetic</b> ()</td></tr>
+<tr class="separator:ab6d2f07f81268aa0bc1651f87f7ccf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90b5e829a51c1d6283927a2eb468f41"><td class="memItemLeft" align="right" valign="top"><a id="af90b5e829a51c1d6283927a2eb468f41"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>endTemporaryStopIntervalArithmetic</b> ()</td></tr>
+<tr class="separator:af90b5e829a51c1d6283927a2eb468f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for localization</div></td></tr>
 <tr class="memitem:aa354203a73c81bc28434b1ec711f3ecf"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aa354203a73c81bc28434b1ec711f3ecf">getDecimalPoint</a> () const</td></tr>
 <tr class="separator:aa354203a73c81bc28434b1ec711f3ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -721,9 +731,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2730d0ac9e43bb53e6ded2927c7c8697"><td class="memItemLeft" align="right" valign="top"><a id="a2730d0ac9e43bb53e6ded2927c7c8697"></a>
 <a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_i</b></td></tr>
 <tr class="separator:a2730d0ac9e43bb53e6ded2927c7c8697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a307a761eb0d0a8cd2ea34e8201454c96"><td class="memItemLeft" align="right" valign="top"><a id="a307a761eb0d0a8cd2ea34e8201454c96"></a>
-<a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_inf</b></td></tr>
-<tr class="separator:a307a761eb0d0a8cd2ea34e8201454c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa928ea4684473f7020d37be32ebd3c0a"><td class="memItemLeft" align="right" valign="top"><a id="aa928ea4684473f7020d37be32ebd3c0a"></a>
 <a class="el" href="classKnownVariable.html">KnownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_pinf</b></td></tr>
 <tr class="separator:aa928ea4684473f7020d37be32ebd3c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -916,6 +923,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2d53196d669eb9daed9a85dbf7e941be"><td class="memItemLeft" align="right" valign="top"><a id="a2d53196d669eb9daed9a85dbf7e941be"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_denominator</b></td></tr>
 <tr class="separator:a2d53196d669eb9daed9a85dbf7e941be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff1175611471f856a088ef83279831c"><td class="memItemLeft" align="right" valign="top"><a id="a1ff1175611471f856a088ef83279831c"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_interval</b></td></tr>
+<tr class="separator:a1ff1175611471f856a088ef83279831c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af74b72a6d5ffa39353f69ee34d1f4957"><td class="memItemLeft" align="right" valign="top"><a id="af74b72a6d5ffa39353f69ee34d1f4957"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_sqrt</b></td></tr>
 <tr class="separator:af74b72a6d5ffa39353f69ee34d1f4957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1204,9 +1214,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8781c9a813ff43d46bbc88a40214d879"><td class="memItemLeft" align="right" valign="top"><a id="a8781c9a813ff43d46bbc88a40214d879"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_plot</b></td></tr>
 <tr class="separator:a8781c9a813ff43d46bbc88a40214d879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac76ebe7e91c332e297381ccecc796b8"><td class="memItemLeft" align="right" valign="top"><a id="aac76ebe7e91c332e297381ccecc796b8"></a>
-<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_uncertainty</b></td></tr>
-<tr class="separator:aac76ebe7e91c332e297381ccecc796b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6c285a0b9eebdb67dc44ed2dc383b0"><td class="memItemLeft" align="right" valign="top"><a id="a7a6c285a0b9eebdb67dc44ed2dc383b0"></a>
 <a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>u_rad</b></td></tr>
 <tr class="separator:a7a6c285a0b9eebdb67dc44ed2dc383b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1219,6 +1226,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aee1269ebe21dc12269fb65020f681a8a"><td class="memItemLeft" align="right" valign="top"><a id="aee1269ebe21dc12269fb65020f681a8a"></a>
 <a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>u_euro</b></td></tr>
 <tr class="separator:aee1269ebe21dc12269fb65020f681a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e9fb1f0f862c6d91078f10ef923f37"><td class="memItemLeft" align="right" valign="top"><a id="a61e9fb1f0f862c6d91078f10ef923f37"></a>
+<a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>u_btc</b></td></tr>
+<tr class="separator:a61e9fb1f0f862c6d91078f10ef923f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a304e393eb87bbcc35fcb36ef2d5ab3"><td class="memItemLeft" align="right" valign="top"><a id="a9a304e393eb87bbcc35fcb36ef2d5ab3"></a>
 <a class="el" href="classDecimalPrefix.html">DecimalPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>decimal_null_prefix</b></td></tr>
 <tr class="separator:a9a304e393eb87bbcc35fcb36ef2d5ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1240,6 +1250,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>place_currency_sign_b
 <tr class="memitem:a0db52224e2f378d995c13f26a35f3838"><td class="memItemLeft" align="right" valign="top"><a id="a0db52224e2f378d995c13f26a35f3838"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>default_dot_as_separator</b></td></tr>
 <tr class="separator:a0db52224e2f378d995c13f26a35f3838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248c9db111c8326962be2d1f51bdbbce"><td class="memItemLeft" align="right" valign="top"><a id="a248c9db111c8326962be2d1f51bdbbce"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>local_digit_group_separator</b></td></tr>
+<tr class="separator:a248c9db111c8326962be2d1f51bdbbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0fbdf5392a6dea1cac99acde0bb216"><td class="memItemLeft" align="right" valign="top"><a id="a7b0fbdf5392a6dea1cac99acde0bb216"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>local_digit_group_format</b></td></tr>
+<tr class="separator:a7b0fbdf5392a6dea1cac99acde0bb216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83162e12645d8436f1df9fcf900a89be"><td class="memItemLeft" align="right" valign="top"><a id="a83162e12645d8436f1df9fcf900a89be"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_busy</b></td></tr>
 <tr class="separator:a83162e12645d8436f1df9fcf900a89be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1312,6 +1328,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ianglemode</b></td></t
 <tr class="memitem:a41b22c46f9e5c83aecfe5535697b2229"><td class="memItemLeft" align="right" valign="top"><a id="a41b22c46f9e5c83aecfe5535697b2229"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>i_precision</b></td></tr>
 <tr class="separator:a41b22c46f9e5c83aecfe5535697b2229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65372f567880ea041f073ea8bf99ee58"><td class="memItemLeft" align="right" valign="top"><a id="a65372f567880ea041f073ea8bf99ee58"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_interval</b></td></tr>
+<tr class="separator:a65372f567880ea041f073ea8bf99ee58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2305f31a238f3959f592a7afe33630b2"><td class="memItemLeft" align="right" valign="top"><a id="a2305f31a238f3959f592a7afe33630b2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>i_stop_interval</b></td></tr>
+<tr class="separator:a2305f31a238f3959f592a7afe33630b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18377875368e7e543e3e94e6d81260f8"><td class="memItemLeft" align="right" valign="top"><a id="a18377875368e7e543e3e94e6d81260f8"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>vbuffer</b> [200]</td></tr>
 <tr class="separator:a18377875368e7e543e3e94e6d81260f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1435,6 +1457,9 @@ vector&lt; <a class="el" href="classMathFunction.html">MathFunction</a> * &gt;&#
 <tr class="memitem:a61de672e6bc577d7c40d5e60badb35c7"><td class="memItemLeft" align="right" valign="top"><a id="a61de672e6bc577d7c40d5e60badb35c7"></a>
 vector&lt; <a class="el" href="classUnit.html">Unit</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>deleted_units</b></td></tr>
 <tr class="separator:a61de672e6bc577d7c40d5e60badb35c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768961d60fa62fe4769ac03336b95ccc"><td class="memItemLeft" align="right" valign="top"><a id="a768961d60fa62fe4769ac03336b95ccc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_var_units</b></td></tr>
+<tr class="separator:a768961d60fa62fe4769ac03336b95ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771a6dff02c0e7fee4502d23e3332c10"><td class="memItemLeft" align="right" valign="top"><a id="a771a6dff02c0e7fee4502d23e3332c10"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_save_called</b></td></tr>
 <tr class="separator:a771a6dff02c0e7fee4502d23e3332c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2950,8 +2975,8 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="ae9c028f4126c55d77bfd288bf167e500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9c028f4126c55d77bfd288bf167e500">&#9670;&nbsp;</a></span>getExchangeRatesFileName()</h2>
+<a id="ad6fa75ca925e44aa89c4d6b0a5509f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fa75ca925e44aa89c4d6b0a5509f10">&#9670;&nbsp;</a></span>getExchangeRatesFileName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2959,12 +2984,19 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
         <tr>
           <td class="memname">string Calculator::getExchangeRatesFileName </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Name of the exchange rates file on local disc.</p>
+<p>Name of the exchange rates file on local disc. Multiple exchange rates sources might be used. Iterate over these, using the index parameter, until an empty string is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index (starting at one) of the exchange rate source </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>name of local exchange rates file. </dd></dl>
 
 </div>
@@ -2988,8 +3020,8 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="a8f8d36c3248c8a7395ecf31ef80b5640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f8d36c3248c8a7395ecf31ef80b5640">&#9670;&nbsp;</a></span>getExchangeRatesUrl()</h2>
+<a id="a75fb8a7d1c2f1fd67c44e71da415d6c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fb8a7d1c2f1fd67c44e71da415d6c8">&#9670;&nbsp;</a></span>getExchangeRatesUrl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2997,12 +3029,19 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
         <tr>
           <td class="memname">string Calculator::getExchangeRatesUrl </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Url of the exchange rates file on the Internet.</p>
+<p>Url of the exchange rates file on the Internet. Multiple exchange rates sources might be used. Iterate over these, using the index parameter, until an empty string is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index (starting at one) of the exchange rate source </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Url of exchange rates file. </dd></dl>
 
 </div>
@@ -4492,6 +4531,49 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
       </table>
 </div><div class="memdoc">
 <p>Use point as decimal separator. To use comma as an ignored separator in numbers, must be invoked with comma_as_separator = true, before using <a class="el" href="structParseOptions.html#a9a96e5e9c4e65fe7686208279f3e8194" title="If true commas will ignored if another character is the default decimal sign, to allow commas to be u...">ParseOptions::comma_as_separator</a>. </p>
+
+</div>
+</div>
+<a id="aee2856e02579b5a2060ce7028333e301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2856e02579b5a2060ce7028333e301">&#9670;&nbsp;</a></span>useIntervalArithmetic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Calculator::useIntervalArithmetic </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_interval_arithmetic</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set if interval arithmetic should be used for approximate calculations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">use_interval_arithmetic</td><td>Set true to activate, or false to deactivate, interval arithmetic. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5652998cac7838372a64640bf62891c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5652998cac7838372a64640bf62891c8">&#9670;&nbsp;</a></span>usesIntervalArithmetic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Calculator::usesIntervalArithmetic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if interval arithmetic are activated. </p>
 
 </div>
 </div>
