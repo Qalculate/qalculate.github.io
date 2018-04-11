@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.3.0: DynamicVariable Class Reference</title>
+<title>libqalculate-2.4.0: DynamicVariable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.3.0
+   <div id="projectname">libqalculate-2.4.0
    </div>
   </td>
  </tr>
@@ -41,6 +41,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classDynamicVariable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DynamicVariable Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -57,10 +58,14 @@ Inheritance diagram for DynamicVariable:</div>
  <div class="center">
   <img src="classDynamicVariable.png" usemap="#DynamicVariable_map" alt=""/>
   <map id="DynamicVariable_map" name="DynamicVariable_map">
-<area href="classKnownVariable.html" title="A variable with a known value. " alt="KnownVariable" shape="rect" coords="0,112,113,136"/>
-<area href="classVariable.html" title="Abstract base class for variables. " alt="Variable" shape="rect" coords="0,56,113,80"/>
-<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="0,0,113,24"/>
-<area href="classPrecisionVariable.html" title="Dynamic variable for Pi. " alt="PrecisionVariable" shape="rect" coords="0,224,113,248"/>
+<area href="classKnownVariable.html" title="A variable with a known value. " alt="KnownVariable" shape="rect" coords="256,112,374,136"/>
+<area href="classVariable.html" title="Abstract base class for variables. " alt="Variable" shape="rect" coords="256,56,374,80"/>
+<area href="classExpressionItem.html" title="Abstract base class for functions, variables and units. " alt="ExpressionItem" shape="rect" coords="256,0,374,24"/>
+<area href="classNowVariable.html" alt="NowVariable" shape="rect" coords="0,224,118,248"/>
+<area href="classPrecisionVariable.html" title="Dynamic variable for Pi. " alt="PrecisionVariable" shape="rect" coords="128,224,246,248"/>
+<area href="classTodayVariable.html" alt="TodayVariable" shape="rect" coords="256,224,374,248"/>
+<area href="classTomorrowVariable.html" alt="TomorrowVariable" shape="rect" coords="384,224,502,248"/>
+<area href="classYesterdayVariable.html" alt="YesterdayVariable" shape="rect" coords="512,224,630,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -311,8 +316,11 @@ Protected Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () const =0</td></tr>
 <tr class="separator:ab3f104059b5a482a4a0d5cf8841c3b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a88c59369219ab068758d1f933a042832"><td class="memItemLeft" align="right" valign="top"><a id="a88c59369219ab068758d1f933a042832"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>always_recalculate</b></td></tr>
+<tr class="separator:a88c59369219ab068758d1f933a042832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classKnownVariable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classKnownVariable')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classKnownVariable.html">KnownVariable</a></td></tr>
 <tr class="memitem:a595f537509d2d0adb877ec4e819413b5 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a595f537509d2d0adb877ec4e819413b5"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mstruct</b></td></tr>
@@ -462,6 +470,8 @@ vector&lt; <a class="el" href="structExpressionName.html">ExpressionName</a> &gt
 <p>Returns if the variable represents a positive value. </p>
 
 <p>Reimplemented from <a class="el" href="classKnownVariable.html#abb6707edd7e47c78b5dba7e840428523">KnownVariable</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classNowVariable.html#a67736d92bd99bd27d7589249f1e4eb2d">NowVariable</a>, <a class="el" href="classYesterdayVariable.html#ab6b7aba0e7ac827c9150acb60a36baf9">YesterdayVariable</a>, <a class="el" href="classTomorrowVariable.html#add8247cb50ad69c32d2f00b40a5f12de">TomorrowVariable</a>, and <a class="el" href="classTodayVariable.html#a7d380f0fa11d75cf13fde8e89de2a9a5">TodayVariable</a>.</p>
 
 </div>
 </div>

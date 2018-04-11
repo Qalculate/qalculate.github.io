@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.3.0: PrintOptions Struct Reference</title>
+<title>libqalculate-2.4.0: PrintOptions Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.3.0
+   <div id="projectname">libqalculate-2.4.0
    </div>
   </td>
  </tr>
@@ -250,16 +250,28 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="separator:ab023524ead5bc8d50866ee12b3dd530a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a33051c6bc1ddf9288e4e87be5d74d"><td class="memItemLeft" align="right" valign="top"><a id="aa6a33051c6bc1ddf9288e4e87be5d74d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrintOptions.html#aa6a33051c6bc1ddf9288e4e87be5d74d">preserve_precision</a></td></tr>
-<tr class="memdesc:aa6a33051c6bc1ddf9288e4e87be5d74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the internal precision of each number instead of global precision. <br /></td></tr>
+<tr class="memdesc:aa6a33051c6bc1ddf9288e4e87be5d74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the internal precision of each number instead of global precision. Default: false. <br /></td></tr>
 <tr class="separator:aa6a33051c6bc1ddf9288e4e87be5d74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae940631420bfaa5da009fccb5c3a78b9"><td class="memItemLeft" align="right" valign="top"><a id="ae940631420bfaa5da009fccb5c3a78b9"></a>
 IntervalDisplay&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrintOptions.html#ae940631420bfaa5da009fccb5c3a78b9">interval_display</a></td></tr>
-<tr class="memdesc:ae940631420bfaa5da009fccb5c3a78b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How number intervals will be displayed. <br /></td></tr>
+<tr class="memdesc:ae940631420bfaa5da009fccb5c3a78b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How number intervals will be displayed. Default: INTERVAL_DISPLAY_INTERVAL. <br /></td></tr>
 <tr class="separator:ae940631420bfaa5da009fccb5c3a78b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a4054f3100b75900a7104d2d59c6204"><td class="memItemLeft" align="right" valign="top"><a id="a4a4054f3100b75900a7104d2d59c6204"></a>
 DigitGrouping&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrintOptions.html#a4a4054f3100b75900a7104d2d59c6204">digit_grouping</a></td></tr>
-<tr class="memdesc:a4a4054f3100b75900a7104d2d59c6204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digit grouping separator. <br /></td></tr>
+<tr class="memdesc:a4a4054f3100b75900a7104d2d59c6204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digit grouping separator. Default: DIGIT_GROUPING_NONE. <br /></td></tr>
 <tr class="separator:a4a4054f3100b75900a7104d2d59c6204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ef43f60d83b1790ac2ab328d13f073"><td class="memItemLeft" align="right" valign="top"><a id="a62ef43f60d83b1790ac2ab328d13f073"></a>
+DateTimeFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrintOptions.html#a62ef43f60d83b1790ac2ab328d13f073">date_time_format</a></td></tr>
+<tr class="memdesc:a62ef43f60d83b1790ac2ab328d13f073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format for time and date. Default: DATE_TIME_FORMAT_ISO. <br /></td></tr>
+<tr class="separator:a62ef43f60d83b1790ac2ab328d13f073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942c2331071b342527ffc50cb9c50f17"><td class="memItemLeft" align="right" valign="top"><a id="a942c2331071b342527ffc50cb9c50f17"></a>
+TimeZone&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrintOptions.html#a942c2331071b342527ffc50cb9c50f17">time_zone</a></td></tr>
+<tr class="memdesc:a942c2331071b342527ffc50cb9c50f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time zone for time and date. Default: TIME_ZONE_LOCAL. <br /></td></tr>
+<tr class="separator:a942c2331071b342527ffc50cb9c50f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e9212c8dbe53c4dd0958644a0184aa"><td class="memItemLeft" align="right" valign="top"><a id="a68e9212c8dbe53c4dd0958644a0184aa"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrintOptions.html#a68e9212c8dbe53c4dd0958644a0184aa">custom_time_zone</a></td></tr>
+<tr class="memdesc:a68e9212c8dbe53c4dd0958644a0184aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset in minute for custom time zone. Default: 0. <br /></td></tr>
+<tr class="separator:a68e9212c8dbe53c4dd0958644a0184aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Options for formatting and display of mathematical structures/results. </p>
