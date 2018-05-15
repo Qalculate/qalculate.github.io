@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.4.0: Number Class Reference</title>
+<title>libqalculate-2.5.0: Number Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.4.0
+   <div id="projectname">libqalculate-2.5.0
    </div>
   </td>
  </tr>
@@ -153,6 +153,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>intervalToPrecision</
 <tr class="memitem:ae1ae1c4e84552617dc295032ed282815"><td class="memItemLeft" align="right" valign="top"><a id="ae1ae1c4e84552617dc295032ed282815"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>intervalToMidValue</b> ()</td></tr>
 <tr class="separator:ae1ae1c4e84552617dc295032ed282815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac248baafec29b931347a68998b03f4c6"><td class="memItemLeft" align="right" valign="top"><a id="ac248baafec29b931347a68998b03f4c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>splitInterval</b> (unsigned int nr_of_parts, vector&lt; <a class="el" href="classNumber.html">Number</a> &gt; &amp;v) const</td></tr>
+<tr class="separator:ac248baafec29b931347a68998b03f4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f21751a4e56c12a21defedaad422b4"><td class="memItemLeft" align="right" valign="top"><a id="ae2f21751a4e56c12a21defedaad422b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getCentralInteger</b> (<a class="el" href="classNumber.html">Number</a> &amp;nr_int, bool *b_multiple=NULL, vector&lt; <a class="el" href="classNumber.html">Number</a> &gt; *v=NULL) const</td></tr>
+<tr class="separator:ae2f21751a4e56c12a21defedaad422b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44c842f53521e32d60668b203eb8b7f1"><td class="memItemLeft" align="right" valign="top"><a id="a44c842f53521e32d60668b203eb8b7f1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>mergeInterval</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool set_to_overlap=false)</td></tr>
 <tr class="separator:a44c842f53521e32d60668b203eb8b7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +192,9 @@ unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><b>ulintVal
 <tr class="separator:a541e75d2dc079bd11752eeded2fcf3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d41df681e921abfede762cccdb1ff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a59d41df681e921abfede762cccdb1ff7">isFloatingPoint</a> () const</td></tr>
 <tr class="separator:a59d41df681e921abfede762cccdb1ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2832fbd5673a8b06ec9aa9ea75db1b"><td class="memItemLeft" align="right" valign="top"><a id="aca2832fbd5673a8b06ec9aa9ea75db1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrecisionAndApproximateFrom</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
+<tr class="separator:aca2832fbd5673a8b06ec9aa9ea75db1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aff3a6ee48d8293787c19d40c22d5b4"><td class="memItemLeft" align="right" valign="top"><a id="a8aff3a6ee48d8293787c19d40c22d5b4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInterval</b> (bool ignore_imag=true) const</td></tr>
 <tr class="separator:a8aff3a6ee48d8293787c19d40c22d5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,6 +356,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>bitXor</b> (const <a 
 <tr class="memitem:a92016510c14d4c7fef0ab017c01de9ad"><td class="memItemLeft" align="right" valign="top"><a id="a92016510c14d4c7fef0ab017c01de9ad"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>bitNot</b> ()</td></tr>
 <tr class="separator:a92016510c14d4c7fef0ab017c01de9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa008b86eed39f8f09bcd0de47558da88"><td class="memItemLeft" align="right" valign="top"><a id="aa008b86eed39f8f09bcd0de47558da88"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bitCmp</b> (unsigned int bits)</td></tr>
+<tr class="separator:aa008b86eed39f8f09bcd0de47558da88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190014dd4fab9008d099b9d6017e7f39"><td class="memItemLeft" align="right" valign="top"><a id="a190014dd4fab9008d099b9d6017e7f39"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>bitEqv</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
 <tr class="separator:a190014dd4fab9008d099b9d6017e7f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,9 +461,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasPositiveSign</b> (
 <tr class="memitem:a80cc96fe71789017a3616ceea38eb9b7"><td class="memItemLeft" align="right" valign="top"><a id="a80cc96fe71789017a3616ceea38eb9b7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>equalsZero</b> () const</td></tr>
 <tr class="separator:a80cc96fe71789017a3616ceea38eb9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00cd0ee7eda6b089b89aea8d9f8e0971"><td class="memItemLeft" align="right" valign="top"><a id="a00cd0ee7eda6b089b89aea8d9f8e0971"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool allow_interval=false) const</td></tr>
-<tr class="separator:a00cd0ee7eda6b089b89aea8d9f8e0971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a51393c528036e64514fb2901951aca"><td class="memItemLeft" align="right" valign="top"><a id="a8a51393c528036e64514fb2901951aca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o, bool allow_interval=false, bool allow_infinite=false) const</td></tr>
+<tr class="separator:a8a51393c528036e64514fb2901951aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e5da3fec1610d0ff88dac25036c1c0d"><td class="memItemLeft" align="right" valign="top"><a id="a9e5da3fec1610d0ff88dac25036c1c0d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (long int i) const</td></tr>
 <tr class="separator:a9e5da3fec1610d0ff88dac25036c1c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -855,9 +867,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>testErrors</b> (int e
 <tr class="memitem:a662aa219bcc59c2247bb710f510ca8a3"><td class="memItemLeft" align="right" valign="top"><a id="a662aa219bcc59c2247bb710f510ca8a3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>testFloatResult</b> (bool allow_infinite_result=true, int error_level=1, bool test_integer=true)</td></tr>
 <tr class="separator:a662aa219bcc59c2247bb710f510ca8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca2832fbd5673a8b06ec9aa9ea75db1b"><td class="memItemLeft" align="right" valign="top"><a id="aca2832fbd5673a8b06ec9aa9ea75db1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrecisionAndApproximateFrom</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
-<tr class="separator:aca2832fbd5673a8b06ec9aa9ea75db1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
