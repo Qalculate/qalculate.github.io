@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.5.0: Calculator Class Reference</title>
+<title>libqalculate-2.6.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.5.0
+   <div id="projectname">libqalculate-2.6.0
    </div>
   </td>
  </tr>
@@ -80,6 +80,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Calculator</b> ()
 <tr class="separator:a386fe38c3982b09bdfe00a010451be34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ae8fa7994773151ecd3f6167ea09b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a08ae8fa7994773151ecd3f6167ea09b0">calculate</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, string to_str=&quot;&quot;)</td></tr>
 <tr class="separator:a08ae8fa7994773151ecd3f6167ea09b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73dcf91dbd69c1e0f47707a36dd564c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ab73dcf91dbd69c1e0f47707a36dd564c">calculateAndPrint</a> (string str, int msecs=10000, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po=default_print_options)</td></tr>
+<tr class="separator:ab73dcf91dbd69c1e0f47707a36dd564c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc2500b7aacaa353b4213ecccfe1e7d"><td class="memItemLeft" align="right" valign="top"><a id="acdc2500b7aacaa353b4213ecccfe1e7d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>testCondition</b> (string expression)</td></tr>
 <tr class="separator:acdc2500b7aacaa353b4213ecccfe1e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1083,6 +1085,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a034ebbe1d9736894ef31ed7e3e61fcfd"><td class="memItemLeft" align="right" valign="top"><a id="a034ebbe1d9736894ef31ed7e3e61fcfd"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_date</b></td></tr>
 <tr class="separator:a034ebbe1d9736894ef31ed7e3e61fcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51fa31ae4640b258b101e41ed4fe4230"><td class="memItemLeft" align="right" valign="top"><a id="a51fa31ae4640b258b101e41ed4fe4230"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_datetime</b></td></tr>
+<tr class="separator:a51fa31ae4640b258b101e41ed4fe4230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43c9fb10c22dfc2830eafb5c61c6228e"><td class="memItemLeft" align="right" valign="top"><a id="a43c9fb10c22dfc2830eafb5c61c6228e"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_timevalue</b></td></tr>
 <tr class="separator:a43c9fb10c22dfc2830eafb5c61c6228e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1128,6 +1133,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a946ee68e52c2024090afb5c1147991db"><td class="memItemLeft" align="right" valign="top"><a id="a946ee68e52c2024090afb5c1147991db"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_add_years</b></td></tr>
 <tr class="separator:a946ee68e52c2024090afb5c1147991db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c0c6d3145b7ae14623ae5c8dbbaf15"><td class="memItemLeft" align="right" valign="top"><a id="ab6c0c6d3145b7ae14623ae5c8dbbaf15"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_lunarphase</b></td></tr>
+<tr class="separator:ab6c0c6d3145b7ae14623ae5c8dbbaf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea13387e6e9c31082d4ffbb802b95ec"><td class="memItemLeft" align="right" valign="top"><a id="aeea13387e6e9c31082d4ffbb802b95ec"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_nextlunarphase</b></td></tr>
+<tr class="separator:aeea13387e6e9c31082d4ffbb802b95ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d359a5fd14096803591028678605a41"><td class="memItemLeft" align="right" valign="top"><a id="a8d359a5fd14096803591028678605a41"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_bin</b></td></tr>
 <tr class="separator:a8d359a5fd14096803591028678605a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2000,6 +2011,59 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the calculation. </dd></dl>
+
+</div>
+</div>
+<a id="ab73dcf91dbd69c1e0f47707a36dd564c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73dcf91dbd69c1e0f47707a36dd564c">&#9670;&nbsp;</a></span>calculateAndPrint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Calculator::calculateAndPrint </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msecs</em> = <code>10000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>eo</em> = <code>default_evaluation_options</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>po</em> = <code>default_print_options</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates an expression.and outputs the result to a text string. The expression should be unlocalized first with <a class="el" href="classCalculator.html#a8e2e3a1af44e5eb60303107163d0270f">unlocalizeExpression()</a>.</p>
+<p>Unlike other functions for expression evaluation this function handles ending "to"-commmands, in addition to unit conversion, such "to hexadecimal" or to "fractions", similar to the qalc application.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Expression. </td></tr>
+    <tr><td class="paramname">msecs</td><td>The maximum time for the calculation in milliseconds. If msecs &lt;= 0 the time will be unlimited. </td></tr>
+    <tr><td class="paramname">eo</td><td>Options for the evaluation and parsing of the expression. </td></tr>
+    <tr><td class="paramname">po</td><td>Result formatting options. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of the calculation. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.6.0 </dd></dl>
 
 </div>
 </div>

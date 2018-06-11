@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.5.0: MathStructure Class Reference</title>
+<title>libqalculate-2.6.0: MathStructure Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.5.0
+   <div id="projectname">libqalculate-2.6.0
    </div>
   </td>
  </tr>
@@ -62,6 +62,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculateLimit</b> (c
 <tr class="memitem:aa5e945fdf5596e6851d28ce0db3322ef"><td class="memItemLeft" align="right" valign="top"><a id="aa5e945fdf5596e6851d28ce0db3322ef"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>decomposeFractions</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;x_var, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo)</td></tr>
 <tr class="separator:aa5e945fdf5596e6851d28ce0db3322ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614e016868503f8ac96958b1e0f630fa"><td class="memItemLeft" align="right" valign="top"><a id="a614e016868503f8ac96958b1e0f630fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>inParentheses</b> () const</td></tr>
+<tr class="separator:a614e016868503f8ac96958b1e0f630fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18178da9bce6c6d6b6f042dea5a11fd1"><td class="memItemLeft" align="right" valign="top"><a id="a18178da9bce6c6d6b6f042dea5a11fd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInParentheses</b> (bool b=true)</td></tr>
+<tr class="separator:a18178da9bce6c6d6b6f042dea5a11fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors</div></td></tr>
 <tr class="memitem:a5256489d65e8dc3526ed14d3204cac7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMathStructure.html#a5256489d65e8dc3526ed14d3204cac7b">MathStructure</a> ()</td></tr>
 <tr class="separator:a5256489d65e8dc3526ed14d3204cac7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1210,6 +1216,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>simplify</b> (const <
 <tr class="memitem:af6b40c6559eccee0d8d5073dcaaa586b"><td class="memItemLeft" align="right" valign="top"><a id="af6b40c6559eccee0d8d5073dcaaa586b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>factorize</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool unfactorize=true, int term_combination_levels=0, int max_msecs=1000, bool only_integers=true, int recursive=1, struct timeval *endtime_p=NULL, const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;force_factorization=m_undefined, bool complete_square=false, bool only_sqrfree=false)</td></tr>
 <tr class="separator:af6b40c6559eccee0d8d5073dcaaa586b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8e2e60b9bc303976476b38b7300c85"><td class="memItemLeft" align="right" valign="top"><a id="a6f8e2e60b9bc303976476b38b7300c85"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>expandPartialFractions</b> (const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo)</td></tr>
+<tr class="separator:a6f8e2e60b9bc303976476b38b7300c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d17b466a255ac7a7e3ee16db3e83eed"><td class="memItemLeft" align="right" valign="top"><a id="a3d17b466a255ac7a7e3ee16db3e83eed"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>structure</b> (<a class="el" href="includes_8h.html#af8538e4aef0716ad66016493cbeffb77">StructuringMode</a> structuring, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, bool restore_first=true)</td></tr>
 <tr class="separator:a3d17b466a255ac7a7e3ee16db3e83eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1339,6 +1348,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_plural</b></td></tr
 <tr class="memitem:ad332bd902d4465663ce490e01f829320"><td class="memItemLeft" align="right" valign="top"><a id="ad332bd902d4465663ce490e01f829320"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_protected</b></td></tr>
 <tr class="separator:ad332bd902d4465663ce490e01f829320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cf07cae4dae96dcefc66f82dbf5ee5"><td class="memItemLeft" align="right" valign="top"><a id="ac0cf07cae4dae96dcefc66f82dbf5ee5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_parentheses</b></td></tr>
+<tr class="separator:ac0cf07cae4dae96dcefc66f82dbf5ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A structure representing a mathematical value/expression/result. </p>
