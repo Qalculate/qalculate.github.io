@@ -50,44 +50,17 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2018-07-09 :. Qalculate! version 2.6.1 released</h4>
+	<h4>.: 2018-08-13 :. Qalculate! version 2.6.2 released</h4>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
 	List of changes:
 	<ul>
-		<li>Fix display of addition with negative non-integer number (show "x - a" instead of "x + -a")</li>
+		<li>Polar and exponential complex forms (changed with mode or with "to" operator/command)</li>
+		<li>Fix f(x)+a=a (e.g. x+1=1, which returned false/zero).</li>
+		<li>Fix ln(-i).</li>
+		<li>Fix automatic unit conversion in RPN mode</li>
+		<li>Allow conversion of the current result using standalone "to" expression (e.g. type "to m" to convert current result to meter) in GUI.</li>
+		<li>Option to disable automatic conversion to local currency (when optimal conversion activated).</li>
 		<li>Minor bug fixes.</li>
-	</ul>
-	GUI improvements:
-	<ul>
-		<li>Do not always download all sources during automatic exchange rates updates (updating of common currencies will be much faster).</li>
-		<li>Configurable completion suggestions.</li>
-		<li>Option to keep insert function dialog open for repeated function calculations.</li>
-		<li>Minor bug fixes and feature enhancements.</li>
-	</ul>
-	<h4>.: 2018-06-11 :. Qalculate! version 2.6 released</h4>
-	List of changes:
-	<ul>
-		<li>Calendar conversion.</li>
-		<li>5'8" notation for feet and inches, 5°12'30" notation for degrees, arcminutes and arcseconds.</li>
-		<li>Interpret 5m 7cm as 5m+7cm, and 3h 52min 20s as 3h+52min+20s, and similar.</li>
-		<li>Improved ln() simplifications.</li>
-		<li>Duodecimal, roman, base #, and partial fraction "to" conversion commands.</li>
-		<li>Lunar phase functions.</li>
-		<li>Fix secondary exchange rates source.</li>
-		<li>Fix crashes with compiler flag "-D_GLIBCXX_ASSERTIONS".</li>
-		<li>Simple Calclator::calculateAndPrint() function with support for all the "to"-conversions supported in qalc.</li>
-		<li>Support for searching matching functions, variables and units using 'list' command in qalc.</li>
-		<li>Minor bug fixes and feature enhancements.</li>
-	</ul>
-	GUI improvements:
-	<ul>
-		<li>Calendar conversion dialog.</li>
-		<li>Currency flags in completion suggestions list and result display.</li>
-		<li>Extended completion suggestions, matching titles (and countries for currencies) when at least three characters are entered.</li>
-		<li>Completion suggestions for prefixes and prefixed units.</li>
-		<li>Completion suggestions for "to" commands.</li>
-		<li>Add duodecimal and roman numerals to number base conversion dialog.</li>
-		<li>Minor bug fixes and feature enhancements.</li>
 	</ul>
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
