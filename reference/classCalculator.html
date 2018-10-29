@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.6.2: Calculator Class Reference</title>
+<title>libqalculate-2.8.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.6.2
+   <div id="projectname">libqalculate-2.8.0
    </div>
   </td>
  </tr>
@@ -261,9 +261,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parseAdd</b> (string 
 <tr class="memitem:a3c1321e4ce4b283353e0d42824dbcf24"><td class="memItemLeft" align="right" valign="top"><a id="a3c1321e4ce4b283353e0d42824dbcf24"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertToBaseUnits</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options)</td></tr>
 <tr class="separator:a3c1321e4ce4b283353e0d42824dbcf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200b8b7410809e134aea7236b5580f3d"><td class="memItemLeft" align="right" valign="top"><a id="a200b8b7410809e134aea7236b5580f3d"></a>
-<a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getBestUnit</b> (<a class="el" href="classUnit.html">Unit</a> *u, bool allow_only_div=false)</td></tr>
-<tr class="separator:a200b8b7410809e134aea7236b5580f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5c99d309819158a7148c6fd114776c"><td class="memItemLeft" align="right" valign="top"><a id="ade5c99d309819158a7148c6fd114776c"></a>
+<a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getBestUnit</b> (<a class="el" href="classUnit.html">Unit</a> *u, bool allow_only_div=false, bool convert_to_local_currency=true)</td></tr>
+<tr class="separator:ade5c99d309819158a7148c6fd114776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef34b4af7b0861cfac6847df2e7ac649"><td class="memItemLeft" align="right" valign="top"><a id="aef34b4af7b0861cfac6847df2e7ac649"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertToBestUnit</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool convert_to_si_units=true)</td></tr>
 <tr class="separator:aef34b4af7b0861cfac6847df2e7ac649"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,6 +375,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkSaveFunctionCall
 <tr class="memitem:a2ee830ff7e93d292aad83200526aa93a"><td class="memItemLeft" align="right" valign="top"><a id="a2ee830ff7e93d292aad83200526aa93a"></a>
 <a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCompositeUnit</b> (string internal_name_)</td></tr>
 <tr class="separator:a2ee830ff7e93d292aad83200526aa93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089600ab0bf7c262c07a9b02f077b14a"><td class="memItemLeft" align="right" valign="top"><a id="a089600ab0bf7c262c07a9b02f077b14a"></a>
+<a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getLocalCurrency</b> ()</td></tr>
+<tr class="separator:a089600ab0bf7c262c07a9b02f077b14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4827d5267bde72f5603008b156f1183b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPrefix.html">Prefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a4827d5267bde72f5603008b156f1183b">getPrefix</a> (size_t index) const</td></tr>
 <tr class="separator:a4827d5267bde72f5603008b156f1183b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee1d747d7308bc7edbf9ad786317aadd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPrefix.html">Prefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aee1d747d7308bc7edbf9ad786317aadd">getPrefix</a> (string name_) const</td></tr>
@@ -537,6 +540,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>endTemporaryStopMessa
 <tr class="memitem:a7d47492a95c8450eea8ccfb218b3c41f"><td class="memItemLeft" align="right" valign="top"><a id="a7d47492a95c8450eea8ccfb218b3c41f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addMessages</b> (vector&lt; <a class="el" href="classCalculatorMessage.html">CalculatorMessage</a> &gt; *message_vector)</td></tr>
 <tr class="separator:a7d47492a95c8450eea8ccfb218b3c41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5e8484bb4fe64569d4f8d46a4ddb3f"><td class="memItemLeft" align="right" valign="top"><a id="adf5e8484bb4fe64569d4f8d46a4ddb3f"></a>
+const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>messagePrintOptions</b> () const</td></tr>
+<tr class="separator:adf5e8484bb4fe64569d4f8d46a4ddb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05bbeadfa1c9d9adf23eda0a767817d"><td class="memItemLeft" align="right" valign="top"><a id="ac05bbeadfa1c9d9adf23eda0a767817d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMessagePrintOptions</b> (const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po)</td></tr>
+<tr class="separator:ac05bbeadfa1c9d9adf23eda0a767817d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for loading and saving definitions (variables, functions, units, etc.).</div></td></tr>
 <tr class="memitem:a1c264e294399a6d0071565f2439a531b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a1c264e294399a6d0071565f2439a531b">loadGlobalDefinitions</a> ()</td></tr>
 <tr class="separator:a1c264e294399a6d0071565f2439a531b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -681,6 +690,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>beginTemporaryStopInt
 <tr class="memitem:af90b5e829a51c1d6283927a2eb468f41"><td class="memItemLeft" align="right" valign="top"><a id="af90b5e829a51c1d6283927a2eb468f41"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>endTemporaryStopIntervalArithmetic</b> ()</td></tr>
 <tr class="separator:af90b5e829a51c1d6283927a2eb468f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622fed92f62de416a985076c762c2551"><td class="memItemLeft" align="right" valign="top"><a id="a622fed92f62de416a985076c762c2551"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>beginTemporaryEnableIntervalArithmetic</b> ()</td></tr>
+<tr class="separator:a622fed92f62de416a985076c762c2551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc70ee2737e17284b50cdce11ed1e864"><td class="memItemLeft" align="right" valign="top"><a id="acc70ee2737e17284b50cdce11ed1e864"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>endTemporaryEnableIntervalArithmetic</b> ()</td></tr>
+<tr class="separator:acc70ee2737e17284b50cdce11ed1e864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for localization</div></td></tr>
 <tr class="memitem:aa354203a73c81bc28434b1ec711f3ecf"><td class="memItemLeft" align="right" valign="top">const string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aa354203a73c81bc28434b1ec711f3ecf">getDecimalPoint</a> () const</td></tr>
 <tr class="separator:aa354203a73c81bc28434b1ec711f3ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -785,6 +800,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7fc0f528fd23d5864e43fabdf3201c8f"><td class="memItemLeft" align="right" valign="top"><a id="a7fc0f528fd23d5864e43fabdf3201c8f"></a>
 <a class="el" href="classUnknownVariable.html">UnknownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_z</b></td></tr>
 <tr class="separator:a7fc0f528fd23d5864e43fabdf3201c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac118621f6de333a4bc48989e29265b9a"><td class="memItemLeft" align="right" valign="top"><a id="ac118621f6de333a4bc48989e29265b9a"></a>
+<a class="el" href="classUnknownVariable.html">UnknownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_C</b></td></tr>
+<tr class="separator:ac118621f6de333a4bc48989e29265b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4769f2e017065586036582f78185d148"><td class="memItemLeft" align="right" valign="top"><a id="a4769f2e017065586036582f78185d148"></a>
+<a class="el" href="classUnknownVariable.html">UnknownVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>v_n</b></td></tr>
+<tr class="separator:a4769f2e017065586036582f78185d148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5572b3dff5bc5bd7a5140ba709bbe811"><td class="memItemLeft" align="right" valign="top"><a id="a5572b3dff5bc5bd7a5140ba709bbe811"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_vector</b></td></tr>
 <tr class="separator:a5572b3dff5bc5bd7a5140ba709bbe811"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -854,6 +875,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a52c86172ae64b209730ed86c75aa6b74"><td class="memItemLeft" align="right" valign="top"><a id="a52c86172ae64b209730ed86c75aa6b74"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_inverse</b></td></tr>
 <tr class="separator:a52c86172ae64b209730ed86c75aa6b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5263ccea975a1d8c1c4d6df2418bd8e8"><td class="memItemLeft" align="right" valign="top"><a id="a5263ccea975a1d8c1c4d6df2418bd8e8"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_magnitude</b></td></tr>
+<tr class="separator:a5263ccea975a1d8c1c4d6df2418bd8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a41225514d796388ca540376a03d2d4"><td class="memItemLeft" align="right" valign="top"><a id="a7a41225514d796388ca540376a03d2d4"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_hadamard</b></td></tr>
+<tr class="separator:a7a41225514d796388ca540376a03d2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c907a58d2902fd6f6e4fbd51464a3c4"><td class="memItemLeft" align="right" valign="top"><a id="a8c907a58d2902fd6f6e4fbd51464a3c4"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_entrywise</b></td></tr>
+<tr class="separator:a8c907a58d2902fd6f6e4fbd51464a3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23736ffeb01b0375c1254c3e6ec9996"><td class="memItemLeft" align="right" valign="top"><a id="af23736ffeb01b0375c1254c3e6ec9996"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_factorial</b></td></tr>
 <tr class="separator:af23736ffeb01b0375c1254c3e6ec9996"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1391,6 +1421,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>tmp_rpnindex</b></t
 <tr class="memitem:ab6673658258cd73aa97c949e2dfe6da1"><td class="memItemLeft" align="right" valign="top"><a id="ab6673658258cd73aa97c949e2dfe6da1"></a>
 <a class="el" href="structPrintOptions.html">PrintOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>save_printoptions</b></td></tr>
 <tr class="separator:ab6673658258cd73aa97c949e2dfe6da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae382a0f3fe1f5b92979bc98e99b32f8"><td class="memItemLeft" align="right" valign="top"><a id="aae382a0f3fe1f5b92979bc98e99b32f8"></a>
+<a class="el" href="structPrintOptions.html">PrintOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>message_printoptions</b></td></tr>
+<tr class="separator:aae382a0f3fe1f5b92979bc98e99b32f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f41292fdb63b847e2517d8598ecc686"><td class="memItemLeft" align="right" valign="top"><a id="a9f41292fdb63b847e2517d8598ecc686"></a>
 vector&lt; <a class="el" href="classVariable.html">Variable</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>variables</b></td></tr>
 <tr class="separator:a9f41292fdb63b847e2517d8598ecc686"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1436,6 +1469,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_interval</b></td></
 <tr class="memitem:a2305f31a238f3959f592a7afe33630b2"><td class="memItemLeft" align="right" valign="top"><a id="a2305f31a238f3959f592a7afe33630b2"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>i_stop_interval</b></td></tr>
 <tr class="separator:a2305f31a238f3959f592a7afe33630b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3e316e108dc42cab695442b2a65b4d"><td class="memItemLeft" align="right" valign="top"><a id="aaa3e316e108dc42cab695442b2a65b4d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>i_start_interval</b></td></tr>
+<tr class="separator:aaa3e316e108dc42cab695442b2a65b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18377875368e7e543e3e94e6d81260f8"><td class="memItemLeft" align="right" valign="top"><a id="a18377875368e7e543e3e94e6d81260f8"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>vbuffer</b> [200]</td></tr>
 <tr class="separator:a18377875368e7e543e3e94e6d81260f8"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.6.2: EvaluationOptions Struct Reference</title>
+<title>libqalculate-2.8.0: EvaluationOptions Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.6.2
+   <div id="projectname">libqalculate-2.8.0
    </div>
   </td>
  </tr>
@@ -77,10 +77,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#aa281c3be291c62faa4a7d566eaf29d77">calculate_functions</a></td></tr>
 <tr class="memdesc:aa281c3be291c62faa4a7d566eaf29d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">If functions will be calculated. Default: true. <br /></td></tr>
 <tr class="separator:aa281c3be291c62faa4a7d566eaf29d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a254f6b79d75b003fa6de63b3cf34617b"><td class="memItemLeft" align="right" valign="top"><a id="a254f6b79d75b003fa6de63b3cf34617b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a254f6b79d75b003fa6de63b3cf34617b">test_comparisons</a></td></tr>
-<tr class="memdesc:a254f6b79d75b003fa6de63b3cf34617b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If comparisons will be evaluated (ex. 5&gt;2 =&gt; 1). Default: true. <br /></td></tr>
-<tr class="separator:a254f6b79d75b003fa6de63b3cf34617b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e01838f42121c17bbaecc90bd7a5742"><td class="memItemLeft" align="right" valign="top"><a id="a4e01838f42121c17bbaecc90bd7a5742"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a4e01838f42121c17bbaecc90bd7a5742">test_comparisons</a></td></tr>
+<tr class="memdesc:a4e01838f42121c17bbaecc90bd7a5742"><td class="mdescLeft">&#160;</td><td class="mdescRight">If comparisons will be evaluated (ex. 5&gt;2 =&gt; 1). Default: true. <br /></td></tr>
+<tr class="separator:a4e01838f42121c17bbaecc90bd7a5742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83b98ace04bc7384ba6d5370a04c2355"><td class="memItemLeft" align="right" valign="top"><a id="a83b98ace04bc7384ba6d5370a04c2355"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a83b98ace04bc7384ba6d5370a04c2355">isolate_x</a></td></tr>
 <tr class="memdesc:a83b98ace04bc7384ba6d5370a04c2355"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a varaible will be isolated to the left side in equations/comparisons (ex. x+y=2 =&gt; x=2-y). Default: true. <br /></td></tr>
@@ -153,6 +153,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 ComplexNumberForm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a695f08df9ced820526ded91b8f902694">complex_number_form</a></td></tr>
 <tr class="memdesc:a695f08df9ced820526ded91b8f902694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complex number form. Default: COMPLEX_NUMBER_FORM_RECTANGULAR. <br /></td></tr>
 <tr class="separator:a695f08df9ced820526ded91b8f902694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d3c148ee93eab1e75d28806bfcda2c"><td class="memItemLeft" align="right" valign="top"><a id="a85d3c148ee93eab1e75d28806bfcda2c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a85d3c148ee93eab1e75d28806bfcda2c">local_currency_conversion</a></td></tr>
+<tr class="memdesc:a85d3c148ee93eab1e75d28806bfcda2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to local currency when optimal conversion is enabled. <br /></td></tr>
+<tr class="separator:a85d3c148ee93eab1e75d28806bfcda2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770752f41a8e3a5095c1337bea2a2a12"><td class="memItemLeft" align="right" valign="top"><a id="a770752f41a8e3a5095c1337bea2a2a12"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a770752f41a8e3a5095c1337bea2a2a12">transform_trigonometric_functions</a></td></tr>
+<tr class="memdesc:a770752f41a8e3a5095c1337bea2a2a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mainly for internal use. Default: true. <br /></td></tr>
+<tr class="separator:a770752f41a8e3a5095c1337bea2a2a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Options for calculation. </p>
