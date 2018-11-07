@@ -52,19 +52,26 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2018-10-29 :. Qalculate! version 2.8 released</h4>
-	This version primarily includes a large number of stability and reliability improvements, thanks to automatic testing of hundreds of thousands of randomly generated mathematical expressions. Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
+	<h4>.: 2018-11-07 :. Qalculate! version 2.8.1 released</h4>
 	List of changes:
 	<ul>
-		<li>Equation solving and improved simplification for expressions with trigonometric functions.</li>
-		<li>General improvements to simplification and equation solving.</li>
-		<li>Improved factorization.</li>
-		<li>New magnitude(), entrywise() and hadamard() functions, and new n variable (unknown integer).</li>
-		<li>Parse |x| and ||x|| as abs(x) and magnitude(x).</li>
-		<li>Use kilo as prefix for gram if automatic prefix is off.</li>
-		<li>Many bug fixes and minor feature improvements.</li>
+		<li>Interpret a character preceded by '\' as an unknown variable (same as in quotation marks).</li>
+		<li>Do not show fractions with very large numerators or denominators, by default.</li>
+		<li>Hectare and decare unit names (in addition to ha/da and hectoare/decaare).</li>
+		<li>Always enable units for expressions that ends with "to [unit expression]", "to optimal", or similar.</li>
+		<li>Improve appearance of "x m/s" and similar.</li>
+		<li>Fix (1x+ay)^b (was not expanded).</li>
+		<li>Fix roman() when used for reversed conversion.</li>
+		<li>Fix compilation without readline.</li>
+		<li>Proper line breaks and line count fixes (CLI).</li>
+		<li>Shortcuts for set command options and descriptions for options in help (CLI).</li>
+		<li>Replace text in quotation marks with italic text (CLI).</li>
+		<li>Always interpret expression that begins with '/' as a command (CLI).</li>
+		<li>Modified keypad layout (GUI).</li>
+		<li>RPN stack buttons with icons (GUI).<li>
+		<li>Use 'linked' widget style where appropriate (GUI).</li>
 	</ul>
-	For details see the changelogs for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v2.8.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v2.8.0/ChangeLog">qalculate-gtk</a>.
+	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>.
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
 </td><td width="50px">&nbsp;</td></tr>
