@@ -36,7 +36,7 @@ Sections:<br>
                         </h2>
 </div>
 <div align="center"><IMG src="images/qalculate-keypad.png" width="550" border="0"></div>
-<br><big>Qalculate! is a multi-purpose cross-platform desktop calculator. It is simple to use but provides power and versatility normally reserved for complicated math packages, as well as useful tools for everyday needs (such as currency conversion and percent calculation). Features include a large library of customizable functions, unit calculations and conversion, symbolic calculations (including integrals and equations), arbitrary precision, interval arithmetic, plotting, and a user-friendly interface (GTK+ and CLI).</big>
+<br><big>Qalculate! is a multi-purpose cross-platform desktop calculator. It is simple to use but provides power and versatility normally reserved for complicated math packages, as well as useful tools for everyday needs (such as currency conversion and percent calculation). Features include a large library of customizable functions, unit calculations and conversion, physical constants, symbolic calculations (including integrals and equations), arbitrary precision, uncertainty propagation, interval arithmetic, plotting, and a user-friendly interface (GTK+ and CLI).</big>
   <br><br>
   <big>Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</big>
   <br>
@@ -49,13 +49,18 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2018-12-03 :. Qalculate! version 2.8.2 released</h4>
+	<h4>.: 2019-02-11 :. Qalculate! version 2.9.0 released</h4>
 	List of changes:
 	<ul>
-		<li>Fix missing prefix for gram (and are) when unit exponent not one and automatic prefixes is off.</li>
-		<li>Fixes for units with non-linear relation.</li>
-		<li>Wrap lines and right align results in history (GUI).</li>
-		<li>Improved line breaks (CLI).</li>
+		<li>Propagation of uncertainty using variance formula (if interval arithmetic is disabled).</li>
+		<li>Improved and extended physical constants, now defined in relation to each other (e.g. R<sub>K</sub> = (&#x3BC;<sub>0</sub>c)/(2&#x03B1;)).</li>
+		<li>Natural, atomic, and Planck units.</li>
+		<li>Reciprocal unit conversion (e.g. 5 m/s = 0.2 s/m, 60 mpg = 0.039 L/km).</li>
+		<li>Updated elements and planets data sets.</li>
+		<li>+/- syntax for non-numeric values.</li>
+		<li>raid() function for RAID capacity calculation.</li>
+		<li>UTC+/-hh[:mm] and CET time zone conversion (using "to").</li>
+		<li>Fix convert button (GUI).</li>
 		<li>Minor bug fixes and feature improvements.</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
