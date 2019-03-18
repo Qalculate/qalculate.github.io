@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.9.0: EvaluationOptions Struct Reference</title>
+<title>libqalculate-3.0.0: EvaluationOptions Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.9.0
+   <div id="projectname">libqalculate-3.0.0
    </div>
   </td>
  </tr>
@@ -61,10 +61,10 @@ Public Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a327402d3210b5da89a3802055a29cee2">sync_units</a></td></tr>
 <tr class="memdesc:a327402d3210b5da89a3802055a29cee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If units will be synced/converted to allow evaluation (ex. 1 min + 1 s=60 s+ 1 s = 61 s). Default: true. <br /></td></tr>
 <tr class="separator:a327402d3210b5da89a3802055a29cee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d4d592a004194fd7a6f4fc708d0aad3"><td class="memItemLeft" align="right" valign="top"><a id="a3d4d592a004194fd7a6f4fc708d0aad3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a3d4d592a004194fd7a6f4fc708d0aad3">sync_complex_unit_relations</a></td></tr>
-<tr class="memdesc:a3d4d592a004194fd7a6f4fc708d0aad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If units with complex/non-linear relations (ex. degress celsius and fahrenheit) will synced/converted. Default: true. <br /></td></tr>
-<tr class="separator:a3d4d592a004194fd7a6f4fc708d0aad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c66e24c7d4a50ad6051529336038e9"><td class="memItemLeft" align="right" valign="top"><a id="a25c66e24c7d4a50ad6051529336038e9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a25c66e24c7d4a50ad6051529336038e9">sync_nonlinear_unit_relations</a></td></tr>
+<tr class="memdesc:a25c66e24c7d4a50ad6051529336038e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If units with complex/non-linear relations (ex. degress celsius and fahrenheit) will synced/converted. Default: true. <br /></td></tr>
+<tr class="separator:a25c66e24c7d4a50ad6051529336038e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0040028e84a9a1cd2399ece5548326d"><td class="memItemLeft" align="right" valign="top"><a id="af0040028e84a9a1cd2399ece5548326d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#af0040028e84a9a1cd2399ece5548326d">keep_prefixes</a></td></tr>
 <tr class="memdesc:af0040028e84a9a1cd2399ece5548326d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If unit prefixes in original expression will be kept. Default: false. <br /></td></tr>
@@ -111,7 +111,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <tr class="separator:aa6fad5c3d769d11664f149487964737f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cebe54389e26f500299b466c46c9a6f"><td class="memItemLeft" align="right" valign="top"><a id="a2cebe54389e26f500299b466c46c9a6f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a2cebe54389e26f500299b466c46c9a6f">warn_about_denominators_assumed_nonzero</a></td></tr>
-<tr class="memdesc:a2cebe54389e26f500299b466c46c9a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Warn if a denominator with unknown value was assumed non-zero (with assume_denominators_nonzero set to true) to allow simplification. Default: false. <br /></td></tr>
+<tr class="memdesc:a2cebe54389e26f500299b466c46c9a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Warn if a denominator with unknown value was assumed non-zero (with assume_denominators_nonzero set to true) to allow simplification. Default: true. <br /></td></tr>
 <tr class="separator:a2cebe54389e26f500299b466c46c9a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34dd421b902005f1905d6e19573e85d"><td class="memItemLeft" align="right" valign="top"><a id="ad34dd421b902005f1905d6e19573e85d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#ad34dd421b902005f1905d6e19573e85d">split_squares</a></td></tr>
@@ -123,7 +123,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="separator:a2077af25fb4f21581e9e2437498787f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ef7e62314c9678d09b2343c04444c6"><td class="memItemLeft" align="right" valign="top"><a id="ac5ef7e62314c9678d09b2343c04444c6"></a>
 <a class="el" href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7c">AutoPostConversion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#ac5ef7e62314c9678d09b2343c04444c6">auto_post_conversion</a></td></tr>
-<tr class="memdesc:ac5ef7e62314c9678d09b2343c04444c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">If and how units will be automatically converted. Does not affect syncing of units. Default: POST_CONVERSION_NONE. <br /></td></tr>
+<tr class="memdesc:ac5ef7e62314c9678d09b2343c04444c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">If and how units will be automatically converted. Does not affect syncing of units. Default: POST_CONVERSION_OPTIMAL. <br /></td></tr>
 <tr class="separator:ac5ef7e62314c9678d09b2343c04444c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29b86f42d9c00f85e2846e1d4c1c990"><td class="memItemLeft" align="right" valign="top"><a id="aa29b86f42d9c00f85e2846e1d4c1c990"></a>
 MixedUnitsConversion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#aa29b86f42d9c00f85e2846e1d4c1c990">mixed_units_conversion</a></td></tr>
@@ -161,6 +161,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a770752f41a8e3a5095c1337bea2a2a12">transform_trigonometric_functions</a></td></tr>
 <tr class="memdesc:a770752f41a8e3a5095c1337bea2a2a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mainly for internal use. Default: true. <br /></td></tr>
 <tr class="separator:a770752f41a8e3a5095c1337bea2a2a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582f3de55fa41c571e93893e36150da9"><td class="memItemLeft" align="right" valign="top"><a id="a582f3de55fa41c571e93893e36150da9"></a>
+<a class="el" href="includes_8h.html#a980908616e1836da3fb4d955de3a81b5">IntervalCalculation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEvaluationOptions.html#a582f3de55fa41c571e93893e36150da9">interval_calculation</a></td></tr>
+<tr class="memdesc:a582f3de55fa41c571e93893e36150da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm used for calculation of uncertainty propagation / intervals. This does not affect calculation of the high precision intervals produced by approximate functions or irrational numbers. Default: INTERVAL_CALCULATION_VARIANCE_FORMULA. <br /></td></tr>
+<tr class="separator:a582f3de55fa41c571e93893e36150da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Options for calculation. </p>

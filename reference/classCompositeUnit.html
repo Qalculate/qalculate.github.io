@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.9.0: CompositeUnit Class Reference</title>
+<title>libqalculate-3.0.0: CompositeUnit Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.9.0
+   <div id="projectname">libqalculate-3.0.0
    </div>
   </td>
  </tr>
@@ -100,6 +100,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>del</b> (size
 <tr class="separator:ae9f924def0bbaaa020fa3c7487a197b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad1624387ac7816fe8e51674fd8a8f85"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCompositeUnit.html#aad1624387ac7816fe8e51674fd8a8f85">containsRelativeTo</a> (<a class="el" href="classUnit.html">Unit</a> *u) const</td></tr>
 <tr class="separator:aad1624387ac7816fe8e51674fd8a8f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965c7c43519b6f8480463ce63ef53e3c"><td class="memItemLeft" align="right" valign="top"><a id="a965c7c43519b6f8480463ce63ef53e3c"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasNonlinearRelationToBase</b> () const</td></tr>
+<tr class="separator:a965c7c43519b6f8480463ce63ef53e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f834e379ec0e33a66f8ad63d26e431"><td class="memItemLeft" align="right" valign="top"><a id="a52f834e379ec0e33a66f8ad63d26e431"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasApproximateRelationToBase</b> (bool check_variables=false, bool ignore_high_precision_intervals=false) const</td></tr>
+<tr class="separator:a52f834e379ec0e33a66f8ad63d26e431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c20ddc5b689b6151204070b6771503d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCompositeUnit.html#a9c20ddc5b689b6151204070b6771503d">generateMathStructure</a> (bool make_division=false, bool set_null_prefixes=false) const</td></tr>
 <tr class="separator:a9c20ddc5b689b6151204070b6771503d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9244e7f29c4cffe3c1d0b9e3f9f1c08"><td class="memItemLeft" align="right" valign="top"><a id="ad9244e7f29c4cffe3c1d0b9e3f9f1c08"></a>
@@ -176,9 +182,12 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>baseExponent</
 <tr class="separator:ab08eea3bfe8a7e3f3939f6f4ed6be6af inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2706b8b1363eb87f7c80a1c6b93b54f2 inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnit.html#a2706b8b1363eb87f7c80a1c6b93b54f2">isParentOf</a> (<a class="el" href="classUnit.html">Unit</a> *u) const</td></tr>
 <tr class="separator:a2706b8b1363eb87f7c80a1c6b93b54f2 inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e61c33926b5d6a47452f1c3a0aabb2d inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top"><a id="a4e61c33926b5d6a47452f1c3a0aabb2d"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasComplexRelationTo</b> (<a class="el" href="classUnit.html">Unit</a> *u) const</td></tr>
-<tr class="separator:a4e61c33926b5d6a47452f1c3a0aabb2d inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd4fa57ae00e2ca0b1fb9175d4bf212 inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top"><a id="a2bd4fa57ae00e2ca0b1fb9175d4bf212"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasNonlinearRelationTo</b> (<a class="el" href="classUnit.html">Unit</a> *u) const</td></tr>
+<tr class="separator:a2bd4fa57ae00e2ca0b1fb9175d4bf212 inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcde31925930bf87a9fd18d5743f4a5 inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top"><a id="aafcde31925930bf87a9fd18d5743f4a5"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasApproximateRelationTo</b> (<a class="el" href="classUnit.html">Unit</a> *u, bool check_variables=false, bool ignore_high_precision_intervals=false) const</td></tr>
+<tr class="separator:aafcde31925930bf87a9fd18d5743f4a5 inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d325e88bb837b49cef95eeea6dfb3e7 inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnit.html#a9d325e88bb837b49cef95eeea6dfb3e7">convert</a> (<a class="el" href="classUnit.html">Unit</a> *u, <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mvalue, <a class="el" href="classMathStructure.html">MathStructure</a> &amp;exp) const</td></tr>
 <tr class="separator:a9d325e88bb837b49cef95eeea6dfb3e7 inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13c56515a0fd1a45d2b6ef8d7630bfaa inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnit.html#a13c56515a0fd1a45d2b6ef8d7630bfaa">convert</a> (<a class="el" href="classUnit.html">Unit</a> *u, <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mvalue) const</td></tr>
@@ -483,6 +492,8 @@ vector&lt; <a class="el" href="structExpressionName.html">ExpressionName</a> &gt
 </table>
 </div><div class="memdoc">
 <p>If this unit contains a sub/base unit with a relation to the specified unit. </p>
+
+<p>Reimplemented from <a class="el" href="classUnit.html">Unit</a>.</p>
 
 </div>
 </div>

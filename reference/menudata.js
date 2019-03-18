@@ -108,6 +108,7 @@ var menudata={children:[
 {text:"c",url:"globals.html#index_c"},
 {text:"e",url:"globals.html#index_e"},
 {text:"f",url:"globals.html#index_f"},
+{text:"i",url:"globals.html#index_i"},
 {text:"m",url:"globals.html#index_m"},
 {text:"n",url:"globals.html#index_n"},
 {text:"p",url:"globals.html#index_p"},
@@ -119,6 +120,7 @@ var menudata={children:[
 {text:"Enumerator",url:"globals_eval.html",children:[
 {text:"a",url:"globals_eval.html#index_a"},
 {text:"f",url:"globals_eval.html#index_f"},
+{text:"i",url:"globals_eval.html#index_i"},
 {text:"p",url:"globals_eval.html#index_p"},
 {text:"s",url:"globals_eval.html#index_s"},
 {text:"t",url:"globals_eval.html#index_t"}]},

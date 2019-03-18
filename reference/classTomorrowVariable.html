@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.9.0: TomorrowVariable Class Reference</title>
+<title>libqalculate-3.0.0: TomorrowVariable Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.9.0
+   <div id="projectname">libqalculate-3.0.0
    </div>
   </td>
  </tr>
@@ -101,9 +101,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (const <a cla
 <tr class="separator:a1c480cef3c985e7ec4ea4d0cbb033706 inherit pub_methods_classDynamicVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a473735cb6ff2e1581dce0436a6a443b2 inherit pub_methods_classDynamicVariable"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDynamicVariable.html#a473735cb6ff2e1581dce0436a6a443b2">calculatedPrecision</a> () const</td></tr>
 <tr class="separator:a473735cb6ff2e1581dce0436a6a443b2 inherit pub_methods_classDynamicVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7177706af3c8c10c5241f22136635e3b inherit pub_methods_classDynamicVariable"><td class="memItemLeft" align="right" valign="top"><a id="a7177706af3c8c10c5241f22136635e3b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculatedWithInterval</b> () const</td></tr>
-<tr class="separator:a7177706af3c8c10c5241f22136635e3b inherit pub_methods_classDynamicVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0968cae953608dd0362b8a71c65ec76c inherit pub_methods_classDynamicVariable"><td class="memItemLeft" align="right" valign="top"><a id="a0968cae953608dd0362b8a71c65ec76c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsNegative</b> (bool=false)</td></tr>
 <tr class="separator:a0968cae953608dd0362b8a71c65ec76c inherit pub_methods_classDynamicVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,17 +149,17 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>representsSca
 <tr class="separator:ad0d643223b93cc5a236d19ea646403fd inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7914440aa1f10963683ae30efa1e9da inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#ac7914440aa1f10963683ae30efa1e9da">expression</a> () const</td></tr>
 <tr class="separator:ac7914440aa1f10963683ae30efa1e9da inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aa09631b2428cad8ceec5034f845c63 inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a4aa09631b2428cad8ceec5034f845c63"></a>
-virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>uncertainty</b> () const</td></tr>
-<tr class="separator:a4aa09631b2428cad8ceec5034f845c63 inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb6122e2fed82727679e1fd4dcd1c04 inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="aacb6122e2fed82727679e1fd4dcd1c04"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>uncertainty</b> (bool *is_relative=NULL) const</td></tr>
+<tr class="separator:aacb6122e2fed82727679e1fd4dcd1c04 inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab609e009f55c7ac5d0634e7b85633d42 inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="ab609e009f55c7ac5d0634e7b85633d42"></a>
 virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>unit</b> () const</td></tr>
 <tr class="separator:ab609e009f55c7ac5d0634e7b85633d42 inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecea1325dfae4a621fc202c476bd72de inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKnownVariable.html#aecea1325dfae4a621fc202c476bd72de">subtype</a> () const</td></tr>
 <tr class="separator:aecea1325dfae4a621fc202c476bd72de inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4bf4fed020f090e75c4c7f615da762 inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="aae4bf4fed020f090e75c4c7f615da762"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setUncertainty</b> (string standard_uncertainty)</td></tr>
-<tr class="separator:aae4bf4fed020f090e75c4c7f615da762 inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a055a8401cf19d4933793e47fdd1ed inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a95a055a8401cf19d4933793e47fdd1ed"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setUncertainty</b> (string standard_uncertainty, bool is_relative=false)</td></tr>
+<tr class="separator:a95a055a8401cf19d4933793e47fdd1ed inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c3f892f7f6e4e3753daa7d06b18c84f inherit pub_methods_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a6c3f892f7f6e4e3753daa7d06b18c84f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setUnit</b> (string unit_expression)</td></tr>
 <tr class="separator:a6c3f892f7f6e4e3753daa7d06b18c84f inherit pub_methods_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,18 +310,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>always_recalculate</b
 <tr class="memitem:a595f537509d2d0adb877ec4e819413b5 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a595f537509d2d0adb877ec4e819413b5"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mstruct</b></td></tr>
 <tr class="separator:a595f537509d2d0adb877ec4e819413b5 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25900a1b57120c3c658b463262bfaac3 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a25900a1b57120c3c658b463262bfaac3"></a>
+<a class="el" href="classMathStructure.html">MathStructure</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mstruct_alt</b></td></tr>
+<tr class="separator:a25900a1b57120c3c658b463262bfaac3 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac422687ac96ecfabaca4fa6a6a486971 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="ac422687ac96ecfabaca4fa6a6a486971"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_expression</b></td></tr>
 <tr class="separator:ac422687ac96ecfabaca4fa6a6a486971 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d445df211540d5ccce5c95e504f2698 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a1d445df211540d5ccce5c95e504f2698"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_precision</b></td></tr>
 <tr class="separator:a1d445df211540d5ccce5c95e504f2698 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64138d06ffd8f698a6ebae5da9fc2356 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a64138d06ffd8f698a6ebae5da9fc2356"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_with_interval</b></td></tr>
-<tr class="separator:a64138d06ffd8f698a6ebae5da9fc2356 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a73376b3c958df8b1ffd675914f3371 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a3a73376b3c958df8b1ffd675914f3371"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_with_units</b></td></tr>
-<tr class="separator:a3a73376b3c958df8b1ffd675914f3371 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a024a2084c2f3b0ef79232480e3bad3dc inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a024a2084c2f3b0ef79232480e3bad3dc"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>sexpression</b></td></tr>
 <tr class="separator:a024a2084c2f3b0ef79232480e3bad3dc inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,6 +328,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>suncertainty</b></t
 <tr class="memitem:a3a0f66f17a8696f9be946ce67fede686 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="a3a0f66f17a8696f9be946ce67fede686"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>sunit</b></td></tr>
 <tr class="separator:a3a0f66f17a8696f9be946ce67fede686 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9489bd5807b06cd8c7a6cb70b3d2863 inherit pro_attribs_classKnownVariable"><td class="memItemLeft" align="right" valign="top"><a id="ab9489bd5807b06cd8c7a6cb70b3d2863"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_relative_uncertainty</b></td></tr>
+<tr class="separator:ab9489bd5807b06cd8c7a6cb70b3d2863 inherit pro_attribs_classKnownVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classExpressionItem"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classExpressionItem')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classExpressionItem.html">ExpressionItem</a></td></tr>
 <tr class="memitem:a3a00b2e70cc3af9c018bfa52944621a1 inherit pro_attribs_classExpressionItem"><td class="memItemLeft" align="right" valign="top"><a id="a3a00b2e70cc3af9c018bfa52944621a1"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>scat</b></td></tr>

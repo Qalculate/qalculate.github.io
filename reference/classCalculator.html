@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.9.0: Calculator Class Reference</title>
+<title>libqalculate-3.0.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.9.0
+   <div id="projectname">libqalculate-3.0.0
    </div>
   </td>
  </tr>
@@ -261,12 +261,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parseAdd</b> (string 
 <tr class="memitem:a3c1321e4ce4b283353e0d42824dbcf24"><td class="memItemLeft" align="right" valign="top"><a id="a3c1321e4ce4b283353e0d42824dbcf24"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertToBaseUnits</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options)</td></tr>
 <tr class="separator:a3c1321e4ce4b283353e0d42824dbcf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade5c99d309819158a7148c6fd114776c"><td class="memItemLeft" align="right" valign="top"><a id="ade5c99d309819158a7148c6fd114776c"></a>
-<a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getBestUnit</b> (<a class="el" href="classUnit.html">Unit</a> *u, bool allow_only_div=false, bool convert_to_local_currency=true)</td></tr>
+<tr class="memitem:ade5c99d309819158a7148c6fd114776c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ade5c99d309819158a7148c6fd114776c">getBestUnit</a> (<a class="el" href="classUnit.html">Unit</a> *u, bool allow_only_div=false, bool convert_to_local_currency=true)</td></tr>
 <tr class="separator:ade5c99d309819158a7148c6fd114776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef34b4af7b0861cfac6847df2e7ac649"><td class="memItemLeft" align="right" valign="top"><a id="aef34b4af7b0861cfac6847df2e7ac649"></a>
-<a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertToBestUnit</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool convert_to_si_units=true)</td></tr>
+<tr class="memitem:a9ce8feb2418b60254b2326ac6af4919f"><td class="memItemLeft" align="right" valign="top"><a id="a9ce8feb2418b60254b2326ac6af4919f"></a>
+<a class="el" href="classUnit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getOptimalUnit</b> (<a class="el" href="classUnit.html">Unit</a> *u, bool allow_only_div=false, bool convert_to_local_currency=true)</td></tr>
+<tr class="separator:a9ce8feb2418b60254b2326ac6af4919f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef34b4af7b0861cfac6847df2e7ac649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aef34b4af7b0861cfac6847df2e7ac649">convertToBestUnit</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool convert_to_si_units=true)</td></tr>
 <tr class="separator:aef34b4af7b0861cfac6847df2e7ac649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add27675e7bcc6f80a6e9a494918fbf03"><td class="memItemLeft" align="right" valign="top"><a id="add27675e7bcc6f80a6e9a494918fbf03"></a>
+<a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertToOptimalUnit</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool convert_to_si_units=true)</td></tr>
+<tr class="separator:add27675e7bcc6f80a6e9a494918fbf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5110fa1630c74b3d8e7332f3e7ac6d5"><td class="memItemLeft" align="right" valign="top"><a id="aa5110fa1630c74b3d8e7332f3e7ac6d5"></a>
 <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convertToCompositeUnit</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, <a class="el" href="classCompositeUnit.html">CompositeUnit</a> *cu, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options, bool always_convert=true)</td></tr>
 <tr class="separator:aa5110fa1630c74b3d8e7332f3e7ac6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,16 +298,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parseAdd</b> (string 
 <tr class="separator:a52e666ffe7bb6e1602ee2e66e5984466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4117d3e5103193c989ccd89d78ed379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ac4117d3e5103193c989ccd89d78ed379">getNearestDecimalPrefix</a> (int exp10, int exp=1) const</td></tr>
 <tr class="separator:ac4117d3e5103193c989ccd89d78ed379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f87bf0fbdd66bf692f09f2880d79a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#af3f87bf0fbdd66bf692f09f2880d79a7">getBestDecimalPrefix</a> (int exp10, int exp=1, bool all_prefixes=true) const</td></tr>
-<tr class="separator:af3f87bf0fbdd66bf692f09f2880d79a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13cd57f4e92573d074096a79193e377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#af13cd57f4e92573d074096a79193e377">getBestDecimalPrefix</a> (const <a class="el" href="classNumber.html">Number</a> &amp;exp10, const <a class="el" href="classNumber.html">Number</a> &amp;exp, bool all_prefixes=true) const</td></tr>
-<tr class="separator:af13cd57f4e92573d074096a79193e377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6975e8a9946ef131efa4969287b5009f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a6975e8a9946ef131efa4969287b5009f">getOptimalDecimalPrefix</a> (int exp10, int exp=1, bool all_prefixes=true) const</td></tr>
+<tr class="separator:a6975e8a9946ef131efa4969287b5009f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa5b2625009d6656b196647cf0854dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a4fa5b2625009d6656b196647cf0854dc">getOptimalDecimalPrefix</a> (const <a class="el" href="classNumber.html">Number</a> &amp;exp10, const <a class="el" href="classNumber.html">Number</a> &amp;exp, bool all_prefixes=true) const</td></tr>
+<tr class="separator:a4fa5b2625009d6656b196647cf0854dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5822e6baae89701aa946e0990dcf777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae5822e6baae89701aa946e0990dcf777">getNearestBinaryPrefix</a> (int exp2, int exp=1) const</td></tr>
 <tr class="separator:ae5822e6baae89701aa946e0990dcf777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e02bae66e60c40f88593a2641f6d57d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a9e02bae66e60c40f88593a2641f6d57d">getBestBinaryPrefix</a> (int exp2, int exp=1) const</td></tr>
-<tr class="separator:a9e02bae66e60c40f88593a2641f6d57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b15714afc145ebbf9cae5b52ff80689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a3b15714afc145ebbf9cae5b52ff80689">getBestBinaryPrefix</a> (const <a class="el" href="classNumber.html">Number</a> &amp;exp2, const <a class="el" href="classNumber.html">Number</a> &amp;exp) const</td></tr>
-<tr class="separator:a3b15714afc145ebbf9cae5b52ff80689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c95fdfc24e0d61c57519abdde9621c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a82c95fdfc24e0d61c57519abdde9621c">getOptimalBinaryPrefix</a> (int exp2, int exp=1) const</td></tr>
+<tr class="separator:a82c95fdfc24e0d61c57519abdde9621c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca50df52d575f6c9722e4807a8500287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aca50df52d575f6c9722e4807a8500287">getOptimalBinaryPrefix</a> (const <a class="el" href="classNumber.html">Number</a> &amp;exp2, const <a class="el" href="classNumber.html">Number</a> &amp;exp) const</td></tr>
+<tr class="separator:aca50df52d575f6c9722e4807a8500287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8a0f90687a2e05eec47930950bb162"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPrefix.html">Prefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a8c8a0f90687a2e05eec47930950bb162">addPrefix</a> (<a class="el" href="classPrefix.html">Prefix</a> *p)</td></tr>
 <tr class="separator:a8c8a0f90687a2e05eec47930950bb162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3470374cb0fdc0c6177c575d54e6fb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae3470374cb0fdc0c6177c575d54e6fb1">prefixNameChanged</a> (<a class="el" href="classPrefix.html">Prefix</a> *p, bool new_item=false)</td></tr>
@@ -703,6 +707,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>endTemporaryEnableInt
 <tr class="separator:aa75e349429e295a255a09f987b6a7cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847a2d550ad21f5ba0e42f229f5464b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a847a2d550ad21f5ba0e42f229f5464b7">setLocale</a> ()</td></tr>
 <tr class="separator:a847a2d550ad21f5ba0e42f229f5464b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8277ab8a3f8e1be85f1288a9b5d30e8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a8277ab8a3f8e1be85f1288a9b5d30e8e">setIgnoreLocale</a> ()</td></tr>
+<tr class="separator:a8277ab8a3f8e1be85f1288a9b5d30e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c9b967d934fa99e7e5892ac393ff70"><td class="memItemLeft" align="right" valign="top"><a id="a03c9b967d934fa99e7e5892ac393ff70"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>useDecimalComma</b> ()</td></tr>
 <tr class="separator:a03c9b967d934fa99e7e5892ac393ff70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -995,9 +1001,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2d53196d669eb9daed9a85dbf7e941be"><td class="memItemLeft" align="right" valign="top"><a id="a2d53196d669eb9daed9a85dbf7e941be"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_denominator</b></td></tr>
 <tr class="separator:a2d53196d669eb9daed9a85dbf7e941be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff1175611471f856a088ef83279831c"><td class="memItemLeft" align="right" valign="top"><a id="a1ff1175611471f856a088ef83279831c"></a>
+<tr class="memitem:a2b3a8a14cafc5e60add359a9b2e5f450"><td class="memItemLeft" align="right" valign="top"><a id="a2b3a8a14cafc5e60add359a9b2e5f450"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_interval</b></td></tr>
-<tr class="separator:a1ff1175611471f856a088ef83279831c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a2b3a8a14cafc5e60add359a9b2e5f450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333257e9288a6edc0389b0a03f5a8eb6"><td class="memItemLeft" align="right" valign="top"><a id="a333257e9288a6edc0389b0a03f5a8eb6"></a>
+<a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_uncertainty</b></td></tr>
+<tr class="separator:a333257e9288a6edc0389b0a03f5a8eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af74b72a6d5ffa39353f69ee34d1f4957"><td class="memItemLeft" align="right" valign="top"><a id="af74b72a6d5ffa39353f69ee34d1f4957"></a>
 <a class="el" href="classMathFunction.html">MathFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>f_sqrt</b></td></tr>
 <tr class="separator:af74b72a6d5ffa39353f69ee34d1f4957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1508,6 +1517,9 @@ vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>def
 <tr class="memitem:af2e8e6203fc3e326ccacfe838aa76ac3"><td class="memItemLeft" align="right" valign="top"><a id="af2e8e6203fc3e326ccacfe838aa76ac3"></a>
 vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>default_real_signs</b></td></tr>
 <tr class="separator:af2e8e6203fc3e326ccacfe838aa76ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ef281bede19f2a10c7c9a1c69939ba"><td class="memItemLeft" align="right" valign="top"><a id="a21ef281bede19f2a10c7c9a1c69939ba"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_ignore_locale</b></td></tr>
+<tr class="separator:a21ef281bede19f2a10c7c9a1c69939ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1a5c314b968ddbf237d74ba4676ffdb"><td class="memItemLeft" align="right" valign="top"><a id="ae1a5c314b968ddbf237d74ba4676ffdb"></a>
 char *&#160;</td><td class="memItemRight" valign="bottom"><b>saved_locale</b></td></tr>
 <tr class="separator:ae1a5c314b968ddbf237d74ba4676ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2760,6 +2772,41 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
+<a id="aef34b4af7b0861cfac6847df2e7ac649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef34b4af7b0861cfac6847df2e7ac649">&#9670;&nbsp;</a></span>convertToBestUnit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMathStructure.html">MathStructure</a> Calculator::convertToBestUnit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;&#160;</td>
+          <td class="paramname"><em>mstruct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>eo</em> = <code>default_evaluation_options</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>convert_to_si_units</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deprecated: use convertToOptimalUnit() </p>
+
+</div>
+</div>
 <a id="a96af02e587a23c3d630859c82861a015"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96af02e587a23c3d630859c82861a015">&#9670;&nbsp;</a></span>defaultAssumptions()</h2>
 
@@ -2858,165 +2905,38 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="a9e02bae66e60c40f88593a2641f6d57d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e02bae66e60c40f88593a2641f6d57d">&#9670;&nbsp;</a></span>getBestBinaryPrefix() <span class="overload">[1/2]</span></h2>
+<a id="ade5c99d309819158a7148c6fd114776c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5c99d309819158a7148c6fd114776c">&#9670;&nbsp;</a></span>getBestUnit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a>* Calculator::getBestBinaryPrefix </td>
+          <td class="memname"><a class="el" href="classUnit.html">Unit</a>* Calculator::getBestUnit </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>exp2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>exp</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the best suited binary prefix for a value.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exp10</td><td>Base-2 exponent of the value. </td></tr>
-    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
-
-</div>
-</div>
-<a id="a3b15714afc145ebbf9cae5b52ff80689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b15714afc145ebbf9cae5b52ff80689">&#9670;&nbsp;</a></span>getBestBinaryPrefix() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a>* Calculator::getBestBinaryPrefix </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
-          <td class="paramname"><em>exp2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
-          <td class="paramname"><em>exp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the best suited binary prefix for a value.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exp10</td><td>Base-2 exponent of the value. </td></tr>
-    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
-
-</div>
-</div>
-<a id="af3f87bf0fbdd66bf692f09f2880d79a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f87bf0fbdd66bf692f09f2880d79a7">&#9670;&nbsp;</a></span>getBestDecimalPrefix() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a>* Calculator::getBestDecimalPrefix </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>exp10</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>exp</em> = <code>1</code>, </td>
+          <td class="paramtype"><a class="el" href="classUnit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>all_prefixes</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the best suited decimal prefix for a value.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exp10</td><td>Base-10 exponent of the value. </td></tr>
-    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
-    <tr><td class="paramname">all_prefixes</td><td>If false, prefixes which is not a multiple of thousand (centi, deci, deka, hekto) will be skipped. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
-
-</div>
-</div>
-<a id="af13cd57f4e92573d074096a79193e377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af13cd57f4e92573d074096a79193e377">&#9670;&nbsp;</a></span>getBestDecimalPrefix() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a>* Calculator::getBestDecimalPrefix </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
-          <td class="paramname"><em>exp10</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
-          <td class="paramname"><em>exp</em>, </td>
+          <td class="paramname"><em>allow_only_div</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>all_prefixes</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>convert_to_local_currency</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the best suited decimal prefix for a value.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exp10</td><td>Base-10 exponent of the value. </td></tr>
-    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
-    <tr><td class="paramname">all_prefixes</td><td>If false, prefixes which is not a multiple of thousand (centi, deci, deka, hekto) will be skipped. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
+<p>Deprecated: use getOptimalUnit() </p>
 
 </div>
 </div>
@@ -3398,6 +3318,168 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if no decimal prefix is available. </dd></dl>
+
+</div>
+</div>
+<a id="a82c95fdfc24e0d61c57519abdde9621c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c95fdfc24e0d61c57519abdde9621c">&#9670;&nbsp;</a></span>getOptimalBinaryPrefix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a>* Calculator::getOptimalBinaryPrefix </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exp2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exp</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the best suited binary prefix for a value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exp10</td><td>Base-2 exponent of the value. </td></tr>
+    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
+
+</div>
+</div>
+<a id="aca50df52d575f6c9722e4807a8500287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca50df52d575f6c9722e4807a8500287">&#9670;&nbsp;</a></span>getOptimalBinaryPrefix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a>* Calculator::getOptimalBinaryPrefix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>exp2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>exp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the best suited binary prefix for a value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exp10</td><td>Base-2 exponent of the value. </td></tr>
+    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
+
+</div>
+</div>
+<a id="a6975e8a9946ef131efa4969287b5009f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6975e8a9946ef131efa4969287b5009f">&#9670;&nbsp;</a></span>getOptimalDecimalPrefix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a>* Calculator::getOptimalDecimalPrefix </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exp10</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exp</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>all_prefixes</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the best suited decimal prefix for a value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exp10</td><td>Base-10 exponent of the value. </td></tr>
+    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
+    <tr><td class="paramname">all_prefixes</td><td>If false, prefixes which is not a multiple of thousand (centi, deci, deka, hekto) will be skipped. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
+
+</div>
+</div>
+<a id="a4fa5b2625009d6656b196647cf0854dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa5b2625009d6656b196647cf0854dc">&#9670;&nbsp;</a></span>getOptimalDecimalPrefix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDecimalPrefix.html">DecimalPrefix</a>* Calculator::getOptimalDecimalPrefix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>exp10</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>exp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>all_prefixes</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the best suited decimal prefix for a value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exp10</td><td>Base-10 exponent of the value. </td></tr>
+    <tr><td class="paramname">exp</td><td>The exponent of the unit. </td></tr>
+    <tr><td class="paramname">all_prefixes</td><td>If false, prefixes which is not a multiple of thousand (centi, deci, deka, hekto) will be skipped. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A prefix or NULL if the unit should be left without prefix. </dd></dl>
 
 </div>
 </div>
@@ -4527,6 +4609,24 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
+<a id="a8277ab8a3f8e1be85f1288a9b5d30e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8277ab8a3f8e1be85f1288a9b5d30e8e">&#9670;&nbsp;</a></span>setIgnoreLocale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Calculator::setIgnoreLocale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If "C" locale shall be used. </p>
+
+</div>
+</div>
 <a id="a847a2d550ad21f5ba0e42f229f5464b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a847a2d550ad21f5ba0e42f229f5464b7">&#9670;&nbsp;</a></span>setLocale()</h2>
 
@@ -4777,7 +4877,7 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set if interval arithmetic should be used for approximate calculations.</p>
+<p>Set if interval should be produced for approximate functions and irrational numbers. This does not affect calculation of lower precision explicit intervals (uncertainty propagation).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">use_interval_arithmetic</td><td>Set true to activate, or false to deactivate, interval arithmetic. </td></tr>

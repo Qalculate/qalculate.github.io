@@ -49,21 +49,21 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2019-02-11 :. Qalculate! version 2.9.0 released</h4>
+	<h4>.: 2019-03-18 :. Qalculate! version 3.0 released</h4>
 	List of changes:
 	<ul>
-		<li>Propagation of uncertainty using variance formula (if interval arithmetic is disabled).</li>
-		<li>Improved and extended physical constants, now defined in relation to each other (e.g. R<sub>K</sub> = (&#x3BC;<sub>0</sub>c)/(2&#x03B1;)).</li>
-		<li>Natural, atomic, and Planck units.</li>
-		<li>Reciprocal unit conversion (e.g. 5 m/s = 0.2 s/m, 60 mpg = 0.039 L/km).</li>
-		<li>Updated elements and planets data sets.</li>
-		<li>+/- syntax for non-numeric values.</li>
-		<li>raid() function for RAID capacity calculation.</li>
-		<li>UTC+/-hh[:mm] and CET time zone conversion (using "to").</li>
-		<li>Fix convert button (GUI).</li>
-		<li>Minor bug fixes and feature improvements.</li>
+		<li>Implement 2019 redefinition of SI base units (primarily affects physical constants and will not take effect until 20 May).</li>
+		<li>Uncertainty propagation improvements/fixes.</li>
+		<li>Separate use of interval arithmetic, to keep track of precision changes with approximate calculations, from selection of interval calculation algorithm (by default both interval arithmetic and uncertainty propagation using variance formula are now activated).</li>
+		<li>uncertainty() function (can specify relative uncertainty of value).</li>
+		<li>Improved polynomial gcd.</li>
+		<li>Option to ignore system language (locale).</li>
+		<li>Option to use two's complement also for hexadecimal numbers.</li>
+		<li>Switch to exact decimal fractions (fixed) from decimal fractions mode (and vice versa) when exact mode is toggled.</li>
+		<li>Restore lost signal handlers in the conversion GUI (fixes search, popup menu, etc.).</li>
+		<li>Bug fixes and minor feature improvements.</li>
 	</ul>
-	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br><i>Update 2019-02-12: missing libidn-2.4.dll has now been added to Windows installer.</i><br><br>
+	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
 </td><td width="50px">&nbsp;</td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-2.9.0: libqalculate/includes.h File Reference</title>
+<title>libqalculate-3.0.0: libqalculate/includes.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-2.9.0
+   <div id="projectname">libqalculate-3.0.0
    </div>
   </td>
  </tr>
@@ -780,6 +780,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="includes_8h.html#ac1f1e0a72eb3bb133c13c1aedc837223af614c3f00d4d89cbb0f79a3f21ad8d13">PARSING_MODE_CONVENTIONAL</a>
  }</td></tr>
 <tr class="separator:ac1f1e0a72eb3bb133c13c1aedc837223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980908616e1836da3fb4d955de3a81b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="includes_8h.html#a980908616e1836da3fb4d955de3a81b5">IntervalCalculation</a> { <a class="el" href="includes_8h.html#a980908616e1836da3fb4d955de3a81b5a30b32be9b703913ff4e91e051dda3624">INTERVAL_CALCULATION_NONE</a>, 
+<b>INTERVAL_CALCULATION_VARIANCE_FORMULA</b>, 
+<b>INTERVAL_CALCULATION_INTERVAL_ARITHMETIC</b>, 
+<a class="el" href="includes_8h.html#a980908616e1836da3fb4d955de3a81b5ab621c61a014273bd6e3d9c82b342c4ae">INTERVAL_CALCULATION_SIMPLE_INTERVAL_ARITHMETIC</a>
+ }</td></tr>
+<tr class="separator:a980908616e1836da3fb4d955de3a81b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -940,6 +946,26 @@ static const struct <a class="el" href="structEvaluationOptions.html">Evaluation
 <tr><td class="fieldname"><a id="a05f1c0afe6f10792534dbd98fbb7541fae40264fa7bcc3bc4091d70ddd42bd542"></a>TYPE_FUNCTION&#160;</td><td class="fielddoc"><p>class <a class="el" href="classMathFunction.html" title="Abstract base class for mathematical functions.">MathFunction</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a05f1c0afe6f10792534dbd98fbb7541fa9f05f9f42cf83343a26b9e1039767679"></a>TYPE_UNIT&#160;</td><td class="fielddoc"><p>class <a class="el" href="classUnit.html" title="A unit for measurement.">Unit</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a980908616e1836da3fb4d955de3a81b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980908616e1836da3fb4d955de3a81b5">&#9670;&nbsp;</a></span>IntervalCalculation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="includes_8h.html#a980908616e1836da3fb4d955de3a81b5">IntervalCalculation</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a980908616e1836da3fb4d955de3a81b5a30b32be9b703913ff4e91e051dda3624"></a>INTERVAL_CALCULATION_NONE&#160;</td><td class="fielddoc"><p>Ignores uncertainties and uses the middle value of intervals. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a980908616e1836da3fb4d955de3a81b5ab621c61a014273bd6e3d9c82b342c4ae"></a>INTERVAL_CALCULATION_SIMPLE_INTERVAL_ARITHMETIC&#160;</td><td class="fielddoc"><p>Treats all intervals as uncorrelated. </p>
 </td></tr>
 </table>
 
