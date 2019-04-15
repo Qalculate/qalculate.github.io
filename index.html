@@ -49,20 +49,23 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2019-03-18 :. Qalculate! version 3.0 released</h4>
+	<h4>.: 2019-04-15 :. Qalculate! version 3.1 released</h4>
 	List of changes:
 	<ul>
-		<li>Implement 2019 redefinition of SI base units (primarily affects physical constants and will not take effect until 20 May).</li>
-		<li>Uncertainty propagation improvements/fixes.</li>
-		<li>Separate use of interval arithmetic, to keep track of precision changes with approximate calculations, from selection of interval calculation algorithm (by default both interval arithmetic and uncertainty propagation using variance formula are now activated).</li>
-		<li>uncertainty() function (can specify relative uncertainty of value).</li>
-		<li>Improved polynomial gcd.</li>
-		<li>Option to ignore system language (locale).</li>
-		<li>Option to use two's complement also for hexadecimal numbers.</li>
-		<li>Switch to exact decimal fractions (fixed) from decimal fractions mode (and vice versa) when exact mode is toggled.</li>
-		<li>Restore lost signal handlers in the conversion GUI (fixes search, popup menu, etc.).</li>
-		<li>Bug fixes and minor feature improvements.</li>
+		<li>Calculation of Si(), Ci(), Shi(), and Chi().</li>
+		<li>Convert trigonometric arguments to selected angle unit, and hide angle unit in result.</li>
+		<li>Hide optional arguments, with default value, in output.</li>
+		<li>Add optional variable value argument to diff(), for calculation of derivative for a specific <i>x</i> value.</li>
+		<li>Improved sinc() support.</li>
+		<li>Improved output with show ending zeroes activated.</li>
+		<li>Fix ignore system language on Windows.</li>
+		<li>Fix atomic unit of velocity.</li>
+		<li>Fix and improve keypad menus, and add dynamic convert to menu to result popup menu (GUI).</li>
+		<li>Fix compilation errors because of erroneous limits.h inclusion.</li>
+		<li>Fix "factorized result is wrong" error.</li>
+		<li>Minor bug fixes and feature improvements.</li>
 	</ul>
+	For details see the changelogs for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v3.1.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v3.1.0/ChangeLog">qalculate-gtk</a>.<br><br>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
