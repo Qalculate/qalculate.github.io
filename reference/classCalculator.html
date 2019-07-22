@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.2.0: Calculator Class Reference</title>
+<title>libqalculate-3.3.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.2.0
+   <div id="projectname">libqalculate-3.3.0
    </div>
   </td>
  </tr>
@@ -64,6 +64,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setVariableUnitsEnabl
 <tr class="memitem:ab0100f6a6d3623e0ed321aaf82660880"><td class="memItemLeft" align="right" valign="top"><a id="ab0100f6a6d3623e0ed321aaf82660880"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>variableUnitsEnabled</b> () const</td></tr>
 <tr class="separator:ab0100f6a6d3623e0ed321aaf82660880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1bdefc8805933602a9cdfad3aa880b"><td class="memItemLeft" align="right" valign="top"><a id="abf1bdefc8805933602a9cdfad3aa880b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCustomInputBase</b> (<a class="el" href="classNumber.html">Number</a> nr)</td></tr>
+<tr class="separator:abf1bdefc8805933602a9cdfad3aa880b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe3c2112f77ed54908f48a878eb15f2"><td class="memItemLeft" align="right" valign="top"><a id="a1fe3c2112f77ed54908f48a878eb15f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCustomOutputBase</b> (<a class="el" href="classNumber.html">Number</a> nr)</td></tr>
+<tr class="separator:a1fe3c2112f77ed54908f48a878eb15f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcf84b106cdeab63c73f6111cdb64e6"><td class="memItemLeft" align="right" valign="top"><a id="affcf84b106cdeab63c73f6111cdb64e6"></a>
+const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>customInputBase</b> () const</td></tr>
+<tr class="separator:affcf84b106cdeab63c73f6111cdb64e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead1b3d760481f2fe4fa62198d846a6a"><td class="memItemLeft" align="right" valign="top"><a id="aead1b3d760481f2fe4fa62198d846a6a"></a>
+const <a class="el" href="classNumber.html">Number</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>customOutputBase</b> () const</td></tr>
+<tr class="separator:aead1b3d760481f2fe4fa62198d846a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructor</div></td></tr>
 <tr class="memitem:adf568b2e0dacc9adf5b7d740622beb92"><td class="memItemLeft" align="right" valign="top"><a id="adf568b2e0dacc9adf5b7d740622beb92"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Calculator</b> ()</td></tr>
@@ -575,8 +587,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanMessages</b> (co
 <tr class="separator:a5a99377533fbddb6609634ad246fdcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b6e4dd5a70424330a38fb759453afe7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a4b6e4dd5a70424330a38fb759453afe7">loadLocalDefinitions</a> ()</td></tr>
 <tr class="separator:a4b6e4dd5a70424330a38fb759453afe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12b7477c394766924196494734679f5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a12b7477c394766924196494734679f5c">loadDefinitions</a> (const char *file_name, bool is_user_defs=true)</td></tr>
-<tr class="separator:a12b7477c394766924196494734679f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dc9a12fb88144917e18c6dfdad959d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ac2dc9a12fb88144917e18c6dfdad959d">loadDefinitions</a> (const char *file_name, bool is_user_defs=true, bool check_duplicates_of_global=false)</td></tr>
+<tr class="separator:ac2dc9a12fb88144917e18c6dfdad959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a843962321253c97cacfa75ae6e806f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a0a843962321253c97cacfa75ae6e806f">saveDefinitions</a> ()</td></tr>
 <tr class="separator:a0a843962321253c97cacfa75ae6e806f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac52b904d9262ebbc1a8600164d1b1265"><td class="memItemLeft" align="right" valign="top"><a id="ac52b904d9262ebbc1a8600164d1b1265"></a>
@@ -3691,8 +3703,8 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
 
 </div>
 </div>
-<a id="a12b7477c394766924196494734679f5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12b7477c394766924196494734679f5c">&#9670;&nbsp;</a></span>loadDefinitions()</h2>
+<a id="ac2dc9a12fb88144917e18c6dfdad959d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2dc9a12fb88144917e18c6dfdad959d">&#9670;&nbsp;</a></span>loadDefinitions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3707,7 +3719,13 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is_user_defs</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>is_user_defs</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>check_duplicates_of_global</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3742,7 +3760,7 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load saved (local) currency units and exchange rates.</p>
+<p>Load exchange rates. Use before <a class="el" href="classCalculator.html#aa1feeafbc5baf4b17a92a5845f1a49be">loadGlobalCurrencies()</a> or <a class="el" href="classCalculator.html#a1c264e294399a6d0071565f2439a531b">loadGlobalDefinitions()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if operation successful. </dd></dl>
 
 </div>
