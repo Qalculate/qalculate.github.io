@@ -49,21 +49,21 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2019-07-22 :. Qalculate! version 3.3 released</h4>
+	<h4>.: 2019-09-16 :. Qalculate! version 3.4 released</h4>
 	List of changes:
 	<ul>
-		<li>Support for number bases &gt; 32, as well as negative and non-integer number bases</li>
-		<li>Support for all number bases, including non-numerical, and specification of digits in base() function</li>
-		<li>dBm and dBW units</li>
-		<li>Support both micro sign and small mu as symbol for micro prefix</li>
-		<li>New programming keypad icon</li>
-		<li>Import definitions action in GUI</li>
-		<li>Fix parsing of "0x80 mod 3" and similar</li>
-		<li>Reduce length of expressions in warnings and errors (primarily when using high precision)</li>
-		<li>Improved handling of interval arithmetic for cubic equations</li>
+		<li>"where"-syntax (e.g. "x+y where x=1 and y=2", or alternatively "x+y/.x=1,y=2", and "x^2=4 where x&gt;0")</li>
+		<li>Improvements to replace() function (now supports replacement functions and parts of polynomials)</li>
+		<li>Fix local thousands separator on Windows when localeconv()->thousands_sep is a non-Unicode character > 127 (e.g. non-breaking space, 0xA0)</li>
+		<li>Smarter comma interpretation (when defined as decimal separator, but used differently)</li>
+		<li>Show warning when multiple decimal separators are used in a single number</li>
+		<li>Man pages (documentation for Unix-like operating systems)</li>
+		<li>Option to automatically calculate the current expression on each change, as you type (GUI)</li>
+		<li>Fix segfault with command line expression (GUI)</li>
+		<li>Option to delete selected history items (GUI)</li>
+		<li>RPN stack drag and drop (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	For details see the changelogs for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v3.3.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v3.3.0/ChangeLog">qalculate-gtk</a>.
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>
