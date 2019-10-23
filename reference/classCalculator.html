@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.4.0: Calculator Class Reference</title>
+<title>libqalculate-3.5.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.4.0
+   <div id="projectname">libqalculate-3.5.0
    </div>
   </td>
  </tr>
@@ -314,6 +314,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>parseAdd</b> (string 
 <tr class="separator:a82c95fdfc24e0d61c57519abdde9621c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca50df52d575f6c9722e4807a8500287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBinaryPrefix.html">BinaryPrefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aca50df52d575f6c9722e4807a8500287">getOptimalBinaryPrefix</a> (const <a class="el" href="classNumber.html">Number</a> &amp;exp2, const <a class="el" href="classNumber.html">Number</a> &amp;exp) const</td></tr>
 <tr class="separator:aca50df52d575f6c9722e4807a8500287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4cb6d30154889840c25a2cbfd0411e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a3f4cb6d30154889840c25a2cbfd0411e">usesBinaryPrefixes</a> () const</td></tr>
+<tr class="separator:a3f4cb6d30154889840c25a2cbfd0411e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0601500b08c0953e3c906ab53a655c07"><td class="memItemLeft" align="right" valign="top"><a id="a0601500b08c0953e3c906ab53a655c07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>useBinaryPrefixes</b> (int use_binary_prefixes)</td></tr>
+<tr class="separator:a0601500b08c0953e3c906ab53a655c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8a0f90687a2e05eec47930950bb162"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPrefix.html">Prefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a8c8a0f90687a2e05eec47930950bb162">addPrefix</a> (<a class="el" href="classPrefix.html">Prefix</a> *p)</td></tr>
 <tr class="separator:a8c8a0f90687a2e05eec47930950bb162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3470374cb0fdc0c6177c575d54e6fb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae3470374cb0fdc0c6177c575d54e6fb1">prefixNameChanged</a> (<a class="el" href="classPrefix.html">Prefix</a> *p, bool new_item=false)</td></tr>
@@ -4914,6 +4919,24 @@ vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> * &gt;
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3f4cb6d30154889840c25a2cbfd0411e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4cb6d30154889840c25a2cbfd0411e">&#9670;&nbsp;</a></span>usesBinaryPrefixes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Calculator::usesBinaryPrefixes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controls if binary, instead of decimal, prefixes will be used by default. 1 = use binary prefixes for information units, 2 = use binary prefixes for all units. </p>
 
 </div>
 </div>

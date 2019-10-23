@@ -49,19 +49,19 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2019-09-16 :. Qalculate! version 3.4 released</h4>
+	<h4>.: 2019-10-23 :. Qalculate! version 3.5 released</h4>
 	List of changes:
 	<ul>
-		<li>"where"-syntax (e.g. "x+y where x=1 and y=2", or alternatively "x+y/.x=1,y=2", and "x^2=4 where x&gt;0")</li>
-		<li>Improvements to replace() function (now supports replacement functions and parts of polynomials)</li>
-		<li>Fix local thousands separator on Windows when localeconv()->thousands_sep is a non-Unicode character > 127 (e.g. non-breaking space, 0xA0)</li>
-		<li>Smarter comma interpretation (when defined as decimal separator, but used differently)</li>
-		<li>Show warning when multiple decimal separators are used in a single number</li>
-		<li>Man pages (documentation for Unix-like operating systems)</li>
-		<li>Option to automatically calculate the current expression on each change, as you type (GUI)</li>
-		<li>Fix segfault with command line expression (GUI)</li>
-		<li>Option to delete selected history items (GUI)</li>
-		<li>RPN stack drag and drop (GUI)</li>
+		<li>Option to use binary prefixes by default for information units and "b?" syntax for conversion to optimal prefix (e.g. 8192 bits to b?byte = 1 kibibyte)</li>
+		<li>Bijective base-26 support (including bijective() function)</li>
+		<li>Option to use 'j' as default symbol for the imaginary unit (placed in front of the imaginary part)</li>
+		<li>Angle/phasor notation for complex numbers</li>
+		<li>poisson() function</li>
+		<li>Fix for steradian conversion</li>
+		<li>Fix and improve integral of abs(<i>f(x)</i>)</li>
+		<li>Add calculate-as-you-type result to history after idle time (GUI)</li>
+		<li>Negate, sum, and "LAST x" RPN buttons, keyboard shortcuts for RPN stack manipulation, and various other RPN improvements (GUI)</li>
+		<li>Fix segfault when saving mode/settings (on exit) if history is empty (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
