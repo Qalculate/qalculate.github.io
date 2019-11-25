@@ -49,22 +49,20 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2019-10-23 :. Qalculate! version 3.5 released</h4>
+	<h4>.: 2019-11-25 :. Qalculate! version 3.6 released</h4>
 	List of changes:
 	<ul>
-		<li>Option to use binary prefixes by default for information units and "b?" syntax for conversion to optimal prefix (e.g. 8192 bits to b?byte = 1 kibibyte)</li>
-		<li>Bijective base-26 support (including bijective() function)</li>
-		<li>Option to use 'j' as default symbol for the imaginary unit (placed in front of the imaginary part)</li>
-		<li>Angle/phasor notation for complex numbers</li>
-		<li>poisson() function</li>
-		<li>Fix for steradian conversion</li>
-		<li>Fix and improve integral of abs(<i>f(x)</i>)</li>
-		<li>Add calculate-as-you-type result to history after idle time (GUI)</li>
-		<li>Negate, sum, and "LAST x" RPN buttons, keyboard shortcuts for RPN stack manipulation, and various other RPN improvements (GUI)</li>
-		<li>Fix segfault when saving mode/settings (on exit) if history is empty (GUI)</li>
+		<li>Major improvements and fixes for integrals (note that the variable of integration argument has moved to 4th position, e.g. <i>integrate(x^2, 1, 5)</i> instead of <i>integrate(x^2, x, 1, 5)</i>)</li>
+		<li>Automatic detection of variables for undefined symbolic arguments (e.g. for <i>diff(y^2)</i>, the derivative is calculated with respect to <i>y</i> instead of defaulting to <i>x</i>)</li>
+		<li>Fix uncertainty propagation involving complex numbers (calculate imaginary and real uncertainty separately when using variance formula)</li>
+		<li>Fix incorrect solutions to equations not removed</li>
+		<li>New functions: dof() for photography depth of field calculation; awg() and awgd() for American Wire Gauge conversion; romberg() for numerical integration; randnorm(), randpoisson(), randrayleigh(), randexp(), and randuniform() for random numbers with different distributions; normdist(), expondist(), and binomdist() for distribution probability calculations</li>
+		<li>New units: cmil and kcmil</li>
+		<li>rand() (and related functions) now accepts an additional argument for specifying the number of random values to generate</li>
+		<li>Option to select custom keypad or application font (GUI)</li>
+		<li>Options to customize the window title: different modes selectable in preferences, command line option, and settitle() function (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<i>Updated 2019-10-24: integral of abs(sin(ax)) fixed</i><br><br>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
 	<br><div align="right"><a href="news.html">older news...</a></div>
 <br><br>

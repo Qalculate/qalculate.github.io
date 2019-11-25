@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.5.0: VectorArgument Class Reference</title>
+<title>libqalculate-3.6.0: VectorArgument Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.5.0
+   <div id="projectname">libqalculate-3.6.0
    </div>
   </td>
  </tr>
@@ -48,7 +48,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A vector argument.  
+<p>A std::vector argument.  
  <a href="classVectorArgument.html#details">More...</a></p>
 
 <p><code>#include &lt;Function.h&gt;</code></p>
@@ -64,9 +64,9 @@ Inheritance diagram for VectorArgument:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5482555b88af340a7bced6dfb6d222e"><td class="memItemLeft" align="right" valign="top"><a id="af5482555b88af340a7bced6dfb6d222e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VectorArgument</b> (string name_=&quot;&quot;, bool does_test=true, bool allow_matrix=false, bool does_error=true)</td></tr>
-<tr class="separator:af5482555b88af340a7bced6dfb6d222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ef2f86a102b69e71c1cce34092f7f0"><td class="memItemLeft" align="right" valign="top"><a id="a05ef2f86a102b69e71c1cce34092f7f0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VectorArgument</b> (std::string name_=&quot;&quot;, bool does_test=true, bool allow_matrix=false, bool does_error=true)</td></tr>
+<tr class="separator:a05ef2f86a102b69e71c1cce34092f7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1230d7ed436d8747ad8d81af65395a78"><td class="memItemLeft" align="right" valign="top"><a id="a1230d7ed436d8747ad8d81af65395a78"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VectorArgument</b> (const <a class="el" href="classVectorArgument.html">VectorArgument</a> *arg)</td></tr>
 <tr class="separator:a1230d7ed436d8747ad8d81af65395a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -74,8 +74,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe1f22ad020f9715257838281bd354f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6743dc992fc41be0f6a6616119e98f5a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classArgument.html">Argument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVectorArgument.html#a6743dc992fc41be0f6a6616119e98f5a">copy</a> () const</td></tr>
 <tr class="separator:a6743dc992fc41be0f6a6616119e98f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93cf560ec9e7028eba0357e5f0dd725"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVectorArgument.html#ae93cf560ec9e7028eba0357e5f0dd725">print</a> () const</td></tr>
-<tr class="separator:ae93cf560ec9e7028eba0357e5f0dd725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3511d1d497a7f7be1e8c538ee09b4db1"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVectorArgument.html#a3511d1d497a7f7be1e8c538ee09b4db1">print</a> () const</td></tr>
+<tr class="separator:a3511d1d497a7f7be1e8c538ee09b4db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c7e99e3f088a42bfe528ddb13221c14"><td class="memItemLeft" align="right" valign="top"><a id="a7c7e99e3f088a42bfe528ddb13221c14"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>reoccuringArguments</b> () const</td></tr>
 <tr class="separator:a7c7e99e3f088a42bfe528ddb13221c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,30 +95,30 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>countArguments</b> 
 <a class="el" href="classArgument.html">Argument</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getArgument</b> (size_t index) const</td></tr>
 <tr class="separator:ae78fa833a152de0629b5dd80c3309281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classArgument"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classArgument')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classArgument.html">Argument</a></td></tr>
-<tr class="memitem:aea909b4efa29a4500448de2c2d2cbad5 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#aea909b4efa29a4500448de2c2d2cbad5">Argument</a> (string name_=&quot;&quot;, bool does_test=true, bool does_error=true)</td></tr>
-<tr class="separator:aea909b4efa29a4500448de2c2d2cbad5 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4bd93f5a03b35d50602b40444e1d3d inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#adf4bd93f5a03b35d50602b40444e1d3d">Argument</a> (std::string name_=&quot;&quot;, bool does_test=true, bool does_error=true)</td></tr>
+<tr class="separator:adf4bd93f5a03b35d50602b40444e1d3d inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa208a7a8e113cf3c789be6b0b20f2849 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#aa208a7a8e113cf3c789be6b0b20f2849">Argument</a> (const <a class="el" href="classArgument.html">Argument</a> *arg)</td></tr>
 <tr class="separator:aa208a7a8e113cf3c789be6b0b20f2849 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91317f50fc0f039c6f060994e9f4993d inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a91317f50fc0f039c6f060994e9f4993d">~Argument</a> ()</td></tr>
 <tr class="separator:a91317f50fc0f039c6f060994e9f4993d inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3cda124d233c5694a31a608d44cda3 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a2a3cda124d233c5694a31a608d44cda3">set</a> (const <a class="el" href="classArgument.html">Argument</a> *arg)</td></tr>
 <tr class="separator:a2a3cda124d233c5694a31a608d44cda3 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff0093c88f07e8b66f527d9d5a55b144 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#aff0093c88f07e8b66f527d9d5a55b144">printlong</a> () const</td></tr>
-<tr class="separator:aff0093c88f07e8b66f527d9d5a55b144 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affaf7436a0a5e5fbacb3a9324b10db47 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#affaf7436a0a5e5fbacb3a9324b10db47">printlong</a> () const</td></tr>
+<tr class="separator:affaf7436a0a5e5fbacb3a9324b10db47 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb1d78b7db515d012b222f757ad28d4 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#aafb1d78b7db515d012b222f757ad28d4">test</a> (<a class="el" href="classMathStructure.html">MathStructure</a> &amp;value, int index, <a class="el" href="classMathFunction.html">MathFunction</a> *f, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_evaluation_options) const</td></tr>
 <tr class="separator:aafb1d78b7db515d012b222f757ad28d4 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c951983cd4589bea3a8dc4a245f0dbd inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a4c951983cd4589bea3a8dc4a245f0dbd">parse</a> (const string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options) const</td></tr>
-<tr class="separator:a4c951983cd4589bea3a8dc4a245f0dbd inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b6e981342668b40c867e0d3c893d07d inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a2b6e981342668b40c867e0d3c893d07d">parse</a> (<a class="el" href="classMathStructure.html">MathStructure</a> *mstruct, const string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options) const</td></tr>
-<tr class="separator:a2b6e981342668b40c867e0d3c893d07d inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4369dad69f4e155a97e0ad7b1313f4 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a6b4369dad69f4e155a97e0ad7b1313f4">name</a> () const</td></tr>
-<tr class="separator:a6b4369dad69f4e155a97e0ad7b1313f4 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fa9eaf486339f09cbbd0158f6f14f9c inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a0fa9eaf486339f09cbbd0158f6f14f9c">setName</a> (string name_)</td></tr>
-<tr class="separator:a0fa9eaf486339f09cbbd0158f6f14f9c inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e334a301ebdd1d379df56e1a116f3d9 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a4e334a301ebdd1d379df56e1a116f3d9">setCustomCondition</a> (string condition)</td></tr>
-<tr class="separator:a4e334a301ebdd1d379df56e1a116f3d9 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c53b0220db6a90b97b76e125b2b8cd3 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a5c53b0220db6a90b97b76e125b2b8cd3">getCustomCondition</a> () const</td></tr>
-<tr class="separator:a5c53b0220db6a90b97b76e125b2b8cd3 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8333a4b3960626344552fd426aababf4 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classMathStructure.html">MathStructure</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a8333a4b3960626344552fd426aababf4">parse</a> (const std::string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options) const</td></tr>
+<tr class="separator:a8333a4b3960626344552fd426aababf4 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f61fbc15a4cc652275808e38e04d22 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#ae2f61fbc15a4cc652275808e38e04d22">parse</a> (<a class="el" href="classMathStructure.html">MathStructure</a> *mstruct, const std::string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options) const</td></tr>
+<tr class="separator:ae2f61fbc15a4cc652275808e38e04d22 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49ebc9b1c6260c76f7c25f5ae830a37 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#ac49ebc9b1c6260c76f7c25f5ae830a37">name</a> () const</td></tr>
+<tr class="separator:ac49ebc9b1c6260c76f7c25f5ae830a37 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24af893b91ebce65232a3a802112c63 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#aa24af893b91ebce65232a3a802112c63">setName</a> (std::string name_)</td></tr>
+<tr class="separator:aa24af893b91ebce65232a3a802112c63 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b303aa970cf0a00d767948ebd18b2bd inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a7b303aa970cf0a00d767948ebd18b2bd">setCustomCondition</a> (std::string condition)</td></tr>
+<tr class="separator:a7b303aa970cf0a00d767948ebd18b2bd inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2bc3ad350e69a1a64d16cbe8f85124 inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#a6b2bc3ad350e69a1a64d16cbe8f85124">getCustomCondition</a> () const</td></tr>
+<tr class="separator:a6b2bc3ad350e69a1a64d16cbe8f85124 inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2dce6124840f272cf4d64970050809a inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArgument.html#ad2dce6124840f272cf4d64970050809a">tests</a> () const</td></tr>
 <tr class="separator:ad2dce6124840f272cf4d64970050809a inherit pub_methods_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef50f56a1457aa7ada7258e07c3f3e9a inherit pub_methods_classArgument"><td class="memItemLeft" align="right" valign="top"><a id="aef50f56a1457aa7ada7258e07c3f3e9a"></a>
@@ -164,24 +164,24 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>suggestsQuote
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af7e7080068049af6db921720632eb30f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVectorArgument.html#af7e7080068049af6db921720632eb30f">subtest</a> (<a class="el" href="classMathStructure.html">MathStructure</a> &amp;value, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo) const</td></tr>
 <tr class="separator:af7e7080068049af6db921720632eb30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d8c1947e7242d6269569dad1849240c"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVectorArgument.html#a3d8c1947e7242d6269569dad1849240c">subprintlong</a> () const</td></tr>
-<tr class="separator:a3d8c1947e7242d6269569dad1849240c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137404c44407ffa2c2b096f77116cf15"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVectorArgument.html#a137404c44407ffa2c2b096f77116cf15">subprintlong</a> () const</td></tr>
+<tr class="separator:a137404c44407ffa2c2b096f77116cf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a56dc02dddae505b4e09049ceb7101334"><td class="memItemLeft" align="right" valign="top"><a id="a56dc02dddae505b4e09049ceb7101334"></a>
-vector&lt; <a class="el" href="classArgument.html">Argument</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subargs</b></td></tr>
-<tr class="separator:a56dc02dddae505b4e09049ceb7101334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751a5fe1e8223d6d9816953d6a3bc1ac"><td class="memItemLeft" align="right" valign="top"><a id="a751a5fe1e8223d6d9816953d6a3bc1ac"></a>
+std::vector&lt; <a class="el" href="classArgument.html">Argument</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subargs</b></td></tr>
+<tr class="separator:a751a5fe1e8223d6d9816953d6a3bc1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc331354b62a9df2e8cded7c9450544"><td class="memItemLeft" align="right" valign="top"><a id="a3bc331354b62a9df2e8cded7c9450544"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_argloop</b></td></tr>
 <tr class="separator:a3bc331354b62a9df2e8cded7c9450544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classArgument"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classArgument')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classArgument.html">Argument</a></td></tr>
-<tr class="memitem:a6f99eb71dbbfc299a19a2ca490605d2e inherit pro_attribs_classArgument"><td class="memItemLeft" align="right" valign="top"><a id="a6f99eb71dbbfc299a19a2ca490605d2e"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>sname</b></td></tr>
-<tr class="separator:a6f99eb71dbbfc299a19a2ca490605d2e inherit pro_attribs_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeca681cb019a8387e1619ed99c88db90 inherit pro_attribs_classArgument"><td class="memItemLeft" align="right" valign="top"><a id="aeca681cb019a8387e1619ed99c88db90"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>scondition</b></td></tr>
-<tr class="separator:aeca681cb019a8387e1619ed99c88db90 inherit pro_attribs_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe0a7cb7c4faef3cc3dec4f0f44b72d inherit pro_attribs_classArgument"><td class="memItemLeft" align="right" valign="top"><a id="a8fe0a7cb7c4faef3cc3dec4f0f44b72d"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>sname</b></td></tr>
+<tr class="separator:a8fe0a7cb7c4faef3cc3dec4f0f44b72d inherit pro_attribs_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fe6329f14c0ecfb22f82526da27d26 inherit pro_attribs_classArgument"><td class="memItemLeft" align="right" valign="top"><a id="a54fe6329f14c0ecfb22f82526da27d26"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>scondition</b></td></tr>
+<tr class="separator:a54fe6329f14c0ecfb22f82526da27d26 inherit pro_attribs_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae13f049d9625f3e8e44dca72e33dbcd5 inherit pro_attribs_classArgument"><td class="memItemLeft" align="right" valign="top"><a id="ae13f049d9625f3e8e44dca72e33dbcd5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_zero</b></td></tr>
 <tr class="separator:ae13f049d9625f3e8e44dca72e33dbcd5 inherit pro_attribs_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +208,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_handle_vector</b></
 <tr class="separator:a0134b18ebdf8596a99da0f7cf1de6fd0 inherit pro_attribs_classArgument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A vector argument. </p>
+<div class="textblock"><p>A std::vector argument. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6743dc992fc41be0f6a6616119e98f5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6743dc992fc41be0f6a6616119e98f5a">&#9670;&nbsp;</a></span>copy()</h2>
@@ -239,8 +239,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_handle_vector</b></
 
 </div>
 </div>
-<a id="ae93cf560ec9e7028eba0357e5f0dd725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae93cf560ec9e7028eba0357e5f0dd725">&#9670;&nbsp;</a></span>print()</h2>
+<a id="a3511d1d497a7f7be1e8c538ee09b4db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3511d1d497a7f7be1e8c538ee09b4db1">&#9670;&nbsp;</a></span>print()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +249,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_handle_vector</b></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual string VectorArgument::print </td>
+          <td class="memname">virtual std::string VectorArgument::print </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -264,12 +264,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_handle_vector</b></
 <p>Resturns a short description of the argument definition. Ex. "number" for <a class="el" href="classNumberArgument.html" title="A definition for numerical arguments.">NumberArgument</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>Short description. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classArgument.html#ae6f447ec3d400bd3e88700a13882b967">Argument</a>.</p>
+<p>Reimplemented from <a class="el" href="classArgument.html#a44b024535ae808339a58b3a9c5aabe4d">Argument</a>.</p>
 
 </div>
 </div>
-<a id="a3d8c1947e7242d6269569dad1849240c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d8c1947e7242d6269569dad1849240c">&#9670;&nbsp;</a></span>subprintlong()</h2>
+<a id="a137404c44407ffa2c2b096f77116cf15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137404c44407ffa2c2b096f77116cf15">&#9670;&nbsp;</a></span>subprintlong()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +278,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_handle_vector</b></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual string VectorArgument::subprintlong </td>
+          <td class="memname">virtual std::string VectorArgument::subprintlong </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -290,10 +290,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>b_handle_vector</b></
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This function is called from <a class="el" href="classArgument.html#aff0093c88f07e8b66f527d9d5a55b144">Argument::printlong()</a> and returns description specific the argument definition type. Should be reimplemented by all subclasses. For example <a class="el" href="classIntegerArgument.html#ab81384375b50ceb7f29d203b7224ab68">IntegerArgument::subprintlong()</a> might return "an integer" and <a class="el" href="classArgument.html#aff0093c88f07e8b66f527d9d5a55b144">Argument::printlong()</a> might append " that fulfills the condition: even(\x)".</p>
+<p>This function is called from <a class="el" href="classArgument.html#affaf7436a0a5e5fbacb3a9324b10db47">Argument::printlong()</a> and returns description specific the argument definition type. Should be reimplemented by all subclasses. For example <a class="el" href="classIntegerArgument.html#a45873551804b38a0d170b517ef9c58fc">IntegerArgument::subprintlong()</a> might return "an integer" and <a class="el" href="classArgument.html#affaf7436a0a5e5fbacb3a9324b10db47">Argument::printlong()</a> might append " that fulfills the condition: even(\x)".</p>
 <dl class="section return"><dt>Returns</dt><dd>Long description. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classArgument.html#a2ab5e939f35e266acd5f467de17cde15">Argument</a>.</p>
+<p>Reimplemented from <a class="el" href="classArgument.html#affd9ba189bf09d8d7ca98fdba4a853e8">Argument</a>.</p>
 
 </div>
 </div>
