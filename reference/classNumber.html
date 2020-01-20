@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.6.0: Number Class Reference</title>
+<title>libqalculate-3.7.0: Number Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.6.0
+   <div id="projectname">libqalculate-3.7.0
    </div>
   </td>
  </tr>
@@ -150,6 +150,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>precisionToInterval</
 <tr class="memitem:a3a4a4357516e9ffef6e54a81ba5d2e57"><td class="memItemLeft" align="right" valign="top"><a id="a3a4a4357516e9ffef6e54a81ba5d2e57"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>intervalToPrecision</b> (long int min_precision=2)</td></tr>
 <tr class="separator:a3a4a4357516e9ffef6e54a81ba5d2e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8353c6e4967643f86749959e25157246"><td class="memItemLeft" align="right" valign="top"><a id="a8353c6e4967643f86749959e25157246"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>intervalToMidValue</b> (bool increase_precision_if_close)</td></tr>
+<tr class="separator:a8353c6e4967643f86749959e25157246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ae1c4e84552617dc295032ed282815"><td class="memItemLeft" align="right" valign="top"><a id="ae1ae1c4e84552617dc295032ed282815"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>intervalToMidValue</b> ()</td></tr>
 <tr class="separator:ae1ae1c4e84552617dc295032ed282815"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -738,6 +741,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setLogicalNot</b> ()<
 <tr class="separator:a415f9191f98f5fff9b1638d0aa97f3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a384a7932c9c0f98fb00def9579b49f4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#a384a7932c9c0f98fb00def9579b49f4b">zeta</a> ()</td></tr>
 <tr class="separator:a384a7932c9c0f98fb00def9579b49f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefc34da5986984f90dd40616a223efa"><td class="memItemLeft" align="right" valign="top"><a id="aeefc34da5986984f90dd40616a223efa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumber.html#aeefc34da5986984f90dd40616a223efa">zeta</a> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
+<tr class="memdesc:aeefc34da5986984f90dd40616a223efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hurwitz zeta function. <br /></td></tr>
+<tr class="separator:aeefc34da5986984f90dd40616a223efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40aaa1910080a4ad419421639aa74f9d"><td class="memItemLeft" align="right" valign="top"><a id="a40aaa1910080a4ad419421639aa74f9d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>gamma</b> ()</td></tr>
 <tr class="separator:a40aaa1910080a4ad419421639aa74f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -750,6 +757,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>airy</b> ()</td></tr>
 <tr class="memitem:a28140aff0d20b7a78a00d519c4c5d6ef"><td class="memItemLeft" align="right" valign="top"><a id="a28140aff0d20b7a78a00d519c4c5d6ef"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>erf</b> ()</td></tr>
 <tr class="separator:a28140aff0d20b7a78a00d519c4c5d6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82cd776d9528cf44d686478b9f70d969"><td class="memItemLeft" align="right" valign="top"><a id="a82cd776d9528cf44d686478b9f70d969"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>erfi</b> ()</td></tr>
+<tr class="separator:a82cd776d9528cf44d686478b9f70d969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11d98fe80f0d12a7f04adcc68cbf43a3"><td class="memItemLeft" align="right" valign="top"><a id="a11d98fe80f0d12a7f04adcc68cbf43a3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>erfc</b> ()</td></tr>
 <tr class="separator:a11d98fe80f0d12a7f04adcc68cbf43a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -813,6 +823,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>exp</b> ()</td></tr>
 <tr class="memitem:acfc4ab2a11f9d3db49914c1ea2ba6238"><td class="memItemLeft" align="right" valign="top"><a id="acfc4ab2a11f9d3db49914c1ea2ba6238"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>lambertW</b> ()</td></tr>
 <tr class="separator:acfc4ab2a11f9d3db49914c1ea2ba6238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa977ecd88ca1223ecee0d51974034ae2"><td class="memItemLeft" align="right" valign="top"><a id="aa977ecd88ca1223ecee0d51974034ae2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lambertW</b> (const <a class="el" href="classNumber.html">Number</a> &amp;k)</td></tr>
+<tr class="separator:aa977ecd88ca1223ecee0d51974034ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da7bb921483eb2ebff60a9970a2019a"><td class="memItemLeft" align="right" valign="top"><a id="a9da7bb921483eb2ebff60a9970a2019a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>gcd</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
 <tr class="separator:a9da7bb921483eb2ebff60a9970a2019a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -825,6 +838,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>polylog</b> (const <a
 <tr class="memitem:a1a555d322b275b93813c6fa2b7e2666c"><td class="memItemLeft" align="right" valign="top"><a id="a1a555d322b275b93813c6fa2b7e2666c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>igamma</b> (const <a class="el" href="classNumber.html">Number</a> &amp;o)</td></tr>
 <tr class="separator:a1a555d322b275b93813c6fa2b7e2666c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0f05c586db45da13934d5bd1208bba"><td class="memItemLeft" align="right" valign="top"><a id="a3d0f05c586db45da13934d5bd1208bba"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fresnels</b> ()</td></tr>
+<tr class="separator:a3d0f05c586db45da13934d5bd1208bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b108d49ec330ddaa9c308eb364e973b"><td class="memItemLeft" align="right" valign="top"><a id="a2b108d49ec330ddaa9c308eb364e973b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fresnelc</b> ()</td></tr>
+<tr class="separator:a2b108d49ec330ddaa9c308eb364e973b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdcc8d58779bd27d2f5d37aeb8ff155"><td class="memItemLeft" align="right" valign="top"><a id="a4cdcc8d58779bd27d2f5d37aeb8ff155"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>expint</b> ()</td></tr>
 <tr class="separator:a4cdcc8d58779bd27d2f5d37aeb8ff155"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -858,6 +877,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>binomial</b> (const <
 <tr class="memitem:a327b6196dccf7a1271f6425f6dab09e5"><td class="memItemLeft" align="right" valign="top"><a id="a327b6196dccf7a1271f6425f6dab09e5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>factorize</b> (std::vector&lt; <a class="el" href="classNumber.html">Number</a> &gt; &amp;factors)</td></tr>
 <tr class="separator:a327b6196dccf7a1271f6425f6dab09e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22f12217e0e45f6eada3110e35366f5"><td class="memItemLeft" align="right" valign="top"><a id="ac22f12217e0e45f6eada3110e35366f5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bernoulli</b> ()</td></tr>
+<tr class="separator:ac22f12217e0e45f6eada3110e35366f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4e90d3f492fbb1da8351480bcf460f"><td class="memItemLeft" align="right" valign="top"><a id="a8a4e90d3f492fbb1da8351480bcf460f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rand</b> ()</td></tr>
 <tr class="separator:a8a4e90d3f492fbb1da8351480bcf460f"><td class="memSeparator" colspan="2">&#160;</td></tr>

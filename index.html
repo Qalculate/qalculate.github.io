@@ -49,18 +49,19 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2019-11-25 :. Qalculate! version 3.6 released</h4>
+	<h4>.: 2019-01-20 :. Qalculate! version 3.7 released</h4>
 	List of changes:
 	<ul>
-		<li>Major improvements and fixes for integrals (note that the variable of integration argument has moved to 4th position, e.g. <i>integrate(x^2, 1, 5)</i> instead of <i>integrate(x^2, x, 1, 5)</i>)</li>
-		<li>Automatic detection of variables for undefined symbolic arguments (e.g. for <i>diff(y^2)</i>, the derivative is calculated with respect to <i>y</i> instead of defaulting to <i>x</i>)</li>
-		<li>Fix uncertainty propagation involving complex numbers (calculate imaginary and real uncertainty separately when using variance formula)</li>
-		<li>Fix incorrect solutions to equations not removed</li>
-		<li>New functions: dof() for photography depth of field calculation; awg() and awgd() for American Wire Gauge conversion; romberg() for numerical integration; randnorm(), randpoisson(), randrayleigh(), randexp(), and randuniform() for random numbers with different distributions; normdist(), expondist(), and binomdist() for distribution probability calculations</li>
-		<li>New units: cmil and kcmil</li>
-		<li>rand() (and related functions) now accepts an additional argument for specifying the number of random values to generate</li>
-		<li>Option to select custom keypad or application font (GUI)</li>
-		<li>Options to customize the window title: different modes selectable in preferences, command line option, and settitle() function (GUI)</li>
+		<li>Configurable keyboard shortcuts (GUI)</li>
+		<li>New functions: bernoulli(), erfi(), fresnels(), fresnelc()</li>
+		<li>Improved zeta(), with exact values for negative and even integers, support for all real values, and optional second argument for calculation of Hurwitz zeta</li>
+		<li>Support for complex numbers in Ei(), li(), Si(), Ci(), Shi(), and Chi()</li>
+		<li>Support for all branches and complex numbers in lambertw()</li>
+		<li>Extended argument support in Li()</li>
+		<li>Add base units (or local currency) for unit conversion when units are missing in original expression (e.g. 5 to ft = 5 m to ft)</li>
+		<li>Belarusian ruble (BYN)</li>
+		<li>Improvements and fixes for integrals</li>
+		<li>Fix crash when used in Cantor (caused by conflict with Poppler library)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
