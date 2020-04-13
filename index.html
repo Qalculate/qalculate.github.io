@@ -49,17 +49,15 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2019-03-02 :. Qalculate! version 3.8 released</h4>
+	<h4>.: 2020-04-13 :. Qalculate! version 3.9 released</h4>
 	List of changes:
 	<ul>
-		<li>IEEE 754 floating point conversion: float(), floatBits(), floatError(), floatParts(), and floatValue() functions, and fp16, fp32/float, fp64/double, fp80, and fp128 "to" conversion</li>
-		<li>Floating point conversion dialog (GUI)</li>
-		<li>Option to enable/disable new version notification (GUI)</li>
-		<li>Restore A and B (case insensitive) digits in input of duodecimal number, use 0d as prefix for input of duodecimal numbers, and always interpret expression as duodecimal if it contains duodecimal Unicode characters</li>
-		<li>Modify behavior of floor(), ceil(), trunc and round(): mark result as exact, allow approximate calculation of argument in exact mode, return interval when appropriate, and add "number of decimals" and "round halfway to even" (defaults to away from zero) arguments to round()</li>
-		<li>Fix 1kOhm||1kOhm (and similar)</li>
-		<li>Fix rounding in some cases with max decimals set</li>
-		<li>Fix segfault in solve() with AND and OR in solution</li>
+		<li>Persistent keypad option, which makes it possible to show the keypad and the history simultaneously (GUI)</li>
+		<li>Minimal window mode, which hides everything but the expression entry and, when not empty, the result (GUI)</li>
+		<li>Optional (disabled by default at compile time) internal help viewer using WebKitGTK (GUI)</li>
+		<li>Fix segfault during calculation of atan(acos(x)), atan(asin(x)), and asin(atan(x)) when angle unit is degrees or gradians</li>
+		<li>Fix order of prime factors</li>
+		<li>Fix immediate closing of plot window if qalc is started in non-interactive mode (persistent parameter added to plot() function)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
