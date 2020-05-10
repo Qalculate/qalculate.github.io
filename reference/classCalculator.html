@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.9.0: Calculator Class Reference</title>
+<title>libqalculate-3.10.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.9.0
+   <div id="projectname">libqalculate-3.10.0
    </div>
   </td>
  </tr>
@@ -76,6 +76,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Calculator</b> ()
 <tr class="separator:a88c6e899e34d8edd05142f7d53e07b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3827c1b3a74a4b655078b41d69a8301"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ae3827c1b3a74a4b655078b41d69a8301">calculateAndPrint</a> (std::string str, int msecs=10000, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo=default_user_evaluation_options, const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po=default_print_options)</td></tr>
 <tr class="separator:ae3827c1b3a74a4b655078b41d69a8301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d8e13d78cc28a32af0fc710595bd0f"><td class="memItemLeft" align="right" valign="top"><a id="a84d8e13d78cc28a32af0fc710595bd0f"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>calculateAndPrint</b> (std::string str, int msecs, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo, const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po, std::string *parsed_expression)</td></tr>
+<tr class="separator:a84d8e13d78cc28a32af0fc710595bd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a660379ed1ea48087e850d93d66c48ff5"><td class="memItemLeft" align="right" valign="top"><a id="a660379ed1ea48087e850d93d66c48ff5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>testCondition</b> (std::string expression)</td></tr>
 <tr class="separator:a660379ed1ea48087e850d93d66c48ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +226,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a9d0f0628b048c81c9c60baf2259f07b7"><td class="memItemLeft" align="right" valign="top"><a id="a9d0f0628b048c81c9c60baf2259f07b7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasWhereExpression</b> (const std::string &amp;str, const <a class="el" href="structEvaluationOptions.html">EvaluationOptions</a> &amp;eo) const</td></tr>
 <tr class="separator:a9d0f0628b048c81c9c60baf2259f07b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e4a91f70fb03f272924b12a6259c18"><td class="memItemLeft" align="right" valign="top"><a id="a39e4a91f70fb03f272924b12a6259c18"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>parseComments</b> (std::string &amp;str, const <a class="el" href="structParseOptions.html">ParseOptions</a> &amp;po=default_parse_options, bool *double_tag=NULL)</td></tr>
+<tr class="separator:a39e4a91f70fb03f272924b12a6259c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea8c99b10467cca1343a70235de459cb"><td class="memItemLeft" align="right" valign="top"><a id="aea8c99b10467cca1343a70235de459cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>parseSigns</b> (std::string &amp;str, bool convert_to_internal_representation=false) const</td></tr>
 <tr class="separator:aea8c99b10467cca1343a70235de459cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
