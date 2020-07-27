@@ -49,32 +49,23 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2020-06-26 :. Qalculate! is now avilable at Flathub</h4>
-	The flatpak package (for Linux) has now finally been added to Flathub (<a href="https://flathub.org/apps/details/io.github.Qalculate">flathub.org/apps/details/io.github.Qalculate</a>). To install the package follow the link or use the command <i>"flatpak install https://flathub.org/repo/appstream/io.github.Qalculate.flatpakref"</i>.
-	<br><br>
-	Flatpak users are adviced to replace previous installations. Note however that the app-id has changed. In order to preserve configuration and data you will have to manually copy the files (from <i>~/.var/app/io.github.qalculate.Qalculate</i> to <i>~/.var/app/io.github.Qalculate</i>).
-	<br><br>
-	For Windows users, Qalculate! was recently added to the <a href="https://docs.microsoft.com/en-us/windows/package-manager/winget/">Windows Package Manager (winget)</a> community repository, making updates easier.
-	<h4>.: 2020-06-22 :. Qalculate! version 3.11 released</h4>
+	<h4>.: 2020-07-27 :. Qalculate! version 3.12 released</h4>
 	List of changes:
 	<ul>
-		<li>Allow multiple "to"-conversions in one expression (e.g. "5 m/s to hex to ft to h = 0xE6AF.1E*ft∕h)</li>
-		<li>Support specification of number of bits for hexadecimal "to" conversion (4 to hex16 = 0004)</li>
-		<li>Improvements and fixes for sexagesimal numbers and time format</li>
-		<li>Support for +, -, (, ) Unicode superscripts, and N-Ary Summation symbol</li>
-		<li>Syntax highlighting using colours in qalc</li>
-		<li>Enable Unicode by default in qalc (on platforms other than Windows)</li>
-		<li>Improved display of unit expressions</li>
-		<li>Option to clear history on exit (GUI)</li>
-		<li>Fix removal of history items, and move to top, when calculate-as-you-type is activated (GUI)</li>
-		<li>Reduce the height of the result widget (GUI)</li>
-		<li>Hide tooltip after keypad button click (GUI)</li>
-		<li>Check for updates menu item (GUI)</li>
-		<li>Slovenian translation (GUI)</li>
-		<li>Support for automatic updates of self-contained binaries</li>
-		<li>Fix segfault when parsing an expression that contains a prefix with more than one letter followed by a unit and an exponent without exponentiation operator</li>
-		<li>Fix use of equals sign in qalc command line arguments (e.g. "qalc --base=16")</li>
-		<li>Fixes for the Gnome shell search provider</li>
+		<li>Option to hide left or right part of the keypad (GUI)</li>
+		<li>Replace fraction mode combo box with a single toggle button (GUI)</li>
+		<li>Disable prefixes by default in scientific, engineering, and pure modes, and change behaviour of composite modes when user changes separate options (GUI)</li>
+		<li>Auto completion for objects and properites in data set functions (GUI)</li>
+		<li>Split long numerical results in two lines and show bit position for binary number that does not fit in window (GUI)</li>
+		<li>Improved text layout in result (GUI)</li>
+		<li>Brazilian Portuguese (GUI only) and Spanish translations</li>
+		<li>Improved exact simplification of roots (e.g. sqrt(2)-2/sqrt(2)=0)</li>
+		<li>Only apply negative exponents option to units, and always use negative exponents instead of division for unit expressions with only negative exponents</li>
+		<li>Support use of right arrow (including "-&gt;") as alternative to "to" for conversion (e.g. 5m-&gt;ft)</li>
+		<li>Use middle dot instead of multiplication x in unit expressions</li>
+		<li>Examples in manual</li>
+		<li>Extended man page for qalc</li>
+		<li>Fix Insert button in insert function dialog (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>

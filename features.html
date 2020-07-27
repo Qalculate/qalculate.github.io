@@ -37,43 +37,41 @@ Sections:<br>
 	<ul>
 		<li>Calculation and parsing: 
 		<ul>
-		<li>Basic operations and operators: + - * / ^ E () && || ! &lt; &gt; &gt;= &lt;= != ~ & | &lt;&lt; &gt;&gt;</li>
+		<li>Basic operations and operators: + - * / mod ^ E () && || ! &lt; &gt; &gt;= &lt;= != ~ & | &lt;&lt; &gt;&gt; xor</li>
 		<li>Fault-tolerant parsing of strings: log 5 / 2 .5 (3) + (2( 3 +5 = ln(5) / (2.5 * 3) + 2 * (3 + 5)</li>
 		<li>Expressions may contain any combination of numbers, functions, units, variables, vectors and matrices, and dates</li>
 		<li>Supports complex and infinite numbers</li>
 		<li>Propagation of uncertainty</li>
-		<li>Interval arithmetic (for determination of the number of significant digits or direct calculation with intervals of numbers)</il>
+		<li>Interval arithmetic</il>
 		<li>Supports all common number bases, as well as negative and non-integer radices, sexagesimal numbers, time format, and roman numerals</li>
-		<li>Ability to disable functions, variables, units or unknown variables for less confusion: ex. when you do not want (a+b)^2 to mean (are+barn)^2 but ("a"+"b")^2</li>
-		<li>Controllable implicit multiplication</li>
+		<li>Ability to disable functions, variables, units or unknown variables for less confusion: e.g. when you do not want (a+b)^2 to mean (are+barn)^2 but ("a"+"b")^2</li>
+		<li>Customizable implicit multiplication</li>
 		<li>Matrices and vectors, and related operations (determinants etc.)</li>
 		<li>Verbose error messages</li>
 		<li>Arbitrary precision</li>
 		<li>RPN mode</li>
 		</ul>
-		</li>		
+		</li>
 		<li>Result display: 
 		<ul>
 		<li>Supports all common number bases, as well as negative and non-integer radices, sexagesimal numbers, time format, and roman numerals</li>
-		<li>Many customization options: precision, max/min decimals, multiplication sign, etc.</li>
-		<li>Exact or approximate</li>
-		<li>Fractions: 4 / 6 * 2 = 1.333... = 4/3 = 1 + 1/3</li>
+		<li>Many customization options: precision, max/min decimals, complex form, multiplication sign, etc.</li>
+		<li>Exact or approximate: sqrt(32) returns 4 * sqrt(2) or 5.66</li>
+		<li>Simple and mixed fractions: 4 / 6 * 2 = 1.333... = 4/3 = 1 + 1/3</li>
 		</ul>
 		</li>
 		<li>Symbolic calculation: 
 		<ul>
-		<li>Ex. (x + y)^2 = x^2 + 2xy + y^2; 4 "apples" + 3 "oranges"</li>
+		<li>E.g. (x + y)^2 = x^2 + 2xy + y^2; 4 "apples" + 3 "oranges"</li>
 		<li>Factorization and simplification</li>
 		<li>Differentiation and integration</li>
 		<li>Can solve most equations and inequalities</li>
-		<li>Customizable assumptions give different results (ex. ln(2x) = ln(2) + ln(x) if x is assumed positive)</li>
+		<li>Customizable assumptions give different results (e.g. ln(2x) = ln(2) + ln(x) if x is assumed positive)</li>
 		</ul>
 		</li>
 		<li>Functions:
 		<ul>
-		<li>All the usual functions: sine, log, etc... : ln 5 = 1.609; sqrt(tan(20) - 5) = sqrt(-2.76283905578)</li>
-		<li>Lots of statistical, financial, geometrical, and more functions (approx. 200)</li>
-		<li>If..then..else function, optional arguments and more features for flexible function creation</li>
+		<li>Hundreds of flexible functions: trigonometry, exponents and logarithms, combinatorics, geometry, calculus, statistics, finance, time and date, etc.</li>
 		<li>Can easily be created, edit and saved to a standard XML file</li>
 		</ul>
 		</li>
@@ -81,20 +79,20 @@ Sections:<br>
 		<ul>
 		<li>Supports all SI units and prefixes (including binary), as well as imperial and other unit systems</li>
 		<li>Automatic conversion: ft + yd + m = 2.2192 m</li>
-		<li>Implicit conversion: 5m/s to mi/h = 11.18 miles/hour</li>
-		<li>Smart conversion: can automatically convert 5 kg*m/s^2 to 5 newton</li>
+		<li>Explicit conversion: 5 m/s to mi/h = 11.18 miles/hour</li>
+		<li>Smart conversion: automatically converts 5 kg*m/s^2 to 5 N</li>
 		<li>Currency conversion with retrieval of daily exchange rates</li>
 		<li>Different name forms: abbreviation, singular, plural (m, meter, meters)</li>
-		<li>Can easily be created, edit and saved to a standard XML file</li>
+		<li>Can easily be created, edited and saved to a standard XML file</li>
 		</ul>
 		</li>
 		<li>Variables and constants:
 		<ul>
-		<li>Basic constants: pi, e</li>
-		<li>Lots of physical constants and elements</li>
+		<li>Basic constants: pi, e, etc.</li>
+		<li>Lots of physical constants (with or without units) and properties of chemical element</li>
 		<li>CSV file import and export</li>
-		<li>Can easily be created, edit and saved to a standard XML file</li>
-		<li>Flexible, can contain simple numbers, units or whole expressions</li>
+		<li>Can easily be created, edited and saved to a standard XML file</li>
+		<li>Flexible - may contain simple numbers, units, or whole expressions</li>
 		<li>Data sets with objects and associated properties in database-like structure</li>
 		</ul>
 		</li>
@@ -108,25 +106,28 @@ Sections:<br>
 		</li>
 		<li>and more...</li>
  	</ul>
+ 	The <a href="manual/index.html">manual</a> includes a complete list of included <a href="manual/qalculate-functions.html">functions</a>, <a href="manual/qalculate-units.html">units</a>, and <a href="manual/qalculate-variables.html">variables</a>, and some <a href="manual/qalculate-examples.html">examples</a>.
 	<h4>User Interface</h4>
 	<ul>
-		<li>Graphical user interfaces implemented using GTK+-3.0</li>
-   		<li>Flexible expression entry and separate result display</li>
-		<li>Displays whether result is precise or not</li>
+		<li>Graphical user interfaces implemented using GTK+ 3</li>
+   		<li>Flexible expression entry with customizable completion, hints, and continious display of parsed expression</li>
+		<li>Optional calculate-as-you-type mode</li>
 		<li>Small and ... not so small mode</li>
+		<li>Calculation history which allows the user to access the text and value of and apply operations to previous expressions and result</li>
+		<li>Optional traditional calculator keypad, with quick access to most features, and a programming mode</li>
 		<li>Practical menus give fast access to all advanced features</li>
-		<li>Calculation history</li>
-		<li>Optional traditional calculator buttons</li>
+		<li>Customizable meta modes for quickly switching between different settings</li>
 		<li>Dialogs for management of and easy access to functions, variables and units (with quick conversion)</li>
 		<li>User friendly dialogs for functions, with description and entries for arguments</li>
 		<li>Create/edit functions, variables and units</li>
 		<li>Easy editing of matrices and vectors</li>
-		<li>Easy interface to gnuplot</li>
-		<li>Separate window for fast conversion between number bases</li>
-		<li>Periodic table</li>
+		<li>Various tools for fast conversion between number bases, floating point conversion, calendar conversion, and percentage calculation, and a period table</li>
+		<li>Convenient interface to gnuplot</li>
+		<li>Configurable keyboard shortcuts</li>
 		<li>Additional text based interface with full functionality</li>
 		<li>and more...</li>
  	</ul>
+ 	<br>
 <br><br>
 </td><td width="50px">&nbsp;</td></tr>
 </body>
