@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Qalculate! - the ultimate desktop calculator</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body text="Black" bgcolor="#ccccdd" style="margin: auto">
 <div align="center">
@@ -49,36 +49,29 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2020-08-05 :. Qalculate version 3.12.1 released</h4>
-	This version includes some critical bug fixes.<br><br>
+	<h4>.: 2020-09-21 :. Qalculate! version 3.13 released</h4>
 	List of changes:
 	<ul>
-		<li>Fix display of negative numbers with scientific notation (GUI)</li>
-		<li>Fix BTC, BYN, and BYR exchange rates</li>
-		<li>Fix exchange rates update time</li>
-		<li>Fix parsing of negative power in function arguments without parenthesis</li>
-		<li>Add arcsin, arccos, arsinh, arcosh, etc. as names for inverse trigonometric and hyperbolic functions</li>
-		<li>Interpret sin^-1, cos^-1, etc. as inverse functions (arcsin, arccos, etc.)</li>
-		<li>Add deftorad() and totient() functions</li>
-	</ul>
-	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
-	<h4>.: 2020-07-27 :. Qalculate! version 3.12 released</h4>
-	List of changes:
-	<ul>
-		<li>Option to hide left or right part of the keypad (GUI)</li>
-		<li>Replace fraction mode combo box with a single toggle button (GUI)</li>
-		<li>Disable prefixes by default in scientific, engineering, and pure modes, and change behaviour of composite modes when user changes separate options (GUI)</li>
-		<li>Auto completion for objects and properites in data set functions (GUI)</li>
-		<li>Split long numerical results in two lines and show bit position for binary number that does not fit in window (GUI)</li>
-		<li>Improved text layout in result (GUI)</li>
-		<li>Brazilian Portuguese (GUI only) and Spanish translations</li>
-		<li>Improved exact simplification of roots (e.g. sqrt(2)-2/sqrt(2)=0)</li>
-		<li>Only apply negative exponents option to units, and always use negative exponents instead of division for unit expressions with only negative exponents</li>
-		<li>Support use of right arrow (including "-&gt;") as alternative to "to" for conversion (e.g. 5m-&gt;ft)</li>
-		<li>Use middle dot instead of multiplication x in unit expressions</li>
-		<li>Examples in manual</li>
-		<li>Extended man page for qalc</li>
-		<li>Fix Insert button in insert function dialog (GUI)</li>
+		<li>Add abhenry (abH), cP, cStoke, mTorr, dyn/cm², and kph (or kmph) units, add biot (Bi) name for abampere, and replace J/T with A/m² as unit for current density</li>
+		<li>Use B as abbreviation for byte instead of bel (dB is still used for decibel)</li>
+		<li>Group digits after decimal separator (in groups of three, when standard digit grouping is active)</li>
+		<li>Group hexadecimal digits</li>
+		<li>Add binary prefixes zebi and yobi</li>
+		<li>Do not use prefixes by default with most CGS units</li>
+		<li>Do not use “$”, “dollar”, and “dollars” for USD (and do not use “£” as symbol for GBP) and remove cent, if the symbol is also used by the local currency</li>
+		<li>Consider vectors as matrices with one column (column vector) in operations that expect a matrix (e.g. matrix multiplication)</li>
+		<li>Increase default precision to 10</li>
+		<li>Reduce time before GUI appears on load in some cases</li>
+		<li>Add derived units without symbol (e.g. kg/m³) to completion (GUI)</li>
+		<li>Option to remember window position (GUI)</li>
+		<li>Only perform continuous conversion when convert tab is visible (GUI)</li>
+		<li>Add "Copy result to clipboard" to Gnome shell search provider</li>
+		<li>Fix cot(pi/2), coth(pi/2×i), arccot(0), arcsch(0), and arcoth(0)</li>
+		<li>Fix conversion to ratio</li>
+		<li>Fix logarithmic y scale in plot</li>
+		<li>Fix unit conversion search entry losing focus (GUI)</li>
+		<li>Fix potential precision loss when performing multiple consecutive unit conversions (GUI)</li>
+		<li>Fix self-contained Linux binaries: change GUI binary name to qalculate (fixes install and update scripts), and fix check for updates at startup</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
