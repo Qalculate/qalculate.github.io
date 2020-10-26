@@ -49,29 +49,26 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2020-09-21 :. Qalculate! version 3.13 released</h4>
+	<h4>.: 2020-10-26 :. Qalculate! version 3.14 released</h4>
 	List of changes:
 	<ul>
-		<li>Add abhenry (abH), cP, cStoke, mTorr, dyn/cm², and kph (or kmph) units, add biot (Bi) name for abampere, and replace J/T with A/m² as unit for current density</li>
-		<li>Use B as abbreviation for byte instead of bel (dB is still used for decibel)</li>
-		<li>Group digits after decimal separator (in groups of three, when standard digit grouping is active)</li>
-		<li>Group hexadecimal digits</li>
-		<li>Add binary prefixes zebi and yobi</li>
-		<li>Do not use prefixes by default with most CGS units</li>
-		<li>Do not use “$”, “dollar”, and “dollars” for USD (and do not use “£” as symbol for GBP) and remove cent, if the symbol is also used by the local currency</li>
-		<li>Consider vectors as matrices with one column (column vector) in operations that expect a matrix (e.g. matrix multiplication)</li>
-		<li>Increase default precision to 10</li>
-		<li>Reduce time before GUI appears on load in some cases</li>
-		<li>Add derived units without symbol (e.g. kg/m³) to completion (GUI)</li>
-		<li>Option to remember window position (GUI)</li>
-		<li>Only perform continuous conversion when convert tab is visible (GUI)</li>
-		<li>Add "Copy result to clipboard" to Gnome shell search provider</li>
-		<li>Fix cot(pi/2), coth(pi/2×i), arccot(0), arcsch(0), and arcoth(0)</li>
-		<li>Fix conversion to ratio</li>
-		<li>Fix logarithmic y scale in plot</li>
-		<li>Fix unit conversion search entry losing focus (GUI)</li>
-		<li>Fix potential precision loss when performing multiple consecutive unit conversions (GUI)</li>
-		<li>Fix self-contained Linux binaries: change GUI binary name to qalculate (fixes install and update scripts), and fix check for updates at startup</li>
+		<li>Customizable keypad buttons—change labels and actions for all buttons on the right-hand side of the keypad (GUI)</li>
+		<li>Support traditional calculator memory (MR/MC/MS/M+/M-)</li>
+		<li>Notifications for invisible actions, e.g. result left-click copy (GUI)</li>
+		<li>Use v1, v2, … as default variable names (GUI)</li>
+		<li>Add Rutherford (Rd), millirem (mrem), mrem/s, and erg/g units</li>
+		<li>Add yr and annus names for year unit, röntgen name for roentgen (R) unit, and rem for roentgen equivalent man</li>
+		<li>Add matrix rank (rk) and reduced row echelon form (rref) functions</li>
+		<li>Support for different character encodings in code() function</li>
+		<li>Keep angle units in calculations involving both length and (plane) angle units (fixes lumen calculations)</li>
+		<li>Improve plot speed for functions defined using expression</li>
+		<li>Always perform conversion to optimal (SI) unit when the expression is a number multiplied by a unit and input equals output</li>
+		<li>Improvements and fixes in insert function dialog (GUI)</li>
+		<li>Improvements and fixes for qalc on Windows</li>
+		<li>Compiled definitions without GIO and with support for out-of-tree builds</li>
+		<li>Fix availability of many currencies before manual exchange rates update (global exchange rates file was not installed)</li>
+		<li>Fix input of circumflex on Windows with dead circumflex without modifier, e.g. German and Swiss keyboard layouts (GUI)</li>
+		<li>Fix programming keypad base conversion for negative integers (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
