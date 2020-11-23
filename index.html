@@ -49,26 +49,23 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2020-10-26 :. Qalculate! version 3.14 released</h4>
+	<h4>.: 2020-11-23 :. Qalculate! version 3.15 released</h4>
 	List of changes:
 	<ul>
-		<li>Customizable keypad buttons—change labels and actions for all buttons on the right-hand side of the keypad (GUI)</li>
-		<li>Support traditional calculator memory (MR/MC/MS/M+/M-)</li>
-		<li>Notifications for invisible actions, e.g. result left-click copy (GUI)</li>
-		<li>Use v1, v2, … as default variable names (GUI)</li>
-		<li>Add Rutherford (Rd), millirem (mrem), mrem/s, and erg/g units</li>
-		<li>Add yr and annus names for year unit, röntgen name for roentgen (R) unit, and rem for roentgen equivalent man</li>
-		<li>Add matrix rank (rk) and reduced row echelon form (rref) functions</li>
-		<li>Support for different character encodings in code() function</li>
-		<li>Keep angle units in calculations involving both length and (plane) angle units (fixes lumen calculations)</li>
-		<li>Improve plot speed for functions defined using expression</li>
-		<li>Always perform conversion to optimal (SI) unit when the expression is a number multiplied by a unit and input equals output</li>
-		<li>Improvements and fixes in insert function dialog (GUI)</li>
-		<li>Improvements and fixes for qalc on Windows</li>
-		<li>Compiled definitions without GIO and with support for out-of-tree builds</li>
-		<li>Fix availability of many currencies before manual exchange rates update (global exchange rates file was not installed)</li>
-		<li>Fix input of circumflex on Windows with dead circumflex without modifier, e.g. German and Swiss keyboard layouts (GUI)</li>
-		<li>Fix programming keypad base conversion for negative integers (GUI)</li>
+		<li>Replace equals button with a clickable icon on the upper right corner of the expression entry (GUI)</li>
+		<li>Optional extra column of customizable keypad buttons (GUI)</li>
+		<li>Use icons for "Value", "Text", and "Copy" in history view and hide all buttons when keypad is shown simultaneously (GUI)</li>
+		<li>Add "Exact" menu item to result popup menu when appropriate (GUI)</li>
+		<li>Automatic and dual approximation and fractions mode in qalc and Gnome shell search provider</li>
+		<li>Do not ask before overwriting temporary variables in qalc</li>
+		<li>Add keyboard shortcuts for approximation (Ctrl+E), fraction mode (Ctrl+F), and save variable (Ctrl+R) in qalc</li>
+		<li>Add "precalculate expression" argument (default false) to save() function (this also changes the behaviour of ":=")</li>
+		<li>Support multiple equivalent custom digits, separated by semicolon (e.g. "0;aA1;bB2;cC3"), and phoneword digit set in base() function</li>
+		<li>Always place unit with prefix first (fixes kWh)</li>
+		<li>Fix local time zone on Windows</li>
+		<li>Fix matrix/vector multiplication with approximate matrix/vector variable</li>
+		<li>Fix parsing of expression with multiple degree signs</li>
+		<li>Fix segfault in unit manager (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>

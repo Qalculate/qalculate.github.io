@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.14.0: /home/hanna/Utveckling/libqalculate/libqalculate/Calculator.h File Reference</title>
+<title>libqalculate-3.15.0: /home/hanna/Utveckling/libqalculate/libqalculate/Calculator.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.14.0
+   <div id="projectname">libqalculate-3.15.0
    </div>
   </td>
  </tr>
@@ -119,6 +119,18 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ac6606ebe91c8ac66a2c314c79f5ab013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message types. <br /></td></tr>
 <tr class="separator:ac6606ebe91c8ac66a2c314c79f5ab013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e805253e546c112d31a295b9ab3fa2c"><td class="memItemLeft" align="right" valign="top"><a id="a4e805253e546c112d31a295b9ab3fa2c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AutomaticFractionFormat</b> { <b>AUTOMATIC_FRACTION_OFF</b>, 
+<b>AUTOMATIC_FRACTION_SINGLE</b>, 
+<b>AUTOMATIC_FRACTION_AUTO</b>, 
+<b>AUTOMATIC_FRACTION_DUAL</b>
+ }</td></tr>
+<tr class="separator:a4e805253e546c112d31a295b9ab3fa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac33a3d5d1918ace39062697cf7f6b6"><td class="memItemLeft" align="right" valign="top"><a id="a4ac33a3d5d1918ace39062697cf7f6b6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AutomaticApproximation</b> { <b>AUTOMATIC_APPROXIMATION_OFF</b>, 
+<b>AUTOMATIC_APPROXIMATION_SINGLE</b>, 
+<b>AUTOMATIC_APPROXIMATION_AUTO</b>, 
+<b>AUTOMATIC_APPROXIMATION_DUAL</b>
+ }</td></tr>
+<tr class="separator:a4ac33a3d5d1918ace39062697cf7f6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top"><a id="a06fc87d81c62e9abb8790b6e5713c55b"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>VARIABLE_ID_I</b> = 200, 
 <b>VARIABLE_ID_PLUS_INFINITY</b> = 201, 
@@ -263,7 +275,7 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="astructPlotDataParameters_html_a596f9364d09d0abf4395ee672b7ec4fd"><div class="ttname"><a href="structPlotDataParameters.html#a596f9364d09d0abf4395ee672b7ec4fd">PlotDataParameters::test_continuous</a></div><div class="ttdeci">bool test_continuous</div><div class="ttdoc">Check if data is continuous.</div><div class="ttdef"><b>Definition:</b> Calculator.h:137</div></div>
 <div class="ttc" id="astructPrintOptions_html_a3c2b4ad148e7dc7a75b0172511e56960"><div class="ttname"><a href="structPrintOptions.html#a3c2b4ad148e7dc7a75b0172511e56960">PrintOptions::show_ending_zeroes</a></div><div class="ttdeci">bool show_ending_zeroes</div><div class="ttdoc">Show ending zeroes for approximate numbers to indicate precision (ex.1.2300000 instead of 1....</div><div class="ttdef"><b>Definition:</b> includes.h:412</div></div>
 <div class="ttc" id="astructEvaluationOptions_html_a85d3c148ee93eab1e75d28806bfcda2c"><div class="ttname"><a href="structEvaluationOptions.html#a85d3c148ee93eab1e75d28806bfcda2c">EvaluationOptions::local_currency_conversion</a></div><div class="ttdeci">bool local_currency_conversion</div><div class="ttdoc">Convert to local currency when optimal conversion is enabled.</div><div class="ttdef"><b>Definition:</b> includes.h:709</div></div>
-<div class="ttc" id="aclassCalculator_html"><div class="ttname"><a href="classCalculator.html">Calculator</a></div><div class="ttdoc">The almighty calculator class.</div><div class="ttdef"><b>Definition:</b> Calculator.h:238</div></div>
+<div class="ttc" id="aclassCalculator_html"><div class="ttname"><a href="classCalculator.html">Calculator</a></div><div class="ttdoc">The almighty calculator class.</div><div class="ttdef"><b>Definition:</b> Calculator.h:252</div></div>
 <div class="ttc" id="aclassArgument_html_affaf7436a0a5e5fbacb3a9324b10db47"><div class="ttname"><a href="classArgument.html#affaf7436a0a5e5fbacb3a9324b10db47">Argument::printlong</a></div><div class="ttdeci">std::string printlong() const</div></div>
 <div class="ttc" id="astructExpressionName_html_ade6d60822f4e5d4711c27920edd04155"><div class="ttname"><a href="structExpressionName.html#ade6d60822f4e5d4711c27920edd04155">ExpressionName::completion_only</a></div><div class="ttdeci">bool completion_only</div><div class="ttdoc">Use only for completion (useful for unicode letter alternatives)</div><div class="ttdef"><b>Definition:</b> ExpressionItem.h:39</div></div>
 <div class="ttc" id="aclassExpressionItem_html_a30b6aee3f508321f8cb63dfbed38589c"><div class="ttname"><a href="classExpressionItem.html#a30b6aee3f508321f8cb63dfbed38589c">ExpressionItem::findName</a></div><div class="ttdeci">virtual const ExpressionName &amp; findName(int abbreviation=-1, int use_unicode=-1, int plural=-1, bool(*can_display_unicode_string_function)(const char *, void *)=NULL, void *can_display_unicode_string_arg=NULL) const</div></div>
@@ -701,7 +713,7 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="astructPlotParameters_html_ad14c7c876408d5f84e9fc9d8510e68bb"><div class="ttname"><a href="structPlotParameters.html#ad14c7c876408d5f84e9fc9d8510e68bb">PlotParameters::x_log</a></div><div class="ttdeci">bool x_log</div><div class="ttdoc">If a logarithimic scale shall be used for the x-axis. Default: false.</div><div class="ttdef"><b>Definition:</b> Calculator.h:108</div></div>
 <div class="ttc" id="aclassExpressionItem_html_a6a832e3f0728f179ba09558ab41fd7f7"><div class="ttname"><a href="classExpressionItem.html#a6a832e3f0728f179ba09558ab41fd7f7">ExpressionItem::hasName</a></div><div class="ttdeci">virtual size_t hasName(const std::string &amp;sname, bool case_sensitive=true) const</div></div>
 <div class="ttc" id="aclassExpressionItem_html_afb6cc6dffa1157eab706f8ef4c588f83"><div class="ttname"><a href="classExpressionItem.html#afb6cc6dffa1157eab706f8ef4c588f83">ExpressionItem::preferredDisplayName</a></div><div class="ttdeci">virtual const ExpressionName &amp; preferredDisplayName(bool abbreviation=false, bool use_unicode=false, bool plural=false, bool reference=false, bool(*can_display_unicode_string_function)(const char *, void *)=NULL, void *can_display_unicode_string_arg=NULL) const</div></div>
-<div class="ttc" id="aclassCalculatorMessage_html"><div class="ttname"><a href="classCalculatorMessage.html">CalculatorMessage</a></div><div class="ttdoc">A message with information to the user. Primarily used for errors and warnings.</div><div class="ttdef"><b>Definition:</b> Calculator.h:162</div></div>
+<div class="ttc" id="aclassCalculatorMessage_html"><div class="ttname"><a href="classCalculatorMessage.html">CalculatorMessage</a></div><div class="ttdoc">A message with information to the user. Primarily used for errors and warnings.</div><div class="ttdef"><b>Definition:</b> Calculator.h:176</div></div>
 <div class="ttc" id="aclassNumber_html_adc0c708b9bc63cb8ae5942e70ee19a15"><div class="ttname"><a href="classNumber.html#adc0c708b9bc63cb8ae5942e70ee19a15">Number::exp2</a></div><div class="ttdeci">bool exp2()</div></div>
 <div class="ttc" id="aclassKnownVariable_html_ab3a80522d7e75e6f58043920ca44ad1e"><div class="ttname"><a href="classKnownVariable.html#ab3a80522d7e75e6f58043920ca44ad1e">KnownVariable::KnownVariable</a></div><div class="ttdeci">KnownVariable(std::string cat_, std::string name_, std::string expression_, std::string title_=&quot;&quot;, bool is_local=true, bool is_builtin=false, bool is_active=true)</div></div>
 <div class="ttc" id="aincludes_8h_html_a41cbc7680bd25dcdfec51442dd6bca7ca576424c7cd21658d6c100eb72af45135"><div class="ttname"><a href="includes_8h.html#a41cbc7680bd25dcdfec51442dd6bca7ca576424c7cd21658d6c100eb72af45135">POST_CONVERSION_OPTIMAL</a></div><div class="ttdeci">@ POST_CONVERSION_OPTIMAL</div><div class="ttdoc">Convert to the the least amount of units. Non-SI units is kept (if optimal), but for conversion only ...</div><div class="ttdef"><b>Definition:</b> includes.h:558</div></div>
@@ -750,7 +762,7 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="aclassUnknownVariable_html_a39a43b0a4f152df0462b5154e775eb8d"><div class="ttname"><a href="classUnknownVariable.html#a39a43b0a4f152df0462b5154e775eb8d">UnknownVariable::UnknownVariable</a></div><div class="ttdeci">UnknownVariable(const UnknownVariable *variable)</div></div>
 <div class="ttc" id="aclassNumber_html_aeb5c5300843e0fdcf84fb8a03c21be8b"><div class="ttname"><a href="classNumber.html#aeb5c5300843e0fdcf84fb8a03c21be8b">Number::realPart</a></div><div class="ttdeci">Number realPart() const</div></div>
 <div class="ttc" id="astructPrintOptions_html_ab795cc19d54396411515f2dc87a39fa5"><div class="ttname"><a href="structPrintOptions.html#ab795cc19d54396411515f2dc87a39fa5">PrintOptions::decimalpoint_sign</a></div><div class="ttdeci">std::string decimalpoint_sign</div><div class="ttdoc">Decimal sign or empty string to use default decimal sign. Default: empty string.</div><div class="ttdef"><b>Definition:</b> includes.h:470</div></div>
-<div class="ttc" id="astructElement_html"><div class="ttname"><a href="structElement.html">Element</a></div><div class="ttdef"><b>Definition:</b> Calculator.h:218</div></div>
+<div class="ttc" id="astructElement_html"><div class="ttname"><a href="structElement.html">Element</a></div><div class="ttdef"><b>Definition:</b> Calculator.h:232</div></div>
 <div class="ttc" id="aclassCalculator_html_a8cea542419c825912180c917e06bf3fb"><div class="ttname"><a href="classCalculator.html#a8cea542419c825912180c917e06bf3fb">Calculator::getPrefix</a></div><div class="ttdeci">Prefix * getPrefix(std::string name_) const</div></div>
 <div class="ttc" id="aclassCalculator_html_a25bed646d1084ff02990c477dc3fe63b"><div class="ttname"><a href="classCalculator.html#a25bed646d1084ff02990c477dc3fe63b">Calculator::loadGlobalUnits</a></div><div class="ttdeci">bool loadGlobalUnits()</div></div>
 <div class="ttc" id="aclassCalculator_html_a672da9ded5ee5b6294311e506be6b948"><div class="ttname"><a href="classCalculator.html#a672da9ded5ee5b6294311e506be6b948">Calculator::busy</a></div><div class="ttdeci">bool busy()</div></div>
@@ -809,9 +821,9 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="aincludes_8h_html_a521a866244dbd66d1ba30bd1b661b011"><div class="ttname"><a href="includes_8h.html#a521a866244dbd66d1ba30bd1b661b011">ComparisonType</a></div><div class="ttdeci">ComparisonType</div><div class="ttdoc">Comparison signs for comparison structures.</div><div class="ttdef"><b>Definition:</b> includes.h:289</div></div>
 <div class="ttc" id="astructPlotParameters_html_a1a1cd16bd2dd8703d6899132096cc2ef"><div class="ttname"><a href="structPlotParameters.html#a1a1cd16bd2dd8703d6899132096cc2ef">PlotParameters::linewidth</a></div><div class="ttdeci">int linewidth</div><div class="ttdoc">Width of lines. Default: 2.</div><div class="ttdef"><b>Definition:</b> Calculator.h:116</div></div>
 <div class="ttc" id="astructParseOptions_html_aec255f3b6f7b9e05f9224eafa98bbadd"><div class="ttname"><a href="structParseOptions.html#aec255f3b6f7b9e05f9224eafa98bbadd">ParseOptions::units_enabled</a></div><div class="ttdeci">bool units_enabled</div><div class="ttdoc">If units will be parsed. Default: true.</div><div class="ttdef"><b>Definition:</b> includes.h:619</div></div>
-<div class="ttc" id="astructPrintOptions_html_a8df10afcf69df561a8773b5987bf3954"><div class="ttname"><a href="structPrintOptions.html#a8df10afcf69df561a8773b5987bf3954">PrintOptions::halfexp_to_sqrt</a></div><div class="ttdeci">bool halfexp_to_sqrt</div><div class="ttdoc">Transform raised to 1/2 to square root function. Default: true.</div><div class="ttdef"><b>Definition:</b> includes.h:448</div></div>
+<div class="ttc" id="astructPrintOptions_html_a8df10afcf69df561a8773b5987bf3954"><div class="ttname"><a href="structPrintOptions.html#a8df10afcf69df561a8773b5987bf3954">PrintOptions::halfexp_to_sqrt</a></div><div class="ttdeci">bool halfexp_to_sqrt</div><div class="ttdoc">Transform raised to 1/2 to square root and raised to 1/3 to cbrt function. Default: true.</div><div class="ttdef"><b>Definition:</b> includes.h:448</div></div>
 <div class="ttc" id="aclassPrefix_html_a5554b0f1b9027a9586e917f61aa77263"><div class="ttname"><a href="classPrefix.html#a5554b0f1b9027a9586e917f61aa77263">Prefix::name</a></div><div class="ttdeci">const std::string &amp; name(bool short_default=true, bool use_unicode=false, bool(*can_display_unicode_string_function)(const char *, void *)=NULL, void *can_display_unicode_string_arg=NULL) const</div></div>
-<div class="ttc" id="aCalculator_8h_html_a32a083f9f3e2a61148431f232469916f"><div class="ttname"><a href="Calculator_8h.html#a32a083f9f3e2a61148431f232469916f">MESSAGE_CATEGORY_NONE</a></div><div class="ttdeci">#define MESSAGE_CATEGORY_NONE</div><div class="ttdoc">Message categories.</div><div class="ttdef"><b>Definition:</b> Calculator.h:156</div></div>
+<div class="ttc" id="aCalculator_8h_html_a32a083f9f3e2a61148431f232469916f"><div class="ttname"><a href="Calculator_8h.html#a32a083f9f3e2a61148431f232469916f">MESSAGE_CATEGORY_NONE</a></div><div class="ttdeci">#define MESSAGE_CATEGORY_NONE</div><div class="ttdoc">Message categories.</div><div class="ttdef"><b>Definition:</b> Calculator.h:170</div></div>
 <div class="ttc" id="aclassCalculator_html_aec6bb634b6b3bc6968d49c7345af67fc"><div class="ttname"><a href="classCalculator.html#aec6bb634b6b3bc6968d49c7345af67fc">Calculator::loadGlobalFunctions</a></div><div class="ttdeci">bool loadGlobalFunctions()</div></div>
 <div class="ttc" id="aclassFileArgument_html_a4532721a6ea2943b6aca418ebb448a2d"><div class="ttname"><a href="classFileArgument.html#a4532721a6ea2943b6aca418ebb448a2d">FileArgument::type</a></div><div class="ttdeci">virtual int type() const</div></div>
 <div class="ttc" id="astructEvaluationOptions_html_ab500bf077118a4f1855cd4d98385d485"><div class="ttname"><a href="structEvaluationOptions.html#ab500bf077118a4f1855cd4d98385d485">EvaluationOptions::allow_infinite</a></div><div class="ttdeci">bool allow_infinite</div><div class="ttdoc">If infinite numbers will be used for evaluation. Default: true.</div><div class="ttdef"><b>Definition:</b> includes.h:683</div></div>
