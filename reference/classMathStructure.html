@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.18.0: MathStructure Class Reference</title>
+<title>libqalculate-3.19.0: MathStructure Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.18.0
+   <div id="projectname">libqalculate-3.19.0
    </div>
   </td>
  </tr>
@@ -1416,11 +1416,11 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>gcd</b> (const
 </div><!-- fragment --><p> The first variant is obviously simpler, but slower and allows less control.</p>
 <p>Then, to evaluate/calculate/simplify (whatever) a structure, eval() should normally be used. The <a class="el" href="structEvaluationOptions.html" title="Options for calculation.">EvaluationOptions</a> passed to eval() allows much control over the process and the outcome. </p><div class="fragment"><div class="line"><a class="code" href="structEvaluationOptions.html">EvaluationOptions</a> eo;</div>
 <div class="line">mstruct.eval(eo);</div>
-<div class="ttc" id="astructEvaluationOptions_html"><div class="ttname"><a href="structEvaluationOptions.html">EvaluationOptions</a></div><div class="ttdoc">Options for calculation.</div><div class="ttdef"><b>Definition:</b> includes.h:666</div></div>
+<div class="ttc" id="astructEvaluationOptions_html"><div class="ttname"><a href="structEvaluationOptions.html">EvaluationOptions</a></div><div class="ttdoc">Options for calculation.</div><div class="ttdef"><b>Definition:</b> includes.h:668</div></div>
 </div><!-- fragment --><p>After that, to display the result, you should first format the structure using format() and then display it using print(), passing the <a class="el" href="structPrintOptions.html" title="Options for formatting and display of mathematical structures/results.">PrintOptions</a> to both. </p><div class="fragment"><div class="line"><a class="code" href="structPrintOptions.html">PrintOptions</a> po;</div>
 <div class="line">mstruct.format(po);</div>
 <div class="line">std::cout &lt;&lt; mstruct.print(po) &lt;&lt; std::endl;</div>
-<div class="ttc" id="astructPrintOptions_html"><div class="ttname"><a href="structPrintOptions.html">PrintOptions</a></div><div class="ttdoc">Options for formatting and display of mathematical structures/results.</div><div class="ttdef"><b>Definition:</b> includes.h:403</div></div>
+<div class="ttc" id="astructPrintOptions_html"><div class="ttname"><a href="structPrintOptions.html">PrintOptions</a></div><div class="ttdoc">Options for formatting and display of mathematical structures/results.</div><div class="ttdef"><b>Definition:</b> includes.h:405</div></div>
 </div><!-- fragment --><p>Most low-level functions expect the structure to be unformatted och require that unformat() is called after an expression string has been parsed or format() has been called.</p>
 <p>To access a child structure either the [] operator or the safer getChild() can be used. Note however that the index passed to the operator start at zero and the index argument for getChild() starts at one. </p><div class="fragment"><div class="line"><a class="code" href="classMathStructure.html">MathStructure</a> mstruct(5);</div>
 <div class="line">mstruct += 2;</div>
