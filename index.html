@@ -36,7 +36,7 @@ Sections:<br>
                         </h2>
 </div>
 <div align="center"><IMG src="images/qalculate-window.png" width="560" border="0"></div>
-<br><big>Qalculate! is a multi-purpose cross-platform desktop calculator. It is simple to use but provides power and versatility normally reserved for complicated math packages, as well as useful tools for everyday needs (such as currency conversion and percent calculation). Features include a large library of customizable functions, unit calculations and conversion, physical constants, symbolic calculations (including integrals and equations), arbitrary precision, uncertainty propagation, interval arithmetic, plotting, and a user-friendly interface (GTK and CLI).</big>
+<br><big>Qalculate! is a multi-purpose cross-platform desktop calculator. It is simple to use but provides power and versatility normally reserved for complicated math packages, as well as useful tools for everyday needs (such as currency conversion and percent calculation). Features include a large library of customizable functions, unit calculations and conversion, physical constants, symbolic calculations (including integrals and equations), arbitrary precision, uncertainty propagation, interval arithmetic, plotting, and a user-friendly interface (GTK, Qt, and CLI).</big>
   <br><br>
   <big>Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</big>
   <br>
@@ -49,22 +49,33 @@ Sections:<br>
 	</div>
 	<br><hr>
 	<h2>Latest News</h2>
-	<h4>.: 2021-05-24 :. Qalculate! version 3.19 released</h4>
+	<h4>.: 2021-07-28 :. Qalculate! version 3.20 released</h4>
+	This version includes a new interface using the Qt GUI toolkit. It is nearly feature complete (notably editing of units and data sets are not currently possible) but is likely not yet completely stable and reliable. At this moment the new user interface is only included in the official binary packages for Windows where the improved speed and compatibility should be particularly welcome.<br><br>
 	List of changes:
 	<ul>
-		<li>Customizable text color and button padding (GUI)</li>
-		<li>Option to keep the main window above other windows (GUI)</li>
-		<li>Activate first (or selected) completion item using Tab key (GUI)</li>
-		<li>Ask (once) for the correct interpretation of dots, when comma is decimal separator</li>
-		<li>Improve simplification of logical expressions (boolean algebra) and add boolean assumptions for unknown variables</li>
-		<li>Add nand and nor operators and spelled out version of logical not operator ("not"), and interpret bitwise operators as logical in some cases</li>
-		<li>New functions for inverse cumulative distributions: chisqdistinv(), fdistinv(), normdistinv(), and tdistinv()</li>
-		<li>Add inverse incomplete beta function, betaincinv(), and improve betainc() (now returns <i>regularized</i> incomplete beta function)</li>
-		<li>newtonsolve() and secantsolve() functions for solving equations using Newton's or secant method</li>
-		<li>Do not return dot product when multiplication operator is used with vectors (use "." or dot() function instead)</li>
-		<li>Russian and German translations</li>
-		<li>Fix custom keyboard shortcuts without modifier (GUI)</li>
-		<li>Fix cumulative t-distribution for X &lt; 0</li>
+		<li>New graphical user interface using Qt (qalculate-qt)</li>
+		<li>Updated insert function dialog layout (GUI)</li>
+		<li>Add description field to variables and units dialogs (GUI)</li>
+		<li>Add customizable keyboard shortcut for insert result (GUI)</li>
+		<li>Insert "smart parentheses" with right parenthesis key if expression has selection or text cursor is at start (GUI)</li>
+		<li>Add language option to configuration file (GUI)</li>
+		<li>Fix background color of expression entry in inactive window (GUI)</li>
+		<li>Add translator credits to about dialog (GUI)</li>
+		<li>Catalan translation</li>
+		<li>Add support for function creation in save() function and with associated operator (e.g. func1():=x*y^2)</li>
+		<li>Add operators (.', .*, ./, .^) and functions (replace multiply(), divide(), and pow()) for transpose and element-wise multiplication, division, and power</li>
+		<li>Fix norm() and magnitude(), and add second argument, p, to norm() function</li>
+		<li>New text operators: dot, cross, comb, and perm</li>
+		<li>Add support for ^^ as XOR operator</li>
+		<li>Fixes and improvements in multisolve() function</li>
+		<li>Always return exact result in base() function, in exact mode</li>
+		<li>Improve parsing of functions without parentheses</li>
+		<li>Do not try to load data objects from global definitions dir if data set is local</li>
+		<li>Interpret "±" at end of expression as "±0"</li>
+		<li>Convert Celsius to Fahrenheit if no calculation was performed</li>
+		<li>Add support for QALCULATE_USER_DIR environment variable and always check for "user" directory on Windows</li>
+		<li>Output both original and factorized integer, and output abs(x) as |x| (CLI)</li>
+		<li>Improved HTML output of mathematical expressions in libqalculate (used by the new GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>

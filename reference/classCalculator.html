@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-3.19.0: Calculator Class Reference</title>
+<title>libqalculate-3.20.0: Calculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">libqalculate-3.19.0
+   <div id="projectname">libqalculate-3.20.0
    </div>
   </td>
  </tr>
@@ -86,11 +86,14 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>calculateAndPr
 int&#160;</td><td class="memItemRight" valign="bottom"><b>testCondition</b> (std::string expression)</td></tr>
 <tr class="separator:a660379ed1ea48087e850d93d66c48ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Functions for printing expressions with the option to set maximum time or abort.</div></td></tr>
-<tr class="memitem:a51b99956b08dbafe7addccbb4f0efd4d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a51b99956b08dbafe7addccbb4f0efd4d">print</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, int milliseconds=100000, const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;op=default_print_options)</td></tr>
-<tr class="separator:a51b99956b08dbafe7addccbb4f0efd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad255f32d52139e947800037115a30a6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aad255f32d52139e947800037115a30a6">print</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, int milliseconds=100000, const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po=default_print_options)</td></tr>
+<tr class="separator:aad255f32d52139e947800037115a30a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf359ea2a5986eaad292ca5c03f2247b"><td class="memItemLeft" align="right" valign="top"><a id="abf359ea2a5986eaad292ca5c03f2247b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, int milliseconds, const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po, bool format, int colorize=0, int tagtype=TAG_TYPE_HTML)</td></tr>
+<tr class="separator:abf359ea2a5986eaad292ca5c03f2247b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2bd382372a1a828be56d2bb33b0df3c"><td class="memItemLeft" align="right" valign="top"><a id="aa2bd382372a1a828be56d2bb33b0df3c"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#aa2bd382372a1a828be56d2bb33b0df3c">printMathStructureTimeOut</a> (const <a class="el" href="classMathStructure.html">MathStructure</a> &amp;mstruct, int milliseconds=100000, const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;op=default_print_options)</td></tr>
-<tr class="memdesc:aa2bd382372a1a828be56d2bb33b0df3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use <a class="el" href="classCalculator.html#a51b99956b08dbafe7addccbb4f0efd4d">print()</a> instead. <br /></td></tr>
+<tr class="memdesc:aa2bd382372a1a828be56d2bb33b0df3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use <a class="el" href="classCalculator.html#aad255f32d52139e947800037115a30a6">print()</a> instead. <br /></td></tr>
 <tr class="separator:aa2bd382372a1a828be56d2bb33b0df3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ebf235ced4e144a78460e4ec9331a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#a23ebf235ced4e144a78460e4ec9331a4">startControl</a> (int milliseconds=0)</td></tr>
 <tr class="separator:a23ebf235ced4e144a78460e4ec9331a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +113,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>abortedMessage
 <tr class="memitem:a239399b95588531c00bd04a71468a796"><td class="memItemLeft" align="right" valign="top"><a id="a239399b95588531c00bd04a71468a796"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>timedOutString</b> (void) const</td></tr>
 <tr class="separator:a239399b95588531c00bd04a71468a796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e68f74c7e80e957a21f6ada32241c73"><td class="memItemLeft" align="right" valign="top"><a id="a2e68f74c7e80e957a21f6ada32241c73"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>logicalORString</b> (void) const</td></tr>
+<tr class="separator:a2e68f74c7e80e957a21f6ada32241c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a4d1e09d2b102298a8cd595e9b930d"><td class="memItemLeft" align="right" valign="top"><a id="a15a4d1e09d2b102298a8cd595e9b930d"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>logicalANDString</b> (void) const</td></tr>
+<tr class="separator:a15a4d1e09d2b102298a8cd595e9b930d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac570ba29df5be2ec772465c1e8629504"><td class="memItemLeft" align="right" valign="top"><a id="ac570ba29df5be2ec772465c1e8629504"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCalculator.html#ac570ba29df5be2ec772465c1e8629504">startPrintControl</a> (int milliseconds=0)</td></tr>
 <tr class="memdesc:ac570ba29df5be2ec772465c1e8629504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: use <a class="el" href="classCalculator.html#a23ebf235ced4e144a78460e4ec9331a4">startControl()</a> <br /></td></tr>
@@ -1768,7 +1777,7 @@ std::vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> *
 <div class="line">CALCULATOR-&gt;loadGlobalDefinitions();</div>
 <div class="line">CALCULATOR-&gt;loadLocalDefinitions();</div>
 <div class="line"><a class="code" href="classMathStructure.html">MathStructure</a> result = CALCULATOR-&gt;calculate(<span class="stringliteral">&quot;1 + 1&quot;</span>);</div>
-<div class="ttc" id="aclassCalculator_html"><div class="ttname"><a href="classCalculator.html">Calculator</a></div><div class="ttdoc">The almighty calculator class.</div><div class="ttdef"><b>Definition:</b> Calculator.h:262</div></div>
+<div class="ttc" id="aclassCalculator_html"><div class="ttname"><a href="classCalculator.html">Calculator</a></div><div class="ttdoc">The almighty calculator class.</div><div class="ttdef"><b>Definition:</b> Calculator.h:265</div></div>
 <div class="ttc" id="aclassMathStructure_html"><div class="ttname"><a href="classMathStructure.html">MathStructure</a></div><div class="ttdoc">A structure representing a mathematical value/expression/result.</div><div class="ttdef"><b>Definition:</b> MathStructure.h:148</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0c57e07e9a53e7aebe1c3fd5a37dbfb8"></a>
@@ -4305,8 +4314,8 @@ std::vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> *
 
 </div>
 </div>
-<a id="a51b99956b08dbafe7addccbb4f0efd4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51b99956b08dbafe7addccbb4f0efd4d">&#9670;&nbsp;</a></span>print()</h2>
+<a id="aad255f32d52139e947800037115a30a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad255f32d52139e947800037115a30a6">&#9670;&nbsp;</a></span>print()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4327,7 +4336,7 @@ std::vector&lt; <a class="el" href="classMathStructure.html">MathStructure</a> *
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>op</em> = <code>default_print_options</code>&#160;</td>
+          <td class="paramname"><em>po</em> = <code>default_print_options</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
