@@ -160,11 +160,15 @@ a:hover {
     padding: 5px;
 }
 
-.screenshots {
+.screenshots-collection {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+}
+
+.screenshots {
+    width: 80%;
+    margin-top: 10px;
 }
 
 .notice {
