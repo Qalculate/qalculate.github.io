@@ -1,78 +1,499 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Chapter 7. Functions</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="index.html" title="Qalculate! Manual v3.20.0"><link rel="up" href="index.html" title="Qalculate! Manual v3.20.0"><link rel="prev" href="qalculate-variables.html" title="Chapter 6. Variables"><link rel="next" href="qalculate-units.html" title="Chapter 8. Units"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 7. Functions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="qalculate-variables.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="qalculate-units.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="qalculate-functions"></a>Chapter 7. Functions</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="sect1"><a href="qalculate-functions.html#qalculate-available-functions">Available Functions</a></span></dt><dt><span class="sect1"><a href="qalculate-functions.html#qalculate-function-creation">Function creation/editing</a></span></dt></dl></div><p>
-Functions are essentially mathematical formulas. They are used to store expressions with variable values, arguments. To execute a function, the values for a number of arguments need to specified. These arguments are then inserted into the expression, making it possible to calculate.
-</p><p>
-Functions is normally entered in an expression by writing the name followed by arguments, separated by commas (or semicolons in languages with comma as decimal point), in parenthesis, thus following the syntax <span class="command"><strong>name(arg1, arg2, ...)</strong></span>. Qalculate! will give a helpful error message if the arguments are not correct.
-</p><div class="figure"><a name="qalculate-FIG-insert-function"></a><p class="title"><b>Figure 7.1. Insert function dialog</b></p><div class="figure-contents"><div class="screenshot"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="644"><tr><td><img src="figures/insert-function.png" width="644" alt="Insert function dialog"></td></tr></table></div></div></div></div><br class="figure-break"><p>
-The insert function dialog presents an easy way to insert a function and its arguments.
-</p><p>
-Although it can lower the readability of an expression, it is perfectly legal to skip the parenthesis and put the arguments after a space, and end with a space or operator. This is most useful in short expressions with single argument functions (e.g. <span class="quote">“<span class="quote">sqrt 5</span>”</span>).
-</p><p>
-Argument types include:
-</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Free — anything</p></li><li class="listitem"><p>Number — a numeric value</p></li><li class="listitem"><p>Integer — a whole number</p></li><li class="listitem"><p>Symbol — a defined or undefined unknown variable</p></li><li class="listitem"><p>Text — a free text string</p></li><li class="listitem"><p>Date — a date in local or standard format (Year-Month-Day, recommended)</p></li><li class="listitem"><p>Vector</p></li><li class="listitem"><p>Matrix</p></li><li class="listitem"><p>Boolean — 0 for false, 1 for true</p></li><li class="listitem"><p>Object — the name of a variable, function or unit</p></li><li class="listitem"><p>Variable — the name of a variable</p></li><li class="listitem"><p>Function — the name of a function</p></li><li class="listitem"><p>Unit — the name of a unit</p></li><li class="listitem"><p>File — the path to a file</p></li><li class="listitem"><p>Angle — an angle used in trigonometric functions, meaning a number and an angle unit. If no angle unit is included the default is used.</p></li></ul></div><p>
-</p><p>
-The argument can be restricted by further conditions. For example that a number must be positive.
-</p><p>
-Most arguments (primarily number arguments) can be replaced by a vector. The function will then be calculated for each vector element and a new vector will be returned. If more than one argument are supplied to a function that takes exactly one argument, each argument will be treated as elements of a vector.
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="qalculate-available-functions"></a>Available Functions</h2></div></div></div><p>
-Here the main function categories and some of their members are described, to give an overview of available functions. For information about separate functions and a complete list of all available functions see <a class="xref" href="qalculate-definitions-functions.html" title="Appendix A. Function List">Appendix A, <i>Function List</i></a> or the function manager.
-</p><div class="variablelist"><dl class="variablelist"><dt><span class="term">Algebra</span></dt><dd><p>
-Contains <span class="command"><strong>sum()</strong></span> and <span class="command"><strong>product()</strong></span>, which corresponds to the sum and product signs. <span class="command"><strong>solve()</strong></span> solves equations (e.g. <span class="quote">“<span class="quote">solve(x × 2 = 8)</span>”</span> returns <span class="quote">“<span class="quote">4</span>”</span> meaning that x equals 4). Use <span class="command"><strong>solve2()</strong></span> and <span class="command"><strong>multisolve()</strong></span> to solve multiple equations with multiple variables.
-</p></dd><dt><span class="term">Calculus</span></dt><dd><p>
-Includes <span class="command"><strong>diff()</strong></span>, which calculates the derivative of an expression with optional arguments <span class="quote">“<span class="quote">with respect to</span>”</span> (default x) and <span class="quote">“<span class="quote">order</span>”</span> (default 1), and a limited integration function.
-</p></dd><dt><span class="term">Combinatorics</span></dt><dd><p>
-Contains functions such as <span class="command"><strong>perm()</strong></span> for permutations, <span class="command"><strong>comb()</strong></span> for combinations, and <span class="command"><strong>factorial()</strong></span>.
-</p></dd><dt><span class="term">Comblex Numbers</span></dt><dd><p>
-Contains functions useful for calculations with complex numbers, including <span class="command"><strong>arg()</strong></span> for principal argument and <span class="command"><strong>conj()</strong></span> for conjugate.
-</p></dd><dt><span class="term">Data Sets</span></dt><dd><p>
-A data set consists of a set of properties and objects, which can be accessed by a function which takes two arguments — object and property. The function returns the object's value for the selected property.
-For example, the data in the <span class="quote">“<span class="quote">Elements</span>”</span> data set is accessed with the <span class="command"><strong>atom()</strong></span> function, with the element (referenced using atomic symbol, number or name) and property (e.g. weight) as arguments.
-The special property <span class="quote">“<span class="quote">info</span>”</span> displays all properties of the object in a dialog window.
-</p></dd><dt><span class="term">Date &amp; Time</span></dt><dd><p>
-Includes <span class="command"><strong>days()</strong></span> and <span class="command"><strong>yearfrac()</strong></span> which returns the number of days and fractional years, respectively, between two dates. 
-</p></dd><dt><span class="term">Exponents &amp; Logarithms</span></dt><dd><p>
-Standard logarithmic and exponential functions. <span class="command"><strong>ln()</strong></span> calculates the natural logarithm of a number, while <span class="command"><strong>log()</strong></span> allows a choice of base as the second argument. The <span class="command"><strong>cbrt()</strong></span> and <span class="command"><strong>root()</strong></span> functions only calculates real roots. For roots of odd degree the root functions give a different answer than the exponential operator, <span class="quote">“<span class="quote">^</span>”</span>, for negative values (<span class="quote">“<span class="quote">cbrt(-8) = -(8)^(1/3) = -2</span>”</span>, but <span class="quote">“<span class="quote">(-8)^(1/3) = 1 + 1.73i</span>”</span>).
-</p></dd><dt><span class="term">Economics</span></dt><dd><p>
-This essentially includes most of the financial functions that are usually found in spreadsheet applications.
-</p></dd><dt><span class="term">Elements</span></dt><dd><p>
-This category includes functions to retrieve data such as atomic weight. The <span class="command"><strong>atom()</strong></span> function opens a window with available data of an element. These functions accept the number, symbol or name of the element as argument. The data are loaded on demand.
-</p></dd><dt><span class="term">Geometry</span></dt><dd><p>
-Category with formulas mostly for calculation of circumference, area and volume of geometric shapes.
-</p></dd><dt><span class="term">Logical</span></dt><dd><p>
-Some procedural functions mainly for use in other functions. These include <span class="command"><strong>if()</strong></span>, which tests a conditional expression and returns a value depending on if the expression evaluates true or false, and <span class="command"><strong>for()</strong></span>, which processes a value while a condition is true.
-</p></dd><dt><span class="term">Matrices &amp; Vectors</span></dt><dd><p>
-These are functions that generate, access and process matrices and vectors. The <span class="command"><strong>vector()</strong></span> function generates a vector from a variable number of arguments for elements, while <span class="command"><strong>matrix()</strong></span> first needs the number of rows and columns and then the elements from left to right. Matrices can also be imported directly from a CSV file with <span class="command"><strong>load()</strong></span>. 
-</p><p>
-Separate elements at a specified row and column are accessed with <span class="command"><strong>element()</strong></span>. Other functions include <span class="command"><strong>det()</strong></span> for calculation of the determinant of a matrix and <span class="command"><strong>inverse()</strong></span> which returns the inverse of the given matrix, as well as functions such as <span class="command"><strong>sort()</strong></span> and <span class="command"><strong>rank()</strong></span>.
-</p></dd><dt><span class="term">Miscellaneous</span></dt><dd><p>
-A category for functions that do not fit elsewhere. 
-</p></dd><dt><span class="term">Number Theory</span></dt><dd><p>
-Contains subcategories arithmetic, number bases, and rounding, in addition to functions such as <span class="command"><strong>abs()</strong></span>, which returns the absolute value of a number (<span class="quote">“<span class="quote">|</span>”</span> can also be used; e.g. <span class="quote">“<span class="quote">|-5| = abs(-5) = 5</span>”</span>, and <span class="command"><strong>gcd()</strong></span>, the greatest common divisor. <span class="command"><strong>round()</strong></span> is the standard rounding function (note that halfway numbers are rounded to even). The functions for number bases translates a text string, representing an expression with numbers in a different base, to a decimal number. Includes <span class="command"><strong>bin()</strong></span> for binary numbers, <span class="command"><strong>hex()</strong></span> for hexadecimal numbers, <span class="command"><strong>oct()</strong></span> for octal numbers and <span class="command"><strong>base()</strong></span> for numbers in a any other base.
-</p></dd><dt><span class="term">Special Functions</span></dt><dd><p>
-Includes <span class="command"><strong>beta()</strong></span>, <span class="command"><strong>gamma()</strong></span> and similar functions, as well as Riemann zeta (<span class="command"><strong>zeta()</strong></span>) and Kronecker delta (<span class="command"><strong>kronecker()</strong></span>).
-</p></dd><dt><span class="term">Statistics</span></dt><dd><p>
-Contains a lot of functions for descriptive statistics and some statistical tests. Data sets are stored as vectors. Generally, functions with a vector/data set as last argument can take elements/samples as a variable number of arguments directly instead of in a vector (e.g. <span class="quote">“<span class="quote">mean(1, 2, 3)</span>”</span> equals <span class="quote">“<span class="quote">mean(vector(1, 2, 3))</span>”</span>). Also contains the <span class="command"><strong>rand()</strong></span> function, which returns a pseudo random number between 0 and 1 (with no argument, or zero), or a random integer between one and the specified number.
-</p></dd><dt><span class="term">Trigonometry</span></dt><dd><p>
-Trigonometric functions, including <span class="command"><strong>sin()</strong></span>, <span class="command"><strong>cos()</strong></span>, <span class="command"><strong>tan()</strong></span>, <span class="command"><strong>sec()</strong></span>, <span class="command"><strong>csc()</strong></span>, <span class="command"><strong>cot()</strong></span>, and hyperbolic and inverse versions of those. These functions take as argument an angle. If the default angle unit (<span class="guimenu">Mode</span> → <span class="guisubmenu">Angle Unit</span>) is set to none, the argument must have an angle unit appended (degrees, radians or gradians), otherwise the default unit will be appended automatically (and removed from result of inverse functions).
-</p></dd><dt><span class="term">Utilities</span></dt><dd><p>
-Various utility functions. Most are only useful in definition of other functions. The <span class="command"><strong>save()</strong></span> function can however be a quick way of storing a value in a variable, and <span class="command"><strong>csum()</strong></span> can be a powerful tool for data processing. This category also contains some functions, such as <span class="command"><strong>char()</strong></span> and <span class="command"><strong>ascii()</strong></span>, that might be useful for programmers. , <span class="command"><strong>replace()</strong></span> provides an easy way of replacing unknown variables by known expressions in a value (e.g. <span class="quote">“<span class="quote">replace(5x^2 + x, x, 3)</span>”</span> equals <span class="quote">“<span class="quote">5 × 3^2 + 3</span>”</span>).
-</p></dd></dl></div><p>
-</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="qalculate-function-creation"></a>Function creation/editing</h2></div></div></div><p>
-Functions are a bit more complex than variables, but can nevertheless be relatively easily created. Select <span class="guimenu">File</span> → <span class="guisubmenu">New</span> → <span class="guimenuitem">Function</span> or <span class="guimenu">File</span> → <span class="guisubmenu">New</span> → <span class="guimenuitem">Function (simplified)</span>), or click the <span class="guibutton">f(x)</span> on the keypad or <span class="guibutton">New</span> in the function manager and a function edit dialog pops up. There are two different dialogs for function creation.
-</p><p>
-The simple function edit dialog only allows entry of a single name and an expression. You have here the option to use x, y and z with or wihout (default) a backslash for argument placeholders in the expressions. The expression <span class="quote">“<span class="quote">x^4</span>”</span> then creates a function which calculates the fourth power of a single argument. If you name it for example <span class="quote">“<span class="quote">sqsq</span>”</span>, <span class="quote">“<span class="quote">sqsq(2)</span>”</span> will calculate <span class="quote">“<span class="quote">2^4</span>”</span>. The use of \x, \y, \z avoid any possible conflict with variables, units and functions. When you edit an existing function, it will use the notation with backslash. 
-</p><div class="figure"><a name="qalculate-FIG-edit-function-simplified"></a><p class="title"><b>Figure 7.2. Simplified Function Edit Dialog</b></p><div class="figure-contents"><div class="screenshot"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="293"><tr><td><img src="figures/edit-function-simplified.png" width="293" alt="Simplified Function Edit Dialog"></td></tr></table></div></div></div></div><br class="figure-break"><p>
-The advanced dialog, with access to all function properties, consists of two tabs/pages; the first with general descriptive information and the last for the function definition. First enter a name, used to reference the function in an expression. If an expression is entered a bit further down, then the function will already be fully working. A bit more does however need to be said about the function expression.
-</p><p>
-The expression of a function is basically a normal expression with placeholders for arguments. These placeholders consists of a backslash and a letter — x, y, z for the 1st, 2nd and 3rd arguments and a to u for argument 4 to 24. They are replaced by entered arguments when a function is calculated. The placeholders naturally also decide the number of arguments that a function requires. For example the function for triangle area (<span class="quote">“<span class="quote">base × height / 2</span>”</span>) has the name triangle and the expression <span class="quote">“<span class="quote">(\x × \y)/2</span>”</span>, which gives that <span class="quote">“<span class="quote">triangle(2, 3)</span>”</span> equals <span class="quote">“<span class="quote">(2 × 3) / 2</span>”</span> and returns <span class="quote">“<span class="quote">3</span>”</span> as result. An argument can be used more than one time and all arguments must not necessarily be in order in the expression.
-</p><div class="figure"><a name="qalculate-FIG-edit-function"></a><p class="title"><b>Figure 7.3. Function Edit Dialog</b></p><div class="figure-contents"><div class="screenshot"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="365"><tr><td><img src="figures/edit-function.png" width="365" alt="Function Edit Dialog"></td></tr></table></div></div></div></div><p><br class="figure-break">
-</p><p>
-Additionally, optional arguments can be put in the expression with upper-case (X, Y, Z, ...) instead of lower-case letters (x, y, z, ...). The default value can be put in brackets after the letter (e.g. <span class="quote">“<span class="quote">\X{2}</span>”</span>). The default value may be omitted and is then zero. All additional arguments after an optional argument must also be optional. 
-</p><p>
-A condition that must be true (&gt;0) for the function to be calculated, can optionally be entered in the text field below the expression. This follows the same conventions as function expressions. For example if the second argument must be higher than the first, <span class="quote">“<span class="quote">\y &gt; \x</span>”</span> may be entered as condition.
-</p><p>
-Further, name, type and condition for each argument can be specified.
-</p><p>
-To keep functions well organized, supply a category, descriptive name and description. A function can also hidden from menus with the corresponding check box, which can be useful for sub functions.
-</p><p>
-Global, system-wide functions can not actually be changed by the user, but if one of these functions is edited, they are deactivated and seemingly replaced by a new function. This way global functions can be <span class="quote">“<span class="quote">deleted</span>”</span> by deactivation. Some functions are however hard-coded and cannot be changed by the user.
-</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="qalculate-variables.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="qalculate-units.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 6. Variables </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 8. Units</td></tr></table></div></body></html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Chapter 7. Functions</title>
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+    <link rel="home" href="index.html" title="Qalculate! Manual v3.20.0">
+    <link rel="up" href="index.html" title="Qalculate! Manual v3.20.0">
+    <link rel="prev" href="qalculate-variables.html" title="Chapter 6. Variables">
+    <link rel="next" href="qalculate-units.html" title="Chapter 8. Units">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+	<link rel="home" href="index.html" title="Qalculate! Manual v3.20.0">
+	<link rel="next" href="qalculate-introduction.html" title="Chapter 1. Introduction">
+</head>
+
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+    <div class="navheader">
+        <table width="100%" summary="Navigation header">
+            <tr>
+                <th colspan="3" align="center">Chapter 7. Functions</th>
+            </tr>
+            <tr>
+                <td width="20%" align="left"><a accesskey="p" href="qalculate-variables.html">Prev</a> </td>
+                <th width="60%" align="center"> </th>
+                <td width="20%" align="right"> <a accesskey="n" href="qalculate-units.html">Next</a></td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    <div class="chapter">
+        <div class="titlepage">
+            <div>
+                <div>
+                    <h1 class="title"><a name="qalculate-functions"></a>Chapter 7. Functions</h1>
+                </div>
+            </div>
+        </div>
+        <div class="toc">
+            <p><b>Table of Contents</b></p>
+            <dl class="toc">
+                <dt><span class="sect1"><a href="qalculate-functions.html#qalculate-available-functions">Available
+                            Functions</a></span></dt>
+                <dt><span class="sect1"><a href="qalculate-functions.html#qalculate-function-creation">Function
+                            creation/editing</a></span></dt>
+            </dl>
+        </div>
+        <p>
+            Functions are essentially mathematical formulas. They are used to store expressions with variable values,
+            arguments. To execute a function, the values for a number of arguments need to specified. These arguments
+            are then inserted into the expression, making it possible to calculate.
+        </p>
+        <p>
+            Functions is normally entered in an expression by writing the name followed by arguments, separated by
+            commas (or semicolons in languages with comma as decimal point), in parenthesis, thus following the syntax
+            <span class="command"><strong>name(arg1, arg2, ...)</strong></span>. Qalculate! will give a helpful error
+            message if the arguments are not correct.
+        </p>
+        <div class="figure"><a name="qalculate-FIG-insert-function"></a>
+            <p class="title"><b>Figure 7.1. Insert function dialog</b></p>
+            <div class="figure-contents">
+                <div class="screenshot">
+                    <div class="mediaobject">
+                        <table border="0" summary="manufactured viewport for HTML img"
+                            style="cellpadding: 0; cellspacing: 0;" width="644">
+                            <tr>
+                                <td><img src="figures/insert-function.png" width="644" alt="Insert function dialog">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div><br class="figure-break">
+        <p>
+            The insert function dialog presents an easy way to insert a function and its arguments.
+        </p>
+        <p>
+            Although it can lower the readability of an expression, it is perfectly legal to skip the parenthesis and
+            put the arguments after a space, and end with a space or operator. This is most useful in short expressions
+            with single argument functions (e.g. <span class="quote">“<span class="quote">sqrt 5</span>”</span>).
+        </p>
+        <p>
+            Argument types include:
+        </p>
+        <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc; ">
+                <li class="listitem">
+                    <p>Free — anything</p>
+                </li>
+                <li class="listitem">
+                    <p>Number — a numeric value</p>
+                </li>
+                <li class="listitem">
+                    <p>Integer — a whole number</p>
+                </li>
+                <li class="listitem">
+                    <p>Symbol — a defined or undefined unknown variable</p>
+                </li>
+                <li class="listitem">
+                    <p>Text — a free text string</p>
+                </li>
+                <li class="listitem">
+                    <p>Date — a date in local or standard format (Year-Month-Day, recommended)</p>
+                </li>
+                <li class="listitem">
+                    <p>Vector</p>
+                </li>
+                <li class="listitem">
+                    <p>Matrix</p>
+                </li>
+                <li class="listitem">
+                    <p>Boolean — 0 for false, 1 for true</p>
+                </li>
+                <li class="listitem">
+                    <p>Object — the name of a variable, function or unit</p>
+                </li>
+                <li class="listitem">
+                    <p>Variable — the name of a variable</p>
+                </li>
+                <li class="listitem">
+                    <p>Function — the name of a function</p>
+                </li>
+                <li class="listitem">
+                    <p>Unit — the name of a unit</p>
+                </li>
+                <li class="listitem">
+                    <p>File — the path to a file</p>
+                </li>
+                <li class="listitem">
+                    <p>Angle — an angle used in trigonometric functions, meaning a number and an angle unit. If no angle
+                        unit is included the default is used.</p>
+                </li>
+            </ul>
+        </div>
+        <p>
+        </p>
+        <p>
+            The argument can be restricted by further conditions. For example that a number must be positive.
+        </p>
+        <p>
+            Most arguments (primarily number arguments) can be replaced by a vector. The function will then be
+            calculated for each vector element and a new vector will be returned. If more than one argument are supplied
+            to a function that takes exactly one argument, each argument will be treated as elements of a vector.
+        </p>
+        <div class="sect1">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both"><a name="qalculate-available-functions"></a>Available
+                            Functions</h2>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Here the main function categories and some of their members are described, to give an overview of
+                available functions. For information about separate functions and a complete list of all available
+                functions see <a class="xref" href="qalculate-definitions-functions.html"
+                    title="Appendix A. Function List">Appendix A, <i>Function List</i></a> or the function manager.
+            </p>
+            <div class="variablelist">
+                <dl class="variablelist">
+                    <dt><span class="term">Algebra</span></dt>
+                    <dd>
+                        <p>
+                            Contains <span class="command"><strong>sum()</strong></span> and <span
+                                class="command"><strong>product()</strong></span>, which corresponds to the sum and
+                            product signs. <span class="command"><strong>solve()</strong></span> solves equations (e.g.
+                            <span class="quote">“<span class="quote">solve(x × 2 = 8)</span>”</span> returns <span
+                                class="quote">“<span class="quote">4</span>”</span> meaning that x equals 4). Use <span
+                                class="command"><strong>solve2()</strong></span> and <span
+                                class="command"><strong>multisolve()</strong></span> to solve multiple equations with
+                            multiple variables.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Calculus</span></dt>
+                    <dd>
+                        <p>
+                            Includes <span class="command"><strong>diff()</strong></span>, which calculates the
+                            derivative of an expression with optional arguments <span class="quote">“<span
+                                    class="quote">with respect to</span>”</span> (default x) and <span
+                                class="quote">“<span class="quote">order</span>”</span> (default 1), and a limited
+                            integration function.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Combinatorics</span></dt>
+                    <dd>
+                        <p>
+                            Contains functions such as <span class="command"><strong>perm()</strong></span> for
+                            permutations, <span class="command"><strong>comb()</strong></span> for combinations, and
+                            <span class="command"><strong>factorial()</strong></span>.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Comblex Numbers</span></dt>
+                    <dd>
+                        <p>
+                            Contains functions useful for calculations with complex numbers, including <span
+                                class="command"><strong>arg()</strong></span> for principal argument and <span
+                                class="command"><strong>conj()</strong></span> for conjugate.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Data Sets</span></dt>
+                    <dd>
+                        <p>
+                            A data set consists of a set of properties and objects, which can be accessed by a function
+                            which takes two arguments — object and property. The function returns the object's value for
+                            the selected property.
+                            For example, the data in the <span class="quote">“<span
+                                    class="quote">Elements</span>”</span> data set is accessed with the <span
+                                class="command"><strong>atom()</strong></span> function, with the element (referenced
+                            using atomic symbol, number or name) and property (e.g. weight) as arguments.
+                            The special property <span class="quote">“<span class="quote">info</span>”</span> displays
+                            all properties of the object in a dialog window.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Date &amp; Time</span></dt>
+                    <dd>
+                        <p>
+                            Includes <span class="command"><strong>days()</strong></span> and <span
+                                class="command"><strong>yearfrac()</strong></span> which returns the number of days and
+                            fractional years, respectively, between two dates.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Exponents &amp; Logarithms</span></dt>
+                    <dd>
+                        <p>
+                            Standard logarithmic and exponential functions. <span
+                                class="command"><strong>ln()</strong></span> calculates the natural logarithm of a
+                            number, while <span class="command"><strong>log()</strong></span> allows a choice of base as
+                            the second argument. The <span class="command"><strong>cbrt()</strong></span> and <span
+                                class="command"><strong>root()</strong></span> functions only calculates real roots. For
+                            roots of odd degree the root functions give a different answer than the exponential
+                            operator, <span class="quote">“<span class="quote">^</span>”</span>, for negative values
+                            (<span class="quote">“<span class="quote">cbrt(-8) = -(8)^(1/3) = -2</span>”</span>, but
+                            <span class="quote">“<span class="quote">(-8)^(1/3) = 1 + 1.73i</span>”</span>).
+                        </p>
+                    </dd>
+                    <dt><span class="term">Economics</span></dt>
+                    <dd>
+                        <p>
+                            This essentially includes most of the financial functions that are usually found in
+                            spreadsheet applications.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Elements</span></dt>
+                    <dd>
+                        <p>
+                            This category includes functions to retrieve data such as atomic weight. The <span
+                                class="command"><strong>atom()</strong></span> function opens a window with available
+                            data of an element. These functions accept the number, symbol or name of the element as
+                            argument. The data are loaded on demand.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Geometry</span></dt>
+                    <dd>
+                        <p>
+                            Category with formulas mostly for calculation of circumference, area and volume of geometric
+                            shapes.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Logical</span></dt>
+                    <dd>
+                        <p>
+                            Some procedural functions mainly for use in other functions. These include <span
+                                class="command"><strong>if()</strong></span>, which tests a conditional expression and
+                            returns a value depending on if the expression evaluates true or false, and <span
+                                class="command"><strong>for()</strong></span>, which processes a value while a condition
+                            is true.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Matrices &amp; Vectors</span></dt>
+                    <dd>
+                        <p>
+                            These are functions that generate, access and process matrices and vectors. The <span
+                                class="command"><strong>vector()</strong></span> function generates a vector from a
+                            variable number of arguments for elements, while <span
+                                class="command"><strong>matrix()</strong></span> first needs the number of rows and
+                            columns and then the elements from left to right. Matrices can also be imported directly
+                            from a CSV file with <span class="command"><strong>load()</strong></span>.
+                        </p>
+                        <p>
+                            Separate elements at a specified row and column are accessed with <span
+                                class="command"><strong>element()</strong></span>. Other functions include <span
+                                class="command"><strong>det()</strong></span> for calculation of the determinant of a
+                            matrix and <span class="command"><strong>inverse()</strong></span> which returns the inverse
+                            of the given matrix, as well as functions such as <span
+                                class="command"><strong>sort()</strong></span> and <span
+                                class="command"><strong>rank()</strong></span>.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Miscellaneous</span></dt>
+                    <dd>
+                        <p>
+                            A category for functions that do not fit elsewhere.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Number Theory</span></dt>
+                    <dd>
+                        <p>
+                            Contains subcategories arithmetic, number bases, and rounding, in addition to functions such
+                            as <span class="command"><strong>abs()</strong></span>, which returns the absolute value of
+                            a number (<span class="quote">“<span class="quote">|</span>”</span> can also be used; e.g.
+                            <span class="quote">“<span class="quote">|-5| = abs(-5) = 5</span>”</span>, and <span
+                                class="command"><strong>gcd()</strong></span>, the greatest common divisor. <span
+                                class="command"><strong>round()</strong></span> is the standard rounding function (note
+                            that halfway numbers are rounded to even). The functions for number bases translates a text
+                            string, representing an expression with numbers in a different base, to a decimal number.
+                            Includes <span class="command"><strong>bin()</strong></span> for binary numbers, <span
+                                class="command"><strong>hex()</strong></span> for hexadecimal numbers, <span
+                                class="command"><strong>oct()</strong></span> for octal numbers and <span
+                                class="command"><strong>base()</strong></span> for numbers in a any other base.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Special Functions</span></dt>
+                    <dd>
+                        <p>
+                            Includes <span class="command"><strong>beta()</strong></span>, <span
+                                class="command"><strong>gamma()</strong></span> and similar functions, as well as
+                            Riemann zeta (<span class="command"><strong>zeta()</strong></span>) and Kronecker delta
+                            (<span class="command"><strong>kronecker()</strong></span>).
+                        </p>
+                    </dd>
+                    <dt><span class="term">Statistics</span></dt>
+                    <dd>
+                        <p>
+                            Contains a lot of functions for descriptive statistics and some statistical tests. Data sets
+                            are stored as vectors. Generally, functions with a vector/data set as last argument can take
+                            elements/samples as a variable number of arguments directly instead of in a vector (e.g.
+                            <span class="quote">“<span class="quote">mean(1, 2, 3)</span>”</span> equals <span
+                                class="quote">“<span class="quote">mean(vector(1, 2, 3))</span>”</span>). Also contains
+                            the <span class="command"><strong>rand()</strong></span> function, which returns a pseudo
+                            random number between 0 and 1 (with no argument, or zero), or a random integer between one
+                            and the specified number.
+                        </p>
+                    </dd>
+                    <dt><span class="term">Trigonometry</span></dt>
+                    <dd>
+                        <p>
+                            Trigonometric functions, including <span class="command"><strong>sin()</strong></span>,
+                            <span class="command"><strong>cos()</strong></span>, <span
+                                class="command"><strong>tan()</strong></span>, <span
+                                class="command"><strong>sec()</strong></span>, <span
+                                class="command"><strong>csc()</strong></span>, <span
+                                class="command"><strong>cot()</strong></span>, and hyperbolic and inverse versions of
+                            those. These functions take as argument an angle. If the default angle unit (<span
+                                class="guimenu">Mode</span> → <span class="guisubmenu">Angle Unit</span>) is set to
+                            none, the argument must have an angle unit appended (degrees, radians or gradians),
+                            otherwise the default unit will be appended automatically (and removed from result of
+                            inverse functions).
+                        </p>
+                    </dd>
+                    <dt><span class="term">Utilities</span></dt>
+                    <dd>
+                        <p>
+                            Various utility functions. Most are only useful in definition of other functions. The <span
+                                class="command"><strong>save()</strong></span> function can however be a quick way of
+                            storing a value in a variable, and <span class="command"><strong>csum()</strong></span> can
+                            be a powerful tool for data processing. This category also contains some functions, such as
+                            <span class="command"><strong>char()</strong></span> and <span
+                                class="command"><strong>ascii()</strong></span>, that might be useful for programmers. ,
+                            <span class="command"><strong>replace()</strong></span> provides an easy way of replacing
+                            unknown variables by known expressions in a value (e.g. <span class="quote">“<span
+                                    class="quote">replace(5x^2 + x, x, 3)</span>”</span> equals <span
+                                class="quote">“<span class="quote">5 × 3^2 + 3</span>”</span>).
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <p>
+            </p>
+        </div>
+        <div class="sect1">
+            <div class="titlepage">
+                <div>
+                    <div>
+                        <h2 class="title" style="clear: both"><a name="qalculate-function-creation"></a>Function
+                            creation/editing</h2>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Functions are a bit more complex than variables, but can nevertheless be relatively easily created.
+                Select <span class="guimenu">File</span> → <span class="guisubmenu">New</span> → <span
+                    class="guimenuitem">Function</span> or <span class="guimenu">File</span> → <span
+                    class="guisubmenu">New</span> → <span class="guimenuitem">Function (simplified)</span>), or click
+                the <span class="guibutton">f(x)</span> on the keypad or <span class="guibutton">New</span> in the
+                function manager and a function edit dialog pops up. There are two different dialogs for function
+                creation.
+            </p>
+            <p>
+                The simple function edit dialog only allows entry of a single name and an expression. You have here the
+                option to use x, y and z with or wihout (default) a backslash for argument placeholders in the
+                expressions. The expression <span class="quote">“<span class="quote">x^4</span>”</span> then creates a
+                function which calculates the fourth power of a single argument. If you name it for example <span
+                    class="quote">“<span class="quote">sqsq</span>”</span>, <span class="quote">“<span
+                        class="quote">sqsq(2)</span>”</span> will calculate <span class="quote">“<span
+                        class="quote">2^4</span>”</span>. The use of \x, \y, \z avoid any possible conflict with
+                variables, units and functions. When you edit an existing function, it will use the notation with
+                backslash.
+            </p>
+            <div class="figure"><a name="qalculate-FIG-edit-function-simplified"></a>
+                <p class="title"><b>Figure 7.2. Simplified Function Edit Dialog</b></p>
+                <div class="figure-contents">
+                    <div class="screenshot">
+                        <div class="mediaobject">
+                            <table border="0" summary="manufactured viewport for HTML img"
+                                style="cellpadding: 0; cellspacing: 0;" width="293">
+                                <tr>
+                                    <td><img src="figures/edit-function-simplified.png" width="293"
+                                            alt="Simplified Function Edit Dialog"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div><br class="figure-break">
+            <p>
+                The advanced dialog, with access to all function properties, consists of two tabs/pages; the first with
+                general descriptive information and the last for the function definition. First enter a name, used to
+                reference the function in an expression. If an expression is entered a bit further down, then the
+                function will already be fully working. A bit more does however need to be said about the function
+                expression.
+            </p>
+            <p>
+                The expression of a function is basically a normal expression with placeholders for arguments. These
+                placeholders consists of a backslash and a letter — x, y, z for the 1st, 2nd and 3rd arguments and a to
+                u for argument 4 to 24. They are replaced by entered arguments when a function is calculated. The
+                placeholders naturally also decide the number of arguments that a function requires. For example the
+                function for triangle area (<span class="quote">“<span class="quote">base × height / 2</span>”</span>)
+                has the name triangle and the expression <span class="quote">“<span class="quote">(\x ×
+                        \y)/2</span>”</span>, which gives that <span class="quote">“<span class="quote">triangle(2,
+                        3)</span>”</span> equals <span class="quote">“<span class="quote">(2 × 3) / 2</span>”</span> and
+                returns <span class="quote">“<span class="quote">3</span>”</span> as result. An argument can be used
+                more than one time and all arguments must not necessarily be in order in the expression.
+            </p>
+            <div class="figure"><a name="qalculate-FIG-edit-function"></a>
+                <p class="title"><b>Figure 7.3. Function Edit Dialog</b></p>
+                <div class="figure-contents">
+                    <div class="screenshot">
+                        <div class="mediaobject">
+                            <table border="0" summary="manufactured viewport for HTML img"
+                                style="cellpadding: 0; cellspacing: 0;" width="365">
+                                <tr>
+                                    <td><img src="figures/edit-function.png" width="365" alt="Function Edit Dialog">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p><br class="figure-break">
+            </p>
+            <p>
+                Additionally, optional arguments can be put in the expression with upper-case (X, Y, Z, ...) instead of
+                lower-case letters (x, y, z, ...). The default value can be put in brackets after the letter (e.g. <span
+                    class="quote">“<span class="quote">\X{2}</span>”</span>). The default value may be omitted and is
+                then zero. All additional arguments after an optional argument must also be optional.
+            </p>
+            <p>
+                A condition that must be true (&gt;0) for the function to be calculated, can optionally be entered in
+                the text field below the expression. This follows the same conventions as function expressions. For
+                example if the second argument must be higher than the first, <span class="quote">“<span
+                        class="quote">\y &gt; \x</span>”</span> may be entered as condition.
+            </p>
+            <p>
+                Further, name, type and condition for each argument can be specified.
+            </p>
+            <p>
+                To keep functions well organized, supply a category, descriptive name and description. A function can
+                also hidden from menus with the corresponding check box, which can be useful for sub functions.
+            </p>
+            <p>
+                Global, system-wide functions can not actually be changed by the user, but if one of these functions is
+                edited, they are deactivated and seemingly replaced by a new function. This way global functions can be
+                <span class="quote">“<span class="quote">deleted</span>”</span> by deactivation. Some functions are
+                however hard-coded and cannot be changed by the user.
+            </p>
+        </div>
+    </div>
+    <div class="navfooter">
+        <hr>
+        <table width="100%" summary="Navigation footer">
+            <tr>
+                <td width="40%" align="left"><a accesskey="p" href="qalculate-variables.html">Prev</a> </td>
+                <td width="20%" align="center"> </td>
+                <td width="40%" align="right"> <a accesskey="n" href="qalculate-units.html">Next</a></td>
+            </tr>
+            <tr>
+                <td width="40%" align="left" valign="top">Chapter 6. Variables </td>
+                <td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+                <td width="40%" align="right" valign="top"> Chapter 8. Units</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

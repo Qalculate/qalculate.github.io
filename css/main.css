@@ -1,0 +1,277 @@
+body {
+    background-color: #212121;
+    color: white;
+}
+
+div.middle { /* used for positioning divs in the middle, just add it as class "middle" next to the div*/
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #e0d3d3;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #ada0a0;
+    transition: color 0.5s;
+}
+
+a.exception {
+    text-decoration: none;
+    color: #e0d3d3;
+}
+
+a:hover {
+    color: #e0d3d3;
+}
+
+.logo {
+    border-radius: 10px;
+    background-color: initial;
+    transition: background-color 0.5s;
+}
+
+.logo:hover {
+    background-color: #424242;
+    transition: background-color 0.5s;
+}
+
+.table-of-content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.main-brand {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-title {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.main-title-news-conf {
+    margin: 10px;
+}
+
+.main-title-1letter {
+    color: #cc4499;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.main-title-2part {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.table-of-content-contents {
+    background-color: #424242;
+    border-radius: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 30px;
+}
+
+.table-of-content-title {
+    background-color: #1b1b1b;
+    margin: 0px;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+   
+.table-of-content-texts {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.toc-texts-unique {
+    border-top: #858484 1px solid;
+    padding: 3px;
+    background-color: initial;
+    transition: background-color 0.5s;
+}
+
+.toc-texts-unique:hover {
+    background-color: #5a5a5a;
+    transition: background-color 0.5s;
+}
+
+.brand-info {
+    margin-top: 40px;
+    background-color: #424242;
+    width: 700px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.brand-img {
+    width: 80%;
+    padding: 5px;
+}
+
+.brand-info-text {
+    padding-top: 10px;
+}
+
+.older-news {
+    position: absolute;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #4e4e4e;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.older-news:hover {
+    background-color: #5a5a5a;
+    transition: background-color 0.5s;
+}
+
+.optional-credit {
+    color: rgba(211, 211, 211, 0.747);    
+    font-size: 12px;
+    text-align: center;
+    background-color: #424242a6;
+    position: absolute;
+    left: 0px;
+    padding: 5px;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notice {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+   /* XXX Small screens (320px and up) */
+   @media only screen and (min-width: 320px) {
+
+   }
+   
+   /* X Small screens (425px and up) */
+   @media only screen and (min-width: 425px) {
+
+    .table-of-content-title {
+        font-size: 20px;
+    }
+       
+    .table-of-content-texts {
+        font-size: 16px;
+    }
+
+    .toc-texts-unique {
+        padding: 5px;
+    }
+   
+   }
+   
+   /* Small screens (640px and up) */
+   @media only screen and (min-width: 640px) {
+
+   }
+   
+   /* Medium screens (768px and up) */
+   @media only screen and (min-width: 768px) {
+
+    .main-brand {
+        margin-top: 90px;
+    }
+
+   .table-of-content-contents {
+       position: absolute;
+       margin-right: 580px;
+       margin-top: 95px;
+   }
+
+   .brand-info {
+       margin-top: 160px;
+       font-size: 16px;
+       padding: 10px;
+   }
+
+   }
+   
+   /* Large screens (1024px and up) */
+   @media only screen and (min-width: 1024px) {
+
+   .table-of-content-contents {
+       margin-right: 890px;
+       margin-top: 95px;
+   }
+
+   .brand-info {
+       margin-top: 160px;
+       width: 1000px;
+   }
+
+   .brand-img {
+       width: 70%;
+   }
+   }
+   
+   /* X Large screens (1280px and up) */
+   @media only screen and (min-width: 1280px) {
+
+   }
+   
+   /* XX Large screens (1536px and up) */
+   @media only screen and (min-width: 1536px) {
+    .brand-info {
+        font-size: 18px;
+    }
+
+    .table-of-content-contents {
+        margin-right: 1290px;
+    }
+ 
+    .brand-info {
+        width: 1400px;
+    }
+ 
+    .brand-img {
+        width: 60%;
+    }
+
+    .table-of-content-title {
+        font-size: 22px;
+    }
+       
+    .table-of-content-texts {
+        font-size: 16px;
+    }
+   }
+    
+   /* XXX Large screens (2560px and up) */
+   @media only screen and (min-width: 2560px) {
+
+   }
