@@ -279,7 +279,7 @@
 
 .content {
 	text-align: left;
-	width: 50%;
+	clear: left;
 }
 
 .latestnews {
