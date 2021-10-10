@@ -1,46 +1,52 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Qalculate! - the ultimate desktop calculator</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Qalculate! - the ultimate desktop calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href="images/qalculate-icon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="css/qalculate.css" />
 </head>
-<body text="Black" bgcolor="#ccccdd" style="margin: auto">
-<div align="center">
-<table cellspacing="0" bgcolor="White" style="height: 100vh"><tr>
-<td width="150" bgcolor="#666677" align="center" valign="top">
-<br>
-<a href="index.html"><IMG src="images/qalculate-icon.png" width="128" height="128" border="0"></a>
-<br><br><br>
-<table cellspacing="25" width="100%"><tr><td align="left">
-<font size="+1" color="White" face="serif">
-Sections:<br>
-<hr color="White" size="1" noshade>
-<a href="news.html" style="text-decoration: none"><font color="White" face="serif">News</font></a><br>
-<a href="features.html" style="text-decoration: none"><font color="White" face="serif">Features</font></a><br>
-<a href="screenshots.html" style="text-decoration: none"><font color="White" face="serif">Screenshots</font></a><br>
-<a href="downloads.html" style="text-decoration: none"><font color="White" face="serif">Downloads</font></a><br>
-<a href="manual/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>Manual</nobr></font></a><br>
-<a href="reference/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>API Reference&nbsp;&nbsp;&nbsp;&nbsp;</nobr></font></a><br>
-<a href="contact.html" style="text-decoration: none"><font color="White" face="serif">Contact</font></a><br>
-</font>
-<hr color="White" size="1" noshade>
-</td></tr></table>
-<br><br>
-</td><td width="50">&nbsp;</td>
-<td valign="top" width="900">
-<br>
-<div align="left">
-<h1><font color="#cc4499"><strong>Q</strong></font>alculate! news</h1>
-<hr></div>
-<br>
-	<h4>.: 2021-07-29 :. Qalculate! version 3.20.1 released</h4>
+<body class="qbody">
+<header class="header"><nav class="navbar_m">
+	<a href="index.html" class="nav-logo">Qalculate!</a>
+	<ul class="nav-menu">
+		<li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+		<li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+		<li class="nav-item"><a href="screenshots.html" class="nav-link">Screenshots</a></li>
+		<li class="nav-item"><a href="downloads.html" class="nav-link">Downloads</a></li>
+		<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+		<li class="nav-item"><a href="manual/index.html" class="nav-link">Manual</a></li>
+		<li class="nav-item"><a href="reference/index.html" class="nav-link">API Reference</a></li>
+		<li class="nav-item"><a href="https://www.paypal.me/HannaKnutsson" class="nav-link navdonate"><img src="images/heart.png" class="heart">Donate</a></li>
+	</ul>
+	<div class="hamburger">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</div>
+</nav></header>
+<div class="navbar"><div style="text-align:center">
+	<a href="index.html" class="navitem navleave navq">Qalculate!</a>
+	<a href="news.html" class="navitem navcurrent">News</a>
+	<a href="features.html" class="navitem">Features</a>
+	<a href="screenshots.html" class="navitem">Screenshots</a>
+	<a href="downloads.html" class="navitem">Downloads</a>
+	<a href="contact.html" class="navitem">Contact</a>
+	<a href="manual/index.html" class="navitem navleave">Manual</a>
+	<a href="reference/index.html" class="navitem navleave">API</a>
+	<a href="https://www.paypal.me/HannaKnutsson" class="navitem navleave navdonate"><img src="images/heart.png" class="heart">Donate</a>
+</div></div>
+<div class="main">
+<div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
+<div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
+	<div class="newsdate">2021-07-29</div><div class="newstitle">Qalculate! version 3.20.1 released</div>
 	List of changes:
 	<ul>
 		<li>Fix segfault when Gnuplot is not installed (GUI)</li>
 		<li>Save answer to dot and temperature questions in non-interactive mode and do not show the questions in non-interactive terse mode</li>
 		<li>Fix saving of sub functions with default values</li>
 	</ul>
-	<h4>.: 2021-07-28 :. Qalculate! version 3.20 released</h4>
+	<div class="newsdate">2021-07-28</div><div class="newstitle">Qalculate! version 3.20 released</div>
 	This version includes a new interface using the Qt GUI toolkit. It is nearly feature complete (notably editing of units and data sets are not currently possible) but is likely not yet completely stable and reliable. At this moment the new user interface is only included in the official binary packages for Windows where the improved speed and compatibility should be particularly welcome.<br><br>
 	List of changes:
 	<ul>
@@ -69,7 +75,7 @@ Sections:<br>
 		<li>Improved HTML output of mathematical expressions in libqalculate (used by the new GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2021-05-24 :. Qalculate! version 3.19 released</h4>
+	<div class="newsdate">2021-05-24</div><div class="newstitle">Qalculate! version 3.19 released</div>
 	List of changes:
 	<ul>
 		<li>Customizable text color and button padding (GUI)</li>
@@ -87,7 +93,7 @@ Sections:<br>
 		<li>Fix cumulative t-distribution for X &lt; 0</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2021-04-05 :. Qalculate! version 3.18 released</h4>
+	<div class="newsdate">2021-04-05</div><div class="newstitle">Qalculate! version 3.18 released</div>
 	List of changes:
 	<ul>
 		<li>Improve handling of expressions with log-based units</li>
@@ -103,7 +109,7 @@ Sections:<br>
 		<li>Fix keyboard focus when run hidden automatically at startup</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2021-02-15 :. Qalculate! version 3.17 released</h4>
+	<div class="newsdate">2021-02-15</div><div class="newstitle">Qalculate! version 3.17 released</div>
 	List of changes:
 	<ul>
 		<li>Temperature calculation modes (absolute, relative, hybrid)</li>
@@ -117,7 +123,7 @@ Sections:<br>
 		<li>Fix never ending loop when calculating []*[]</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2021-01-09 :. Qalculate! version 3.16.1 released</h4>
+	<div class="newsdate">2021-01-09</div><div class="newstitle">Qalculate! version 3.16.1 released</div>
 	This version primarily fixes an issue which may cause the deletion of all user data for data sets. qalculate-gtk has not been updated.<br><br>
 	List of changes:
 	<ul>
@@ -127,7 +133,7 @@ Sections:<br>
 		<li>Improve prefixes when expression contains both units that do and units that do not use prefixes</li>
 		<li>Add daysInMonth() function</li>
 	</ul>
-	<h4>.: 2021-01-04 :. Qalculate! version 3.16 released</h4>
+	<div class="newsdate">2021-01-04</div><div class="newstitle">Qalculate! version 3.16 released</div>
 	List of changes:
 	<ul>
 		<li>Redesigned expression, status, and result widgets (GUI)</li>
@@ -147,7 +153,7 @@ Sections:<br>
 		<li>Fix segfault when closing 32-bit Windows binaries</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-11-23 :. Qalculate! version 3.15 released</h4>
+	<div class="newsdate">2020-11-23</div><div class="newstitle">Qalculate! version 3.15 released</div>
 	List of changes:
 	<ul>
 		<li>Replace equals button with a clickable icon in the upper right corner of the expression entry (GUI)</li>
@@ -166,7 +172,7 @@ Sections:<br>
 		<li>Fix segfault in unit manager (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-10-26 :. Qalculate! version 3.14 released</h4>
+	<div class="newsdate">2020-10-26</div><div class="newstitle">Qalculate! version 3.14 released</div>
 	List of changes:
 	<ul>
 		<li>Customizable keypad buttons—change labels and actions for all buttons on the right-hand side of the keypad (GUI)</li>
@@ -188,7 +194,7 @@ Sections:<br>
 		<li>Fix programming keypad base conversion for negative integers (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-09-21 :. Qalculate! version 3.13 released</h4>
+	<div class="newsdate">2020-09-21</div><div class="newstitle">Qalculate! version 3.13 released</div>
 	List of changes:
 	<ul>
 		<li>Add abhenry (abH), cP, cStoke, mTorr, dyn/cm², and kph (or kmph) units, add biot (Bi) name for abampere, and replace J/T with A/m² as unit for current density</li>
@@ -213,7 +219,7 @@ Sections:<br>
 		<li>Fix self-contained Linux binaries: change GUI binary name to qalculate (fixes install and update scripts), and fix check for updates at startup</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-08-05 :. Qalculate version 3.12.1 released</h4>
+	<div class="newsdate">2020-08-05</div><div class="newstitle">Qalculate version 3.12.1 released</div>
 	This version includes some critical bug fixes.<br><br>
 	List of changes:
 	<ul>
@@ -225,7 +231,7 @@ Sections:<br>
 		<li>Interpret sin^-1, cos^-1, etc. as inverse functions (arcsin, arccos, etc.)</li>
 		<li>Add deftorad() and totient() functions</li>
 	</ul>
-	<h4>.: 2020-07-27 :. Qalculate! version 3.12 released</h4>
+	<div class="newsdate">2020-07-27</div><div class="newstitle">Qalculate! version 3.12 released</div>
 	List of changes:
 	<ul>
 		<li>Option to hide left or right part of the keypad (GUI)</li>
@@ -244,13 +250,13 @@ Sections:<br>
 		<li>Fix Insert button in insert function dialog (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-06-26 :. Qalculate! is now avilable at Flathub</h4>
+	<div class="newsdate">2020-06-26</div><div class="newstitle">Qalculate! is now avilable at Flathub</div>
 	The flatpak package (for Linux) has now finally been added to Flathub (<a href="https://flathub.org/apps/details/io.github.Qalculate">flathub.org/apps/details/io.github.Qalculate</a>). To install the package follow the link or use the command <i>"flatpak install https://flathub.org/repo/appstream/io.github.Qalculate.flatpakref"</i>.
 	<br><br>
 	Flatpak users are adviced to replace previous installations. Note however that the app-id has changed. In order to preserve configuration and data you will have to manually copy the files (from <i>~/.var/app/io.github.qalculate.Qalculate</i> to <i>~/.var/app/io.github.Qalculate</i>).
 	<br><br>
 	For Windows users, Qalculate! was recently added to the <a href="https://docs.microsoft.com/en-us/windows/package-manager/winget/">Windows Package Manager (winget)</a> community repository, making updates easier.
-	<h4>.: 2020-06-22 :. Qalculate! version 3.11 released</h4>
+	<div class="newsdate">2020-06-22</div><div class="newstitle">Qalculate! version 3.11 released</div>
 	List of changes:
 	<ul>
 		<li>Allow multiple "to"-conversions in one expression (e.g. "5 m/s to hex to ft to h = 0xE6AF.1E*ft∕h)</li>
@@ -272,7 +278,7 @@ Sections:<br>
 		<li>Fixes for the Gnome shell search provider</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-05-11 :. Qalculate! version 3.10 released</h4>
+	<div class="newsdate">2020-05-11</div><div class="newstitle">Qalculate! version 3.10 released</div>
 	List of changes:
 	<ul>
 		<li>Support for comments in expressions, using # (number sign)</li>
@@ -294,7 +300,7 @@ Sections:<br>
 		<li>Fix segfault with empty sin() or sinh() in equation</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-04-13 :. Qalculate! version 3.9 released</h4>
+	<div class="newsdate">2020-04-13</div><div class="newstitle">Qalculate! version 3.9 released</div>
 	List of changes:
 	<ul>
 		<li>Persistent keypad option, which makes it possible to show the keypad and the history simultaneously (GUI)</li>
@@ -308,7 +314,7 @@ Sections:<br>
 		<li>Fix segfault when running qalc in non-interactive mode without gnuplot (v3.9.0a)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-03-02 :. Qalculate! version 3.8 released</h4>
+	<div class="newsdate">2020-03-02</div><div class="newstitle">Qalculate! version 3.8 released</div>
 	List of changes:
 	<ul>
 		<li>IEEE 754 floating point conversion: float(), floatBits(), floatError(), floatParts(), and floatValue() functions, and fp16, fp32/float, fp64/double, fp80, and fp128 "to" conversion</li>
@@ -321,7 +327,7 @@ Sections:<br>
 		<li>Fix segfault in solve() with AND and OR in solution</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2020-01-20 :. Qalculate! version 3.7 released</h4>
+	<div class="newsdate">2020-01-20</div><div class="newstitle">Qalculate! version 3.7 released</div>
 	List of changes:
 	<ul>
 		<li>Configurable keyboard shortcuts (GUI)</li>
@@ -336,7 +342,7 @@ Sections:<br>
 		<li>Fix crash when used in Cantor (caused by conflict with Poppler library)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2019-11-25 :. Qalculate! version 3.6 released</h4>
+	<div class="newsdate">2019-11-25</div><div class="newstitle">Qalculate! version 3.6 released</div>
 	List of changes:
 	<ul>
 		<li>Major improvements and fixes for integrals (note that the variable of integration argument has moved to 4th position, e.g. <i>integrate(x^2, 1, 5)</i> instead of <i>integrate(x^2, x, 1, 5)</i>)</li>
@@ -350,7 +356,7 @@ Sections:<br>
 		<li>Options to customize the window title: different modes selectable in preferences, command line option, and settitle() function (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2019-10-23 :. Qalculate! version 3.5 released</h4>
+	<div class="newsdate">2019-10-23</div><div class="newstitle">Qalculate! version 3.5 released</div>
 	List of changes:
 	<ul>
 		<li>Option to use binary prefixes by default for information units and "b?" syntax for conversion to optimal prefix (e.g. 8192 bits to b?byte = 1 kibibyte)</li>
@@ -365,7 +371,7 @@ Sections:<br>
 		<li>Fix segfault when saving mode/settings (on exit) if history is empty (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2019-09-16 :. Qalculate! version 3.4 released</h4>
+	<div class="newsdate">2019-09-16</div><div class="newstitle">Qalculate! version 3.4 released</div>
 	List of changes:
 	<ul>
 		<li>"where"-syntax (e.g. "x+y where x=1 and y=2", or alternatively "x+y/.x=1,y=2", and "x^2=4 where x&gt;0")</li>
@@ -380,7 +386,7 @@ Sections:<br>
 		<li>RPN stack drag and drop (GUI)</li>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
-	<h4>.: 2019-07-22 :. Qalculate! version 3.3 released</h4>
+	<div class="newsdate">2019-07-22</div><div class="newstitle">Qalculate! version 3.3 released</div>
 	List of changes:
 	<ul>
 		<li>Support for number bases &gt; 32, as well as negative and non-integer number bases</li>
@@ -395,7 +401,7 @@ Sections:<br>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	For details see the changelogs for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v3.3.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v3.3.0/ChangeLog">qalculate-gtk</a>.
-	<h4>.: 2019-05-27 :. Qalculate! version 3.2 released</h4>
+	<div class="newsdate">2019-05-27</div><div class="newstitle">Qalculate! version 3.2 released</div>
 	List of changes:
 	<ul>
 		<li>Updated physical constants (CODATA 2018)</li>
@@ -419,7 +425,7 @@ Sections:<br>
 		<li>Minor bug fixes and feature improvements</li>
 	</ul>
 	For details see the changelogs for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v3.2.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v3.2.0/ChangeLog">qalculate-gtk</a>.
-	<h4>.: 2019-04-15 :. Qalculate! version 3.1 released</h4>
+	<div class="newsdate">2019-04-15</div><div class="newstitle">Qalculate! version 3.1 released</div>
 	List of changes:
 	<ul>
 		<li>Calculation of Si(), Ci(), Shi(), and Chi().</li>
@@ -436,7 +442,7 @@ Sections:<br>
 		<li>Minor bug fixes and feature improvements.</li>
 	</ul>
 	For details see the changelogs for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v3.1.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v3.1.0/ChangeLog">qalculate-gtk</a>.
-	<h4>.: 2019-03-18 :. Qalculate! version 3.0 released</h4>
+	<div class="newsdate">2019-03-18</div><div class="newstitle">Qalculate! version 3.0 released</div>
 	List of changes:
 	<ul>
 		<li>Implement 2019 redefinition of SI base units (primarily affects physical constants and will not take effect until 20 May).</li>
@@ -450,7 +456,7 @@ Sections:<br>
 		<li>Restore lost signal handlers in the conversion GUI (fixes search, popup menu, etc.).</li>
 		<li>Bug fixes and minor feature improvements.</li>
 	</ul>
-	<h4>.: 2019-02-11 :. Qalculate! version 2.9.0 released</h4>
+	<div class="newsdate">2019-02-11</div><div class="newstitle">Qalculate! version 2.9.0 released</div>
 	List of changes:
 	<ul>
 		<li>Propagation of uncertainty using variance formula (if interval arithmetic is disabled).</li>
@@ -464,7 +470,7 @@ Sections:<br>
 		<li>Fix convert button (GUI).</li>
 		<li>Minor bug fixes and feature improvements.</li>
 	</ul>
-	<h4>.: 2018-12-03 :. Qalculate! version 2.8.2 released</h4>
+	<div class="newsdate">2018-12-03</div><div class="newstitle">Qalculate! version 2.8.2 released</div>
 	List of changes:
 	<ul>
 		<li>Fix missing prefix for gram (and are) when unit exponent not one and automatic prefixes is off.</li>
@@ -473,7 +479,7 @@ Sections:<br>
 		<li>Improved line breaks (CLI).</li>
 		<li>Minor bug fixes and feature improvements.</li>
 	</ul>
-	<h4>.: 2018-11-07 :. Qalculate! version 2.8.1 released</h4>
+	<div class="newsdate">2018-11-07</div><div class="newstitle">Qalculate! version 2.8.1 released</div>
 	List of changes:
 	<ul>
 		<li>Interpret a character preceded by '\' as an unknown variable (same as in quotation marks).</li>
@@ -492,7 +498,7 @@ Sections:<br>
 		<li>RPN stack buttons with icons (GUI).</li>
 		<li>Use 'linked' widget style where appropriate (GUI).</li>
 	</ul>
-	<h4>.: 2018-10-29 :. Qalculate! version 2.8 released</h4>
+	<div class="newsdate">2018-10-29</div><div class="newstitle">Qalculate! version 2.8 released</div>
 	This version primarily includes a large number of stability and reliability improvements, thanks to automatic testing of hundreds of thousands of randomly generated mathematical expressions.<br><br>
 	List of changes:
 	<ul>
@@ -505,7 +511,7 @@ Sections:<br>
 		<li>Many bug fixes and minor feature improvements.</li>
 	</ul>
 	For details see the changelogs for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v2.8.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v2.8.0/ChangeLog">qalculate-gtk</a>.
-	<h4>.: 2018-08-13 :. Qalculate! version 2.6.2 released</h4>
+	<div class="newsdate">2018-08-13</div><div class="newstitle">Qalculate! version 2.6.2 released</div>
 	List of changes:
 	<ul>
 		<li>Polar and exponential complex forms (changed with mode or with "to" operator/command)</li>
@@ -516,7 +522,7 @@ Sections:<br>
 		<li>Option to disable automatic conversion to local currency (when optimal conversion activated)</li>
 		<li>Minor bug fixes.</li>
 	</ul>
-	<h4>.: 2018-07-09 :. Qalculate! version 2.6.1 released</h4>
+	<div class="newsdate">2018-07-09</div><div class="newstitle">Qalculate! version 2.6.1 released</div>
 	List of changes:
 	<ul>
 		<li>Fix display of addition with negative non-integer number (show "x - a" instead of "x + -a")</li>
@@ -529,7 +535,7 @@ Sections:<br>
 		<li>Option to keep insert function dialog open for repeated function calculations.</li>
 		<li>Minor bug fixes and feature enhancements.</li>
 	</ul>
-	<h4>.: 2018-06-11 :. Qalculate! version 2.6 released</h4>
+	<div class="newsdate">2018-06-11</div><div class="newstitle">Qalculate! version 2.6 released</div>
 	List of changes:
 	<ul>
 		<li>Calendar conversion.</li>
@@ -554,7 +560,7 @@ Sections:<br>
 		<li>Add duodecimal and roman numerals to number base conversion dialog.</li>
 		<li>Minor bug fixes and feature enhancements.</li>
 	</ul>
-	<h4>.: 2018-05-15 :. Qalculate! version 2.5 released</h4>
+	<div class="newsdate">2018-05-15</div><div class="newstitle">Qalculate! version 2.5 released</div>
 	List of changes:
 	<ul>
 		<li>Improved interval arithmetic with dependent values (variables and function arguments). Most differentiable expressions do now return a properly narrow interval.</li>
@@ -575,7 +581,7 @@ Sections:<br>
 		<li>Improved convert to menu in unit manager.</li>
 		<li>Workarounds for bugs in GTK+ themes.</li>
 	</ul>
-	<h4>.: 2018-04-11 :. Qalculate! version 2.4 released</h4>
+	<div class="newsdate">2018-04-11</div><div class="newstitle">Qalculate! version 2.4 released</div>
 	List of changes:
 	<ul>
 		<li>Simplified percent calculation (e.g. 100 + 20% = 120).</li>
@@ -589,9 +595,9 @@ Sections:<br>
 		<li>Fix lambertw()/productlog().</li>
 		<li>Fix display of parsed sexagesimal numbers.</li>
 	</ul>
-	<h4>.: 2018-03-28 :. Qalculate! version 2.3 released</h4>
+	<div class="newsdate">2018-03-28</div><div class="newstitle">Qalculate! version 2.3 released</div>
 	The main focus of version 2.3 is enhanced integration capabilities and basic solving of differential equations. Qalculate! should be much more usable for calculation of integrals now, even though it is still far from perfect.<br><br>There is also some important plotting fixes, as well as many minor bug fixes and feature enhancements. For details see the changelog for <a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v2.3.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v2.3.0/ChangeLog">qalculate-gtk</a>.
-	<h4>.: 2018-01-17 :. Qalculate! version 2.2.1 released</h4>
+	<div class="newsdate">2018-01-17</div><div class="newstitle">Qalculate! version 2.2.1 released</div>
 	Version 2.2.1 includes bug fixes and minor feature enhancements.<br><br>
 	List of changes:
 	<ul>
@@ -604,7 +610,7 @@ Sections:<br>
 		<li>Add completion only names to enable completion of Greek letters from the Roman letter names.</li>
 		<li>Suppress gnuplot output in terminal.</li>
 	</ul>
-	<h4>.: 2017-12-07 :. Qalculate! version 2.2 released</h4>
+	<div class="newsdate">2017-12-07</div><div class="newstitle">Qalculate! version 2.2 released</div>
 	The main focus of version 2.2 is interval arithmetic, which can be used for determination of the number of significant digits in the final result or direct calculation with intervals of numbers. Note that more work is needed to avoid unnecessary interval widening for non-trivial expressions with dependent variables.<br><br>
 	List of main changes:
 	<ul>
@@ -618,7 +624,7 @@ Sections:<br>
 		<li>Use 10^n instead of E-notation for main result display by default. (GUI)</li>
 		<li>Various bug fixes and minor feature enhancements.</li>
 	</ul>
-	<h4>.: 2017-10-02 :. Qalculate! version 2.1 released</h4>
+	<div class="newsdate">2017-10-02</div><div class="newstitle">Qalculate! version 2.1 released</div>
 	The main focus of version 2.1 is consistent handling of roots of negative numbers and equation solving enhancements.<br><br>
 	List of main changes:
 	<ul>
@@ -633,7 +639,7 @@ Sections:<br>
 		<li>Proper display of roots and absolute value. (GUI)</li>
 		<li>Minor bug fixes and feature enhancements.</li>
 	</ul>
-	<h4>.: 2017-08-28 :. Qalculate! version 2.0 released</h4>
+	<div class="newsdate">2017-08-28</div><div class="newstitle">Qalculate! version 2.0 released</div>
 	After a month of hard work Qalculate! version 2.0 is ready with removal of glib and cln dependencies from the library, a redesigned expression entry and keypad in the GUI, and a new feature complete Windows version.<br><br>
 	List of main changes:
 	<ul>
@@ -652,10 +658,10 @@ Sections:<br>
 		<li>Increased efficiency and many minor enhancements and bug fixes.</li>
 	</ul>
 	For a complee list of changes see the ChangeLogs (<a href="https://raw.githubusercontent.com/Qalculate/libqalculate/v2.0.0/ChangeLog">libqalculate</a> and <a href="https://raw.githubusercontent.com/Qalculate/qalculate-gtk/v2.0.0a/ChangeLog">qalculate-gtk</a>), or, for even more details, git logs (<a href="https://github.com/Qalculate/libqalculate/commits/v2.0.0">libqalculate</a> and <a href="https://github.com/Qalculate/qalculate-gtk/commits/v2.0.0a">qalculate-gtk</a>).
-	<h4>.: 2017-08-09 :. Preview of the first official Windows version of Qalculate! released</h4>
+	<div class="newsdate">2017-08-09</div><div class="newstitle">Preview of the first official Windows version of Qalculate! released</div>
 	Qalculate! has long been available for GNU/Linux and Mac OS X, but now it is finally also compatible with Microsoft Windows (although there is a fork by Cheng Sun with Windows compatibility, which has contributed code to this version). This pre-release version is likely not as stable as version 1.0.0 (although it does include some important bug fixes), but you are nevertheless invited to try it, report any issues you find and share you opinion. 
 	<br><br>Download the installer here: <a href="https://github.com/Qalculate/libqalculate/releases/download/v1.0.99/qalculate-1.0.99.msi">qalculate-1.0.99.msi</a>.
-	<h4>.: 2017-07-24 :. Qalculate! version 1.0 released</h4>
+	<div class="newsdate">2017-07-24</div><div class="newstitle">Qalculate! version 1.0 released</div>
 	Qalculate! version 1.0 includes the following changes:
 	<ul>
 		<li>Increased efficiency and stability. Slow calculations can in most cases now be terminated in a controlled manner and the application should no longer potentially crash when trying to calculate extremely large numbers.</li>
@@ -665,9 +671,9 @@ Sections:<br>
 		<li>A long list of bug fixes and minor feature enhancements.</li>
 	</ul>
 	For a complete list of changes see the git logs for <a href="https://github.com/Qalculate/libqalculate/commits/v1.0.0a">libqalculate</a> and <a href="https://github.com/Qalculate/qalculate-gtk/commits/v1.0.0">qalculate-gtk</a>.
-	<h4>.: 2017-05-29 :. Qalculate! version 0.9.12 released</h4>
+	<div class="newsdate">2017-05-29</div><div class="newstitle">Qalculate! version 0.9.12 released</div>
 	Qalculate! version 0.9.12 includes fixes to unit parsing in <i>adaptive parsing mode</i>, build fixes and other minor bug fixes. The fork with support for Microsoft Windows has been merged (compilation on Windows has however not been tested).
-	<h4>.: 2017-03-06 :. Qalculate! version 0.9.11 released</h4>
+	<div class="newsdate">2017-03-06</div><div class="newstitle">Qalculate! version 0.9.11 released</div>
 	Qalculate! version 0.9.11 includes both some important bug fixes and a number of new features. Among other things mixed units conversion has been added and users of the graphical user interface will notice the new enhanced history view. The RPN functionality has received much needed attention and should now be more usable.
 	<br><br>Changes:
 	<ul>
@@ -687,14 +693,14 @@ Sections:<br>
 		<li>Option to use multiple instances by default (GTK+ UI)</li>
 		<li>Various other minor enhancements and bug fixes...</li>
 	</ul>
-	<h4>.: 2016-08-28 :. Qalculate! version 0.9.10 released</h4>
+	<div class="newsdate">2016-08-28</div><div class="newstitle">Qalculate! version 0.9.10 released</div>
 	Qalculate! version 0.9.10 includes a small number of important bug fixes. Only libqalculate has been updated.
 	<br><br>Changes:
 	<ul>
 		<li>Unit conversion fixes (e.g. "1/s to ms" and "1/ns to GHz")</li>
 		<li>Fixed parsing of degrees sign (used in defult symbol for temperature units)</li>
 	</ul>
-	<h4>.: 2016-07-26 :. Qalculate! version 0.9.9 released</h4>
+	<div class="newsdate">2016-07-26</div><div class="newstitle">Qalculate! version 0.9.9 released</div>
 	Qalculate! version 0.9.9 is a minor release with some important bug fixes, as well as a few new features.
 	<br><br>Changes:
 	<ul>
@@ -705,7 +711,7 @@ Sections:<br>
 		<li>New commands/options in qalc which list available variables, functions and units</li>
 		<li>New command in qalc for deletion of variables</li>
 	</ul>
-	<h4>.: 2016-06-15 :. Qalculate! version 0.9.8 released</h4>
+	<div class="newsdate">2016-06-15</div><div class="newstitle">Qalculate! version 0.9.8 released</div>
 	After almost a decade of very little development, the project has been revived and during the last two months many improvements have been made, until it is now time to release a new version. Qalculate! version 0.9.8 includes many bug fixes, but due to limited testing some new bugs have probably been introduced. Any external applications using libqalculate need to be recompiled to function properly with the new version.
 	<br><br>Changes:
 	<ul>	
@@ -730,10 +736,10 @@ Sections:<br>
 		<li>'to' can now not only be used for conversion to unit expressions. "to bin", "to oct", "to hex" and "to bases" changes number base displayed, "to factors" factorizes, "to fraction" displays as fraction, and "to base" and "to optimal" auto-converts units. (CLI and GTK+ UI)</li>
 		<li>The KDE UI has been abandoned for now and is not included in this release.</li>
 	</ul>
-	<h4>.: 2016-04-30 :. A new version coming soon...</h4>
+	<div class="newsdate">2016-04-30</div><div class="newstitle">A new version coming soon...</div>
 	The graphical user interface has been ported to GTK+ 3 (unfortunately the KDE version has been abandoned for now) and lots of bugs have been fixed. Even a few new features have been introduced in the process. Only few more fixes and a lot more testing are needed before I will release a shiny new version of Qalculate.<br>
-	<h4>.: 2010-01-06 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.7 released</h4>
-	After a long time without updates, a new version of <font color="#cc4499"><strong>Q</strong></font>alculate! is available for download. This is a bug fix and build update release. Qalculate! should now compile and work on most modern systems.
+	<div class="newsdate">2010-01-06</div><div class="newstitle">Qalculate! version 0.9.7 released</div>
+	After a long time without updates, a new version of Qalculate! is available for download. This is a bug fix and build update release. Qalculate! should now compile and work on most modern systems.
 	<br><br>Changelog:
 	<ul>	
 		<li>General build updates and bug fixes, including the ability to build against cln >= 1.2</li>
@@ -742,8 +748,8 @@ Sections:<br>
 		<li>Fix crash with unsupported operator in RPN syntax</li>
 		<li>Fix reduction of vector size</li>
 	</ul>
-	<h4>.: 2007-06-17 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.6 released</h4>
-	A new version of <font color="#cc4499"><strong>Q</strong></font>alculate! providing enhanced stability and usability with bug fixes and feature enhancements is now available.
+	<div class="newsdate">2007-06-17</div><div class="newstitle">Qalculate! version 0.9.6 released</div>
+	A new version of Qalculate! providing enhanced stability and usability with bug fixes and feature enhancements is now available.
 	<br><br>Changelog:
 	<ul>		
 		<li>Use Lambert W to solve more equations and avoid infinite loop when solving some equations</li>		
@@ -761,7 +767,7 @@ Sections:<br>
 	  	<li>New variable: omega constant</li>
 		<li>Other minor fixes and enhancements</li>
 	</ul>
-	<h4>.: 2006-12-17 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.5 finally released</h4>
+	<div class="newsdate">2006-12-17</div><div class="newstitle">Qalculate! version 0.9.5 finally released</div>
 	After a long time with sporadic development, here is a new version with many new features and bug fixes.
 	<br><br>Changelog:
 	<ul>
@@ -789,7 +795,7 @@ Sections:<br>
 		<li>Fixes for old KDE and Qt versions</li>
 		<li>New command line options for qalc: -terse (-t), -nodefs (-n), -nocurrencies, -nodatasets, -nofunctions, -nounits, -novariables</li>
 	</ul>
-	<h4>.: 2006-06-02 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.4 released</h4>
+	<div class="newsdate">2006-06-02</div><div class="newstitle">Qalculate! version 0.9.4 released</div>
 	This version includes many enhancements, such as a true RPN mode, a Dutch translation, new icons, API documenation, and bug fixes.
 	<br><br>Changelog:
 	<ul>
@@ -817,9 +823,9 @@ Sections:<br>
 		<li>Change some dubious mathematical wordings</li>
 		<li>...and many more enhancements and fixes...</li>
 	</ul>
-	<h4>.: 2006-03-24 :. KDE GUI updated</h4>
-	Version 0.9.3.1 of the KDE GUI for <font color="#cc4499"><strong>Q</strong></font>alculate! (only the qalculate-kde package has been updated) has been released. This version fixes session management and puts <font color="#cc4499"><strong>Q</strong></font>alculate! in the system tray by default. Also new are a combined dialog for number bases in result and expression, and a command line option to calculate the clipboard content.
-	<h4>.: 2006-03-14 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.3 released</h4>
+	<div class="newsdate">2006-03-24</div><div class="newstitle">KDE GUI updated</div>
+	Version 0.9.3.1 of the KDE GUI for Qalculate! (only the qalculate-kde package has been updated) has been released. This version fixes session management and puts Qalculate! in the system tray by default. Also new are a combined dialog for number bases in result and expression, and a command line option to calculate the clipboard content.
+	<div class="newsdate">2006-03-14</div><div class="newstitle">Qalculate! version 0.9.3 released</div>
 	This is primarily a bug fix release with relatively few changes.
 	<br><br>Changelog:
 	<ul>
@@ -832,7 +838,7 @@ Sections:<br>
 		<li>Approximate comparison</li>
 		<li>...and some more...</li>
 	</ul>
-	<h4>.: 2005-12-22 :. Happy Yule to you all! &nbsp; <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.2 released</h4>
+	<div class="newsdate">2005-12-22</div><div class="newstitle">Happy Yule to you all! &nbsp; Qalculate! version 0.9.2 released</div>
 	This is a major release (hence the .2 increase) that focuses on the CAS functionality, with greatly enhanced factorization/simplification
 	and solving of equations and inequalities.
 	<br><br>Changelog:
@@ -863,7 +869,7 @@ Sections:<br>
 		<li>Unicode fixes</li>
 		<li>...and many more minor fixes and enhancements (and probably some new bugs)...</li>
 	</ul>
-	<h4>.: 2005-11-03 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.9.0 released</h4>
+	<div class="newsdate">2005-11-03</div><div class="newstitle">Qalculate! version 0.9.0 released</div>
 	This release includes many visual and non-visual enhancements. Users will first notice the redesigned main
 	window, and then the as-you-type parse and function hint display, and enhanced completion. 
 	But there are more to be discovered...
@@ -886,18 +892,18 @@ Sections:<br>
 		<li>Fixed f(x) return type analysis (ex. log(x) represents a real number if x represents a positive). This was by accident unused.</li>
 		<li>...and many more bug fixes and enhancements...</li>
 	</ul>
-	<h4>.: 2005-10-11 :. Quick fix for result cropping in new pango</h4>
-	The gtk+ version of <font color="#cc4499"><strong>Q</strong></font>alculate! was updated to handle new behaviour
+	<div class="newsdate">2005-10-11</div><div class="newstitle">Quick fix for result cropping in new pango</div>
+	The gtk+ version of Qalculate! was updated to handle new behaviour
 	in pango &gt;= 1.10.0.
-	<h4>.: 2005-10-10 :. New Applications: <font color="#cc4499"><strong>Q</strong></font>alculate! Bases, <font color="#cc4499"><strong>Q</strong></font>alculate! Currency, <font color="#cc4499"><strong>Q</strong></font>alculate! Units</h4>
-	In some cases the big (bloated) <font color="#cc4499"><strong>Q</strong></font>alculate! application is not the most efficient and user friendly interface.
+	<div class="newsdate">2005-10-10</div><div class="newstitle">New Applications: Qalculate! Bases, Qalculate! Currency, Qalculate! Units</div>
+	In some cases the big (bloated) Qalculate! application is not the most efficient and user friendly interface.
 	Why should you, for example, need to load and learn to use the full application just to convert a simple binary number to a decimal, or
 	to see what the price of a foreign product is in your national currency with the current exchange rates. 
-	Therefore, I am now releasing three small utilities: <font color="#cc4499"><strong>Q</strong></font>alculate! Bases,
-	<font color="#cc4499"><strong>Q</strong></font>alculate! Currency, and <font color="#cc4499"><strong>Q</strong></font>alculate! Units.
+	Therefore, I am now releasing three small utilities: Qalculate! Bases,
+	Qalculate! Currency, and Qalculate! Units.
 	The full libqalculate capabilities is of course available in these applications (arbitrary precision, expression evaluation, etc.), but in
 	graphical user interfaces more fine-tuned for the specific purposes. The <a href="screenshots.html#qalclets">screenshots</a> should be self-explanatory.
-	<h4>.: 2005-10-10 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.2</h4>
+	<div class="newsdate">2005-10-10</div><div class="newstitle">Qalculate! version 0.8.2</div>
 	A new full release with mostly bug fixes.
 	<br><br>Changelog:
 	<ul>
@@ -911,7 +917,7 @@ Sections:<br>
 		<li>System tray icon and close to system tray option (of by default, KDE)</li>
 		<li>Do not create qalculate symlink to qalc (confusing when installing GUI in other location)</li>
 	</ul>
-	<h4>.: 2005-09-22 :. lib<font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.1.2</h4>
+	<div class="newsdate">2005-09-22</div><div class="newstitle">libqalculate! version 0.8.1.2</div>
 	This is a bug fix release of libqalculate.
 	<br><br>Changelog:
 	<ul>
@@ -920,7 +926,7 @@ Sections:<br>
 		<li>Fix conversion of 0 &ordm;C to &ordm;F</li>
 		<li>New units: mph and mpg</li>
 	</ul>
-	<h4>.: 2005-06-11 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.1.1</h4>
+	<div class="newsdate">2005-06-11</div><div class="newstitle">Qalculate! version 0.8.1.1</div>
 	The purpose if this release is to check and lower the version numbers of required libraries.
 	Some additional enhancements did however sneak in... qalculate-gtk has not been updated but needs to
 	be recompiled if libqalculate is updated.
@@ -936,7 +942,7 @@ Sections:<br>
 		<li>Use KIO instead of wget for fetching exchange rates (KDE)</li>
 		<li>Close gnuplot and disable save button when no series defined (KDE)</li>
 	</ul>
-	<h4>.: 2005-06-09 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.1</h4>
+	<div class="newsdate">2005-06-09</div><div class="newstitle">Qalculate! version 0.8.1</div>
 	This release includes several major bug fixes and new features in the KDE interface. The new version also adds
 	support for bitwise operators (~, &, |). This means that '&&' or 'AND', and '||' or 'OR' must be used for 
 	logical	operations.
@@ -960,7 +966,7 @@ Sections:<br>
 		<li>Handle input keys ^+digit as "^"+digit (KDE)</li>
 		<li>and more...</li>
 	</ul>
-	<h4>.: 2005-06-01 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.8.0 released with new KDE interface</h4>
+	<div class="newsdate">2005-06-01</div><div class="newstitle">Qalculate! version 0.8.0 released with new KDE interface</div>
 	This release includes a completely new graphical user interface using KDE with all features of the old GTK+ GUI.
 	It features a redesigned main window, with new features such as a history view (instead of in its own window),
 	selectable result and tooltips for variables, functions and units in the result.
@@ -977,7 +983,7 @@ Sections:<br>
 		<li>Fix documentation typos</li>
 		<li>Fix includes.h for gcc-4.0</li>
 	</ul>
-	<h4>.: 2005-02-01 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.7.2</h4>
+	<div class="newsdate">2005-02-01</div><div class="newstitle">Qalculate! version 0.7.2</div>
 	This release includes some requested feature enhancements and minor bug fixes.
 	<br><br>Changelog:
 	<ul>
@@ -988,7 +994,7 @@ Sections:<br>
 		<li>Fix RPN crash and don't add lonely stack value to itself</li>
 		<li>Workaround freeze with message dialog without buttons</li>
 	</ul>
-	<h4>.: 2004-11-22 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.7.1</h4>
+	<div class="newsdate">2004-11-22</div><div class="newstitle">Qalculate! version 0.7.1</div>
 	This is mainly a bug fix release.
 	<br><br>Changelog:
 	<ul>
@@ -1004,11 +1010,11 @@ Sections:<br>
 		<li>Fix comparison of unit with unknown</li>
 		<li>Fix 0.5!</li>
 	</ul>
-	<h4>.: 2004-10-18 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.7.0</h4>
+	<div class="newsdate">2004-10-18</div><div class="newstitle">Qalculate! version 0.7.0</div>
 	This release includes some structural changes, a text-based interface, some major speed-ups and a number of bug fixes. 
 	Libqalculate is now installed as a shared library and in addition to the now optional gtk+ GUI, there
 	is now a text-based/command line interface with an executable named qalc and access to the full functionality
-	of <font color="#cc4499"><strong>Q</strong></font>alculate!.
+	of Qalculate!.
 	<br><br>Changelog:
 	<ul>
 		<li>New text interface: qalc</li>
@@ -1033,7 +1039,7 @@ Sections:<br>
 		<li>Fix: x!! != (x!)!</li>
 		<li>Fix: change non-unicode abbreviation for micro from n to u</li>
 	</ul>
-	<h4>.: 2004-09-27 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.4</h4>
+	<div class="newsdate">2004-09-27</div><div class="newstitle">Qalculate! version 0.6.4</div>
 	This release includes, in addition to a large variety of enhancements and bug fixes, 
 	a new data set concept, to be able to handle large sets of variables, and significant algebraic enhancements.
 	<br><br>Changelog:
@@ -1064,8 +1070,8 @@ Sections:<br>
 		<li>Fix diff() with variables and functions that contains x</li>
 		<li>Many additional minor enhancements and bug fixes</li>
 	</ul>
-	<h4>.: 2004-08-16 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.3</h4>
-	A new exciting release of <font color="#cc4499"><strong>Q</strong></font>alculate! is ready with a lot of bug fixes
+	<div class="newsdate">2004-08-16</div><div class="newstitle">Qalculate! version 0.6.3</div>
+	A new exciting release of Qalculate! is ready with a lot of bug fixes
 	and some interesting new features, including a periodic table, lots of physical constants, and new more flexible internal
 	systems and user options for precision and object names (now case-insensitive).
 	<br><br>Changelog:
@@ -1073,7 +1079,7 @@ Sections:<br>
 		<li>Periodic Table and functions to retrieve element data</li>
 		<li>Non-abbreviated names are now case-insensitive</li>
 		<li>Individual precision for approximate values</li>
-		<li>Solve quadratic equations (note that <font color="#cc4499"><strong>Q</strong></font>alculate! is still not really a good tool for solving advanced equations)</li>
+		<li>Solve quadratic equations (note that Qalculate! is still not really a good tool for solving advanced equations)</li>
 		<li>New system for variable, unit and function names which allows unlimited number of different names for each object, translation of all names, and suffixes</li>
 		<li>New variables: lots of physical constants, and true (yes), false (no), undefined</li>
 		<li>Option to show ending zeroes (to see actual precision)</li>
@@ -1094,10 +1100,10 @@ Sections:<br>
 	forward and fill in the missing properties I would very much appreciate it. I could also use some more suggestions 
 	on functions that you think should be included, how the user interface can become more user-friendly, and any 
 	new features that would be useful.
-	<h4>.: 2004-07-29 :. <font color="#cc4499"><strong>Q</strong></font>alculate! ebuild now in portage</h4>
-	<font color="#cc4499"><strong>Q</strong></font>alculate! is now available in <a href="http://www.gentoo.org">Gentoo</a>.
+	<div class="newsdate">2004-07-29</div><div class="newstitle">Qalculate! ebuild now in portage</div>
+	Qalculate! is now available in <a href="http://www.gentoo.org">Gentoo</a>.
 	<br>Install with <code>ACCEPT_KEYWORDS="~x86" emerge qalculate-gtk</code>
-	<h4>.: 2004-07-19 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.2</h4>
+	<div class="newsdate">2004-07-19</div><div class="newstitle">Qalculate! version 0.6.2</div>
 	The new version includes some urgent bug fixes and a number of feature enhancements.
 	<br><br>Changelog:
 	<ul>
@@ -1128,10 +1134,10 @@ Sections:<br>
 		<li>Documentation updates</li>
 		<li>...</li>
 	</ul>
-	<h4>.: 2004-07-10 :. Problems with -Os optimization</h4>
-	I have discovered that with "-Os" in CFLAGS/CXXFLAGS, <font color="#cc4499"><strong>Q</strong></font>alculate! will 
+	<div class="newsdate">2004-07-10</div><div class="newstitle">Problems with -Os optimization</div>
+	I have discovered that with "-Os" in CFLAGS/CXXFLAGS, Qalculate! will 
 	crash on startup. Replace with "-O2".
-	<h4>.: 2004-07-07 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6.1</h4>
+	<div class="newsdate">2004-07-07</div><div class="newstitle">Qalculate! version 0.6.1</div>
 	This release fixes some urgent bugs.
 	<br><br>Changelog:
 	<ul>
@@ -1142,9 +1148,9 @@ Sections:<br>
 		<li>Fix approximate integers</li>
 		<li>Fix is approximate indication</li>
 	</ul>
-	<h4>.: 2004-06-24 :. Quick fix</h4>
+	<div class="newsdate">2004-06-24</div><div class="newstitle">Quick fix</div>
 	If you downloaded version 0.6 yesterday, you should try again today.
-	<h4>.: 2004-06-23 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.6 finally released</h4>
+	<div class="newsdate">2004-06-23</div><div class="newstitle">Qalculate! version 0.6 finally released</div>
 	This release features completely rewritten math structures, including how expressions are represented, simplified and calculated internally.
 	This means that all known bugs and mathematical errors have been fixed, and hopefully results in much improved reliability. 
 	As almost no code was left untouched, a bunch of new bugs should however be expected.
@@ -1162,7 +1168,7 @@ Sections:<br>
 		<li>Do not create a new thread (and stack space) for every calculation</li>
 		<li>...</li>
 	</ul>
-	<h4>.: 2004-05-12 :. Status Update</h4>
+	<div class="newsdate">2004-05-12</div><div class="newstitle">Status Update</div>
 	Relatively long time has gone by since the last release, but this does not mean that development has stalled. 
 	I am currently rewriting the core math code, including how expressions are represented, simplified and calculated internally.
 	<br><br>The rewrite will take some time, but will hopefully result in much improved reliability. Some functionality will be lost in the process
@@ -1170,10 +1176,10 @@ Sections:<br>
 	user-visible features will remain unchanged. Also, the API will be closer to being ready for a separate library release.
 	<br><br>I seriously considered fully moving to Giac, but found that it was still lacking the stability needed for 
 	a desktop application and I also felt that I was moving too far a way from the main purpose 
-	of <font color="#cc4499"><strong>Q</strong></font>alculate!, which is to be a user-friendly and
+	of Qalculate!, which is to be a user-friendly and
 	efficient tool for a wide array of everyday and simple scientific calculations. Those who need a full CAS will probably
 	be more efficient with the tools provided with Giac.
-	<h4>.: 2004-04-06 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.5.1</h4>
+	<div class="newsdate">2004-04-06</div><div class="newstitle">Qalculate! version 0.5.1</div>
 	This version includes some important bug fixes (mostly related to trigonometric functions and multiple roots) 
 	and a new solve function.
 	<br><br>Changelog:
@@ -1191,9 +1197,9 @@ Sections:<br>
 		<li>Fix precision dialog</li>
 		<li>Additional minor bug fixes</li>
 	</ul>
-	<h4>.: 2004-04-02 :. Multiple roots is broken</h4>
+	<div class="newsdate">2004-04-02</div><div class="newstitle">Multiple roots is broken</div>
 	The mode for calculation of multiple roots is seriously broken. Make sure that you disable it!
-	<h4>.: 2004-03-29 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.5</h4>
+	<div class="newsdate">2004-03-29</div><div class="newstitle">Qalculate! version 0.5</div>
 	This version includes a relatively large number of feature enhancements and fixes. 
 	The user interface has been partly redesigned (see screenshots) and does now have convenient completion for expressions. 
 	Note that gtk+-2.4 is recommended for this release, as it is needed for some of the new features.
@@ -1227,9 +1233,9 @@ Sections:<br>
 		<li>Fix printing of exponent 1E...</li>
 		<li>Some additional minor fixes</li>
 	</ul>
-	<h4>.: 2004-03-10 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4.2a: "Oops!"</h4>
+	<div class="newsdate">2004-03-10</div><div class="newstitle">Qalculate! version 0.4.2a: "Oops!"</div>
 	Fixes compilation without Giac.
-	<h4>.: 2004-03-09 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4.2: Now with documentation!</h4>
+	<div class="newsdate">2004-03-09</div><div class="newstitle">Qalculate! version 0.4.2: Now with documentation!</div>
 	This release includes a first manual draft. Please note that English is not my native language and this quite extensive manual was written during one hectic week. 
 	Version 0.4.2 also includes some bug fixes and new features.
 	<br><br>Changelog:
@@ -1250,7 +1256,7 @@ Sections:<br>
 		<li>Fix abort when locale not supported by C library</li>
 		<li>Fix some problems related to complex numbers</li>
 	</ul>
-	<h4>.: 2004-02-26 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4.1</h4>
+	<div class="newsdate">2004-02-26</div><div class="newstitle">Qalculate! version 0.4.1</div>
 	This is a bug fix release that fixes all problems related to strptime (by not using it) and parsing of text/date arguments.<br>
 	<br>Changelog:
 	<ul>
@@ -1259,7 +1265,7 @@ Sections:<br>
 		<li>Fix gtk warnings on start-up</li>
 		<li>Use gtk's new file dialog</li>
 	</ul>
-	<h4>.: 2004-02-18 :. <font color="#cc4499"><strong>Q</strong></font>alculate! version 0.4</h4>
+	<div class="newsdate">2004-02-18</div><div class="newstitle">Qalculate! version 0.4</div>
 	This release adds complex numbers and optional support for <a href="http://www-fourier.ujf-grenoble.fr/~parisse/giac.html">Giac</a>, 
 	a computer algebra system. Even though some bug fixes have been made, this version is considered less stable than the previous.
 	Most changes dates back to early November before a long break and I'm still waiting for the time and motivation to do the necessary rewrite of the core math structures.<br>
@@ -1276,12 +1282,12 @@ Sections:<br>
 		<li>Delay inexact calculations: sqrt(2)^2 is no longer approximate</li>
 		<li>Permutations and combinations</li>
 	</ul>
-	<h4>.: 2004-02-03 :. Binary packages available</h4>
+	<div class="newsdate">2004-02-03</div><div class="newstitle">Binary packages available</div>
 	<a href="http://packages.debian.org/qalculate">Debian packages</a> (by Martin Waitz) are now available.
-	<h4>.: 2004-01-31 :. Minor bug fix release</h4>
-	<font color="#cc4499"><strong>Q</strong></font>alculate! version 0.3.1.1 foremost fixes crash on display of matrix and incorrect
+	<div class="newsdate">2004-01-31</div><div class="newstitle">Minor bug fix release</div>
+	Qalculate! version 0.3.1.1 foremost fixes crash on display of matrix and incorrect
 	calculation of division by root with multiple solutions.
-<br><br>
-</td><td width="50px">&nbsp;</td></tr>
+</div>
 </body>
+<script src="scripts/mobile.js"></script>
 </html>

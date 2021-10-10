@@ -1,67 +1,51 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Qalculate! - the ultimate desktop calculator</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Qalculate! - the ultimate desktop calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href="images/qalculate-icon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="css/qalculate.css" />
 </head>
-<body text="Black" bgcolor="#ccccdd" style="margin: auto">
-<div align="center">
-<table cellspacing="0" bgcolor="White" style="height: 100vh"><tr>
-<td width="150" bgcolor="#666677" align="center" valign="top">
-<br>
-<a href="index.html"><IMG src="images/qalculate-icon.png" width="128" height="128" border="0"></a>
-<br><br><br>
-<table cellspacing="25" width="100%"><tr><td align="left">
-<font size="+1" color="White" face="serif">
-Sections:<br>
-<hr color="White" size="1" noshade>
-<a href="news.html" style="text-decoration: none"><font color="White" face="serif">News</font></a><br>
-<a href="features.html" style="text-decoration: none"><font color="White" face="serif">Features</font></a><br>
-<a href="screenshots.html" style="text-decoration: none"><font color="White" face="serif">Screenshots</font></a><br>
-<a href="downloads.html" style="text-decoration: none"><font color="White" face="serif">Downloads</font></a><br>
-<a href="manual/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>Manual</nobr></font></a><br>
-<a href="reference/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>API Reference&nbsp;&nbsp;&nbsp;&nbsp;</nobr></font></a><br>
-<a href="contact.html" style="text-decoration: none"><font color="White" face="serif">Contact</font></a><br>
-</font>
-<hr color="White" size="1" noshade>
-</td></tr></table>
-<br><br>
-</td><td width="50">&nbsp;</td>
-<td valign="top" width="900">
-<br>
-<div align="left">
-<h1><font color="#cc4499"><strong>Q</strong></font>alculate! downloads</h1>
-<hr></div>
-<br>
-(!) Note that even though most planned features are in place and I personally find it highly stable and reliable in everyday use, 
-Qalculate! definitely needs more testing and no guarantees whatsoever are given.
-<br><br>
-With that said, you are welcome to download the latest version of Qalculate! and report any bugs you find.
-<h4>Qalculate! version 3.20.1 (source code):</h4>
-<ul>
-	<li><a href="https://github.com/Qalculate/libqalculate/releases/download/v3.20.1/libqalculate-3.20.1.tar.gz">Library and text interface (libqalculate)</a></li>
-	<li><a href="https://github.com/Qalculate/qalculate-gtk/releases/download/v3.20.1/qalculate-gtk-3.20.1.tar.gz">Graphical user interface (GTK)</a></li>
-	<li><a href="https://github.com/Qalculate/qalculate-qt/releases/download/v3.20.1/qalculate-qt-3.20.1.tar.gz">Graphical user interface (Qt)</a></li>
-</ul>
+<body class="qbody">
+<header class="header"><nav class="navbar_m">
+	<a href="index.html" class="nav-logo">Qalculate!</a>
+	<ul class="nav-menu">
+		<li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+		<li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+		<li class="nav-item"><a href="screenshots.html" class="nav-link">Screenshots</a></li>
+		<li class="nav-item"><a href="downloads.html" class="nav-link">Downloads</a></li>
+		<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+		<li class="nav-item"><a href="manual/index.html" class="nav-link">Manual</a></li>
+		<li class="nav-item"><a href="reference/index.html" class="nav-link">API Reference</a></li>
+		<li class="nav-item"><a href="https://www.paypal.me/HannaKnutsson" class="nav-link navdonate"><img src="images/heart.png" class="heart">Donate</a></li>
+	</ul>
+	<div class="hamburger">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</div>
+</nav></header>
+<div class="navbar"><div style="text-align:center">
+	<a href="index.html" class="navitem navleave navq">Qalculate!</a>
+	<a href="news.html" class="navitem">News</a>
+	<a href="features.html" class="navitem">Features</a>
+	<a href="screenshots.html" class="navitem">Screenshots</a>
+	<a href="downloads.html" class="navitem navcurrent">Downloads</a>
+	<a href="contact.html" class="navitem">Contact</a>
+	<a href="manual/index.html" class="navitem navleave">Manual</a>
+	<a href="reference/index.html" class="navitem navleave">API</a>
+	<a href="https://www.paypal.me/HannaKnutsson" class="navitem navleave navdonate"><img src="images/heart.png" class="heart">Donate</a>
+</div></div>
+<div class="main">
+<div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
+<div class="pagetitle"><span class="qcolor">Q</span>alculate! downloads</div>
 <hr>
-<h4>Library requirements:</h4>
-<ul>
-	<li>GMP, MPFR, Libxml2 (required)</li>
-	<li>libcurl, icu, gettext (strongly recommended)</li>
-	<li>Gnuplot (optional, for plotting)</li>
-</ul>
-<h4>Graphical user interface requirements:</h4>
-<ul>
-	<li>GTK (>= 3.10) or Qt (>= 5.6)</li>
-	<li>libqalculate (>= 3.20.1)</li>
-</ul>
-<h4>Text interface requirements:</h4>
-<ul>
-	<li>GNU Readline (recommended)</li>
-	<li>libiconv (recommended)</li>
-</ul>
+<div style="margin: 1em 0;">(!) Note that even though most planned features are in place and I personally find it highly stable and reliable in everyday use, 
+Qalculate! definitely needs more testing and no guarantees whatsoever are given. With that said, you are welcome to download the latest version of Qalculate! and <a href="contact.html">report any bugs</a> you find.</div>
 <hr>
-<h4>Windows binaries:</h4>
+<div>
+<div style="float: right"><img src="images/windows.png" height="48" style="margin: 1em 2em;"></div>
+<div class="sectiontitle">Windows binaries:</div>
 <ul>
 <li><a href="https://github.com/Qalculate/qalculate-gtk/releases/download/v3.20.1/qalculate-3.20.1-x64.msi">64-bit installer</a></li>
 <li><a href="https://github.com/Qalculate/qalculate-gtk/releases/download/v3.20.1/qalculate-3.20.1-x64.zip">64-bit "portable" zip package</a></li>
@@ -69,9 +53,12 @@ With that said, you are welcome to download the latest version of Qalculate! and
 <li><a href="https://github.com/Qalculate/qalculate-gtk/releases/download/v3.20.1/qalculate-3.20.1-i386.zip">32-bit "portable" zip package</a></li>
 </ul>
 Includes the graphical user interface and CLI, and all dependencies, except Gnuplot. Requires at least Windows Vista or higher (has been tested on Windows 7 and Windows 10).<br><br>Use compatibility mode to avoid keyboard input issues with 32-bit version.<br><br>The portable file can be unpacked and run without further installation. No application data are read or written outside of the unpacked directory.<br><br>
-The 64-bit binaries can also be installed using the <a href="https://docs.microsoft.com/en-us/windows/package-manager/winget/">Windows Package Manager (winget)</a> using command <i>"winget install qalculate"</i>.
-<br><br><hr>
-<h4>Linux binaries:</h4>
+The 64-bit binaries can also be installed using the <a href="https://docs.microsoft.com/en-us/windows/package-manager/winget/">Windows Package Manager (winget)</a> using the command <i>"winget install qalculate"</i>.
+</div>
+<br><hr>
+<div>
+<div class="sectiontitle">Linux binaries:</div>
+<div style="float: left"><img src="images/linux.png" height="128" style="margin-right: 1em;"></div>
 A <b>snap package</b>, with all dependencies included, is available at <a href="https://snapcraft.io/qalculate">snapcraft.io/qalculate</a>.
 <br>Use the above link or install with the command <i>"sudo snap install qalculate"</i>.
 <br><br>
@@ -80,18 +67,43 @@ Click the above link or use the command <i>"flatpak install https://flathub.org/
 <b>Self-contained binaries</b>: <a href="https://github.com/Qalculate/qalculate-gtk/releases/download/v3.20.1/qalculate-3.20.1a-x86_64.tar.xz">qalculate-3.20.1a-x86_64.tar.xz</a><br>
 <i>Extract and run from anywhere on most GNU/Linux distributions. Does not include any languages other than English.</i><br><br>
 Most distributions for Linux provide packages (which may or may not be outdated) for Qalculate!, and all its dependencies, which you can install using the distribution's standard installers.
-<br><br><hr><br>
-<b>Mac OS</b> binaries:<br>
+</div>
+<br><hr>
+<div style="float: right"><img src="images/macos.png" height="32" style="margin: 1em 2em;"></div>
+<div class="sectiontitle">Mac OS binaries:</div>
 <ul>
 <li><a href="https://ports.macports.org/search/?q=qalculate">Qalculate! at MacPorts</a></li>
 <li><a href="https://formulae.brew.sh/formula/qalculate-gtk">Qalculate! Homebrew Formulae</a></li>
+</ul>
+<hr>
+<div class="sectiontitle">Source code:</div>
+<ul>
+	<li><a href="https://github.com/Qalculate/libqalculate/releases/download/v3.20.1/libqalculate-3.20.1.tar.gz">Library and text interface (libqalculate)</a></li>
+	<li><a href="https://github.com/Qalculate/qalculate-gtk/releases/download/v3.20.1/qalculate-gtk-3.20.1.tar.gz">Graphical user interface (GTK)</a></li>
+	<li><a href="https://github.com/Qalculate/qalculate-qt/releases/download/v3.20.1/qalculate-qt-3.20.1.tar.gz">Graphical user interface (Qt)</a></li>
+</ul>
+<div class="sectiontitle">Library requirements:</div>
+<ul>
+	<li>GMP, MPFR, Libxml2 (required)</li>
+	<li>libcurl, icu, gettext (strongly recommended)</li>
+	<li>Gnuplot (optional, for plotting)</li>
+</ul>
+<div class="sectiontitle">Graphical user interface requirements:</div>
+<ul>
+	<li>GTK (>= 3.10) or Qt (>= 5.6)</li>
+	<li>libqalculate (>= 3.20.1)</li>
+</ul>
+<div class="sectiontitle">Text interface requirements:</div>
+<ul>
+	<li>GNU Readline (recommended)</li>
+	<li>libiconv (recommended)</li>
 </ul>
 <hr><br>
 <b>Old versions</b> can be found at the project page for <a href="https://github.com/Qalculate/libqalculate/releases">libqalculate</a> and <a href="https://github.com/Qalculate/libqalculate/releases">qalculate-gtk</a>. Ancient versions are available at the <a href="https://sourceforge.net/projects/qalculate/files/">old project page at sourceforge.net</a>.
 <br><br><hr><br>
 Other applications:<br>
 <a href="https://store.kde.org/p/1155946/">Qalculate! KDE Plasma widget</a>
-<br><br>
-</td><td width="50px">&nbsp;</td></tr>
+</div>
 </body>
+<script src="scripts/mobile.js"></script>
 </html>

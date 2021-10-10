@@ -1,93 +1,95 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Qalculate! - the ultimate desktop calculator</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Qalculate! - the ultimate desktop calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/qalculate-icon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="css/qalculate.css" />
 </head>
-<body text="Black" bgcolor="#ccccdd" style="margin: auto">
-<div align="center">
-<table cellspacing="0" bgcolor="White" style="height: 100vh"><tr>
-<td width="150" bgcolor="#666677" align="center" valign="top">
-<br>
-<a href="index.html"><IMG src="images/qalculate-icon.png" width="128" height="128" border="0"></a>
-<br><br><br>
-<table cellspacing="25" width="100%"><tr><td align="left">
-<font size="+1" color="White" face="serif">
-Sections:<br>
-<hr color="White" size="1" noshade>
-<a href="news.html" style="text-decoration: none"><font color="White" face="serif">News</font></a><br>
-<a href="features.html" style="text-decoration: none"><font color="White" face="serif">Features</font></a><br>
-<a href="screenshots.html" style="text-decoration: none"><font color="White" face="serif">Screenshots</font></a><br>
-<a href="downloads.html" style="text-decoration: none"><font color="White" face="serif">Downloads</font></a><br>
-<a href="manual/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>Manual</nobr></font></a><br>
-<a href="reference/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>API Reference&nbsp;&nbsp;&nbsp;&nbsp;</nobr></font></a><br>
-<a href="contact.html" style="text-decoration: none"><font color="White" face="serif">Contact</font></a><br>
-</font>
-<hr color="White" size="1" noshade>
-</td></tr></table>
-<br><br>
-</td><td width="50">&nbsp;</td>
-<td valign="top" width="900">
-<br>
-<div align="center">
-<h1><font color="#cc4499"><strong>Q</strong></font>alculate!</h1>
-<h2>
-                            - the ultimate desktop calculator
-                        </h2>
-</div>
-<div align="center"><IMG src="images/qalculate-window.png" width="560" border="0"></div>
-<br><big>Qalculate! is a multi-purpose cross-platform desktop calculator. It is simple to use but provides power and versatility normally reserved for complicated math packages, as well as useful tools for everyday needs (such as currency conversion and percent calculation). Features include a large library of customizable functions, unit calculations and conversion, physical constants, symbolic calculations (including integrals and equations), arbitrary precision, uncertainty propagation, interval arithmetic, plotting, and a user-friendly interface (GTK, Qt, and CLI).</big>
-  <br><br>
-  <big>Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</big>
-  <br>
-</font>
-<br><br>
-<div align="right">
-	This project welcomes new developers. Visit the project page <a href="https://github.com/Qalculate">here</a>.
-	<br><br>
-	<a href="https://www.paypal.me/HannaKnutsson"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="donate"/></a>
+<body class="qbody">
+<header class="header"><nav class="navbar_m">
+	<a href="index.html" class="nav-logo">Qalculate!</a>
+	<ul class="nav-menu">
+		<li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+		<li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+		<li class="nav-item"><a href="screenshots.html" class="nav-link">Screenshots</a></li>
+		<li class="nav-item"><a href="downloads.html" class="nav-link">Downloads</a></li>
+		<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+		<li class="nav-item"><a href="manual/index.html" class="nav-link">Manual</a></li>
+		<li class="nav-item"><a href="reference/index.html" class="nav-link">API Reference</a></li>
+		<li class="nav-item"><a href="https://www.paypal.me/HannaKnutsson" class="nav-link navdonate"><img src="images/heart.png" class="heart">Donate</a></li>
+	</ul>
+	<div class="hamburger">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
 	</div>
-	<br><hr>
-	<h2>Latest News</h2>
-	<h4>.: 2021-07-29 :. Qalculate! version 3.20.1 released</h4>
-	List of changes:
-	<ul>
-		<li>Fix segfault when Gnuplot is not installed (GUI)</li>
-		<li>Save answer to dot and temperature questions in non-interactive mode and do not show the questions in non-interactive terse mode</li>
-		<li>Fix saving of sub functions with default values</li>
-	</ul>
-	Get the new version from <a href="downloads.html">the downloads page</a>.<br><br>
-	<h4>.: 2021-07-28 :. Qalculate! version 3.20 released</h4>
-	This version includes a new interface using the Qt GUI toolkit. It is nearly feature complete (notably editing of units and data sets are not currently possible) but is likely not yet completely stable and reliable. At this moment the new user interface is only included in the official binary packages for Windows where the improved speed and compatibility should be particularly welcome.<br><br>
-	List of changes:
-	<ul>
-		<li>New graphical user interface using Qt (qalculate-qt)</li>
-		<li>Updated insert function dialog layout (GUI)</li>
-		<li>Add description field to variables and units dialogs (GUI)</li>
-		<li>Add customizable keyboard shortcut for insert result (GUI)</li>
-		<li>Insert "smart parentheses" with right parenthesis key if expression has selection or text cursor is at start (GUI)</li>
-		<li>Add language option to configuration file (GUI)</li>
-		<li>Fix background color of expression entry in inactive window (GUI)</li>
-		<li>Add translator credits to about dialog (GUI)</li>
-		<li>Catalan translation</li>
-		<li>Add support for function creation in save() function and with associated operator (e.g. func1():=x*y^2)</li>
-		<li>Add operators (.', .*, ./, .^) and functions (replace multiply(), divide(), and pow()) for transpose and element-wise multiplication, division, and power</li>
-		<li>Fix norm() and magnitude(), and add second argument, p, to norm() function</li>
-		<li>New text operators: dot, cross, comb, and perm</li>
-		<li>Add support for ^^ as XOR operator</li>
-		<li>Fixes and improvements in multisolve() function</li>
-		<li>Always return exact result in base() function, in exact mode</li>
-		<li>Improve parsing of functions without parentheses</li>
-		<li>Do not try to load data objects from global definitions dir if data set is local</li>
-		<li>Interpret "±" at end of expression as "±0"</li>
-		<li>Convert Celsius to Fahrenheit if no calculation was performed</li>
-		<li>Add support for QALCULATE_USER_DIR environment variable and always check for "user" directory on Windows</li>
-		<li>Output both original and factorized integer, and output abs(x) as |x| (CLI)</li>
-		<li>Improved HTML output of mathematical expressions in libqalculate (used by the new GUI)</li>
-		<li>Minor bug fixes and feature improvements</li>
-	</ul>
-	<br><div align="right"><a href="news.html">older news...</a></div>
+</nav></header>
+<div class="navbar" id="navbar"><div style="text-align:center">
+	<a href="index.html" class="navitem navleave navq">Qalculate!</a>
+	<a href="news.html" class="navitem">News</a>
+	<a href="features.html" class="navitem">Features</a>
+	<a href="screenshots.html" class="navitem">Screenshots</a>
+	<a href="downloads.html" class="navitem">Downloads</a>
+	<a href="contact.html" class="navitem">Contact</a>
+	<a href="manual/index.html" class="navitem navleave">Manual</a>
+	<a href="reference/index.html" class="navitem navleave">API</a>
+	<a href="https://www.paypal.me/HannaKnutsson" class="navitem navleave navdonate"><img src="images/heart.png" class="heart">Donate</a>
+</div></div>
+<div class="main">
+<div class="title"><span class="qcolor">Q</span>alculate!</div>
+<div class="subtitle">- the ultimate desktop calculator</div>
+<div>
+<div class="mainscreenshot"><a href="screenshots.html"><img class="mainscreenshotimg" src="images/qalculate-window.png"/></a></div>
+<div class="description">Qalculate! is a multi-purpose cross-platform desktop calculator. It is simple to use but provides power and versatility normally reserved for complicated math packages, as well as useful tools for everyday needs (such as currency conversion and percent calculation). Features include a large library of customizable functions, unit calculations and conversion, physical constants, symbolic calculations (including integrals and equations), arbitrary precision, uncertainty propagation, interval arithmetic, plotting, and a user-friendly interface (GTK, Qt, and CLI).</div>
+<br>
+<div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
+</div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 3.21</a></div>
 <br><br>
-</td><td width="50px">&nbsp;</td></tr>
+<div class="content">
+<div class="latestnews">Latest News</div>
+<div class="newsdate">2021-07-29</div><div class="newstitle">Qalculate! version 3.20.1 released</div>
+List of changes:
+<ul>
+	<li>Fix segfault when Gnuplot is not installed (GUI)</li>
+	<li>Save answer to dot and temperature questions in non-interactive mode and do not show the questions in non-interactive terse mode</li>
+	<li>Fix saving of sub functions with default values</li>
+</ul>
+<div class="newsdate">2021-07-28</div><div class="newstitle">Qalculate! version 3.20 released</div>
+This version includes a new interface using the Qt GUI toolkit. It is nearly feature complete (notably editing of units and data sets are not currently possible) but is likely not yet completely stable and reliable. At this moment the new user interface is only included in the official binary packages for Windows where the improved speed and compatibility should be particularly welcome.<br><br>
+List of changes:
+<ul>
+	<li>New graphical user interface using Qt (qalculate-qt)</li>
+	<li>Updated insert function dialog layout (GUI)</li>
+	<li>Add description field to variables and units dialogs (GUI)</li>
+	<li>Add customizable keyboard shortcut for insert result (GUI)</li>
+	<li>Insert "smart parentheses" with right parenthesis key if expression has selection or text cursor is at start (GUI)</li>
+	<li>Add language option to configuration file (GUI)</li>
+	<li>Fix background color of expression entry in inactive window (GUI)</li>
+	<li>Add translator credits to about dialog (GUI)</li>
+	<li>Catalan translation</li>
+	<li>Add support for function creation in save() function and with associated operator (e.g. func1():=x*y^2)</li>
+	<li>Add operators (.', .*, ./, .^) and functions (replace multiply(), divide(), and pow()) for transpose and element-wise multiplication, division, and power</li>
+	<li>Fix norm() and magnitude(), and add second argument, p, to norm() function</li>
+	<li>New text operators: dot, cross, comb, and perm</li>
+	<li>Add support for ^^ as XOR operator</li>
+	<li>Fixes and improvements in multisolve() function</li>
+	<li>Always return exact result in base() function, in exact mode</li>
+	<li>Improve parsing of functions without parentheses</li>
+	<li>Do not try to load data objects from global definitions dir if data set is local</li>
+	<li>Interpret "±" at end of expression as "±0"</li>
+	<li>Convert Celsius to Fahrenheit if no calculation was performed</li>
+	<li>Add support for QALCULATE_USER_DIR environment variable and always check for "user" directory on Windows</li>
+	<li>Output both original and factorized integer, and output abs(x) as |x| (CLI)</li>
+	<li>Improved HTML output of mathematical expressions in libqalculate (used by the new GUI)</li>
+	<li>Minor bug fixes and feature improvements</li>
+</ul>
+<div style="text-align: right;"><a href="news.html">older news...</a></div>
+</div>
+<div style="text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
+</div>
 </body>
+<script src="scripts/mobile.js"></script>
 </html>

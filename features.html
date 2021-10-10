@@ -1,39 +1,45 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Qalculate! - the ultimate desktop calculator</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Qalculate! - the ultimate desktop calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href="images/qalculate-icon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="css/qalculate.css" />
 </head>
-<body text="Black" bgcolor="#ccccdd" style="margin: auto">
-<div align="center">
-<table cellspacing="0" bgcolor="White" style="height: 100vh"><tr>
-<td width="150" bgcolor="#666677" align="center" valign="top">
-<br>
-<a href="index.html"><IMG src="images/qalculate-icon.png" width="128" height="128" border="0"></a>
-<br><br><br>
-<table cellspacing="25" width="100%"><tr><td align="left">
-<font size="+1" color="White" face="serif">
-Sections:<br>
-<hr color="White" size="1" noshade>
-<a href="news.html" style="text-decoration: none"><font color="White" face="serif">News</font></a><br>
-<a href="features.html" style="text-decoration: none"><font color="White" face="serif">Features</font></a><br>
-<a href="screenshots.html" style="text-decoration: none"><font color="White" face="serif">Screenshots</font></a><br>
-<a href="downloads.html" style="text-decoration: none"><font color="White" face="serif">Downloads</font></a><br>
-<a href="manual/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>Manual</nobr></font></a><br>
-<a href="reference/index.html" style="text-decoration: none"><font color="White" face="serif"><nobr>API Reference&nbsp;&nbsp;&nbsp;&nbsp;</nobr></font></a><br>
-<a href="contact.html" style="text-decoration: none"><font color="White" face="serif">Contact</font></a><br>
-</font>
-<hr color="White" size="1" noshade>
-</td></tr></table>
-<br><br>
-</td><td width="50">&nbsp;</td>
-<td valign="top" width="900">
-<br>
-<div align="left">
-<h1><font color="#cc4499"><strong>Q</strong></font>alculate! features</h1>
-<hr></div>
-<br>
-	<h4>Math Library</h4>
+<body class="qbody">
+<header class="header"><nav class="navbar_m">
+	<a href="index.html" class="nav-logo">Qalculate!</a>
+	<ul class="nav-menu">
+		<li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+		<li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+		<li class="nav-item"><a href="screenshots.html" class="nav-link">Screenshots</a></li>
+		<li class="nav-item"><a href="downloads.html" class="nav-link">Downloads</a></li>
+		<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+		<li class="nav-item"><a href="manual/index.html" class="nav-link">Manual</a></li>
+		<li class="nav-item"><a href="reference/index.html" class="nav-link">API Reference</a></li>
+		<li class="nav-item"><a href="https://www.paypal.me/HannaKnutsson" class="nav-link navdonate"><img src="images/heart.png" class="heart">Donate</a></li>
+	</ul>
+	<div class="hamburger">
+		<span class="bar"></span>
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</div>
+</nav></header>
+<div class="navbar"><div style="text-align:center">
+	<a href="index.html" class="navitem navleave navq">Qalculate!</a>
+	<a href="news.html" class="navitem">News</a>
+	<a href="features.html" class="navitem navcurrent">Features</a>
+	<a href="screenshots.html" class="navitem">Screenshots</a>
+	<a href="downloads.html" class="navitem">Downloads</a>
+	<a href="contact.html" class="navitem">Contact</a>
+	<a href="manual/index.html" class="navitem navleave">Manual</a>
+	<a href="reference/index.html" class="navitem navleave">API</a>
+	<a href="https://www.paypal.me/HannaKnutsson" class="navitem navleave navdonate"><img src="images/heart.png" class="heart">Donate</a>
+</div></div>
+<div class="main">
+<div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
+<div class="pagetitle"><span class="qcolor">Q</span>alculate! features</div><hr>
+	<div class="sectiontitle">Math Library</div>
 	<ul>
 		<li>Calculation and parsing: 
 		<ul>
@@ -105,12 +111,12 @@ Sections:<br>
 		</ul>
 		</li>
 		<li>and more...</li>
- 	</ul>
- 	The <a href="manual/index.html">manual</a> includes a complete list of included <a href="manual/qalculate-functions.html">functions</a>, <a href="manual/qalculate-units.html">units</a>, and <a href="manual/qalculate-variables.html">variables</a>, and some <a href="manual/qalculate-examples.html">examples</a>.
-	<h4>User Interface</h4>
+	</ul>
+	The <a href="manual/index.html">manual</a> includes a complete list of included <a href="manual/qalculate-functions.html">functions</a>, <a href="manual/qalculate-units.html">units</a>, and <a href="manual/qalculate-variables.html">variables</a>, and some <a href="manual/qalculate-examples.html">examples</a>.
+	<div class="sectiontitle">User Interface</div>
 	<ul>
 		<li>Graphical user interfaces implemented using GTK or Qt</li>
-   		<li>Flexible expression entry with customizable completion, hints, and continious display of parsed expression</li>
+		<li>Flexible expression entry with customizable completion, hints, and continious display of parsed expression</li>
 		<li>Optional calculate-as-you-type mode (GTK)</li>
 		<li>Small and ... not so small mode (GTK)</li>
 		<li>Calculation history which allows the user to access the text and value of and apply operations to previous expressions and result</li>
@@ -126,9 +132,9 @@ Sections:<br>
 		<li>Configurable keyboard shortcuts (GTK)</li>
 		<li>Additional text based interface with full functionality</li>
 		<li>and more...</li>
- 	</ul>
- 	<br>
-<br><br>
-</td><td width="50px">&nbsp;</td></tr>
+	</ul>
+	<br>
+</div>
 </body>
+<script src="scripts/mobile.js"></script>
 </html>
