@@ -41,49 +41,29 @@
 <div class="title"><span class="qcolor">Q</span>alculate!</div>
 <div class="subtitle">- the ultimate desktop calculator</div>
 <div>
-<div class="mainscreenshot"><a href="screenshots.html"><img class="mainscreenshotimg" src="images/qalculate-window.png"/></a></div>
+<div class="mainscreenshot"><a href="screenshots.html" alt="Screenshot"><img class="mainscreenshotimg" src="images/qalculate-window.png"/></a></div>
 <div class="description">Qalculate! is a multi-purpose cross-platform desktop calculator. It is simple to use but provides power and versatility normally reserved for complicated math packages, as well as useful tools for everyday needs (such as currency conversion and percent calculation). Features include a large library of customizable functions, unit calculations and conversion, physical constants, symbolic calculations (including integrals and equations), arbitrary precision, uncertainty propagation, interval arithmetic, plotting, and a user-friendly interface (GTK, Qt, and CLI).</div>
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
 <div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 3.21</a></div>
 <br><br>
-<div class="content">
+<div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2021-07-29</div><div class="newstitle">Qalculate! version 3.20.1 released</div>
+<div class="newsdate">2021-10-13</div>
+<div class="newstitle">Qalculate! version 3.21 released</div>
 List of changes:
 <ul>
-	<li>Fix segfault when Gnuplot is not installed (GUI)</li>
-	<li>Save answer to dot and temperature questions in non-interactive mode and do not show the questions in non-interactive terse mode</li>
-	<li>Fix saving of sub functions with default values</li>
-</ul>
-<div class="newsdate">2021-07-28</div><div class="newstitle">Qalculate! version 3.20 released</div>
-This version includes a new interface using the Qt GUI toolkit. It is nearly feature complete (notably editing of units and data sets are not currently possible) but is likely not yet completely stable and reliable. At this moment the new user interface is only included in the official binary packages for Windows where the improved speed and compatibility should be particularly welcome.<br><br>
-List of changes:
-<ul>
-	<li>New graphical user interface using Qt (qalculate-qt)</li>
-	<li>Updated insert function dialog layout (GUI)</li>
-	<li>Add description field to variables and units dialogs (GUI)</li>
-	<li>Add customizable keyboard shortcut for insert result (GUI)</li>
-	<li>Insert "smart parentheses" with right parenthesis key if expression has selection or text cursor is at start (GUI)</li>
-	<li>Add language option to configuration file (GUI)</li>
-	<li>Fix background color of expression entry in inactive window (GUI)</li>
-	<li>Add translator credits to about dialog (GUI)</li>
-	<li>Catalan translation</li>
-	<li>Add support for function creation in save() function and with associated operator (e.g. func1():=x*y^2)</li>
-	<li>Add operators (.', .*, ./, .^) and functions (replace multiply(), divide(), and pow()) for transpose and element-wise multiplication, division, and power</li>
-	<li>Fix norm() and magnitude(), and add second argument, p, to norm() function</li>
-	<li>New text operators: dot, cross, comb, and perm</li>
-	<li>Add support for ^^ as XOR operator</li>
-	<li>Fixes and improvements in multisolve() function</li>
-	<li>Always return exact result in base() function, in exact mode</li>
-	<li>Improve parsing of functions without parentheses</li>
-	<li>Do not try to load data objects from global definitions dir if data set is local</li>
-	<li>Interpret "±" at end of expression as "±0"</li>
-	<li>Convert Celsius to Fahrenheit if no calculation was performed</li>
-	<li>Add support for QALCULATE_USER_DIR environment variable and always check for "user" directory on Windows</li>
-	<li>Output both original and factorized integer, and output abs(x) as |x| (CLI)</li>
-	<li>Improved HTML output of mathematical expressions in libqalculate (used by the new GUI)</li>
+	<li>Ask (once) for correct interpretation of ambiguous implicit multiplication</li>
+	<li>Improved simplification of radical expressions</li>
+	<li>Improved Im(), Re(), and arg() functions</li>
+	<li>Improved output of complex forms (other than the default rectangular) in exact mode</li>
+	<li>Function for drill bit size conversion</li>
+	<li>Improved history/result view, and other feature improvements and bug fixes, in the Qt GUI (see the <a href="https://github.com/Qalculate/qalculate-qt/releases/tag/v3.21.0">release notes</a> for details)</li>
+	<li>Indicate number base of result/expression, in qalc, if not more or less obvious</li>
+	<li>Fixes for equations with complex inverse trigonometric and hyperbolic functions with no solution</li>
+	<li>Fixes for complex x^(ax)=b</li>
+	<li>Fixes for localization on Windows</li>
 	<li>Minor bug fixes and feature improvements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
