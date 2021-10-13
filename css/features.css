@@ -1,3 +1,10 @@
+    .features-box {
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: #8c8c8c 1px solid;
+    }
+
     .features-title {
         text-align: center;
         font-weight: bolder;

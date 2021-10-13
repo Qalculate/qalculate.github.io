@@ -22,12 +22,3 @@ This redesign is made by SerjSX volunteerily
 
 ### Why I Did This
 Sometimes on my free time I volunteer in doing things like this, re-designing websites to a more modern UI, if the website needs it. 100% free, no need for any payment, and the watermark is optional. But you know why I add the watermarks ;)
-
-#### Colors:
-https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FAFAFA&secondary.color=BDBDBD
-
-#### Logos:
-Windows 10: https://icons8.com/icon/OlmjyQ9zkRzF/windows-10
-Linux: https://icons8.com/icon/892/linux
-Apple: https://icons8.com/icon/85906/apple-logo
-Source Code: https://icons8.com/icon/86973/source-code
