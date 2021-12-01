@@ -41,6 +41,50 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
 <div class="content">
+	<div class="newsdate">2021-12-01</div>
+	<div class="newstitle">Qalculate! version 3.22 released</div>
+	Changes in libqalculate:
+	<ul>
+		<li>New functions: linearfit(), quadraticfit(), cubicfit(), ramlatency(), parallel()</li>
+		<li>Improved and extended parallel operator (|| is interpreted as parallel if units are used)</li>
+		<li>Allow nested subfunctions</li>
+		<li>Solve x^(x^(-a))=b</li>
+		<li>Fix pearson() and spearman()</li>
+		<li>Fix display of incompletely solved equation with dual approximation in some cases</li>
+		<li>Fix a*sin(x)+b*cos(x)=c</li>
+		<li>Minor bug fixes and feature improvements (see the <a href="https://github.com/Qalculate/libqalculate/blob/v3.22.0/ChangeLog">ChangeLog</a> for more details)</li>
+	</ul>
+	Changes in Qt GUI:
+	<ul>
+		<li>Unit and data set creation/editing</li>
+		<li>Complete variable and functions editing</li>
+		<li>Percentage calculation dialog</li>
+		<li>Periodic table</li>
+		<li>Show result in expression status tooltip (calculate-as-you-type)</li>
+		<li>Horizontal toolbar with added units and plot buttons</li>
+		<li>Favorite functions, units, and variables (shown in toolbar menus)</li>
+		<li>Fix segfault with Qt 6.2</li>
+		<li>Many feature enhancements and bug fixes (see the <a href="https://github.com/Qalculate/libqalculate/commits/v3.22.0">git log</a> for more details)</li>
+	</ul>
+	Changes in GTK GUI:
+	<ul>
+		<li>Minor improvements and fixes in data set, function, unit, and variable edit dialogs</li>
+		<li>Avoid division by zero in percentage calculation dialog</li>
+		<li>Use editable combo box for data object argument in insert function dialog</li>
+		<li>Remove associated bookmark from menu when removing history item, and select the history row on go to bookmark</li>
+		<li>Somewhat selectable history text (single click on selected item edits cell with non-editable entry)</li>
+		<li>Increase the number of optional custom buttons from 5 to 20</li>
+		<li>Fix plot expression with localized decimal separator, and add as multiple functions if plot expression results in matrix</li>
+	</ul>
+	Changes in CLI (qalc):
+	<ul>
+		<li>Support "--" as end of options</li>
+		<li>New --defaults command line option</li>
+		<li>Configurable SIGINT (Ctrl+C) action (exit orderly by default)</li>
+		<li>Vertical space option (vspace)</li>
+		<li>Clear command with Ctrl+L shortcut</li>
+		<li>Fix "to unicode"</li>
+	</ul>
 	<div class="newsdate">2021-10-13</div><div class="newstitle">Qalculate! version 3.21 released</div>
 	List of changes:
 	<ul>

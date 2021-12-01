@@ -50,21 +50,49 @@
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2021-10-13</div>
-<div class="newstitle">Qalculate! version 3.21 released</div>
-List of changes:
+<div class="newsdate">2021-12-01</div>
+<div class="newstitle">Qalculate! version 3.22 released</div>
+Changes in libqalculate:
 <ul>
-	<li>Ask (once) for correct interpretation of ambiguous implicit multiplication</li>
-	<li>Improved simplification of radical expressions</li>
-	<li>Improved Im(), Re(), and arg() functions</li>
-	<li>Improved output of complex forms (other than the default rectangular) in exact mode</li>
-	<li>Function for drill bit size conversion</li>
-	<li>Improved history/result view, and other feature improvements and bug fixes, in the Qt GUI (see the <a href="https://github.com/Qalculate/qalculate-qt/releases/tag/v3.21.0">release notes</a> for details)</li>
-	<li>Indicate number base of result/expression, in qalc, if not more or less obvious</li>
-	<li>Fixes for equations with complex inverse trigonometric and hyperbolic functions with no solution</li>
-	<li>Fixes for complex x^(ax)=b</li>
-	<li>Fixes for localization on Windows</li>
-	<li>Minor bug fixes and feature improvements</li>
+	<li>New functions: linearfit(), quadraticfit(), cubicfit(), ramlatency(), parallel()</li>
+	<li>Improved and extended parallel operator (|| is interpreted as parallel if units are used)</li>
+	<li>Allow nested subfunctions</li>
+	<li>Solve x^(x^(-a))=b</li>
+	<li>Fix pearson() and spearman()</li>
+	<li>Fix display of incompletely solved equation with dual approximation in some cases</li>
+	<li>Fix a*sin(x)+b*cos(x)=c</li>
+	<li>Minor bug fixes and feature improvements (see the <a href="https://github.com/Qalculate/libqalculate/blob/v3.22.0/ChangeLog">ChangeLog</a> for more details)</li>
+</ul>
+Changes in Qt GUI:
+<ul>
+	<li>Unit and data set creation/editing</li>
+	<li>Complete variable and functions editing</li>
+	<li>Percentage calculation dialog</li>
+	<li>Periodic table</li>
+	<li>Show result in expression status tooltip (calculate-as-you-type)</li>
+	<li>Horizontal toolbar with added units and plot buttons</li>
+	<li>Favorite functions, units, and variables (shown in toolbar menus)</li>
+	<li>Fix segfault with Qt 6.2</li>
+	<li>Many feature enhancements and bug fixes (see the <a href="https://github.com/Qalculate/libqalculate/commits/v3.22.0">git log</a> for more details)</li>
+</ul>
+Changes in GTK GUI:
+<ul>
+	<li>Minor improvements and fixes in data set, function, unit, and variable edit dialogs</li>
+	<li>Avoid division by zero in percentage calculation dialog</li>
+	<li>Use editable combo box for data object argument in insert function dialog</li>
+	<li>Remove associated bookmark from menu when removing history item, and select the history row on go to bookmark</li>
+	<li>Somewhat selectable history text (single click on selected item edits cell with non-editable entry)</li>
+	<li>Increase the number of optional custom buttons from 5 to 20</li>
+	<li>Fix plot expression with localized decimal separator, and add as multiple functions if plot expression results in matrix</li>
+</ul>
+Changes in CLI (qalc):
+<ul>
+	<li>Support "--" as end of options</li>
+	<li>New --defaults command line option</li>
+	<li>Configurable SIGINT (Ctrl+C) action (exit orderly by default)</li>
+	<li>Vertical space option (vspace)</li>
+	<li>Clear command with Ctrl+L shortcut</li>
+	<li>Fix "to unicode"</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
