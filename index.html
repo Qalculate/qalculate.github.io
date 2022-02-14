@@ -46,53 +46,57 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 3.22</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.0</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2021-12-01</div>
-<div class="newstitle">Qalculate! version 3.22 released</div>
-Changes in libqalculate:
+<div class="newsdate">2022-02-14</div>
+<div class="newstitle">Qalculate! version 4.0 released</div>
+General changes:
 <ul>
-	<li>New functions: linearfit(), quadraticfit(), cubicfit(), ramlatency(), parallel()</li>
-	<li>Improved and extended parallel operator (|| is interpreted as parallel if units are used)</li>
-	<li>Allow nested subfunctions</li>
-	<li>Solve x^(x^(-a))=b</li>
-	<li>Fix pearson() and spearman()</li>
-	<li>Fix display of incompletely solved equation with dual approximation in some cases</li>
-	<li>Fix a*sin(x)+b*cos(x)=c</li>
+	<li>New matrix syntax (column separated by space or comma, rows separated by semicolon, as in matlab)</li>
+	<li>Do not make any difference between a vector and a matrix with a single row, or between a scalar and matrix with a single element</li>
+	<li>Support input of functions, units, and variables with underscores omitted in names (e.g. µ0 = µ_0, FermiCoupling = fermi_coupling), with some exceptions</li>
+	<li>Option to disable "simplified" percentage calculations (e.g. interpret 100 + 20% as 100 + 0.2 instead of 100 × 120%)</li>
+	<li>Option to truncate numbers (instead of round to nearest) in result</li>
+	<li>Convert K, Hz, and 1/m to J (and derived units) using conversion factor constants (e.g. 1/(550nm) to eV ≈ 2.25 eV)</li>
+	<li>Allow use of M as 10^6 without unit</li>
+	<li>New ksi unit</li>
+	<li>New functions: divisors(), rate(), vertcat(), horzcat()</li>
+	<li>New plastic number (ρ) constant, and new "hbar" name for reduced Planck constant, and add second Unicode codepoint for µ-sign in constants</li>
+	<li>Allow zero (1st and/or 2nd argument) in comb() and perm(), and return zero if second argument (k) is greater than the first (n)</li>
+	<li>Calculate statistical functions (e.g. mode(), min(), max(), percentile()) separately for each column of matrix</li>
+	<li>Return the lowest value if there are multiple values with equal frequency in mode()</li>
+	<li>Parse text argument as expression if concatenate function name is found in text string, and fix concatenate returning date</li>
+	<li>Fix Unicode handling on platforms where char is not signed</li>
+	<li>Fix bitrot()</li>
+	<li>Fix segfault in multisolve() when initial order of equations is not optimal</li>
+	<li>Fix segfault with empty sqrt inside sqrt, e.g. sqrt(1+sqrt())</li>
+	<li>Fix incompletely calculated nounit(), e.g. in unit conversion</li>
 	<li>Minor bug fixes and feature improvements (see the <a href="https://github.com/Qalculate/libqalculate/blob/v3.22.0/ChangeLog">ChangeLog</a> for more details)</li>
 </ul>
-Changes in Qt GUI:
+Changes in Qt GUI (see the <a href="https://github.com/Qalculate/qalculate-qt/commits/v4.0.0">git log</a> for details):
 <ul>
-	<li>Unit and data set creation/editing</li>
-	<li>Complete variable and functions editing</li>
-	<li>Percentage calculation dialog</li>
-	<li>Periodic table</li>
-	<li>Show result in expression status tooltip (calculate-as-you-type)</li>
-	<li>Horizontal toolbar with added units and plot buttons</li>
-	<li>Favorite functions, units, and variables (shown in toolbar menus)</li>
-	<li>Fix segfault with Qt 6.2</li>
-	<li>Many feature enhancements and bug fixes (see the <a href="https://github.com/Qalculate/libqalculate/commits/v3.22.0">git log</a> for more details)</li>
+	<li>Programming and algebra keypads</li>
+	<li>Customizable keypad</li>
+	<li>Customizable keyboard shortcuts</li>
+	<li>Option to hide number pad (right part of keypad)</li>
+	<li>Workspace (mode, history, and temporary variables) can now be saved (to a single file)</li>
 </ul>
-Changes in GTK GUI:
+Changes in GTK GUI (see the <a href="https://github.com/Qalculate/qalculate-gtk/blob/v4.0.0/ChangeLog">ChangeLog</a> for details):
 <ul>
-	<li>Minor improvements and fixes in data set, function, unit, and variable edit dialogs</li>
-	<li>Avoid division by zero in percentage calculation dialog</li>
-	<li>Use editable combo box for data object argument in insert function dialog</li>
-	<li>Remove associated bookmark from menu when removing history item, and select the history row on go to bookmark</li>
-	<li>Somewhat selectable history text (single click on selected item edits cell with non-editable entry)</li>
-	<li>Increase the number of optional custom buttons from 5 to 20</li>
-	<li>Fix plot expression with localized decimal separator, and add as multiple functions if plot expression results in matrix</li>
+	<li>Enhanced formatting of history</li>
+	<li>Make keypad in number bases dialog hidable</li>
+	<li>Omit characters in the middle (ellipsize) of very long results (> 500 000 characters) instead of just showing an ellipsis, and show matrix dimension instead of result for very large matrices</li>
+	<li>Iconify activated window first to bring it to the front with input focus</li>
+	<li>Fix copy result when calculate-as-you-type result is not automatically added to history</li>
+	<li>Fix output of a ≤ x ≤ b (on Windows, and possibly other platforms)</li>
+	<li>Fix loading of keyboard shortcuts and custom buttons with space in value or label</li>
+	<li>Fix segfault with extremely long results</li>
 </ul>
 Changes in CLI (qalc):
 <ul>
-	<li>Support "--" as end of options</li>
-	<li>New --defaults command line option</li>
-	<li>Configurable SIGINT (Ctrl+C) action (exit orderly by default)</li>
-	<li>Vertical space option (vspace)</li>
-	<li>Clear command with Ctrl+L shortcut</li>
-	<li>Fix "to unicode"</li>
+	<li>New layout for output of result of matrices and equations</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
