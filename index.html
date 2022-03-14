@@ -50,53 +50,31 @@
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2022-02-14</div>
-<div class="newstitle">Qalculate! version 4.0 released</div>
+<div class="newsdate">2022-03-14</div>
+<div class="newstitle">Qalculate! version 4.1 released</div>
 General changes:
 <ul>
-	<li>New matrix syntax (column separated by space or comma, rows separated by semicolon, as in matlab)</li>
-	<li>Do not make any difference between a vector and a matrix with a single row, or between a scalar and matrix with a single element</li>
-	<li>Support input of functions, units, and variables with underscores omitted in names (e.g. µ0 = µ_0, FermiCoupling = fermi_coupling), with some exceptions</li>
-	<li>Option to disable "simplified" percentage calculations (e.g. interpret 100 + 20% as 100 + 0.2 instead of 100 × 120%)</li>
-	<li>Option to truncate numbers (instead of round to nearest) in result</li>
-	<li>Convert K, Hz, and 1/m to J (and derived units) using conversion factor constants (e.g. 1/(550nm) to eV ≈ 2.25 eV)</li>
-	<li>Allow use of M as 10^6 without unit</li>
-	<li>New ksi unit</li>
-	<li>New functions: divisors(), rate(), vertcat(), horzcat()</li>
-	<li>New plastic number (ρ) constant, and new "hbar" name for reduced Planck constant, and add second Unicode codepoint for µ-sign in constants</li>
-	<li>Allow zero (1st and/or 2nd argument) in comb() and perm(), and return zero if second argument (k) is greater than the first (n)</li>
-	<li>Calculate statistical functions (e.g. mode(), min(), max(), percentile()) separately for each column of matrix</li>
-	<li>Return the lowest value if there are multiple values with equal frequency in mode()</li>
-	<li>Parse text argument as expression if concatenate function name is found in text string, and fix concatenate returning date</li>
-	<li>Fix Unicode handling on platforms where char is not signed</li>
-	<li>Fix bitrot()</li>
-	<li>Fix segfault in multisolve() when initial order of equations is not optimal</li>
-	<li>Fix segfault with empty sqrt inside sqrt, e.g. sqrt(1+sqrt())</li>
-	<li>Fix incompletely calculated nounit(), e.g. in unit conversion</li>
-	<li>Minor bug fixes and feature improvements (see the <a href="https://github.com/Qalculate/libqalculate/blob/v3.22.0/ChangeLog">ChangeLog</a> for more details)</li>
+	<li>Use non-breaking narrow space as digit separator in reasonably short numbers, and between quantity and unit</li>
+	<li>Update value of austronomical unit</li>
+	<li>Fix segfault (when compiled with -D_GLIBCXX_ASSERTIONS) with local digit grouping when separator is empty (e.g. with ignore locale)</li>
+	<li>Fix freezes and crashes with extrememly large vectors and matrices</li>
+	<li>Fix segfault (when compiled with -D_GLIBCXX_ASSERTIONS) in matrix multiplication</li>
+	<li>Minor bug fixes and feature improvements</li>
 </ul>
-Changes in Qt GUI (see the <a href="https://github.com/Qalculate/qalculate-qt/commits/v4.0.0">git log</a> for details):
+GUI changes:
 <ul>
-	<li>Programming and algebra keypads</li>
-	<li>Customizable keypad</li>
-	<li>Customizable keyboard shortcuts</li>
-	<li>Option to hide number pad (right part of keypad)</li>
-	<li>Workspace (mode, history, and temporary variables) can now be saved (to a single file)</li>
-</ul>
-Changes in GTK GUI (see the <a href="https://github.com/Qalculate/qalculate-gtk/blob/v4.0.0/ChangeLog">ChangeLog</a> for details):
-<ul>
-	<li>Enhanced formatting of history</li>
-	<li>Make keypad in number bases dialog hidable</li>
-	<li>Omit characters in the middle (ellipsize) of very long results (> 500 000 characters) instead of just showing an ellipsis, and show matrix dimension instead of result for very large matrices</li>
-	<li>Iconify activated window first to bring it to the front with input focus</li>
-	<li>Fix copy result when calculate-as-you-type result is not automatically added to history</li>
-	<li>Fix output of a ≤ x ≤ b (on Windows, and possibly other platforms)</li>
-	<li>Fix loading of keyboard shortcuts and custom buttons with space in value or label</li>
-	<li>Fix segfault with extremely long results</li>
-</ul>
-Changes in CLI (qalc):
-<ul>
-	<li>New layout for output of result of matrices and equations</li>
+	<li>Add option to show only parsed or entered expression, or both, in history</li>
+	<li>Add option to clear expression history</li>
+	<li>Do not add duplicate results to history</li>
+	<li>Improved result copying, with proper html format and ASCII option</li>
+	<li>Do not replace *, -, / with Unicode operators if cursor is within quotation marks (apply same principles on paste)</li>
+	<li>Improve window focus retrieval method on Windows</li>
+	<li>Improve appearance of icons with display scaling (Qt)</li>
+	<li>Fix display of result with quoted symbol in history (GTK)</li>
+	<li>Improvements and fixes for interaction with history (GTK)</li>
+	<li>Do not change result color when window loses focus (GTK)</li>
+	<li>Fix completion visible after expression cleared with key repetition (GTK)</li>
+	<li>Do not perform automatic (continuous) conversion, from conversion view, if result contains no unit (GTK)</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
