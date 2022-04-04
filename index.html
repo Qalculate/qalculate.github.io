@@ -46,35 +46,34 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.1</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.1.1</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2022-03-14</div>
-<div class="newstitle">Qalculate! version 4.1 released</div>
+<div class="newsdate">2022-04-04</div>
+<div class="newstitle">Qalculate! version 4.1.1 released</div>
 General changes:
 <ul>
-	<li>Use non-breaking narrow space as digit separator in reasonably short numbers, and between quantity and unit</li>
-	<li>Update value of austronomical unit</li>
-	<li>Fix segfault (when compiled with -D_GLIBCXX_ASSERTIONS) with local digit grouping when separator is empty (e.g. with ignore locale)</li>
-	<li>Fix freezes and crashes with extrememly large vectors and matrices</li>
-	<li>Fix segfault (when compiled with -D_GLIBCXX_ASSERTIONS) in matrix multiplication</li>
-	<li>Minor bug fixes and feature improvements</li>
+	<li>Restrict use of reciprocal in unit conversion, e.g. invert in "5m/s to s/m" (= 0.2 s/m) but not in "500/lb to g" (= 1.1/g)</li>
+	<li>New mHg unit (allows use with prefixes other than milli)</li>
+	<li>Always display abbreviated unit name (symbol) with abbreviated prefix (when unit only has short name)</li>
+	<li>Minor improvements to automatic unit conversion</li>
+	<li>Fix display of (1 + f(x))/n</li>
+	<li>Improve resolution and sizing of flag images (GUI)</li>
+	<li>Do nothing when Enter is pressed if expression is empty (GUI)</li>
+	<li>Save definitions on exit (only) if definitions has changed regardless of interactive mode status (CLI)</li>
 </ul>
-GUI changes:
+GTK GUI changes:
 <ul>
-	<li>Add option to show only parsed or entered expression, or both, in history</li>
-	<li>Add option to clear expression history</li>
-	<li>Do not add duplicate results to history</li>
-	<li>Improved result copying, with proper html format and ASCII option</li>
-	<li>Do not replace *, -, / with Unicode operators if cursor is within quotation marks (apply same principles on paste)</li>
-	<li>Improve window focus retrieval method on Windows</li>
-	<li>Improve appearance of icons with display scaling (Qt)</li>
-	<li>Fix display of result with quoted symbol in history (GTK)</li>
-	<li>Improvements and fixes for interaction with history (GTK)</li>
-	<li>Do not change result color when window loses focus (GTK)</li>
-	<li>Fix completion visible after expression cleared with key repetition (GTK)</li>
-	<li>Do not perform automatic (continuous) conversion, from conversion view, if result contains no unit (GTK)</li>
+	<li>Do not change result color when window loses focus</li>
+	<li>Do not add separator line if history duplicate was prevented</li>
+	<li>Do not convert empty expression</li>
+	<li>Fix memory leak when updating result display</li>
+	<li>Fix close to systrem tray for 32-bit (and potentially 64-bit) Windows binaries and remove icon before exit</li>
+	<li>Fix small dot visible when expression is empty with some default fonts</li>
+	<li>Fix segfault if result widget is not realized when first drawing</li>
+	<li>Fix Unicode handling when ellipsizing during saving of long result</li>
+	<li>Fix "Customize completion…" item in expression popup menu</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
