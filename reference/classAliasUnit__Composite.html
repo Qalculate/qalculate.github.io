@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-4.1.1: AliasUnit_Composite Class Reference</title>
+<title>libqalculate-4.2.0: AliasUnit_Composite Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libqalculate-4.1.1
+   <div id="projectname">libqalculate-4.2.0
    </div>
   </td>
  </tr>
@@ -77,6 +77,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad765f2695f86332c28347a678eafdf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e2972a133b86e500389e2abc18e7ed"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAliasUnit__Composite.html#a15e2972a133b86e500389e2abc18e7ed">print</a> (bool plural_, bool short_, bool use_unicode=false, bool(*can_display_unicode_string_function)(const char *, void *)=NULL, void *can_display_unicode_string_arg=NULL) const</td></tr>
 <tr class="separator:a15e2972a133b86e500389e2abc18e7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6856bb17135688c7cbe226ea963e92a2"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAliasUnit__Composite.html#a6856bb17135688c7cbe226ea963e92a2">print</a> (const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po, bool format=false, int tagtype=0, bool input=false, bool plural=true) const</td></tr>
+<tr class="separator:a6856bb17135688c7cbe226ea963e92a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f21028760782e01be32e0539d3d6534"><td class="memItemLeft" align="right" valign="top"><a id="a3f21028760782e01be32e0539d3d6534" name="a3f21028760782e01be32e0539d3d6534"></a>
 virtual <a class="el" href="classPrefix.html">Prefix</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>prefix</b> () const</td></tr>
 <tr class="separator:a3f21028760782e01be32e0539d3d6534"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +220,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCountries</b> (std
 <tr class="separator:afca70c090b3d3027ec11503a2afa6d01 inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1d523b3b56bf1105b2bd8ec0af68d1 inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnit.html#afd1d523b3b56bf1105b2bd8ec0af68d1">print</a> (bool plural_, bool short_, bool use_unicode=false, bool(*can_display_unicode_string_function)(const char *, void *)=NULL, void *can_display_unicode_string_arg=NULL) const</td></tr>
 <tr class="separator:afd1d523b3b56bf1105b2bd8ec0af68d1 inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839bec094110002813ba799b53459b5c inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top"><a id="a839bec094110002813ba799b53459b5c" name="a839bec094110002813ba799b53459b5c"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> (const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;po, bool format=false, int tagtype=0, bool input=false, bool plural=true) const</td></tr>
+<tr class="separator:a839bec094110002813ba799b53459b5c inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a907b19e07f21e949836dcbfa8dde6df5 inherit pub_methods_classUnit"><td class="memItemLeft" align="right" valign="top"><a id="a907b19e07f21e949836dcbfa8dde6df5" name="a907b19e07f21e949836dcbfa8dde6df5"></a>
 virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>plural</b> (bool return_singular_if_no_plural=true, bool use_unicode=false, bool(*can_display_unicode_string_function)(const char *, void *)=NULL, void *can_display_unicode_string_arg=NULL) const</td></tr>
 <tr class="separator:a907b19e07f21e949836dcbfa8dde6df5 inherit pub_methods_classUnit"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -616,7 +621,7 @@ std::vector&lt; <a class="el" href="structExpressionName.html">ExpressionName</a
 </div>
 </div>
 <a id="a15e2972a133b86e500389e2abc18e7ed" name="a15e2972a133b86e500389e2abc18e7ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15e2972a133b86e500389e2abc18e7ed">&#9670;&nbsp;</a></span>print()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e2972a133b86e500389e2abc18e7ed">&#9670;&nbsp;</a></span>print() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -670,6 +675,62 @@ std::vector&lt; <a class="el" href="structExpressionName.html">ExpressionName</a
 <p >Equivalent to <a class="el" href="classExpressionItem.html#a7e99f66222b27efa9a743a647379235a">preferredName()</a> for <a class="el" href="classUnit.html" title="A unit for measurement.">Unit</a> and <a class="el" href="classAliasUnit.html" title="An unit with relation to another unit.">AliasUnit</a>, but closer to MathStructure::print() for <a class="el" href="classCompositeUnit.html" title="A unit consisting of a number of other units.">CompositeUnit</a> (prints out base expression). </p>
 
 <p>Reimplemented from <a class="el" href="classUnit.html#afd1d523b3b56bf1105b2bd8ec0af68d1">Unit</a>.</p>
+
+</div>
+</div>
+<a id="a6856bb17135688c7cbe226ea963e92a2" name="a6856bb17135688c7cbe226ea963e92a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6856bb17135688c7cbe226ea963e92a2">&#9670;&nbsp;</a></span>print() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string AliasUnit_Composite::print </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structPrintOptions.html">PrintOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>po</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>format</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tagtype</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>input</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>plural</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classUnit.html">Unit</a>.</p>
 
 </div>
 </div>
