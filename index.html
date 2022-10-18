@@ -46,35 +46,44 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.3</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.4</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2022-08-22</div>
-<div class="newstitle">Qalculate! version 4.3 released</div>
+<div class="newsdate">2022-10-17</div>
+<div class="newstitle">Qalculate! version 4.4 released</div>
 Changes:
 <ul>
-	<li>Fix handling of Unicode powers for units in denominator, with adaptive parsing enabled (e.g. parse 10m/s² the same as 10m/s^2)</li>
-	<li>Fix "+" ignored after "E" in number bases where "E" is a digit</li>
-	<li>Fix scientific E notation with sign in argument when function is used without parentheses</li>
-	<li>Fix lambertw() for values very close to zero</li>
-	<<li>Fix a × b^x + cx = d when a and c have different signs and d is non-zero</li>
-	<li>Fix a^x × b^x = c when a and b is negative, and c is positive</li>
+	<li>New prime number functions: primePi(), primes(), nthprime(), nextprime(), prevprime(), and isprime()</li>
+	<li>New functions for intervals and uncertainties: upperEndpoint(), lowerEndpoint(), midpoint(), and errorPart()</li>
+	<li>Add meter of water and related pressure units, and more derived flow rate units</li>
+	<li>Support for vectors and matrices in uncertainty propagation calculation</li>
+	<li>Proper support for uncertainty propagation in total(), sum(), product(), and for() functions</li>
+	<li>Simplify display of parsed expression (primarily for quantities with units)</li>
+	<li>Avoid parsing of implicit multiplication as nested multiplication</li>
+	<li>Allow use of curly brackets as alternative parentheses</li>
+	<li>Include +/- statement in function argument without parentheses</li>
+	<li>Return values for approximate variables in exact mode in dimension() and elements()</li>
+	<li>Improve parsing of quotation marks as feet/inch or arcmin/arcsec (e.g. do not parse s" as sin)</li>
+	<li>Partial Georgian translation</li>
+	<li>Fix exact calculation of re((a*i)^(n/2)) (wrong sign in some cases)</li>
+	<li>Fix erroneous calculation in some cases with physical constants both outside and inside unit relations when interval calculation is set to interval arithmetic</li>
+	<li>Fix segfault in Calculator destructor</li>
 	<li>Fix segfaults in some corner cases</li>
-	<li>Fix potential issues in handling of leap seconds (e.g. during subtraction of seconds from date)</li>
-	<li>var = a syntax for variable assignment with calculated expression</li>
-	<li>Replace ounce with fluid ounce during conversion to volume unit</li>
-	<li>Solve a^x + b^x + … = c in more cases</li>
-	<li>Improve remainder/modulus for numerators with large exponents</li>
-	<li>Truncate number in output of parsed expression and end with ellipsis if unable to display all decimals</li>
-	<li>Improved floating point calculation and output speed, particularly for simple expressions with very high precision</li>
-	<li>New functions: clip(), qFormat(), qError()</li>
-	<li>"clear history" command and option to clear (not save) history on exit (CLI)</li>
-	<li>Replace selection (instead of wrap in parentheses) on operator input if selection ends with operator (GTK, Qt)</li>
-	<li>Act as if two arguments are required when applying base-N logarithm to expression (GTK, Qt)</li>
-	<li>When applying function to expression, exclude to/where expression and place cursor before closing parenthesis if operator is last in selection (GTK)</li>
-	<li>Show padlock (or "[P]") after protected expression (Qt)</li>
-	<li>Fix name field not working in argument edit dialog (Qt)</li>
+	<li>Fix use of random numbers in iterative functions</li>
+	<li>Fix writing beyond end of array during exchange rates check in some cases (results in activation of old style matrices)</li>
+	<li>Fix automatic reactivation of deactivated global object if a function with the same name exists</li>
+	<li>Do not convert function arguments which do not allow units (fixes "arcsin(0.5+/-0.1) to deg")</li>
+	<li>Fix prefix after conversion to optimal unit when the optimal unit includes a prefix</li>
+	<li>Fix exact calculation when function argument is an approximate vector variable (fail)</li>
+	<li>Add "Clear history" to available keyboard shortcut and button actions (GTK, Qt)</li>
+	<li>Show exchange rates source, and update time, for current calculation in tooltip (GTK, Qt)</li>
+	<li>Fix "Set Prefix" for auto-calculated result (GTK)</li>
+	<li>Fix copying of result during delay before calculate-as-you-type result is added to history (GTK)</li>
+	<li>Fix removal of additional keyboard shortcuts, after first removal (Qt)</li>
+	<li>Add option, in keypad button menu, to reset keypad position (Qt)</li>
+	<li>Fix font dialogs when "Keep above other windows" is enabled (Qt)</li>
+	<li>Fix saving of sub-function precalculate property (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
