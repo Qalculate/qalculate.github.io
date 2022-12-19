@@ -46,44 +46,34 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.4</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.5</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2022-10-17</div>
-<div class="newstitle">Qalculate! version 4.4 released</div>
+<div class="newsdate">2022-12-19</div>
+<div class="newstitle">Qalculate! version 4.5 released</div>
 Changes:
 <ul>
-	<li>New prime number functions: primePi(), primes(), nthprime(), nextprime(), prevprime(), and isprime()</li>
-	<li>New functions for intervals and uncertainties: upperEndpoint(), lowerEndpoint(), midpoint(), and errorPart()</li>
-	<li>Add meter of water and related pressure units, and more derived flow rate units</li>
-	<li>Support for vectors and matrices in uncertainty propagation calculation</li>
-	<li>Proper support for uncertainty propagation in total(), sum(), product(), and for() functions</li>
-	<li>Simplify display of parsed expression (primarily for quantities with units)</li>
-	<li>Avoid parsing of implicit multiplication as nested multiplication</li>
-	<li>Allow use of curly brackets as alternative parentheses</li>
-	<li>Include +/- statement in function argument without parentheses</li>
-	<li>Return values for approximate variables in exact mode in dimension() and elements()</li>
-	<li>Improve parsing of quotation marks as feet/inch or arcmin/arcsec (e.g. do not parse s" as sin)</li>
-	<li>Partial Georgian translation</li>
-	<li>Fix exact calculation of re((a*i)^(n/2)) (wrong sign in some cases)</li>
-	<li>Fix erroneous calculation in some cases with physical constants both outside and inside unit relations when interval calculation is set to interval arithmetic</li>
-	<li>Fix segfault in Calculator destructor</li>
-	<li>Fix segfaults in some corner cases</li>
-	<li>Fix use of random numbers in iterative functions</li>
-	<li>Fix writing beyond end of array during exchange rates check in some cases (results in activation of old style matrices)</li>
-	<li>Fix automatic reactivation of deactivated global object if a function with the same name exists</li>
-	<li>Do not convert function arguments which do not allow units (fixes "arcsin(0.5+/-0.1) to deg")</li>
-	<li>Fix prefix after conversion to optimal unit when the optimal unit includes a prefix</li>
-	<li>Fix exact calculation when function argument is an approximate vector variable (fail)</li>
-	<li>Add "Clear history" to available keyboard shortcut and button actions (GTK, Qt)</li>
-	<li>Show exchange rates source, and update time, for current calculation in tooltip (GTK, Qt)</li>
-	<li>Fix "Set Prefix" for auto-calculated result (GTK)</li>
-	<li>Fix copying of result during delay before calculate-as-you-type result is added to history (GTK)</li>
-	<li>Fix removal of additional keyboard shortcuts, after first removal (Qt)</li>
-	<li>Add option, in keypad button menu, to reset keypad position (Qt)</li>
-	<li>Fix font dialogs when "Keep above other windows" is enabled (Qt)</li>
-	<li>Fix saving of sub-function precalculate property (Qt)</li>
+	<li>Conversion to any type of expression (e.g. "1000 BTC to million USD")</li>
+	<li>Use current status of limit implicit multiplication setting during parsing of conversion expression</li>
+	<li>New SI prefixes (R, r, Q, q)</li>
+	<li>New units: ounce force (ozf), rack unit (U)</li>
+	<li>Use standard form (sorting) for polynomials</li>
+	<li>Improve consistency of behaviour when global units are replaced</li>
+	<li>More consistent addition of units to expression without units for unit conversion</li>
+	<li>Improvements and fixes for arg() and atan2() functions</li>
+	<li>Fix interpretation of Myr (megayear) and Gyr (gigayear)</li>
+	<li>Fix milli- and centimeter of water units</li>
+	<li>Fix genvector() with for negative step size or expression as step size/number of steps</li>
+	<li>Fix randuniform() function</li>
+	<li>Fix automatic/dual fraction format after conversion (e.g. "8 to score")</li>
+	<li>Fix inconsistently displayed parsing of "7d 5h" and similar</li>
+	<li>Use history font for RPN stack list (GTK, Qt)</li>
+	<li>Fix factorization conversion specified in expression, and conversion performed using a separate expression (GTK)</li>
+	<li>Fix unit names dialog (GTK)</li>
+	<li>Use log() instead of log2() as alternative action on "ln" keypad button (Qt)</li>
+	<li>Fix completion (including segfaults) and expression tooltip on Wayland (Qt)</li>
+	<li>Fix RPN mode deactivated after application loses focus (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
