@@ -46,35 +46,21 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.5</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.5.1</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2022-12-19</div>
-<div class="newstitle">Qalculate! version 4.5 released</div>
+<div class="newsdate">2023-01-04</div>
+<div class="newstitle">Qalculate! version 4.5.1 released</div>
 Changes:
 <ul>
-	<li>Conversion to any type of expression (e.g. "1000 BTC to million USD")</li>
-	<li>Use current status of limit implicit multiplication setting during parsing of conversion expression</li>
-	<li>New SI prefixes (R, r, Q, q)</li>
-	<li>New units: ounce force (ozf), rack unit (U)</li>
-	<li>Use standard form (sorting) for polynomials</li>
-	<li>Improve consistency of behaviour when global units are replaced</li>
-	<li>More consistent addition of units to expression without units for unit conversion</li>
-	<li>Improvements and fixes for arg() and atan2() functions</li>
-	<li>Fix interpretation of Myr (megayear) and Gyr (gigayear)</li>
-	<li>Fix milli- and centimeter of water units</li>
-	<li>Fix genvector() with for negative step size or expression as step size/number of steps</li>
-	<li>Fix randuniform() function</li>
-	<li>Fix automatic/dual fraction format after conversion (e.g. "8 to score")</li>
-	<li>Fix inconsistently displayed parsing of "7d 5h" and similar</li>
-	<li>Use history font for RPN stack list (GTK, Qt)</li>
-	<li>Fix factorization conversion specified in expression, and conversion performed using a separate expression (GTK)</li>
-	<li>Fix unit names dialog (GTK)</li>
-	<li>Use log() instead of log2() as alternative action on "ln" keypad button (Qt)</li>
-	<li>Fix completion (including segfaults) and expression tooltip on Wayland (Qt)</li>
-	<li>Fix RPN mode deactivated after application loses focus (Qt)</li>
-	<li>Minor bug fixes and feature enhancements</li>
+	<li>Fix retrieval of exchange rates from mycurrency.net and add alternative secondary exchange rates sources</li>
+	<li>Add m/s³, m/s⁴, m/s⁵, and m/s⁶ as derived units (improves automatic unit conversion)</li>
+	<li>Check that the output of command, in command() function, is a reasonably sane expression</li>
+	<li>Fix unit tests</li>
+	<li>Align completion list to beginning of word (GTK, Qt)</li>
+	<li>Do not reduce width of columns in visible list (Qt)</li>
+	<li>Add option to not format output (Qt)</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
