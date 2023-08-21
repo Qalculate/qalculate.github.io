@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>libqalculate-4.7.0: PrintOptions Struct Reference</title>
+<title>libqalculate-4.8.0: PrintOptions Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libqalculate-4.7.0
+   <div id="projectname">libqalculate-4.8.0
    </div>
   </td>
  </tr>
@@ -67,10 +67,11 @@ const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>de
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5f7f6d8759c80283163c117deec5f63d"><td class="memItemLeft" align="right" valign="top"><a id="a5f7f6d8759c80283163c117deec5f63d" name="a5f7f6d8759c80283163c117deec5f63d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>min_exp</b></td></tr>
+<tr class="memdesc:a5f7f6d8759c80283163c117deec5f63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the minimum exponent with scientific notation. Values &lt; -1 restricts the exponent to multiples of -min_exp, e.g. 20 000 is output as 20e3 (engineering notation) if min_exp is -3. The special value EXP_PRECISION (-1) uses the current precision to determine the minimum exponent. Default: EXP_PRECISION. <br /></td></tr>
 <tr class="separator:a5f7f6d8759c80283163c117deec5f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e445366af0450ce329164af63dfb314"><td class="memItemLeft" align="right" valign="top"><a id="a7e445366af0450ce329164af63dfb314" name="a7e445366af0450ce329164af63dfb314"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>base</b></td></tr>
-<tr class="memdesc:a7e445366af0450ce329164af63dfb314"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classNumber.html" title="A number.">Number</a> base for displaying numbers. Default: 10. <br /></td></tr>
+<tr class="memdesc:a7e445366af0450ce329164af63dfb314"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classNumber.html" title="A number.">Number</a> base for displaying numbers. Specify a value between 2 and 36 or use one of the special values defined in <a class="el" href="includes_8h.html">includes.h</a> (BASE_*). Default: 10. <br /></td></tr>
 <tr class="separator:a7e445366af0450ce329164af63dfb314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c9373c7d2f79a2bb646c9bcc40c273"><td class="memItemLeft" align="right" valign="top"><a id="a91c9373c7d2f79a2bb646c9bcc40c273" name="a91c9373c7d2f79a2bb646c9bcc40c273"></a>
 BaseDisplay&#160;</td><td class="memItemRight" valign="bottom"><b>base_display</b></td></tr>
