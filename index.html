@@ -46,26 +46,36 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.8.1</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 4.9</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2023-09-18</div>
-<div class="newstitle">Qalculate! version 4.8.1 released</div>
+<div class="newsdate">2023-11-27</div>
+<div class="newstitle">Qalculate! version 4.9 released</div>
 Changes:
 <ul>
-	<li>Fix besselj() and bessely()</li>
-	<li>Fix display of matrices and vectors with complex number form other than rectangular (default)</li>
-	<li>Fix conflict between decibel units (e.g. "0dB") and duodecimal 0d… syntax (now requires at least two digits)</li>
-	<li>Fixes for title options in plot() function</li>
-	<li>Add additional buttons and button menus to general keypad (Qt)</li>
-	<li>Add option to show all functions, units, and variables in tool button menus (Qt)</li>
-	<li>Add recently used objects to functions, units, and variables menus (Qt)</li>
-	<li>Add option to bypass dialog for functions in menu (Qt)</li>
-	<li>Add option, in context menu, to display text for tool buttons (Qt)</li>
-	<li>Open functions, units, and variables tool button menus using long-press or right-click (in addition to arrow button), and add keyboard shortcuts (Qt)</li>
-	<li>Use keypad tool button menu as context menu and show keypad type in title bar of keypad (Qt)</li>
-	<li>Auto-update number bases above programming keypad when entering simple integers, even if calculate-as-you-type is deactivated (GTK)</li>
+	<li>Support for specifying a fixed denominator for display of fractions (e.g. "0.3 ft ➞ 1/8 ≈ (3 + 5/8) in")</li>
+	<li>Return gcd of numerators divided by lcm of denominators in gcd() with non-integer rational numbers, and vice versa for lcm()</li>
+	<li>Add units for mean Gregorian and tropical years</li>
+	<li>Ignore underscore in number</li>
+	<li>Replace defunct exchange rates source and fix bitcoin exchange rate</li>
+	<li>Fix asin(x)=a, acos(x)=a, and atan(x)=a, when a contains an angle unit and default angle unit is set</li>
+	<li>Fix output of value converted to unit expression with numerical multiplier in denominator, e.g. "➞ L/(100 km)"</li>
+	<li>Fix segfault when trying to solve "(x*sqrt(x)-y*sqrt(y))/(sqrt(x)-sqrt(y))=x+sqrt(x*y)+y"</li>
+	<li>Fix parsing of case insensitive object name ending with Unicode character when followed by another Unicode character in expression, e.g. "микрометр"</li>
+	<li>Always add result to history (even if identical to previous) if expression contains a function generating a random number (GTK, Qt)</li>
+	<li>Prefer capitalized function name (over name with underscore), when completing function name (GTK, Qt)</li>
+	<li>Improve decision to (not) update calculate-as-you-type result when last character is an operator (GTK)</li>
+	<li>Add percent and permille output options in rational number form menu (GTK)</li>
+	<li>Fix keypad button (up/down) for cycling through expression history (GTK)</li>
+	<li>Restore decimal number base after closing programming keypad (Qt)</li>
+	<li>Improve appearance of conversion menu (Qt)</li>
+	<li>Save position of main window even if size has not changed from the default (Qt)</li>
+	<li>Fix custom middle click button action (Qt)</li>
+	<li>Fix immediate calculation after selecting to-conversion completion (Qt)</li>
+	<li>Add history command, listing expression history (CLI)</li>
+	<li>Display all exponents 0-9 using Unicode superscript characters if these are the only exponents in the expression (CLI)</li>
+	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
