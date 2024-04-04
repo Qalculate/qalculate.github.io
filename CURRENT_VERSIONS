@@ -2,3 +2,8 @@ qalculate-gtk:5.0.0
 qalculate-qt:5.0.0
 libqalculate:5.0.0
 windows:5.0.0
+linux-x86_64-selfcontained:https://github.com/Qalculate/qalculate-gtk/releases/download/v5.0.0/qalculate-5.0.0-x86_64.tar.xz
+windows-i386-portable:https://github.com/Qalculate/qalculate-gtk/releases/download/v5.0.0/qalculate-5.0.0-i386.zip
+windows-x64-portable:https://github.com/Qalculate/qalculate-gtk/releases/download/v5.0.0/qalculate-5.0.0-x64.zip
+windows-i386-installer:https://github.com/Qalculate/qalculate-gtk/releases/download/v5.0.0/qalculate-5.0.0-i386.msi
+windows-x64-installer:https://github.com/Qalculate/qalculate-gtk/releases/download/v5.0.0/qalculate-5.0.0-x64.msi
