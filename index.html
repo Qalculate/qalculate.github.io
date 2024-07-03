@@ -46,36 +46,47 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.1.1</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.2</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2024-05-07</div>
-<div class="newstitle">Qalculate! version 5.1.1 released</div>
-This version fixes a^(f(x)) = (a^b)^(g(x)), where b equals -1, 2/3, 2 or 3, and f(x) does not equals g(x). Only libqalculate has been updated.
-<div class="newsdate">2024-05-06</div>
-<div class="newstitle">Qalculate! version 5.1 released</div>
+<div class="newsdate">2024-07-01</div>
+<div class="newstitle">Qalculate! version 5.2 released</div>
 Changes:
 <ul>
-	<li>Support for solving equations containing if() function</li>
-	<li>Support for solving root(a, x)=b (requires rational value for ln(a)/ln(b))</li>
-	<li>New functions: powertower() and multiples()</li>
-	<li>New units for solar radius, mass, and luminosity</li>
-	<li>Ask for the desired interpretation the first time percent addition is used (e.g. 100 + 10% equals 110 or 100.1)</li>
-	<li>Use parentheses for exponent using scientific notation (with power of 10)</li>
-	<li>Support integer factorization of integers in matrix/vector, and of numerator and denominator in rational number</li>
-	<li>Relaxed conditions for (x^a)^b = x^(a × b) and x^a × x^b = x^(a + b) when complex numbers are deactivated (fixes segfaults)</li>
-	<li>Fix (ax + n)^2 &gt; 1, where n is even and a is not 1, returning false</li>
-	<li>Fix setbits() function</li>
-	<li>Fix Number::equals(0, ..., true) when number is infinite (affects replace() function)</li>
-	<li>Add two's complement input and binary bits to preferences, and preserve these settings when leaving programming keypad (GTK, Qt)</li>
-	<li>Download button in dialog shown when new version is available, on Windows (GTK, Qt)</li>
-	<li>Fix AltGr (primarily for input of operators) on Windows (GTK, Qt)</li>
-	<li>Option to show parsed expression in result field (GTK)</li>
-	<li>Portuguese (Portugal) translation (GTK)</li>
-	<li>Fix updating of self-contained GNU/Linux binaries from GUI (GTK)</li>
-	<li>Improved history list efficiency (Qt)</li>
-	<li>Hide expression tooltip (after 300 ms) when input resumes, if delayed expression status is enabled (Qt)</li>
+	<li>Physical constants updated with CODATA 2022 values</li>
+	<li>New function: allroots()</li>
+	<li>New units: therm, thermie, IUNS calorie, rpm</li>
+	<li>Additional names/symbols for turn unit</li>
+	<li>Use symbol "cal" for thermochemical (instead of international table) calorie</li>
+	<li>Change title and names/symbols of weak mixing angle (prepend "sin2" to theta variants)</li>
+	<li>Return exact negative integers in log10()</li>
+	<li>More conservative handling of infinity in equations</li>
+	<li>Remove n from equation solution if possible using assumptions of x</li>
+	<li>Fix input of scientific E-notation using lowercase e in numbers using concise interval notation, in expressions</li>
+	<li>Fix "bit width" and "signed integer" arguments in setbits()</li>
+	<li>Fix a^(f(x))=a^(b*g(x)) where b=2 or b=3</li>
+	<li>Fix auto/dual approximation with "where" expression</li>
+	<li>Fix "where" expressions with multiple inequality statements for a single variable, e.g. "where x&gt;0 and x&lt;10"</li>
+	<li>Fix crash when a variable name/symbol with more than 20 characters is used in "where" expression</li>
+	<li>Fix qalc not exiting after factorization in non-interactive mode (CLI)</li>
+	<li>Option to change the max number of history lines saved (GTK, Qt)</li>
+	<li>Fix subsequent tab completions after completion of unit with prefix (GTK, Qt)</li>
+	<li>Save date and time for history items, add search by date, and show date of selected history item in search by date context menu item (GTK)</li>
+	<li>Option to save history to separate file (GTK)</li>
+	<li>Improved sorting of text strings with Unicode characters (GTK)</li>
+	<li>Reverse order of row and column for element index in matrix dialogs (GTK)</li>
+	<li>Fix extremely small superscript and subscript with some fonts and on Windows with scaling ≥200% (GTK)</li>
+	<li>Fix empty windows when opened a second time (GTK)</li>
+	<li>Option (enabled by default) to show expression status (parsed expression and calculated value) as you type in history list, instead of in tooltip (Qt)</li>
+	<li>Option to hide toolbar (Qt)</li>
+	<li>Option to preserve height of history list when keypad or number bases are shown/hidden (Qt)</li>
+	<li>Headers for keyboard shortcuts and actions lists to allow custom sorting (Qt)</li>
+	<li>Option to show/hide hidden units (hidden by default) in units window (Qt)</li>
+	<li>Reduced minimum height (one line) of expression field (Qt)</li>
+	<li>Fix unnecessary parenthesis, with wrong color for closing bracket, around unit with exponent (Qt)</li>
+	<li>Fix convert button text, when toolbar style is not icon only (Qt)</li>
+	<li>Fix history list not cleared before reload if there are exactly one item (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
