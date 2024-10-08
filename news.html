@@ -41,6 +41,41 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
 <div class="content">
+	<div class="newsdate">2024-10-07</div>
+	<div class="newstitle">Qalculate! version 5.3 released</div>
+	Changes:
+	<ul>
+		<li>Fix memory leaks</li>
+		<li>Fix segfault with recursive (self-referencing) function</li>
+		<li>Fix input of negative exponent in scientific e notation with RPN syntax</li>
+		<li>Fix parsing of 1°2'3" as 1°+2'+3"</li>
+		<li>Improve handling of "where" expressions with inequalities</li>
+		<li>Fix definite integral for 1/sqrt(1-x^2), with limits higher/lower than or equal to -1 and 1</li>
+		<li>Fix crash with empty vector in plot function, e.g. plot([])</li>
+		<li>Fix "did you mean..." warning for two implicitly multiplicated functions without space between (e.g. "atan2(a,b)atan2(c,d)")</li>
+		<li>Fix saving of percentage interpretation (CLI)</li>
+		<li>Fix save definitions option (CLI)</li>
+		<li>Show language menu in preferences on all platforms (Gtk, Qt)</li>
+		<li>Improve initial value and clear all other fields when edited field is empty, in number bases and floating point conversion dialogs (Gtk, Qt)</li>
+		<li>Allow unit expressions for insert unit action, for custom shortcuts and buttons (Gtk, Qt)</li>
+		<li>Set minimum characters to two for all completion with "Limited full completion" (Gtk, Qt)</li>
+		<li>Support x without backslash for custom function argument condition (Gtk, Qt)</li>
+		<li>Update parsed expression and calculate-as-you-type result if variable, function, or unit in expression has changed (Gtk, Qt)</li>
+		<li>Update conversion dialogs when expression has been calculated (Gtk, Qt)</li>
+		<li>Restructured code (Gtk)</li>
+		<li>Fixes for overwrite input mode (Gtk, Qt)</li>
+		<li>Fix Up and Down item in context menu of RPN stack (Gtk)</li>
+		<li>Fix tiny exponents in prefix menus (Gtk)</li>
+		<li>Fix copy unformatted ASCII without units when decimal separator is comma (Gtk)</li>
+		<li>Change "Hide number pad" to "Always show number pad", and add separate number pad when the option is not enabled (Qt)</li>
+		<li>Improve support for small displays with low resolution/high scaling (Qt)</li>
+		<li>Update chain mode to match behaviour in Gtk UI (Qt)</li>
+		<li>Portuguese (pt_PT) translation (Qt)</li>
+		<li>Fix unresponsive expression field in some cases after smart parentheses has been applied (Qt)</li>
+		<li>Fix completion with both custom app font and custom expression font set (Qt)</li>
+		<li>Fix input of max value for number argument (Qt)</li>
+		<li>Minor bug fixes and feature enhancements</li>
+	</ul>
 	<div class="newsdate">2024-07-01</div>
 	<div class="newstitle">Qalculate! version 5.2 released</div>
 	Changes:

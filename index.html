@@ -46,47 +46,43 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.2</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.3</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2024-07-01</div>
-<div class="newstitle">Qalculate! version 5.2 released</div>
+<div class="newsdate">2024-10-07</div>
+<div class="newstitle">Qalculate! version 5.3 released</div>
 Changes:
 <ul>
-	<li>Physical constants updated with CODATA 2022 values</li>
-	<li>New function: allroots()</li>
-	<li>New units: therm, thermie, IUNS calorie, rpm</li>
-	<li>Additional names/symbols for turn unit</li>
-	<li>Use symbol "cal" for thermochemical (instead of international table) calorie</li>
-	<li>Change title and names/symbols of weak mixing angle (prepend "sin2" to theta variants)</li>
-	<li>Return exact negative integers in log10()</li>
-	<li>More conservative handling of infinity in equations</li>
-	<li>Remove n from equation solution if possible using assumptions of x</li>
-	<li>Fix input of scientific E-notation using lowercase e in numbers using concise interval notation, in expressions</li>
-	<li>Fix "bit width" and "signed integer" arguments in setbits()</li>
-	<li>Fix a^(f(x))=a^(b*g(x)) where b=2 or b=3</li>
-	<li>Fix auto/dual approximation with "where" expression</li>
-	<li>Fix "where" expressions with multiple inequality statements for a single variable, e.g. "where x&gt;0 and x&lt;10"</li>
-	<li>Fix crash when a variable name/symbol with more than 20 characters is used in "where" expression</li>
-	<li>Fix qalc not exiting after factorization in non-interactive mode (CLI)</li>
-	<li>Option to change the max number of history lines saved (GTK, Qt)</li>
-	<li>Fix subsequent tab completions after completion of unit with prefix (GTK, Qt)</li>
-	<li>Save date and time for history items, add search by date, and show date of selected history item in search by date context menu item (GTK)</li>
-	<li>Option to save history to separate file (GTK)</li>
-	<li>Improved sorting of text strings with Unicode characters (GTK)</li>
-	<li>Reverse order of row and column for element index in matrix dialogs (GTK)</li>
-	<li>Fix extremely small superscript and subscript with some fonts and on Windows with scaling ≥200% (GTK)</li>
-	<li>Fix empty windows when opened a second time (GTK)</li>
-	<li>Option (enabled by default) to show expression status (parsed expression and calculated value) as you type in history list, instead of in tooltip (Qt)</li>
-	<li>Option to hide toolbar (Qt)</li>
-	<li>Option to preserve height of history list when keypad or number bases are shown/hidden (Qt)</li>
-	<li>Headers for keyboard shortcuts and actions lists to allow custom sorting (Qt)</li>
-	<li>Option to show/hide hidden units (hidden by default) in units window (Qt)</li>
-	<li>Reduced minimum height (one line) of expression field (Qt)</li>
-	<li>Fix unnecessary parenthesis, with wrong color for closing bracket, around unit with exponent (Qt)</li>
-	<li>Fix convert button text, when toolbar style is not icon only (Qt)</li>
-	<li>Fix history list not cleared before reload if there are exactly one item (Qt)</li>
+	<li>Fix memory leaks</li>
+	<li>Fix segfault with recursive (self-referencing) function</li>
+	<li>Fix input of negative exponent in scientific e notation with RPN syntax</li>
+	<li>Fix parsing of 1°2'3" as 1°+2'+3"</li>
+	<li>Improve handling of "where" expressions with inequalities</li>
+	<li>Fix definite integral for 1/sqrt(1-x^2), with limits higher/lower than or equal to -1 and 1</li>
+	<li>Fix crash with empty vector in plot function, e.g. plot([])</li>
+	<li>Fix "did you mean..." warning for two implicitly multiplicated functions without space between (e.g. "atan2(a,b)atan2(c,d)")</li>
+	<li>Fix saving of percentage interpretation (CLI)</li>
+	<li>Fix save definitions option (CLI)</li>
+	<li>Show language menu in preferences on all platforms (Gtk, Qt)</li>
+	<li>Improve initial value and clear all other fields when edited field is empty, in number bases and floating point conversion dialogs (Gtk, Qt)</li>
+	<li>Allow unit expressions for insert unit action, for custom shortcuts and buttons (Gtk, Qt)</li>
+	<li>Set minimum characters to two for all completion with "Limited full completion" (Gtk, Qt)</li>
+	<li>Support x without backslash for custom function argument condition (Gtk, Qt)</li>
+	<li>Update parsed expression and calculate-as-you-type result if variable, function, or unit in expression has changed (Gtk, Qt)</li>
+	<li>Update conversion dialogs when expression has been calculated (Gtk, Qt)</li>
+	<li>Restructured code (Gtk)</li>
+	<li>Fixes for overwrite input mode (Gtk, Qt)</li>
+	<li>Fix Up and Down item in context menu of RPN stack (Gtk)</li>
+	<li>Fix tiny exponents in prefix menus (Gtk)</li>
+	<li>Fix copy unformatted ASCII without units when decimal separator is comma (Gtk)</li>
+	<li>Change "Hide number pad" to "Always show number pad", and add separate number pad when the option is not enabled (Qt)</li>
+	<li>Improve support for small displays with low resolution/high scaling (Qt)</li>
+	<li>Update chain mode to match behaviour in Gtk UI (Qt)</li>
+	<li>Portuguese (pt_PT) translation (Qt)</li>
+	<li>Fix unresponsive expression field in some cases after smart parentheses has been applied (Qt)</li>
+	<li>Fix completion with both custom app font and custom expression font set (Qt)</li>
+	<li>Fix input of max value for number argument (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
