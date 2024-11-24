@@ -46,43 +46,34 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.3</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.4</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2024-10-07</div>
-<div class="newstitle">Qalculate! version 5.3 released</div>
+<div class="newsdate">2024-11-25</div>
+<div class="newstitle">Qalculate! version 5.4 released</div>
 Changes:
 <ul>
-	<li>Fix memory leaks</li>
-	<li>Fix segfault with recursive (self-referencing) function</li>
-	<li>Fix input of negative exponent in scientific e notation with RPN syntax</li>
-	<li>Fix parsing of 1°2'3" as 1°+2'+3"</li>
-	<li>Improve handling of "where" expressions with inequalities</li>
-	<li>Fix definite integral for 1/sqrt(1-x^2), with limits higher/lower than or equal to -1 and 1</li>
-	<li>Fix crash with empty vector in plot function, e.g. plot([])</li>
-	<li>Fix "did you mean..." warning for two implicitly multiplicated functions without space between (e.g. "atan2(a,b)atan2(c,d)")</li>
-	<li>Fix saving of percentage interpretation (CLI)</li>
-	<li>Fix save definitions option (CLI)</li>
-	<li>Show language menu in preferences on all platforms (Gtk, Qt)</li>
-	<li>Improve initial value and clear all other fields when edited field is empty, in number bases and floating point conversion dialogs (Gtk, Qt)</li>
-	<li>Allow unit expressions for insert unit action, for custom shortcuts and buttons (Gtk, Qt)</li>
-	<li>Set minimum characters to two for all completion with "Limited full completion" (Gtk, Qt)</li>
-	<li>Support x without backslash for custom function argument condition (Gtk, Qt)</li>
-	<li>Update parsed expression and calculate-as-you-type result if variable, function, or unit in expression has changed (Gtk, Qt)</li>
-	<li>Update conversion dialogs when expression has been calculated (Gtk, Qt)</li>
-	<li>Restructured code (Gtk)</li>
-	<li>Fixes for overwrite input mode (Gtk, Qt)</li>
-	<li>Fix Up and Down item in context menu of RPN stack (Gtk)</li>
-	<li>Fix tiny exponents in prefix menus (Gtk)</li>
-	<li>Fix copy unformatted ASCII without units when decimal separator is comma (Gtk)</li>
-	<li>Change "Hide number pad" to "Always show number pad", and add separate number pad when the option is not enabled (Qt)</li>
-	<li>Improve support for small displays with low resolution/high scaling (Qt)</li>
-	<li>Update chain mode to match behaviour in Gtk UI (Qt)</li>
-	<li>Portuguese (pt_PT) translation (Qt)</li>
-	<li>Fix unresponsive expression field in some cases after smart parentheses has been applied (Qt)</li>
-	<li>Fix completion with both custom app font and custom expression font set (Qt)</li>
-	<li>Fix input of max value for number argument (Qt)</li>
+	<li>New functions: tripleProduct(), multilimit()</li>
+	<li>Improve decision to automatically convert unchanged quantity with unit</li>
+	<li>Updated French translation</li>
+	<li>Fix case conversion of µ to M and similar</li>
+	<li>Fix segfault with very large integer raised by very large integer</li>
+	<li>Option to continuously display result while editing expression (CLI)</li>
+	<li>Option to specify number of displayed significant digits, instead of using precision (Gtk, CLI)</li>
+	<li>Option, in menu, to open settings folder(s) (Gtk, Qt)</li>
+	<li>Fix number base subscripts in programming keypad (Gtk)</li>
+	<li>Fix keyboard shortcut with copy followed by quit (Gtk)</li>
+	<li>Fix initial selection and exclusion of optional arguments from output of insert function dialog (Gtk)</li>
+	<li>Fix precision in Preset mode (Gtk)</li>
+	<li>Hungarian translation (Gtk)</li>
+	<li>Apply dual approximation/fraction to calculate as you type result, as regular result but with length restriction (Qt)</li>
+	<li>Add option to add/edit comment to history context menu, and save comments in result on exit (Qt)</li>
+	<li>Add "Search by Date" (also shows the date of the expression) to history context menu (Qt)</li>
+	<li>Option to automatically group digits in input (Qt)</li>
+	<li>Fix equals sign for calculate as you type result (Qt)</li>
+	<li>Fix segfault with calculate as you type of "-(300K" and similar (Qt)</li>
+	<li>Fix saving of two's complement input settings (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
