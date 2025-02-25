@@ -46,31 +46,29 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.5</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.5.1</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2025-01-13</div>
-<div class="newstitle">Qalculate! version 5.5 released</div>
+<div class="newsdate">2025-02-24</div>
+<div class="newstitle">Qalculate! version 5.5.1 released</div>
 Changes:
 <ul>
-	<li>a(i) and a[i] syntax (the latter with support for functions) for element in vector</li>
-	<li>Set ans variable to solution(s) of equation (as if solve() function were used)</li>
-	<li>New function: factor()</li>
-	<li>Use hours or minutes as default unit for conversion to time unit of expression with time format but no units (e.g. "0:00:12 to s")</li>
-	<li>Always use four digits for year in date (e.g. "0064-07-18" instead of "64-07-18"), and support input of date using DD-MM-YYYY format</li>
-	<li>Fix solving of x^4-4x^3+10x^2-12x+1=0, and similar, in exact mode</li>
-	<li>Fix dual/auto approximation when unable to find exact solution to equation</li>
-	<li>Fix rounding in 1/# conversion to integer (e.g. "1/2 to 0.99")</li>
-	<li>Fix unability to find approximate solutions to some high degree equations (e.g. "x⁴ − 4x³ + 10x² − 12x = −1")</li>
-	<li>Fix automatic variable detection in select()</li>
-	<li>Fix terminal columns and rows when piping/redirecting input (CLI)</li>
-	<li>Fix ans variables with calculate as you type activated (CLI)</li>
-	<li>Fix compilation without readline (CLI)</li>
-	<li>Option to disable cursor blinking (Gtk, Qt)</li>
-	<li>Place approximate value before exact in calculate as you type result (Qt)</li>
-	<li>Fix display of units automatically appended to expression in parse status (Qt)</li>
-	<li>Fix reading of expressions from file (Qt)</li>
+	<li>Fix solve() function with replace() function as first argument (fixes solve2() function)</li>
+	<li>Fix "where" operator using (in)equality in variable</li>
+	<li>Return x=a*e^(i*r) (with r instead of n) for abs(x)=x</li>
+	<li>Add Ctrl+I shortcut for input of the previous result (CLI)</li>
+	<li>Support calculate as you type with RPN stack enabled (CLI)</li>
+	<li>Fix calculate as you type with RPN syntax (CLI)</li>
+	<li>Fix segfault when deleting object (Gtk)</li>
+	<li>Fix mode menu items sometimes not functioning properly after a mode has been added or removed (Gtk)</li>
+	<li>Fix right status context menu not updated (Gtk)</li>
+	<li>Fix keyboard shortcut input dialog when modifier is released first (Gtk)</li>
+	<li>Fix date (month off by one) in history context menu (Gtk)</li>
+	<li>Fix roman numerals shown as "Other" (Gtk)</li>
+	<li>Fix copy unformatted ASCII without units when unit is placed before quantity (Gtk, Qt)</li>
+	<li>Option to automatically calculate the current selection, in tooltip (Qt)</li>
+	<li>Option to calculate the current selection, once in history (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
