@@ -115,12 +115,11 @@ p.roffit {
 <div class="level0"><span Class="bold">rotate [direction]</span> Rotates the RPN stack up (default) or down. <p/></div>
 <div class="level0"><span Class="bold">swap [index 1] [index 2]</span> Swaps position of values on the RPN stack. If no index is specified, the values on the top of the stack (index 1 and index 2) will be swapped and if only one index is specified, the value at this index will be swapped with the top value. Index 1 is the top of stack and negative index values count from the bottom of the stack. <br>Example: swap 2 4 <p/>When a line begins with '/', the text that follows is always interpreted as a command. </div><h2 class="nroffsh" id="KEYBINDINGS">KEYBINDINGS</h2>
 <div class="level0"><p/></div>
-<div class="level0"><span Class="bold">Tab</span> shows a list of functions, variables, and units that matches the last object in the current expression <p/></div>
+<div class="level0"><span Class="bold">Tab (Ctrl+I)</span> shows a list of functions, variables, and units that matches the last object in the current expression, or, if cursor is at beginning of line or after operator, inserts the previous result (either with text of value, or as a temporary variable for approximate or long values) <p/></div>
 <div class="level0"><span Class="bold">Ctrl+A</span> saves the current result in a temporary variable <p/></div>
 <div class="level0"><span Class="bold">Ctrl+D</span> terminates the program <p/></div>
 <div class="level0"><span Class="bold">Ctrl+E</span> switches between approximation modes (exact, try exact, auto) <p/></div>
 <div class="level0"><span Class="bold">Ctrl+F</span> switches between fraction modes (simple, decimal, auto) <p/></div>
-<div class="level0"><span Class="bold">Ctrl+I</span> inserts the previous result (either with text of value, or as a temporary variable for approximate or long values) <p/></div>
 <div class="level0"><span Class="bold">Ctrl+L</span> clears the screen </div><h2 class="nroffsh" id="SETTINGS">SETTINGS</h2>
 <div class="level0">These settings are changed using the set command (e.g. set base 16) or the -s, --set command line option (e.g. qalc -s "base 16"). Possible values are shown in parenthesis. 1 and 0 can be used instead of on and off, yes and no. If the value is left out, a value of 1 is generally assumed. The default value is marked with '*'. <p/>Algebraic mode: <p/></div>
 <div class="level0"><span Class="bold">algebra mode, alg (1* = expand, 2 = factorize)</span> Determines if the expression is factorized or not after calculation. <p/></div>
