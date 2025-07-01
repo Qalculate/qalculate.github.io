@@ -41,6 +41,43 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
 <div class="content">
+	<div class="newsdate">2025-06-30</div>
+	<div class="newstitle">Qalculate! version 5.6 released</div>
+	Changes:
+	<ul>
+		<li>Add support for display of repeating decimals using overline (vinculum) instead of ellipsis</li>
+		<li>Support all real numbers in binomial(), comb(), and perm() functions</li>
+		<li>Add boolean argument for reversed conversion (to text string) in bin(), oct(), dec(), hex(), and base()</li>
+		<li>Add support for units in limit()</li>
+		<li>Improve simplification and speed in diff() function for high orders</li>
+		<li>Do not allow, or warn about, attempted conversion using "to" in function expression</li>
+		<li>Show a warning when it appears as if the user tries to convert part of an expression</li>
+		<li>Show error (and fix status) when trying to perform multiple conversions at same time using "to" command (without preceding expression on the same line)</li>
+		<li>Improve handling of functions returning text string or value with angle unit, in angle and text arguments</li>
+		<li>Improve handling of random numbers in iterative functions and in function arguments of custom functions</li>
+		<li>Disable calculate as you type for expression containing export, load, or command function</li>
+		<li>Use LANGUAGE environment variable, instead of LANG, on Windows in order to avoid changing regional format settings</li>
+		<li>Improvements/fixes for currencies and exchange rates</li>
+		<li>Fix integral with infinite limit with unit</li>
+		<li>Fix non-localized data set key properties (when translated version is available)</li>
+		<li>Fix angle conversion for (in)equalities (both sides where converted)</li>
+		<li>Fix default separator in load() and export() functions</li>
+		<li>Fix µ_B name/symbol for Bohr magneton</li>
+		<li>Fix incorrect limit for expression containing tan(x) when value to approach is pi/2 without direction</li>
+		<li>Add "language" option (CLI)</li>
+		<li>Reset exact value (for dual approximation) when applying "to" command (CLI)</li>
+		<li>Fix autocalculate input offset with readline vi mode (CLI)</li>
+		<li>Fix abort using SIGINT (Ctrl+C) during factor command (CLI)</li>
+		<li>Add "-" after unit prefix symbol (k and M excluded), in completion list, to indicate that it must be followed by a unit (GTK, Qt)</li>
+		<li>Use selection (as if button was clicked) if RPN stack is visible when using keyboard shortcut for RPN operation (GTK)</li>
+		<li>Fix segfault in some cases when creating variable with long title/value (GTK)</li>
+		<li>Fix empty category field in matrix/vector edit dialog (GTK)</li>
+		<li>Use tabular numbers (tnum) font feature (fixes alignment with Adwaita font) in history, RPN stack, and for binary numbers in result (GTK)</li>
+		<li>Fix copy result to clipboard (and inconsequential crash after any action) in Gnome shell search provider (GTK)</li>
+		<li>Fix calculate-as-you-type not responding to unit modifier changes (Qt)</li>
+		<li>Traditional Chinese translation</li>
+		<li>Minor bug fixes and feature enhancements</li>
+	</ul>
 	<div class="newsdate">2025-03-02</div>
 	<div class="newstitle">Qalculate! version 5.5.2 released</div>
 	This version fixes tab completion in qalc. The GUIs have not updated.
