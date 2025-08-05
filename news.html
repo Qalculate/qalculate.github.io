@@ -41,6 +41,40 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
 <div class="content">
+	<div class="newsdate">2025-08-04</div>
+	<div class="newstitle">Qalculate! version 5.7 released</div>
+	Changes:
+	<ul>
+		<li>Ask for interpretation of comma (when comma is not the default decimal separator)</li>
+		<li>Support input of base in log() function before parenthesis, e.g. "log20(400)" (equivalent to "log(400, 20)")</li>
+		<li>Support input of exponent before argument of trigonometric function (e.g. "sin²(x)")</li>
+		<li>Support input of functions with more than one argument using RPN syntax</li>
+		<li>Add new binary prefixes (robi, quebi), and enable use of recently added SI prefixes in output by default</li>
+		<li>Micron unit</li>
+		<li>Support "to 1/n" as alternative to "to fraction"</li>
+		<li>Data set translation fixes</li>
+		<li>Return exact integers in more case in log() function</li>
+		<li>Fix segfault with text argument containing potential text returning function, or variable containing text value</li>
+		<li>Fix segfault during calculation of (in)equality with root() function with insufficient number of arguments</li>
+		<li>Fix segfault during output of both approximate and exact logical OR value without (in)equality</li>
+		<li>Fix qError() function</li>
+		<li>Customizable prompt (CLI)</li>
+		<li>Uncolorized "E" in scientific E notation (CLI)</li>
+		<li>Fix locale used for definitions when language option is set (CLI)</li>
+		<li>Fix calculate as you type and indentation for show-mode-in-prompt with custom mode strings (CLI)</li>
+		<li>Fix completion of text string ending with capital E (CLI)</li>
+		<li>Use icon for "AC" button, and no icon for "DEL" button (Gtk, Qt)</li>
+		<li>Automatically set "Use comma as decimal separator" and "Ignore comma/dots in numbers" when local digit grouping is selected (Gtk, Qt)</li>
+		<li>Improvements for insert function dialog in RPN mode (Gtk, Qt)</li>
+		<li>Restore editing of <i>all</i> right-hand side buttons (Gtk)</li>
+		<li>Add option to place percent/remainder button in number pad (Qt)</li>
+		<li>Do not add conversion to expression when using convert button on calculate-as-you-type result (Qt)</li>
+		<li>Input of only conversion operator (arrow) using middle-click on convert button, or new "Custom" menu option (Qt)</li>
+		<li>Fix segfault when closing application with preferences open (Qt)</li>
+		<li>Fix segfault when removing row or column with defined custom button (Qt)</li>
+		<li>Fix automatic digit grouping in decimals (Qt)</li>
+		<li>Minor bug fixes and feature enhancements</li>
+	</ul>
 	<div class="newsdate">2025-06-30</div>
 	<div class="newstitle">Qalculate! version 5.6 released</div>
 	Changes:
