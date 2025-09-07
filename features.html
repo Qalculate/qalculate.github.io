@@ -41,84 +41,71 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! features</div><hr>
 <div class="content">
-	<div class="sectiontitle">Calculation and parsing</div>
+	<div class="sectiontitle">General</div>
 		<ul>
-		<li>All basic operations and operators: arithmetic, logical, bitwise, element-wise, (in)equalities</li>
-		<li>Fault-tolerant parsing of strings: <i>log 5 / 2 .5 (3) + (2( 3 +5</i> = <i>ln(5) / (2.5 × 3) + 2 × (3 + 5)</i></li>
+		<li>All common operators — arithmetic, logical, bitwise, element-wise, (in)equalities</li>
+		<li>Expressions may contain any combination of numbers, constants, functions, units, variables, matrices, vectors, and time/dates</li>
+		<li>Fault-tolerant and flexible input parsing with verbose error/warning messages</li>
 		<li>Calculate as you type</li>
-		<li>Expressions may contain any combination of numbers, functions, units, variables, vectors and matrices, and dates</li>
-		<li>Supports complex and infinite numbers</li>
-		<li>Arbitrary precision</li>
-		<li>Propagation of uncertainty</li>
-		<li>Interval arithmetic</il>
-		<li>Supports all common number bases, as well as negative and non-integer radices, sexagesimal numbers, time format, and roman numerals</li>
-		<li>Ability to disable functions, variables, units or unknown variables for less confusion: e.g. when you do not want <i>(a+b)^2</i> to mean <i>(are+barn)^2</i> but <i>(\a+\b)^2</i></li>
-		<li>Customizable implicit multiplication</li>
-		<li>Matrices and vectors, and related operations (determinants etc.)</li>
-		<li>Verbose error messages</li>
-		<li>RPN mode</li>
-		</ul>
-	<div class="sectiontitle">Result display</div>
-		<ul>
-		<li>Supports all common number bases, as well as negative and non-integer radices, sexagesimal numbers, time format, and roman numerals</li>
-		<li>Many customization options: precision, max/min decimals, complex form, multiplication sign, etc.</li>
-		<li>Exact or approximate: <i>sqrt(32)</i> returns <i>4 × sqrt(2)</i> or <i>5.657</i></li>
+		<li>Arbitrary precision with both rational and floating point numbers</li>
+		<li>Complex and infinite numbers</li>
+		<li>Propagation of uncertainty and interval arithmetic</li>
+		<li>Both exact and approximate output (<i>sqrt(32)</i> = <i>4 × sqrt(2)</i> ≈ <i>5.657</i></i>)</li>
 		<li>Simple and mixed fractions: <i>4 / 6 × 2</i> = <i>1.333…</i> = <i>4/3</i> = <i>1 + 1/3</i></li>
+		<li>All common number bases, as well as negative and non-integer radices, roman numerals, etc.</li>
+		<li>RPN mode</li>
+		<li>Highly customizable with a myriad of options for every aspect of the calculator</li>
 		</ul>
 	<div class="sectiontitle">Symbolic calculations</div>
 		<ul>
-		<li>E.g. <i>(x + y)^2</i> = <i>x^2 + 2xy + y^2</i>; <i>4 "apples" + 3 "oranges"</i></li>
 		<li>Factorization and simplification</li>
 		<li>Differentiation and integration</li>
 		<li>Can solve most equations and inequalities</li>
-		<li>Customizable assumptions give different results (e.g. <i>ln(2x) where x &gt; 0</i> = <i>ln(2) + ln(x)</i>)</li>
+		<li>Customizable assumptions (e.g. <i>ln(2x) where x &gt; 0</i> = <i>ln(2) + ln(x)</i>)</li>
 		</ul>
 	<div class="sectiontitle">Functions</div>
 		<ul>
-		<li>Hundreds of flexible functions: trigonometry, exponents and logarithms, combinatorics, geometry, calculus, statistics, finance, time and date, etc.</li>
-		<li>Can easily be created, edit and saved to a standard XML file</li>
+		<li>Over 400 flexible and diverse functions (trigonometry, exponents and logarithms, combinatorics, geometry, calculus, statistics, finance, time and date, etc.)</li>
+		<li>Easily created and edited from the user interfaces, with support for different argument types, subfunctions, and custom conditions</li>
 		</ul>
 	<div class="sectiontitle">Units</div>
 		<ul>
-		<li>Supports all SI units and prefixes (including binary), as well as imperial and other unit systems</li>
-		<li>Automatic conversion: <i>ft + yd + m</i> = <i>2.2192 m</i></li>
-		<li>Explicit conversion: <i>5 m/s to mi/h</i> = <i>11.18 miles/hour</i></li>
-		<li>Smart conversion: automatically converts <i>5 kg × m/s^2</i> to <i>5 N</i></li>
-		<li>Currency conversion with retrieval of daily exchange rates</li>
-		<li>Different name forms: abbreviation, singular, plural (m, meter, meters)</li>
-		<li>Can easily be created, edited and saved to a standard XML file</li>
+		<li>Over 400 diverse units and all standard decimal and binary prefixes</li>
+		<li>Includes all SI units, as well as imperial, CGS, atomic, and natural units, and more…</li>
+		<li>Automatic and explicit conversion (e.g. <i>ft + yd + m</i> = <i>2.2192 m</i>, <i>5 kg × m/s^2</i> = <i>5 N</i>, <i>5 m/s to mph</i> = <i>11.18 mph</i>)</li>
+		<li>Currency conversion with daily updated exchange rates</li>
+		<li>Easily created and edited from the user interfaces</li>
 		</ul>
 	<div class="sectiontitle">Variables and constants</div>
 		<ul>
-		<li>Basic constants: pi, e, etc.</li>
-		<li>Lots of physical constants (with or without units) and properties of chemical element</li>
+		<li>All common basic constants (pi, e, etc.)</li>
+		<li>All fundamental physical constants with 2022 CODATA values (including standard uncertainty and optional units)</li>
 		<li>CSV file import and export</li>
-		<li>Can easily be created, edited and saved to a standard XML file (including by direct assignment, e.g. <i>x = 2 s</i>)</li>
-		<li>Flexible - may contain simple numbers, units, or whole expressions</li>
-		<li>Data sets with objects and associated properties in database-like structure</li>
+		<li>Easily created and edited from the user interfaces (including by using simple assignment expressions, e.g. <i>x = 2 s</i>)</li>
+		<li>Data sets with objects and associated properties (a data set with chemical elements is included)</li>
 		</ul>
-	<div class="sectiontitle">Plotting</div>
+	<div class="sectiontitle">Plots and graphs</div>
 		<ul>
 		<li>Uses Gnuplot</li>
 		<li>Can plot functions or data (matrices and vectors)</li>
-		<li>Ability to save plot to PNG image, postscript, etc.</li>
-		<li>Several customization options</li>
+		<li>Can be customized using several options, and saved as an image</li>
 		</ul>
 	<div class="sectiontitle">Graphical user interfaces</div>
 		<ul>
-		<li>Graphical user interfaces implemented using GTK or Qt</li>
-		<li>Flexible expression entry with customizable completion, function hints, and continious display of parsed expression</li>
+		<li>Graphical user interfaces implemented using GTK and Qt</li>
+		<li>Flexible expression entry with customizable completion, function hints, and continuous display of parsed expression</li>
 		<li>Calculate as you type</li>
-		<li>Calculation history which allows the user to access the text and value of and apply operations to previous expressions and results</li>
-		<li>Customizable keypad with quick access to most features</li>
+		<li>History list with support for comments, protection of individual items, search, and use of mathematical operations on previous results</li>
+		<li>Customizable keypad with access to most features</li>
 		<li>Context-dependent menu for conversion to suitable units and output formats</li>
-		<li>Practical menus with access to all advanced features (GTK)</li>
+		<li>Extensive menus with access to all functions, units, and variables, as well as most settings</li>
+		<li>Everything but the expression entry can be hidden to minimize footprint and distractions (GTK version)</li>
 		<li>Customizable meta modes (GTK) and workspaces (Qt) for quickly switching between different settings</li>
 		<li>Dialogs for management of and easy access to functions, variables and units (with quick conversion)</li>
 		<li>Dialogs for easy entry of all functions</li>
 		<li>Create/edit functions, variables, matrices/vectors, units, and data sets</li>
-		<li>Tools for fast conversion between number bases, floating point conversion, calendar conversion, and percentage calculation, and a periodic table</li>
-		<li>Convenient interface to gnuplot</li>
+		<li>Tools for quick conversion between number bases, floating point conversion, calendar conversion, and percentage calculation</li>
+		<li>Convenient interface for plots and graphs</li>
 		<li>Configurable keyboard shortcuts</li>
 		</ul>
 	<i>…and more…</i>
