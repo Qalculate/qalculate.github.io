@@ -46,43 +46,50 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.7</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.8</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2025-08-04</div>
-<div class="newstitle">Qalculate! version 5.7 released</div>
+<div class="newsdate">2025-10-13</div>
+<div class="newstitle">Qalculate! version 5.8 released</div>
 Changes:
 <ul>
-	<li>Ask for interpretation of comma (when comma is not the default decimal separator)</li>
-	<li>Support input of base in log() function before parenthesis, e.g. "log20(400)" (equivalent to "log(400, 20)")</li>
-	<li>Support input of exponent before argument of trigonometric function (e.g. "sin²(x)")</li>
-	<li>Support input of functions with more than one argument using RPN syntax</li>
-	<li>Add new binary prefixes (robi, quebi), and enable use of recently added SI prefixes in output by default</li>
-	<li>Micron unit</li>
-	<li>Support "to 1/n" as alternative to "to fraction"</li>
-	<li>Data set translation fixes</li>
-	<li>Return exact integers in more case in log() function</li>
-	<li>Fix segfault with text argument containing potential text returning function, or variable containing text value</li>
-	<li>Fix segfault during calculation of (in)equality with root() function with insufficient number of arguments</li>
-	<li>Fix segfault during output of both approximate and exact logical OR value without (in)equality</li>
-	<li>Fix qError() function</li>
-	<li>Customizable prompt (CLI)</li>
-	<li>Uncolorized "E" in scientific E notation (CLI)</li>
-	<li>Fix locale used for definitions when language option is set (CLI)</li>
-	<li>Fix calculate as you type and indentation for show-mode-in-prompt with custom mode strings (CLI)</li>
-	<li>Fix completion of text string ending with capital E (CLI)</li>
-	<li>Use icon for "AC" button, and no icon for "DEL" button (Gtk, Qt)</li>
-	<li>Automatically set "Use comma as decimal separator" and "Ignore comma/dots in numbers" when local digit grouping is selected (Gtk, Qt)</li>
-	<li>Improvements for insert function dialog in RPN mode (Gtk, Qt)</li>
-	<li>Restore editing of <i>all</i> right-hand side buttons (Gtk)</li>
+	<li>Add output in scientific (sci), engineering (eng), ans simple notation as "to"-operator options</li>
+	<li>Improve support (and fix segfault) for exponential notation in hexadecimal numbers</li>
+	<li>Add TeX point, TeX scaled point, twip, agate, darcy, kayser, lambert, foot-lambert, and cc units</li>
+	<li>Add compton wavelength constants for muon, neutron, proton, and tau</li>
+	<li>Update calculation of fraction of year (with day counting basis 0 and 1) to match method used in spreadsheets other than Gnumeric</li>
+	<li>Change default quantile algorithm from 8 to 7</li>
+	<li>Improve accuracy for intervals in solutions to equations when using interval arithmetic</li>
+	<li>Fix poolvar(), ttest(), cor(), dollarde() and dollarfr() functions</li>
+	<li>Fix inequality with 1/f(x) on one side, e.g. "1/(x-2) ≤ 2"</li>
+	<li>Fix segfault with extremely small numbers and high number of bits in floating point conversion</li>
+	<li>Fix crashes and freezes in some corner cases</li>
+	<li>Fix value of Planck unit (was rounded to 7 decimals)</li>
+	<li>Show warning about default assumptions the first time an equation is solved</li>
+	<li>Show warning symbol when calculate as you type expression results in a question</li>
+	<li>Show warning and ask for confirmation when deactivating interval arithmetic</li>
+	<li>Improve completion</li>
+	<li>Add "save config" option (if disabled qalc.cfg is never automatically updated) and relocate qalc.history to $XDG_STATE_HOME (CLI)</li>
+	<li>Increase speed when calculating many expressions from file (CLI)</li>
+	<li>Fix support for prompt string containing Unicode characters, control characters, and/or escape sequences (CLI)</li>
+	<li>Automatically recalculate expression with current time every second (CLI, Qt)</li>
+	<li>Replace edit-clear icon on keypad button with "C" (Gtk, Qt)</li>
+	<li>Support non-existing X-variables in plot dialog (Gtk, Qt)</li>
+	<li>Fix floating point value in floating point conversion dialog for extended and microchip formats (Gtk, Qt)</li>
+	<li>Automatically calculate expression selection if calculate as you type is enabled (Gtk)</li>
+	<li>Enable calculate as you type by default (Gtk)</li>
+	<li>Add option to add or edit comment in history (Gtk)</li>
+	<li>Add option to clear expression or replace with result after calculation (Gtk)</li>
+	<li>Fix custom time zone in calculate as you type result when added to history (Gtk)</li>
+	<li>Improve automatic digit grouping (Qt)</li>
 	<li>Add option to place percent/remainder button in number pad (Qt)</li>
-	<li>Do not add conversion to expression when using convert button on calculate-as-you-type result (Qt)</li>
-	<li>Input of only conversion operator (arrow) using middle-click on convert button, or new "Custom" menu option (Qt)</li>
-	<li>Fix segfault when closing application with preferences open (Qt)</li>
-	<li>Fix segfault when removing row or column with defined custom button (Qt)</li>
-	<li>Fix automatic digit grouping in decimals (Qt)</li>
-	<li>Minor bug fixes and feature enhancements</li>
+	<li>Add asterisk and middle dot as multiplication sign alternatives in preferences (Qt)</li>
+	<li>Add options to show a status bar and to place expression field below history (Qt)</li>
+	<li>Fix updating of fields in plot dialog when expression list selection changes (Qt)</li>
+	<li>Fixes for comments and removal of single result (Qt)</li>
+	<li>Fix initial state of "Use E-notation instead of 10^n" in preferences (Qt)</li>
+	<li>Many minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
