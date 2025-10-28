@@ -46,50 +46,32 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.8</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.8.1</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2025-10-13</div>
-<div class="newstitle">Qalculate! version 5.8 released</div>
+<div class="newsdate">2025-10-27</div>
+<div class="newstitle">Qalculate! version 5.8.1 released</div>
 Changes:
 <ul>
-	<li>Add output in scientific (sci), engineering (eng), ans simple notation as "to"-operator options</li>
-	<li>Improve support (and fix segfault) for exponential notation in hexadecimal numbers</li>
-	<li>Add TeX point, TeX scaled point, twip, agate, darcy, kayser, lambert, foot-lambert, and cc units</li>
-	<li>Add compton wavelength constants for muon, neutron, proton, and tau</li>
-	<li>Update calculation of fraction of year (with day counting basis 0 and 1) to match method used in spreadsheets other than Gnumeric</li>
-	<li>Change default quantile algorithm from 8 to 7</li>
-	<li>Improve accuracy for intervals in solutions to equations when using interval arithmetic</li>
-	<li>Fix poolvar(), ttest(), cor(), dollarde() and dollarfr() functions</li>
-	<li>Fix inequality with 1/f(x) on one side, e.g. "1/(x-2) ≤ 2"</li>
-	<li>Fix segfault with extremely small numbers and high number of bits in floating point conversion</li>
-	<li>Fix crashes and freezes in some corner cases</li>
-	<li>Fix value of Planck unit (was rounded to 7 decimals)</li>
-	<li>Show warning about default assumptions the first time an equation is solved</li>
-	<li>Show warning symbol when calculate as you type expression results in a question</li>
-	<li>Show warning and ask for confirmation when deactivating interval arithmetic</li>
-	<li>Improve completion</li>
-	<li>Add "save config" option (if disabled qalc.cfg is never automatically updated) and relocate qalc.history to $XDG_STATE_HOME (CLI)</li>
-	<li>Increase speed when calculating many expressions from file (CLI)</li>
-	<li>Fix support for prompt string containing Unicode characters, control characters, and/or escape sequences (CLI)</li>
-	<li>Automatically recalculate expression with current time every second (CLI, Qt)</li>
-	<li>Replace edit-clear icon on keypad button with "C" (Gtk, Qt)</li>
-	<li>Support non-existing X-variables in plot dialog (Gtk, Qt)</li>
-	<li>Fix floating point value in floating point conversion dialog for extended and microchip formats (Gtk, Qt)</li>
-	<li>Automatically calculate expression selection if calculate as you type is enabled (Gtk)</li>
-	<li>Enable calculate as you type by default (Gtk)</li>
-	<li>Add option to add or edit comment in history (Gtk)</li>
-	<li>Add option to clear expression or replace with result after calculation (Gtk)</li>
-	<li>Fix custom time zone in calculate as you type result when added to history (Gtk)</li>
-	<li>Improve automatic digit grouping (Qt)</li>
-	<li>Add option to place percent/remainder button in number pad (Qt)</li>
-	<li>Add asterisk and middle dot as multiplication sign alternatives in preferences (Qt)</li>
-	<li>Add options to show a status bar and to place expression field below history (Qt)</li>
-	<li>Fix updating of fields in plot dialog when expression list selection changes (Qt)</li>
-	<li>Fixes for comments and removal of single result (Qt)</li>
-	<li>Fix initial state of "Use E-notation instead of 10^n" in preferences (Qt)</li>
-	<li>Many minor bug fixes and feature enhancements</li>
+	<li>Show error when function or variable disabled by "--disable-insecure" is used</li>
+	<li>Fix compilation with -fsanitize=undefined</li>
+	<li>Fix make check with --disable-insecure</li>
+	<li>Fix infinite loop during factorization on Windows</li>
+	<li>New completion method with matches selectable from numbered list (CLI)</li>
+	<li>Configurable completion (CLI)</li>
+	<li>Fix crash after factorization or in RPN mode, with calculate-as-you-type enabled (CLI)</li>
+	<li>Fix unable to write preferences because of missing configuration directory (CLI)</li>
+	<li>Fixes for character encodings other than UTF-8 (CLI)</li>
+	<li>Improve interpretation of function expressions with x, y, or z in object names (e.g. "x year"), or within quotation marks (CLI, Gtk, Qt)</li>
+	<li>Option to change the default currency (Gtk, Qt)</li>
+	<li>Customizable digit group size and separator (Gtk)</li>
+	<li>Fix replace expression with result (Gtk)</li>
+	<li>Option to show expression status in status bar (Qt)</li>
+	<li>Customizable status bar font (Qt)</li>
+	<li>Colorize icons if the button text color differs visibly from the default icon color (Qt)</li>
+	<li>Fixes and improvements for expression field below history (Qt)</li>
+	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
 </div>
