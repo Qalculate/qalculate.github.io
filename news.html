@@ -41,6 +41,32 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
 <div class="content">
+	<div class="newsdate">2025-11-17</div>
+	<div class="newstitle">Qalculate! version 5.8.2 released</div>
+	Changes:
+	<ul>
+		<li>New functions: reshape(), circshift(), replacePart()</li>
+		<li>Functions mergevectors() and area() renamed to slice() and part()</li>
+		<li>v[i, ...]=... syntax for assignment of part of matrix/vector variable</li>
+		<li>Improve language handling for functions, units, and variables</li>
+		<li>Limit the range of supported arguments in bessely, besselj, binomial, and igamma functions (to avoid segfault and very slow unabortable calculations)</li>
+		<li>Do not try to calculate exact result with automatic approximation for expressions with iterative functions</li>
+		<li>Fix compilation without Readline</li>
+		<li>Fix segfault with entrywise operation on column vector and an empty vector</li>
+		<li>Fix handling of single quotation marks</li>
+		<li>Option to change the default currency (CLI)</li>
+		<li>Limit time used for dual calculation with time command line argument to same limit as without (CLI)</li>
+		<li>Fix use of options "ignore locale" and "language" in command line arguments (CLI)</li>
+		<li>Highlight unmatched parenthesis, with red color (Gtk, Qt)</li>
+		<li>Option to colorize background of highlighted parenthesis when light theme is used (Gtk)</li>
+		<li>Customizable digit group size and separator (Qt)</li>
+		<li>Option to enable/disable check for new versions (Qt)</li>
+		<li>Optional compact variant of parsed expression in history (Qt)</li>
+		<li>New default adaptive calculate-as-you-type delay, without delay in most cases (Qt)</li>
+		<li>Improve decision to not do calculate-as-you-type or not show result of it (Qt)</li>
+		<li>Restore default unversioned installation location on Windows</li>
+		<li>Minor bug fixes and feature enhancements</li>
+	</ul>
 	<div class="newsdate">2025-10-27</div>
 	<div class="newstitle">Qalculate! version 5.8.1 released</div>
 	Changes:

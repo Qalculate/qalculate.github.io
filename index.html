@@ -46,31 +46,34 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.8.1</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.8.2</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2025-10-27</div>
-<div class="newstitle">Qalculate! version 5.8.1 released</div>
+<div class="newsdate">2025-11-17</div>
+<div class="newstitle">Qalculate! version 5.8.2 released</div>
 Changes:
 <ul>
-	<li>Show error when function or variable disabled by "--disable-insecure" is used</li>
-	<li>Fix compilation with -fsanitize=undefined</li>
-	<li>Fix make check with --disable-insecure</li>
-	<li>Fix infinite loop during factorization on Windows</li>
-	<li>New completion method with matches selectable from numbered list (CLI)</li>
-	<li>Configurable completion (CLI)</li>
-	<li>Fix crash after factorization or in RPN mode, with calculate-as-you-type enabled (CLI)</li>
-	<li>Fix unable to write preferences because of missing configuration directory (CLI)</li>
-	<li>Fixes for character encodings other than UTF-8 (CLI)</li>
-	<li>Improve interpretation of function expressions with x, y, or z in object names (e.g. "x year"), or within quotation marks (CLI, Gtk, Qt)</li>
-	<li>Option to change the default currency (Gtk, Qt)</li>
-	<li>Customizable digit group size and separator (Gtk)</li>
-	<li>Fix replace expression with result (Gtk)</li>
-	<li>Option to show expression status in status bar (Qt)</li>
-	<li>Customizable status bar font (Qt)</li>
-	<li>Colorize icons if the button text color differs visibly from the default icon color (Qt)</li>
-	<li>Fixes and improvements for expression field below history (Qt)</li>
+	<li>New functions: reshape(), circshift(), replacePart()</li>
+	<li>Functions mergevectors() and area() renamed to slice() and part()</li>
+	<li>v[i, ...]=... syntax for assignment of part of matrix/vector variable</li>
+	<li>Improve language handling for functions, units, and variables</li>
+	<li>Limit the range of supported arguments in bessely, besselj, binomial, and igamma functions (to avoid segfault and very slow unabortable calculations)</li>
+	<li>Do not try to calculate exact result with automatic approximation for expressions with iterative functions</li>
+	<li>Fix compilation without Readline</li>
+	<li>Fix segfault with entrywise operation on column vector and an empty vector</li>
+	<li>Fix handling of single quotation marks</li>
+	<li>Option to change the default currency (CLI)</li>
+	<li>Limit time used for dual calculation with time command line argument to same limit as without (CLI)</li>
+	<li>Fix use of options "ignore locale" and "language" in command line arguments (CLI)</li>
+	<li>Highlight unmatched parenthesis, with red color (Gtk, Qt)</li>
+	<li>Option to colorize background of highlighted parenthesis when light theme is used (Gtk)</li>
+	<li>Customizable digit group size and separator (Qt)</li>
+	<li>Option to enable/disable check for new versions (Qt)</li>
+	<li>Optional compact variant of parsed expression in history (Qt)</li>
+	<li>New default adaptive calculate-as-you-type delay, without delay in most cases (Qt)</li>
+	<li>Improve decision to not do calculate-as-you-type or not show result of it (Qt)</li>
+	<li>Restore default unversioned installation location on Windows</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news...</a></div>
