@@ -1,7 +1,7 @@
-qalculate-gtk:5.8.2
-qalculate-qt:5.8.2
-libqalculate:5.8.2
-windows:5.8.2
-linux-x86_64-selfcontained:https://github.com/Qalculate/libqalculate/releases/download/v5.8.2/qalculate-5.8.2-x86_64.tar.xz
-windows-x64-portable:https://github.com/Qalculate/libqalculate/releases/download/v5.8.2/qalculate-5.8.2-x64.zip
-windows-x64-installer:https://github.com/Qalculate/libqalculate/releases/download/v5.8.2/qalculate-5.8.2-x64.msi
+qalculate-gtk:5.9.0
+qalculate-qt:5.9.0
+libqalculate:5.9.0
+windows:5.9.0
+linux-x86_64-selfcontained:https://github.com/Qalculate/libqalculate/releases/download/v5.9.0/qalculate-5.9.0-x86_64.tar.xz
+windows-x64-portable:https://github.com/Qalculate/libqalculate/releases/download/v5.9.0/qalculate-5.9.0-x64.zip
+windows-x64-installer:https://github.com/Qalculate/libqalculate/releases/download/v5.9.0/qalculate-5.9.0-x64.msi
