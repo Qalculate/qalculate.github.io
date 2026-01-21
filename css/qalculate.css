@@ -218,6 +218,10 @@
 		font-family: sans-serif;
 		text-transform: uppercase;
 	}
+
+	.screenshots {
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 750px) {
@@ -364,3 +368,9 @@ ul {
 	 margin: 0.5em 0;
 }
 
+.screenshots {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: contain;
+	display: block;
+}
