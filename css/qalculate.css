@@ -28,9 +28,6 @@
 	border-radius: 0.35em;
 }
 
-.navleave {
-}
-
 .navitem:hover {
 	background-color: #333A40;
 	transition: 0.3s;
@@ -330,9 +327,6 @@
 .button:hover {
 	background-color: #cc4499;
 	transition: background-color 0.5s;
-}
-
-.whiteimage {
 }
 
 @media (prefers-color-scheme: dark) {
