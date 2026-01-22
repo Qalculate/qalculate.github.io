@@ -28,9 +28,6 @@
 	border-radius: 0.35em;
 }
 
-.navleave {
-}
-
 .navitem:hover {
 	background-color: #333A40;
 	transition: 0.3s;
@@ -218,6 +215,10 @@
 		font-family: sans-serif;
 		text-transform: uppercase;
 	}
+
+	.screenshots {
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 750px) {
@@ -328,9 +329,6 @@
 	transition: background-color 0.5s;
 }
 
-.whiteimage {
-}
-
 @media (prefers-color-scheme: dark) {
 	.qbody, .main, .navcurrent, .navcurrent:hover {
 		background-color: #202124;
@@ -364,3 +362,9 @@ ul {
 	 margin: 0.5em 0;
 }
 
+.screenshots {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: contain;
+	display: block;
+}
