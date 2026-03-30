@@ -46,44 +46,39 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.9</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.10</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2026-01-19</div>
-<div class="newstitle">Qalculate! version 5.9 released</div>
+<div class="newsdate">2026-03-30</div>
+<div class="newstitle">Qalculate! version 5.10 released</div>
 Changes:
 <ul>
-	<li>Improve speed of sort(), rank(), and mode() functions (and other dependent functions)</li>
-	<li>Parse ± before implicit multiplication when not preceded by number (e.g. "7 km ± 5m")</li>
-	<li>Always consider x^(a + b) equivalent to x^a × x^b (fixes "x^(y + z) − x^y × x^z")</li>
-	<li>Simplify (x = a || x ≥ a + 1) and (x ≤ a || x ≥ a + 1), and similar, when x and a are integers (fixes "abs(x − 1) = abs(1 − x)")</li>
-	<li>Do not remove duplicate whitespace characters from text strings (in quotation marks)</li>
-	<li>Fix floating point conversion when comma is used as decimal separator</li>
-	<li>Fix (almost) endless loop with increasingly complex equations in some cases when x + x^(1/a) is transformed to x = (b − x)^a)</li>
-	<li>Fix and improve function() function</li>
-	<li>Fix crash on Windows during output of extremely small or large (> 10^323228497) floating point number</li>
-	<li>Remove intltool build dependency</li>
-	<li>Do not show calculate-as-you-type result for incomplete object name (e.g. "integ" interpreted as "int(e × g)") (CLI, Gtk, Qt)</li>
-	<li>Ellipsize large matrices and vectors when a subset of output, e.g. in a failed function (CLI)</li>
-	<li>Completion for commands and options (CLI)</li>
-	<li>Do not show result for variable assignment when --terse and --file are used (CLI)</li>
-	<li>Avoid display of completion list for non-decimal numbers, text arguments, and x, y, z (Gtk, Qt)</li>
-	<li>Add --update-exchange-rates command line option (Gtk, Qt)</li>
-	<li>Option to show expression field below result (Gtk)</li>
-	<li>Customizable result widget height, in preferences (Gtk)</li>
-	<li>Preserve result copied to clipboard after exit (Gtk)</li>
-	<li>Fix tab completion, when pressing shortcut key multiple times (Gtk)</li>
-	<li>Fix delayed completion when tooltip is visible on Wayland (Gtk)</li>
-	<li>Improve decision when to not calculate or hide result in Gnome shell search provider (Gtk)</li>
-	<li>Place expression field below history by default (Qt)</li>
-	<li>Optional custom button column in keypad (four buttons shown regardless keypad types) (Qt)</li>
-	<li>Calculate-as-you-type improvements and fixes (Qt)</li>
-	<li>Improve automatic digit groups, in input, for non-decimal numbers and group sizes other than 3 (Qt)</li>
-	<li>Fix tooltips for warning and flag in result when expression is placed below history (Qt)</li>
+	<li>Improve factorization and simplification (particularly with radicals, logarithms, and absolute value)</li>
+	<li>Add ton of refrigeration, slug, mol/dm³, mol/L, and molar units</li>
+	<li>Add pcm, ppm, ppb, ppt, and ppq (parts per …), and lakh and crore variables</li>
+	<li>Add XAG, XAU, XPD, and XPT currencies (precious metals)</li>
+	<li>Use a maximum 4 decimals and minimum of 2 decimals by default for display of value of converted currencies</li>
+	<li>Improve handling of "to mixed" after previous conversion statement (e.g. "1 m to in to mixed")</li>
+	<li>Improve interval calculation, with interval arithmetic, with division by zero and/or both real and complex numbers in derivative of expression</li>
+	<li>Treat 0^0 as undefined (instead of equal to 1), and fix limit for 0^0</li>
+	<li>Set initial random seed using /dev/random (or BCryptGenRandom on Windows)</li>
+	<li>Do not show warning about denominators assumed non-zero when converting to expression with non-unit objects</li>
+	<li>Do not show negative exponents (if "negexp" is deactivated) when expressions contains unknown variables, even if all units have negative exponents</li>
+	<li>Do not show possibly real expression in complex exponential form</li>
+	<li>Initial support for comparison of vectors and matrices</li>
+	<li>Allow use of apostrophe as thousands separator in input, when specified as such by locale</li>
+	<li>Fix segfault with recursive variable in "where" expression</li>
+	<li>Fix segfault in some cases when argument in det() contains only a single element</li>
+	<li>Fix wrong simplification of "sin(2-cosh(x)^2/x+x)"</li>
+	<li>Fix negative exponents always used for units with rounding set to (halfway) down or up</li>
+	<li>Fix file paths with non-ASCII characters on Windows</li>
+	<li>Fix loading of history on Windows (CLI)</li>
+	<li>Fix adaptive interval display for calculate-as-you-type result (Gtk, Qt)</li>
+	<li>Fixes and improvements for number bases (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
-<div style="text-align: left;"><a href="news.html">older news...</a></div>
+<div style="text-align: left;"><a href="news.html">older news…</a></div>
 </div>
 <div style="text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 </div>
