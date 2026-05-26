@@ -46,36 +46,37 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.10</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.11</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2026-03-30</div>
-<div class="newstitle">Qalculate! version 5.10 released</div>
+<div class="newsdate">2026-05-25</div>
+<div class="newstitle">Qalculate! version 5.11 released</div>
 Changes:
 <ul>
-	<li>Improve factorization and simplification (particularly with radicals, logarithms, and absolute value)</li>
-	<li>Add ton of refrigeration, slug, mol/dm³, mol/L, and molar units</li>
-	<li>Add pcm, ppm, ppb, ppt, and ppq (parts per …), and lakh and crore variables</li>
-	<li>Add XAG, XAU, XPD, and XPT currencies (precious metals)</li>
-	<li>Use a maximum 4 decimals and minimum of 2 decimals by default for display of value of converted currencies</li>
-	<li>Improve handling of "to mixed" after previous conversion statement (e.g. "1 m to in to mixed")</li>
-	<li>Improve interval calculation, with interval arithmetic, with division by zero and/or both real and complex numbers in derivative of expression</li>
-	<li>Treat 0^0 as undefined (instead of equal to 1), and fix limit for 0^0</li>
-	<li>Set initial random seed using /dev/random (or BCryptGenRandom on Windows)</li>
-	<li>Do not show warning about denominators assumed non-zero when converting to expression with non-unit objects</li>
-	<li>Do not show negative exponents (if "negexp" is deactivated) when expressions contains unknown variables, even if all units have negative exponents</li>
-	<li>Do not show possibly real expression in complex exponential form</li>
-	<li>Initial support for comparison of vectors and matrices</li>
-	<li>Allow use of apostrophe as thousands separator in input, when specified as such by locale</li>
-	<li>Fix segfault with recursive variable in "where" expression</li>
-	<li>Fix segfault in some cases when argument in det() contains only a single element</li>
-	<li>Fix wrong simplification of "sin(2-cosh(x)^2/x+x)"</li>
-	<li>Fix negative exponents always used for units with rounding set to (halfway) down or up</li>
-	<li>Fix file paths with non-ASCII characters on Windows</li>
-	<li>Fix loading of history on Windows (CLI)</li>
-	<li>Fix adaptive interval display for calculate-as-you-type result (Gtk, Qt)</li>
-	<li>Fixes and improvements for number bases (Qt)</li>
+	<li>Add set functions (union, intersect, setdiff, setxor, isMember, isSubset) and operators (∪, ∩, ∖, ⊖, ∈, ⊆, etc.)</li>
+	<li>Add characters(), count(), digitSum(), and digitalRoot(), find(), popCount(), string(), and while() functions</li>
+	<li>Support negative row and column values in element(), row(), and column() functions</li>
+	<li>Support matrix[row][column] syntax</li>
+	<li>Support text objects in sort() function</li>
+	<li>Add third optional argument to interval() function to allow exclusion of exact endpoints</li>
+	<li>Ignore "to" and "where" (and equivalent symbols) inside quotation marks</li>
+	<li>Ignore dot in front of plus or minus (for consistent behavior in line with entrywise operators)</li>
+	<li>Show "Division by zero" warning for all divisions by zero</li>
+	<li>Make display of expressions with time units in time format more consistent</li>
+	<li>Fix support for vector in argument of many functions (erf, mod, exp, etc.)</li>
+	<li>Fix explicit conversion to mixed units for year variants</li>
+	<li>Fix first digit missing in return value of integerDigits() in some cases</li>
+	<li>Fix segfault when Calculator object is destroyed with uninitialized random state</li>
+	<li>Fix infinite loop when referencing subfunction in another subfunction</li>
+	<li>Fix segfault in replace() with variable specified using where expression, e.g. "replace(v, x, 1) where v = x"</li>
+	<li>Fix segfault when data set function name is followed immediately by a single dot</li>
+	<li>Fix v[i]=a syntax for vector element assignment</li>
+	<li>Do not bind escape key (fixes bad behavior with keys that generate escape sequences, e.g function keys) (CLI)</li>
+	<li>Fix use of x, y, z, without backslash, for arguments when using function command (CLI)</li>
+	<li>Fix parse status and calculate-as-you-type when "where" expression defines a new symbol (Gtk, Qt)</li>
+	<li>Convert degree Celsius to Fahrenheit and vice versa in Gnome search provider (Gtk)</li>
+	<li>Fix compilation on macOS (Gtk)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news…</a></div>
