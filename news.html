@@ -41,6 +41,30 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
 <div class="content">
+	<div class="newsdate">2026-06-13</div>
+	<div class="newstitle">Qalculate! version 5.12 released</div>
+	Changes:
+	<ul>
+		<li>LaTeX input and output (using latex() function, "$\...$" syntax, and "to latex" or "-latex" in qalc)</li>
+		<li>Solve a*x^b+c*d^x=0 for real x</li>
+		<li>Solve equations with absolute value and complex x (x*abs(x)=a, x^2*abs(x)=a, and a*f(x)+b*abs(x)=c)</li>
+		<li>Improve simplification of a^(c/d)/b^(c/d) in exact mode (e.g. cbrt(12)/cbrt(4)=cbrt(3))</li>
+		<li>Apply logical and bitwise operation entrywise to vectors and matrices</li>
+		<li>Allow symbols with suffix when input using backslash (e.g. \x_n = "x_n", with n shown as subscript in output)</li>
+		<li>Add argument for reverse conversion to roman(), bijective(), and bcd() functions</li>
+		<li>Add tsp and tbsp abbreviations, change cup to exactly 240 mL (U.S. legal), and add U.S. customary cup, tablespoon, and teaspoon</li>
+		<li>Mixed units conversion improvements/fixes</li>
+		<li>Fix conversion of feet and inches when using ' and " (e.g. 5'2" to cm)</li>
+		<li>Fix a*x+b*ln(x)=c where sgn(a)!=sgn(b) (only one solution were found)</li>
+		<li>Fix segfault when calculating limit for expression with sinh or cosh (also affects integrals with infinite lower or upper limit)</li>
+		<li>Fix RPN syntax for expressions with multiple functions</li>
+		<li>Add max history option to configure maximum number of expressions saved in history (CLI)</li>
+		<li>Add "Insert parentheses" shortcut action (default "Ctrl+Shft+("), which always inserts empty parentheses after cursor (Gtk, Qt)</li>
+		<li>Fix cursor and text position with RTL keyboard layouts (Gtk)</li>
+		<li>Do not fail configure on macOS if gtk-mac-integration-gtk3 is not found (Gtk)</li>
+		<li>Ignore docks (e.g. keypad) reported hidden when window is minimized on Windows (Qt)</li>
+		<li>Minor bug fixes and feature enhancements</li>
+	</ul>
 	<div class="newsdate">2026-05-25</div>
 	<div class="newstitle">Qalculate! version 5.11 released</div>
 	Changes:

@@ -46,37 +46,32 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.11</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.12</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2026-05-25</div>
-<div class="newstitle">Qalculate! version 5.11 released</div>
+<div class="newsdate">2026-06-13</div>
+<div class="newstitle">Qalculate! version 5.12 released</div>
 Changes:
 <ul>
-	<li>Add set functions (union, intersect, setdiff, setxor, isMember, isSubset) and operators (∪, ∩, ∖, ⊖, ∈, ⊆, etc.)</li>
-	<li>Add characters(), count(), digitSum(), and digitalRoot(), find(), popCount(), string(), and while() functions</li>
-	<li>Support negative row and column values in element(), row(), and column() functions</li>
-	<li>Support matrix[row][column] syntax</li>
-	<li>Support text objects in sort() function</li>
-	<li>Add third optional argument to interval() function to allow exclusion of exact endpoints</li>
-	<li>Ignore "to" and "where" (and equivalent symbols) inside quotation marks</li>
-	<li>Ignore dot in front of plus or minus (for consistent behavior in line with entrywise operators)</li>
-	<li>Show "Division by zero" warning for all divisions by zero</li>
-	<li>Make display of expressions with time units in time format more consistent</li>
-	<li>Fix support for vector in argument of many functions (erf, mod, exp, etc.)</li>
-	<li>Fix explicit conversion to mixed units for year variants</li>
-	<li>Fix first digit missing in return value of integerDigits() in some cases</li>
-	<li>Fix segfault when Calculator object is destroyed with uninitialized random state</li>
-	<li>Fix infinite loop when referencing subfunction in another subfunction</li>
-	<li>Fix segfault in replace() with variable specified using where expression, e.g. "replace(v, x, 1) where v = x"</li>
-	<li>Fix segfault when data set function name is followed immediately by a single dot</li>
-	<li>Fix v[i]=a syntax for vector element assignment</li>
-	<li>Do not bind escape key (fixes bad behavior with keys that generate escape sequences, e.g function keys) (CLI)</li>
-	<li>Fix use of x, y, z, without backslash, for arguments when using function command (CLI)</li>
-	<li>Fix parse status and calculate-as-you-type when "where" expression defines a new symbol (Gtk, Qt)</li>
-	<li>Convert degree Celsius to Fahrenheit and vice versa in Gnome search provider (Gtk)</li>
-	<li>Fix compilation on macOS (Gtk)</li>
+	<li>LaTeX input and output (using latex() function, "$\...$" syntax, and "to latex" or "-latex" in qalc)</li>
+	<li>Solve a*x^b+c*d^x=0 for real x</li>
+	<li>Solve equations with absolute value and complex x (x*abs(x)=a, x^2*abs(x)=a, and a*f(x)+b*abs(x)=c)</li>
+	<li>Improve simplification of a^(c/d)/b^(c/d) in exact mode (e.g. cbrt(12)/cbrt(4)=cbrt(3))</li>
+	<li>Apply logical and bitwise operation entrywise to vectors and matrices</li>
+	<li>Allow symbols with suffix when input using backslash (e.g. \x_n = "x_n", with n shown as subscript in output)</li>
+	<li>Add argument for reverse conversion to roman(), bijective(), and bcd() functions</li>
+	<li>Add tsp and tbsp abbreviations, change cup to exactly 240 mL (U.S. legal), and add U.S. customary cup, tablespoon, and teaspoon</li>
+	<li>Mixed units conversion improvements/fixes</li>
+	<li>Fix conversion of feet and inches when using ' and " (e.g. 5'2" to cm)</li>
+	<li>Fix a*x+b*ln(x)=c where sgn(a)!=sgn(b) (only one solution were found)</li>
+	<li>Fix segfault when calculating limit for expression with sinh or cosh (also affects integrals with infinite lower or upper limit)</li>
+	<li>Fix RPN syntax for expressions with multiple functions</li>
+	<li>Add max history option to configure maximum number of expressions saved in history (CLI)</li>
+	<li>Add "Insert parentheses" shortcut action (default "Ctrl+Shft+("), which always inserts empty parentheses after cursor (Gtk, Qt)</li>
+	<li>Fix cursor and text position with RTL keyboard layouts (Gtk)</li>
+	<li>Do not fail configure on macOS if gtk-mac-integration-gtk3 is not found (Gtk)</li>
+	<li>Ignore docks (e.g. keypad) reported hidden when window is minimized on Windows (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news…</a></div>
