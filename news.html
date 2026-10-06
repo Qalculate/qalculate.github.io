@@ -41,6 +41,38 @@
 <div style="float: right; text-align: right;"><a href="https://github.com/Qalculate" class="githubbutton">GitHub project</a></div>
 <div class="pagetitle"><span class="qcolor">Q</span>alculate! news</div><hr>
 <div class="content">
+	<div class="newsdate">2026-10-05</div>
+	<div class="newstitle">Qalculate! version 5.13 released</div>
+	Changes:
+	<ul>
+		<li>New function: ymd() (returns the number of calendar years, months, and days between two dates)</li>
+		<li>Return exact value for more argument values in lambertw() function</li>
+		<li>Integrate sqrt(ax + b)/x and 1/(x × sqrt(ax² + bx + c))</li>
+		<li>Do not use same "n" variable for different unknown integer values in equation result (e.g. e^e^x = 1)</li>
+		<li>Solve e^x = ln(x), a × sin(x) = a × tan(x), and a × sin(x) = −a × tan(x)</li>
+		<li>Solve f(x) = f(x²) and f(x) = −f(x²) for trigonometric functions, and exponentiation</li>
+		<li>Do not return x = −infinity as solution for a^x = 0</li>
+		<li>Fix a = 1 and b = 1 solution for a^x = b when the value of a and b are unknown</li>
+		<li>Fix uncertainty propagation with duplicate equal data set functions</li>
+		<li>Fix trigonometric functions with function in argument not calculated when angle unit is not radians</li>
+		<li>Fix segfaults with deeply recursive expressions, and from unavailable pipe2, on Mac OS</li>
+		<li>Fix global variables not initialized properly when a Calculator instance lives in a different translation unit's global scope</li>
+		<li>Fix division by zero warning for some expressions with zero quantity (e.g. "1 m × 0 kg")</li>
+		<li>Fix inconsistent (over)use of secondary exchanges rate sources</li>
+		<li>Fix number of decimals for currency quantity when currency is placed before quantity</li>
+		<li>Fix result containing interval with zero as lower value not displayed automatically</li>
+		<li>Add option to use underscore as digit group separator (CLI)</li>
+		<li>Fix segfault when completion results in a shorter text string, e.g. rho to ρ (CLI)</li>
+		<li>Add temporary check box to function edit dialog (Gtk, Qt)</li>
+		<li>Fix bookmark removed when deleting history item immediately above (Gtk)</li>
+		<li>Fix crashes when adding bookmark to most recent history item (Gtk)</li>
+		<li>Preserve base of current expression when switching input number base using keypad buttons (Qt)</li>
+		<li>Customizable number bases font (Qt)</li>
+		<li>Use slightly larger font size and wider letter spacing for binary digits, and add option to use bold font for binary "1" (Qt)</li>
+		<li>Show tooltip with index and decimal value of bit when mouse is over binary digit in number bases view (Qt)</li>
+		<li>Insert decimal separator (regardless of reported key symbol) when separator key is pressed on keyboard number pad (Qt)</li>
+		<li>Minor bug fixes and feature enhancements</li>
+	</ul>
 	<div class="newsdate">2026-07-13</div>
 	<div class="newstitle">Qalculate! version 5.12 released</div>
 	Changes:

@@ -46,32 +46,40 @@
 <br>
 <div class="description">Qalculate! is free software, licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU Public License v2</a> (or later).</div><br>
 </div>
-<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.12</a></div>
+<div style="text-align: center; margin-top: 0.5em;"><a href="downloads.html" class="button">Download version 5.13</a></div>
 <br><br>
 <div class="lncontent">
 <div class="latestnews">Latest News</div>
-<div class="newsdate">2026-07-13</div>
-<div class="newstitle">Qalculate! version 5.12 released</div>
+<div class="newsdate">2026-10-05</div>
+<div class="newstitle">Qalculate! version 5.13 released</div>
 Changes:
 <ul>
-	<li>LaTeX input and output (using latex() function, "$\...$" syntax, and "to latex" or "-latex" in qalc)</li>
-	<li>Solve a*x^b+c*d^x=0 for real x</li>
-	<li>Solve equations with absolute value and complex x (x*abs(x)=a, x^2*abs(x)=a, and a*f(x)+b*abs(x)=c)</li>
-	<li>Improve simplification of a^(c/d)/b^(c/d) in exact mode (e.g. cbrt(12)/cbrt(4)=cbrt(3))</li>
-	<li>Apply logical and bitwise operation entrywise to vectors and matrices</li>
-	<li>Allow symbols with suffix when input using backslash (e.g. \x_n = "x_n", with n shown as subscript in output)</li>
-	<li>Add argument for reverse conversion to roman(), bijective(), and bcd() functions</li>
-	<li>Add tsp and tbsp abbreviations, change cup to exactly 240 mL (U.S. legal), and add U.S. customary cup, tablespoon, and teaspoon</li>
-	<li>Mixed units conversion improvements/fixes</li>
-	<li>Fix conversion of feet and inches when using ' and " (e.g. 5'2" to cm)</li>
-	<li>Fix a*x+b*ln(x)=c where sgn(a)!=sgn(b) (only one solution were found)</li>
-	<li>Fix segfault when calculating limit for expression with sinh or cosh (also affects integrals with infinite lower or upper limit)</li>
-	<li>Fix RPN syntax for expressions with multiple functions</li>
-	<li>Add max history option to configure maximum number of expressions saved in history (CLI)</li>
-	<li>Add "Insert parentheses" shortcut action (default "Ctrl+Shft+("), which always inserts empty parentheses after cursor (Gtk, Qt)</li>
-	<li>Fix cursor and text position with RTL keyboard layouts (Gtk)</li>
-	<li>Do not fail configure on macOS if gtk-mac-integration-gtk3 is not found (Gtk)</li>
-	<li>Ignore docks (e.g. keypad) reported hidden when window is minimized on Windows (Qt)</li>
+	<li>New function: ymd() (returns the number of calendar years, months, and days between two dates)</li>
+	<li>Return exact value for more argument values in lambertw() function</li>
+	<li>Integrate sqrt(ax + b)/x and 1/(x × sqrt(ax² + bx + c))</li>
+	<li>Do not use same "n" variable for different unknown integer values in equation result (e.g. e^e^x = 1)</li>
+	<li>Solve e^x = ln(x), a × sin(x) = a × tan(x), and a × sin(x) = −a × tan(x)</li>
+	<li>Solve f(x) = f(x²) and f(x) = −f(x²) for trigonometric functions, and exponentiation</li>
+	<li>Do not return x = −infinity as solution for a^x = 0</li>
+	<li>Fix a = 1 and b = 1 solution for a^x = b when the value of a and b are unknown</li>
+	<li>Fix uncertainty propagation with duplicate equal data set functions</li>
+	<li>Fix trigonometric functions with function in argument not calculated when angle unit is not radians</li>
+	<li>Fix segfaults with deeply recursive expressions, and from unavailable pipe2, on Mac OS</li>
+	<li>Fix global variables not initialized properly when a Calculator instance lives in a different translation unit's global scope</li>
+	<li>Fix division by zero warning for some expressions with zero quantity (e.g. "1 m × 0 kg")</li>
+	<li>Fix inconsistent (over)use of secondary exchanges rate sources</li>
+	<li>Fix number of decimals for currency quantity when currency is placed before quantity</li>
+	<li>Fix result containing interval with zero as lower value not displayed automatically</li>
+	<li>Add option to use underscore as digit group separator (CLI)</li>
+	<li>Fix segfault when completion results in a shorter text string, e.g. rho to ρ (CLI)</li>
+	<li>Add temporary check box to function edit dialog (Gtk, Qt)</li>
+	<li>Fix bookmark removed when deleting history item immediately above (Gtk)</li>
+	<li>Fix crashes when adding bookmark to most recent history item (Gtk)</li>
+	<li>Preserve base of current expression when switching input number base using keypad buttons (Qt)</li>
+	<li>Customizable number bases font (Qt)</li>
+	<li>Use slightly larger font size and wider letter spacing for binary digits, and add option to use bold font for binary "1" (Qt)</li>
+	<li>Show tooltip with index and decimal value of bit when mouse is over binary digit in number bases view (Qt)</li>
+	<li>Insert decimal separator (regardless of reported key symbol) when separator key is pressed on keyboard number pad (Qt)</li>
 	<li>Minor bug fixes and feature enhancements</li>
 </ul>
 <div style="text-align: left;"><a href="news.html">older news…</a></div>
